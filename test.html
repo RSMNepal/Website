@@ -1,0 +1,1486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery - Rastriya Shramik Mahasangh Nepal</title>
+<meta name="description" content="Explore our gallery showcasing the activities, events, and achievements of Rastriya Shramik Mahasangh Nepal.">
+<meta name="keywords" content="labor union gallery, workers rights Nepal, RSMN gallery, worker activities">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rsmn.org.np/gallery.html">
+<meta property="og:title" content="Gallery - Rastriya Shramik Mahasangh Nepal">
+<meta property="og:description" content="Explore our gallery showcasing the activities, events, and achievements of Rastriya Shramik Mahasangh Nepal.">
+<meta property="og:image" content="https://rsmn.org.np/img/logo.jpg">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://rsmn.org.np/gallery.html">
+<meta property="twitter:title" content="Gallery - Rastriya Shramik Mahasangh Nepal">
+<meta property="twitter:description" content="Explore our gallery showcasing the activities, events, and achievements of Rastriya Shramik Mahasangh Nepal.">
+<meta property="twitter:image" content="https://rsmn.org.np/img/logo.jpg">
+<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" as="style">
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" as="style">
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;700&display=swap" as="style">
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+<style>
+:root {
+--primary-orange: #e67e22;
+--dark-orange: #d35400;
+--light-orange: #f39c12;
+--primary-gold: #FFD700;
+--light-gold: #FFED4E;
+--dark-gold: #B8860B;
+--beige: #f5f0e6;
+--text-dark: #333333;
+--text-light: #555555;
+}
+body {
+font-family: 'Poppins', sans-serif;
+background-color: var(--beige);
+color: var(--text-dark);
+overflow-x: hidden;
+}
+.nepali-font {
+font-family: 'Mukta', sans-serif;
+}
+.nepali-numerals {
+  font-family: 'Mukta', sans-serif;
+  font-size: 17px;
+}
+.section-title {
+position: relative;
+display: inline-block;
+}
+.section-title::after {
+content: '';
+position: absolute;
+width: 60%;
+height: 3px;
+background: linear-gradient(90deg, var(--primary-orange), var(--light-orange));
+bottom: -10px;
+left: 20%;
+}
+.card-hover {
+transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+transform-origin: center bottom;
+}
+.card-hover:hover {
+transform: translateY(-12px);
+box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+.btn-primary {
+background: linear-gradient(135deg, var(--primary-gold), var(--primary-orange));
+transition: all 0.3s ease;
+box-shadow: 0 4px 15px rgba(230, 126, 34, 0.3);
+}
+.btn-primary:hover {
+background: linear-gradient(135deg, var(--primary-orange), var(--dark-orange));
+transform: scale(1.05);
+box-shadow: 0 6px 20px rgba(230, 126, 34, 0.4);
+}
+.btn-secondary {
+background: linear-gradient(135deg, var(--primary-gold), var(--dark-gold));
+transition: all 0.3s ease;
+box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+.btn-secondary:hover {
+background: linear-gradient(135deg, var(--dark-gold), var(--primary-gold));
+transform: translateY(-2px);
+box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+}
+.text-orange {
+color: var(--primary-orange);
+}
+.hover\:text-orange:hover {
+color: var(--primary-orange) !important;
+}
+.text-gold {
+color: var(--primary-gold);
+}
+.bg-orange {
+background-color: var(--primary-orange);
+}
+.bg-gold {
+background: linear-gradient(135deg, var(--primary-gold), var(--dark-gold));
+}
+.bg-beige {
+background-color: var(--beige);
+}
+.nav-link {
+position: relative;
+transition: all 0.3s ease;
+}
+.nav-link::after {
+content: '';
+position: absolute;
+width: 0;
+height: 2px;
+background: white;
+bottom: -5px;
+left: 0;
+transition: width 0.3s ease;
+}
+.nav-link:hover::after {
+width: 100%;
+}
+.loading-spinner {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 40px;
+height: 40px;
+border: 4px solid rgba(230, 126, 34, 0.2);
+border-top: 4px solid var(--primary-orange);
+border-radius: 50%;
+animation: spin 1s linear infinite;
+}
+@keyframes spin {
+0% { transform: translate(-50%, -50%) rotate(0deg); }
+100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+/* Header Styles */
+.header-container {
+background: linear-gradient(135deg, var(--primary-orange), var(--dark-orange));
+position: relative;
+overflow: visible;
+z-index: 100;
+}
+.announcement-fade {
+background: linear-gradient(to bottom, rgba(255, 215, 0, 0.9), rgba(255, 215, 0, 0));
+padding: 8px 0;
+text-align: center;
+font-weight: 500;
+position: relative;
+}
+.announcement-fade::after {
+content: '';
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+height: 20px;
+background: linear-gradient(to bottom, rgba(255, 215, 0, 0), rgba(230, 126, 34, 0.3));
+}
+.nav-link-item {
+position: relative;
+transition: all 0.3s ease;
+}
+.nav-link-item::after {
+content: '';
+position: absolute;
+width: 0;
+height: 2px;
+background: var(--primary-gold);
+bottom: -2px;
+left: 50%;
+transform: translateX(-50%);
+transition: width 0.3s ease;
+}
+.nav-link-item:hover::after {
+width: 80%;
+}
+.dropdown-menu {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  z-index: 1000;
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #4b5563;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.dropdown-menu a:hover {
+  color: #ea580c !important; /* orange-600 equivalent */
+}
+.dropdown:hover .dropdown-menu {
+opacity: 1;
+visibility: visible;
+transform: translateY(0);
+}
+.dropdown-toggle i {
+transition: transform 0.3s ease;
+}
+.dropdown:hover .dropdown-toggle i {
+transform: rotate(180deg);
+}
+.mobile-menu {
+transform: translateX(-100%);
+transition: transform 0.3s ease;
+}
+.mobile-menu.active {
+transform: translateX(0);
+}
+.search-bar {
+opacity: 0;
+max-height: 0;
+overflow: hidden;
+transition: all 0.3s ease;
+}
+.search-bar.active {
+opacity: 1;
+max-height: 100px;
+}
+.lang-toggle {
+position: relative;
+overflow: hidden;
+}
+.lang-toggle::before {
+content: '';
+position: absolute;
+top: 0;
+left: -100%;
+width: 100%;
+height: 100%;
+background: rgba(255, 255, 255, 0.2);
+transition: left 0.3s ease;
+}
+.lang-toggle:hover::before {
+left: 0;
+}
+/* Improved Header Responsiveness */
+@media (max-width: 1024px) {
+  .nav-container {
+    padding: 0 1rem;
+  }
+  
+  .logo-container img {
+    height: 3.5rem;
+  }
+  
+  .organization-name h1 {
+    font-size: 1.25rem;
+  }
+  
+  .organization-name p {
+    font-size: 0.875rem;
+  }
+}
+@media (max-width: 768px) {
+  .announcement-fade {
+    padding: 6px 0;
+  }
+  
+  .announcement-fade span {
+    font-size: 0.75rem;
+  }
+  
+  .logo-container img {
+    height: 3rem;
+  }
+  
+  .organization-name h1 {
+    font-size: 1.125rem;
+  }
+  
+  .organization-name p {
+    font-size: 0.813rem;
+  }
+  
+  .mobile-menu {
+    width: 280px;
+  }
+}
+@media (max-width: 480px) {
+  .announcement-fade {
+    padding: 4px 0;
+  }
+  
+  .announcement-fade span {
+    font-size: 0.688rem;
+    padding: 0 0.25rem;
+  }
+  
+  .logo-container img {
+    height: 2.5rem;
+  }
+  
+  .organization-name h1 {
+    font-size: 1rem;
+  }
+  
+.organization-name p {
+    font-size: 0.75rem;
+  }
+  
+  .mobile-menu {
+    width: 260px;
+  }
+}
+/* Touch device optimizations */
+@media (hover: none) {
+  .dropdown:hover .dropdown-menu {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+  }
+  
+  .dropdown-menu.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+  .dropdown-toggle.active i {
+    transform: rotate(180deg);
+  }
+}
+/* Large screen optimizations */
+@media (min-width: 1536px) {
+  .nav-container {
+    max-width: 1536px;
+    margin: 0 auto;
+  }
+  
+  .nav-links {
+    justify-content: center;
+  }
+  
+  .logo-container img {
+    height: 5rem;
+  }
+  
+  .organization-name h1 {
+    font-size: 1.875rem;
+  }
+  
+  .organization-name p {
+    font-size: 1.25rem;
+  }
+}
+/* Gallery Hero Section - Similar to Press Releases */
+.gallery-hero {
+position: relative;
+height: 50vh;
+min-height: 400px;
+overflow: hidden;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.gallery-hero-bg {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-image: url('Gallery/hero-banner1.png');
+background-size: cover;
+background-position: center;
+filter: brightness(0.6);
+z-index: -1;
+}
+.gallery-hero-overlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.4));
+z-index: -1;
+}
+.gallery-content {
+position: relative;
+z-index: 2;
+text-align: center;
+color: white;
+padding: 0 20px;
+max-width: 800px;
+}
+.gallery-content h1 {
+font-size: 3rem;
+font-weight: 700;
+margin-bottom: 1rem;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.gallery-content p {
+font-size: 1.2rem;
+margin-bottom: 2rem;
+text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+.gallery-breadcrumb {
+position: absolute;
+bottom: 30px;
+left: 0;
+width: 100%;
+text-align: center;
+color: rgba(255, 255, 255, 0.8);
+font-size: 0.9rem;
+}
+.gallery-breadcrumb a {
+color: white;
+text-decoration: none;
+transition: color 0.3s ease;
+}
+.gallery-breadcrumb a:hover {
+color: var(--primary-gold);
+}
+/* Gallery Specific Styles */
+.gallery-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.gallery-grid {
+  column-count: 1;
+  column-gap: 1rem;
+}
+@media (min-width: 640px) {
+  .gallery-grid {
+    column-count: 2;
+  }
+}
+@media (min-width: 1024px) {
+  .gallery-grid {
+    column-count: 3;
+  }
+}
+@media (min-width: 1280px) {
+  .gallery-grid {
+    column-count: 4;
+  }
+}
+.gallery-item {
+  break-inside: avoid;
+  margin-bottom: 1rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+}
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+.gallery-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+  color: white;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+.gallery-item:hover .gallery-overlay {
+  transform: translateY(0);
+}
+.gallery-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+.gallery-description {
+  font-size: 0.875rem;
+  opacity: 0.9;
+}
+.gallery-filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+.filter-btn {
+  padding: 0.5rem 1.25rem;
+  border-radius: 2rem;
+  background: white;
+  color: var(--text-dark);
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.filter-btn:hover, .filter-btn.active {
+  background: var(--primary-orange);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(230, 126, 34, 0.3);
+}
+.gallery-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.gallery-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-orange);
+  margin-bottom: 1rem;
+}
+.gallery-header p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: var(--text-light);
+  font-size: 1.125rem;
+}
+.gallery-section {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, white, rgba(255, 215, 0, 0.05));
+}
+.gallery-stats {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin: 4rem 0;
+  flex-wrap: wrap;
+}
+.stat-item {
+  text-align: center;
+}
+.stat-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--primary-orange);
+  margin-bottom: 0.5rem;
+}
+.stat-label {
+  font-size: 1rem;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+/* Lightbox customizations */
+.lb-data .lb-caption {
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+}
+.lb-data .lb-number {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+.lb-nav a.lb-prev, .lb-nav a.lb-next {
+  opacity: 0.7;
+}
+.lb-nav a.lb-prev:hover, .lb-nav a.lb-next:hover {
+  opacity: 1;
+}
+/* Loading animation for images */
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.75rem;
+}
+.image-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0) 100%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  z-index: 1;
+}
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.image-wrapper.loaded::before {
+  animation: none;
+  opacity: 0;
+}
+/* Responsive adjustments for Gallery Hero */
+@media (max-width: 992px) {
+  .gallery-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .gallery-content p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .gallery-hero {
+    height: 40vh;
+    min-height: 300px;
+  }
+  
+  .gallery-content h1 {
+    font-size: 2rem;
+  }
+  
+  .gallery-content p {
+    font-size: 1rem;
+  }
+}
+</style>
+</head>
+<body>
+<header class="header-container text-white shadow-xl sticky top-0 z-50">
+  <div class="announcement-fade">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 md:gap-x-4 lg:gap-x-6 text-sm md:text-base font-semibold overflow-x-auto py-1">
+        <span class="whitespace-nowrap transition-colors duration-300 hover:text-yellow-300 px-1" data-translate="announcement.slogan1">Rastra heet!</span>
+        <span class="whitespace-nowrap transition-colors duration-300 hover:text-yellow-300 px-1" data-translate="announcement.slogan2">Udyog Heet!</span>
+        <span class="whitespace-nowrap transition-colors duration-300 hover:text-yellow-300 px-1" data-translate="announcement.slogan3">Shramik Heet!</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="nav-container">
+    <div class="flex flex-col md:flex-row items-center justify-between py-0 px-4">
+      <a href="Landing_Page.html" class="flex items-center w-full md:w-auto mb-3 md:mb-0 pl-20 no-underline nav-link-custom">
+        <div class="logo-container">
+          <img src="logo.jpg" alt="Rastriya Shramik Mahasangh Nepal Logo" class="h-20 md:h-24 lg:h-28 transition-transform duration-300 hover:scale-105">
+        </div>
+        <div class="organization-name ml-3 md:ml-4">
+          <h1 class="text-lg md:text-xl lg:text-2xl font-bold transition-colors duration-300 hover:text-yellow-100" data-translate="organization.name">Rastriya Shramik Mahasangh</h1>
+          <p class="text-sm md:text-base lg:text-lg transition-colors duration-300 hover:text-yellow-200" data-translate="organization.country">Nepal</p>
+        </div>
+      </a>
+      
+      <nav class="nav-links hidden lg:flex items-center justify-center flex-grow mx-4 lg:mx-8">
+        <a href="Landing_Page.html" class="nav-link-item px-3 py-2 rounded-lg text-white font-medium transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md nav-link-custom" data-translate="nav.home">Home</a>
+        
+        <div class="relative dropdown">
+          <a href="about.html" class="nav-link-item px-3 py-2 rounded-lg text-white font-medium flex items-center transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md dropdown-toggle nav-link-custom">
+            <span data-translate="nav.about">About</span> <i class="fas fa-chevron-down ml-1 text-xs"></i>
+          </a>
+          <div class="dropdown-menu absolute left-0 flex-col bg-white text-gray-800 mt-1 rounded-md shadow-lg py-1 w-48">
+            <a href="about.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600 nav-link-custom" data-translate="nav.about.story">Our Story</a>
+            <a href="about.html#organizational-structure" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600 nav-link-custom" data-translate="nav.about.structure">Organizational Structure</a>
+            <a href="about.html#central-executive-committee" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600 nav-link-custom" data-translate="nav.about.leadership">Leadership</a>
+          </div>
+        </div>
+        
+        <div class="relative dropdown">
+          <button class="nav-link-item px-3 py-2 rounded-lg text-white font-medium flex items-center transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md dropdown-toggle">
+            <span data-translate="nav.resources">Resources</span> <i class="fas fa-chevron-down ml-1 text-xs"></i>
+          </button>
+          <div class="dropdown-menu absolute left-0 flex-col bg-white text-gray-800 mt-1 rounded-md shadow-lg py-1 w-56">
+            <a href="Slogans.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600 nav-link-custom" data-translate="nav.resources.slogans">Our Slogans</a>
+            <a href="Press_Releases.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600 nav-link-custom" data-translate="nav.resources.press">Press Releases</a>
+            <a href="Publications.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600 nav-link-custom" data-translate="nav.resources.publications">Publications</a>
+          </div>
+        </div>
+        
+        <a href="Upcoming.html" class="nav-link-item px-3 py-2 rounded-lg text-white font-medium transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md nav-link-custom" data-translate="nav.events">Events</a>
+        <a href="gallery.html" class="nav-link-item px-3 py-2 rounded-lg text-white font-medium transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md nav-link-custom" data-translate="nav.gallery">Gallery</a>
+      </nav>
+      
+      <div class="flex items-center justify-end space-x-3 md:space-x-4 pr-20">
+        <div class="flex bg-orange-800 bg-opacity-60 rounded-full p-1 shadow-md transition-all duration-300 hover:bg-opacity-80">
+          <button id="lang-en" class="lang-toggle px-2 py-1 md:px-3 md:py-1 rounded-full text-sm font-medium transition-all duration-300">EN</button>
+          <button id="lang-ne" class="lang-toggle px-2 py-1 md:px-3 md:py-1 rounded-full text-sm font-medium transition-all duration-300">ने</button>
+        </div>
+        
+        <button class="text-white hover:text-gold p-2 rounded-full hover:bg-gold hover:shadow-md transition-all duration-300" id="search-toggle" aria-label="Search">
+          <i class="fas fa-search text-lg"></i>
+        </button>
+        
+        <button class="lg:hidden text-white focus:outline-none p-2" id="mobile-menu-button" aria-label="Menu">
+          <i class="fas fa-bars text-xl"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <div id="search-bar" class="search-bar bg-gray-700 py-2 px-4 shadow-md">
+    <div class="container mx-auto">
+      <form id="search-form" class="flex">
+        <input type="text" id="search-input" placeholder="Search..." class="flex-grow px-4 py-1.5 rounded-l-lg focus:outline-none text-gray-800 bg-white shadow-inner transition-all duration-300 hover:bg-gray-50" data-translate-placeholder="search.placeholder">
+        <button type="submit" class="bg-gold hover:bg-orange-600 px-4 py-1.5 rounded-r-lg transition-all duration-300 hover:shadow-md">
+          <i class="fas fa-search"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+  
+  <div id="mobile-menu" class="mobile-menu fixed top-0 left-0 w-64 h-full bg-gray-800 text-white z-50 shadow-lg">
+    <div class="p-4 border-b border-gray-700">
+      <div class="flex justify-between items-center mb-4">
+        <div class="flex bg-orange-800 bg-opacity-60 rounded-full p-1 shadow-md transition-all duration-300 hover:bg-opacity-80">
+          <button id="mobile-lang-en" class="lang-toggle px-3 py-1 rounded-full text-sm font-medium transition-all duration-300">EN</button>
+          <button id="mobile-lang-ne" class="lang-toggle px-3 py-1 rounded-full text-sm font-medium transition-all duration-300">ने</button>
+        </div>
+        
+        <button class="text-white hover:text-gold p-2 rounded-full hover:bg-gold hover:shadow-md transition-all duration-300" id="mobile-search-toggle" aria-label="Search">
+          <i class="fas fa-search text-lg"></i>
+        </button>
+        
+        <button class="text-white hover:text-gold p-2 rounded-full hover:bg-gold hover:shadow-md transition-all duration-300" id="close-mobile-menu" aria-label="Close menu">
+          <i class="fas fa-times text-lg"></i>
+        </button>
+      </div>
+      
+      <a href="Landing_Page.html" class="flex items-center no-underline nav-link-custom">
+        <img src="logo.jpg" alt="Rastriya Shramik Mahasangh Nepal Logo" class="h-16">
+        <div class="ml-3">
+          <h1 class="text-lg font-bold text-white" data-translate="organization.name">Rastriya Shramik Mahasangh</h1>
+          <p class="text-sm text-white" data-translate="organization.country">Nepal</p>
+        </div>
+      </a>
+    </div>
+    
+    <div class="p-4 space-y-2 overflow-y-auto max-h-[calc(100vh-180px)]">
+      <a href="Landing_Page.html" class="block py-2 px-4 rounded-lg hover:bg-gold hover:text-dark-orange transition-all duration-300 nav-link-custom" data-translate="nav.home">Home</a>
+      
+      <div class="py-1">
+        <button class="flex justify-between items-center w-full py-2 px-4 rounded-lg hover:bg-gold hover:text-dark-orange transition-all duration-300 mobile-submenu-toggle" data-target="about-submenu">
+          <span data-translate="nav.about">About</span> <i class="fas fa-chevron-down text-xs transition-transform duration-300"></i>
+        </button>
+        <div id="about-submenu" class="hidden pl-6 mt-1 space-y-1 bg-gray-700 rounded-lg">
+          <a href="about.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600 nav-link-custom" data-translate="nav.about.story">Our Story</a>
+          <a href="about.html#organizational-structure" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600 nav-link-custom" data-translate="nav.about.structure">Organizational Structure</a>
+          <a href="about.html#central-executive-committee" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600 nav-link-custom" data-translate="nav.about.leadership">Leadership</a>
+        </div>
+      </div>
+      
+      <div class="py-1">
+        <button class="flex justify-between items-center w-full py-2 px-4 rounded-lg hover:bg-gold hover:text-dark-orange transition-all duration-300 mobile-submenu-toggle" data-target="resources-submenu">
+          <span data-translate="nav.resources">Resources</span> <i class="fas fa-chevron-down text-xs transition-transform duration-300"></i>
+        </button>
+        <div id="resources-submenu" class="hidden pl-6 mt-1 space-y-1 bg-gray-700 rounded-lg">
+          <a href="Slogans.html" class="block py-2 px-4 hover:bg-orange-100 transition-colors duration-300 nav-link-custom" data-translate="nav.resources.slogans">Our Slogans</a>
+          <a href="Press_Releases.html" class="block py-2 px-4 hover:bg-orange-100 transition-colors duration-300 nav-link-custom" data-translate="nav.resources.press">Press Releases</a>
+          <a href="Publications.html" class="block py-2 px-4 hover:bg-orange-100 transition-colors duration-300 nav-link-custom" data-translate="nav.resources.publications">Publications</a>
+        </div>
+      </div>
+      
+      <a href="Upcoming.html" class="block py-2 px-4 rounded-lg hover:bg-gold hover:text-dark-orange transition-all duration-300 nav-link-custom" data-translate="nav.events">Events</a>
+      <a href="gallery.html" class="block py-2 px-4 rounded-lg hover:bg-gold hover:text-dark-orange transition-all duration-300 nav-link-custom" data-translate="nav.gallery">Gallery</a>
+    </div>
+  </div>
+</header>
+<section class="gallery-hero">
+  <div class="gallery-hero-bg"></div>
+  <div class="gallery-hero-overlay"></div>
+  <div class="gallery-content">
+    <h1 data-aos="fade-up" data-translate="hero.title">Our Gallery</h1>
+    <p data-aos="fade-up" data-aos-delay="100" data-translate="hero.subtitle">Capturing moments of unity, advocacy, and empowerment in our journey to uplift workers across Nepal</p>
+  </div>
+  <div class="gallery-breadcrumb">
+    <a href="Landing_Page.html" class="nav-link-custom" data-translate="breadcrumb.home">Home</a> / <span data-translate="breadcrumb.gallery">Gallery</span>
+  </div>
+</section>
+<section class="gallery-section">
+  <div class="gallery-container">
+    <div class="gallery-stats" data-aos="fade-up" data-aos-delay="200">
+      <div class="stat-item">
+        <div class="stat-number nepali-numerals" data-count="500" data-original="500">500</div>
+        <div class="stat-label" data-translate="stats.events">Events</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number nepali-numerals" data-count="50" data-original="50">50</div>
+        <div class="stat-label" data-translate="stats.rallies">Rallies</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number nepali-numerals" data-count="100" data-original="100">100</div>
+        <div class="stat-label" data-translate="stats.meetings">Meetings</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number nepali-numerals" data-count="25" data-original="25">25</div>
+        <div class="stat-label" data-translate="stats.achievements">Achievements</div>
+      </div>
+    </div>
+    
+    <div class="gallery-filter" data-aos="fade-up" data-aos-delay="100">
+      <button class="filter-btn active" data-filter="all" data-translate="filter.all">All</button>
+      <button class="filter-btn" data-filter="rallies" data-translate="filter.rallies">Rallies</button>
+      <button class="filter-btn" data-filter="meetings" data-translate="filter.meetings">Meetings</button>
+      <button class="filter-btn" data-filter="events" data-translate="filter.events">Events</button>
+      <button class="filter-btn" data-filter="achievements" data-translate="filter.achievements">Achievements</button>
+    </div>
+    
+    <div class="gallery-grid" id="gallery-grid">
+      <div class="gallery-item" data-filter="rallies" data-aos="fade-up">
+        <div class="image-wrapper">
+          <a href="Gallery/Gallery1.jpeg" data-lightbox="gallery" data-title="Annual Planning Meeting">
+            <img src="Gallery/Gallery1.jpeg" alt="Annual Planning Meeting" loading="lazy">
+          </a>
+        </div>
+        <div class="gallery-overlay">
+          <h3 class="gallery-title" data-translate="gallery.item1.title">Annual Planning Meeting</h3>
+          <p class="gallery-description" data-translate="gallery.item1.description">Gen. Secretary delivering a keynote address on strategic labor initiatives</p>
+        </div>
+      </div>
+      
+      <div class="gallery-item" data-filter="events" data-aos="fade-up" data-aos-delay="100">
+        <div class="image-wrapper">
+          <a href="Gallery/Gallery2.jpeg" data-lightbox="gallery" data-title="Establishment of Delhi Unit of RSM Nepal">
+            <img src="Gallery/Gallery2.jpeg" alt="Establishment of Delhi Unit of RSM Nepal" loading="lazy">
+          </a>
+        </div>
+        <div class="gallery-overlay">
+          <h3 class="gallery-title" data-translate="gallery.item2.title">Establishment of Delhi Unit of RSM Nepal</h3>
+          <p class="gallery-description" data-translate="gallery.item2.description">Unit launched with active participation of Nepali workers in India</p>
+        </div>
+      </div>
+      
+      <div class="gallery-item" data-filter="meetings" data-aos="fade-up" data-aos-delay="200">
+        <div class="image-wrapper">
+          <a href="Gallery/Gallery3.jpeg" data-lightbox="gallery" data-title="BMS India–RSM Nepal Leadership Dialogue">
+            <img src="Gallery/Gallery3.jpeg" alt="BMS India–RSM Nepal Leadership Dialogue" loading="lazy">
+          </a>
+        </div>
+        <div class="gallery-overlay">
+          <h3 class="gallery-title" data-translate="gallery.item3.title">BMS India–RSM Nepal Leadership Dialogue</h3>
+          <p class="gallery-description" data-translate="gallery.item3.description">Addressing key labor issues faced by Nepali workers in India</p>
+        </div>
+      </div>
+      
+      <div class="gallery-item" data-filter="achievements" data-aos="fade-up" data-aos-delay="300">
+        <div class="image-wrapper">
+          <a href="Gallery/Gallery4.jpeg" data-lightbox="gallery" data-title="Vishwakarma Puja Celebration">
+            <img src="Gallery/Gallery4.jpeg" alt="Vishwakarma Puja Celebration" loading="lazy">
+          </a>
+        </div>
+        <div class="gallery-overlay">
+          <h3 class="gallery-title" data-translate="gallery.item4.title">Vishwakarma Puja Celebration</h3>
+          <p class="gallery-description" data-translate="gallery.item4.description">General Secretary delivering an address honoring the spirit of labor and craftsmanship</p>
+        </div>
+      </div>
+      
+      <div class="gallery-item" data-filter="events" data-aos="fade-up" data-aos-delay="100">
+        <div class="image-wrapper">
+          <a href="Gallery/Gallery6.jpeg" data-lightbox="gallery" data-title="Meeting with ILO & SARTUC Representatives">
+            <img src="Gallery/Gallery6.jpeg" alt="Meeting with ILO & SARTUC Representatives" loading="lazy">
+          </a>
+        </div>
+        <div class="gallery-overlay">
+          <h3 class="gallery-title" data-translate="gallery.item6.title">Meeting with ILO & SARTUC Representatives</h3>
+          <p class="gallery-description" data-translate="gallery.item6.description">RSM Nepal leaders discussing regional labor rights and collaborative initiatives</p>
+        </div>
+      </div>
+      
+      <div class="gallery-item" data-filter="meetings" data-aos="fade-up" data-aos-delay="200">
+        <div class="image-wrapper">
+          <a href="Gallery/Gallery7.jpeg" data-lightbox="gallery" data-title="Vishwakarma Puja Rituals">
+            <img src="Gallery/Gallery7.jpeg" alt="Vishwakarma Puja Rituals" loading="lazy">
+          </a>
+        </div>
+        <div class="gallery-overlay">
+          <h3 class="gallery-title" data-translate="gallery.item7.title">Vishwakarma Puja Rituals</h3>
+          <p class="gallery-description" data-translate="gallery.item7.description">Traditional worship ceremony celebrating the deity of labor and craftsmanship</p>
+        </div>
+      </div>
+      
+      <div class="gallery-item" data-filter="meetings" data-aos="fade-up" data-aos-delay="200">
+        <div class="image-wrapper">
+          <a href="Gallery/Gallery11.jpeg" data-lightbox="gallery" data-title="Executive Committee of Ghar Grihasti Shramik Sangh">
+            <img src="Gallery/Gallery11.jpeg" alt="Executive Committee of Ghar Grihasti Shramik Sangh" loading="lazy">
+          </a>
+        </div>
+        <div class="gallery-overlay">
+          <h3 class="gallery-title" data-translate="gallery.item11.title">Executive Committee of Ghar Grihasti Shramik Sangh</h3>
+          <p class="gallery-description" data-translate="gallery.item11.description">Committee members participating in the traditional celebration of labor and skill</p>
+        </div>
+      </div>
+      
+      <div class="gallery-item" data-filter="rallies" data-aos="fade-up">
+        <div class="image-wrapper">
+          <a href="Gallery/Gallery13.jpeg" data-lightbox="gallery" data-title="Meeting on Agricultural Workers' Issues">
+            <img src="Gallery/Gallery13.jpeg" alt="Meeting on Agricultural Workers' Issues" loading="lazy">
+          </a>
+        </div>
+        <div class="gallery-overlay">
+          <h3 class="gallery-title" data-translate="gallery.item13.title">Meeting on Agricultural Workers' Issues</h3>
+          <p class="gallery-description" data-translate="gallery.item13.description">RSM Nepal leaders submitting farmers' labor issues at Kathmandu District Office</p>
+        </div>
+      </div>
+      
+      <div class="gallery-item" data-filter="events" data-aos="fade-up" data-aos-delay="100">
+        <div class="image-wrapper">
+          <a href="Gallery/Gallery14.jpeg" data-lightbox="gallery" data-title="Farmers' Labor Rights Meeting">
+            <img src="Gallery/Gallery14.jpeg" alt="Farmers' Labor Rights Meeting" loading="lazy">
+          </a>
+        </div>
+        <div class="gallery-overlay">
+          <h3 class="gallery-title" data-translate="gallery.item14.title">Farmers' Labor Rights Meeting</h3>
+          <p class="gallery-description" data-translate="gallery.item14.description">Submitting farmers' labor issues at Mahottari District Office</p>
+        </div>
+      </div>
+      
+      <div class="gallery-item" data-filter="meetings" data-aos="fade-up" data-aos-delay="200">
+        <div class="image-wrapper">
+          <a href="Gallery/Gallery15.jpeg" data-lightbox="gallery" data-title="Karyakarta Training Program">
+            <img src="Gallery/Gallery15.jpeg" alt="Karyakarta Training Program" loading="lazy">
+          </a>
+        </div>
+        <div class="gallery-overlay">
+          <h3 class="gallery-title" data-translate="gallery.item15.title">Karyakarta Training Program</h3>
+          <p class="gallery-description" data-translate="gallery.item15.description">RSM Nepal conducting training session in Chitwan</p>
+        </div>
+      </div>
+      
+      <div class="gallery-item" data-filter="achievements" data-aos="fade-up" data-aos-delay="300">
+        <div class="image-wrapper">
+          <a href="Gallery/Gallery16.jpeg" data-lightbox="gallery" data-title="Meeting with BMS Leaders">
+            <img src="Gallery/Gallery16.jpeg" alt="Meeting with BMS Leaders" loading="lazy">
+          </a>
+        </div>
+        <div class="gallery-overlay">
+          <h3 class="gallery-title" data-translate="gallery.item16.title">Meeting with BMS Leaders</h3>
+          <p class="gallery-description" data-translate="gallery.item16.description">Discussing issues of Nepali workers and labor policies</p>
+        </div>
+      </div>
+      
+      <div class="gallery-item" data-filter="rallies" data-aos="fade-up">
+        <div class="image-wrapper">
+          <a href="Gallery/Gallery17.jpeg" data-lightbox="gallery" data-title="Sugarcane Farmers' Subsidy">
+            <img src="Gallery/Gallery17.jpeg" alt="Sugarcane Farmers' Subsidy" loading="lazy">
+          </a>
+        </div>
+        <div class="gallery-overlay">
+          <h3 class="gallery-title" data-translate="gallery.item17.title">Sugarcane Farmers' Subsidy</h3>
+          <p class="gallery-description" data-translate="gallery.item17.description">Krishi Shramik Sangh presenting concerns at Nawalparasi office</p>
+        </div>
+      </div>
+      
+      <div class="gallery-item" data-filter="events" data-aos="fade-up" data-aos-delay="100">
+        <div class="image-wrapper">
+          <a href="Gallery/Gallery18.jpeg" data-lightbox="gallery" data-title="Farmers' Subsidy Memorandum">
+            <img src="Gallery/Gallery18.jpeg" alt="Farmers' Subsidy Memorandum" loading="lazy">
+          </a>
+        </div>
+        <div class="gallery-overlay">
+          <h3 class="gallery-title" data-translate="gallery.item18.title">Farmers' Subsidy Memorandum</h3>
+          <p class="gallery-description" data-translate="gallery.item18.description">Krishi Shramik Sangh presenting concerns at Saptari office</p>
+        </div>
+      </div>
+      
+      <div class="gallery-item" data-filter="meetings" data-aos="fade-up" data-aos-delay="200">
+        <div class="image-wrapper">
+          <a href="Gallery/Gallery19.jpeg" data-lightbox="gallery" data-title="Workers' Rights Protest">
+            <img src="Gallery/Gallery19.jpeg" alt="Workers' Rights Protest" loading="lazy">
+          </a>
+        </div>
+        <div class="gallery-overlay">
+          <h3 class="gallery-title" data-translate="gallery.item19.title">Workers' Rights Protest</h3>
+          <p class="gallery-description" data-translate="gallery.item19.description">Varun Beverages employees demand labor rights – Nawalparasi</p>
+        </div>
+      </div>
+      
+      <div class="gallery-item" data-filter="achievements" data-aos="fade-up" data-aos-delay="300">
+        <div class="image-wrapper">
+          <a href="Gallery/Gallery20.jpeg" data-lightbox="gallery" data-title="Leaders' Meeting">
+            <img src="Gallery/Gallery20.jpeg" alt="Leaders' Meeting" loading="lazy">
+          </a>
+        </div>
+        <div class="gallery-overlay">
+          <h3 class="gallery-title" data-translate="gallery.item20.title">Leaders' Meeting</h3>
+          <p class="gallery-description" data-translate="gallery.item20.description">RSM Nepal meets Confederation of Nepalese Professionals' leaders</p>
+        </div>
+      </div>
+      
+      <div class="gallery-item" data-filter="rallies" data-aos="fade-up">
+        <div class="image-wrapper">
+          <a href="Gallery/Gallery21.jpeg" data-lightbox="gallery" data-title="Leaders' Meeting">
+            <img src="Gallery/Gallery21.jpeg" alt="Leaders' Meeting" loading="lazy">
+          </a>
+        </div>
+        <div class="gallery-overlay">
+          <h3 class="gallery-title" data-translate="gallery.item21.title">Leaders' Meeting</h3>
+          <p class="gallery-description" data-translate="gallery.item21.description">BMS, RSM Nepal, ILO & SARTUC leaders in discussion</p>
+        </div>
+      </div>
+      
+      <div class="gallery-item" data-filter="events" data-aos="fade-up" data-aos-delay="100">
+        <div class="image-wrapper">
+          <a href="Gallery/Gallery23.jpeg" data-lightbox="gallery" data-title="Book Release">
+            <img src="Gallery/Gallery23.jpeg" alt="Book Release" loading="lazy">
+          </a>
+        </div>
+        <div class="gallery-overlay">
+          <h3 class="gallery-title" data-translate="gallery.item23.title">Book Release</h3>
+          <p class="gallery-description" data-translate="gallery.item23.description">Sangathan Mantra Book Bimochan at the First Rastriya Yojana Baithak of RSM Nepal</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="text-white pt-16 pb-8 px-4" style="background: linear-gradient(135deg, var(--primary-orange), var(--dark-orange));">
+  <div class="container mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+      <div class="md:col-span-1">
+        <a href="Landing_Page.html" class="flex items-center mb-6 transition-transform duration-300 hover:scale-105 nav-link-custom">
+          <img src="logo.jpg" alt="Rastriya Shramik Mahasangh Nepal Logo" class="h-24 md:h-28 mr-3">
+          <div>
+            <h3 class="text-xl font-bold" data-translate="organization.name">Rastriya Shramik Mahasangh</h3>
+            <p class="text-sm text-white-300" data-translate="organization.country">नेपाल</p>
+          </div>
+        </a>
+        <p class="text-white mb-6 nepali-numerals" data-translate="footer.description">
+          Empowering workers through unity, advocacy, and action since 2080 B.S.
+        </p>
+        <div class="flex space-x-4">
+          <a
+            href="https://www.facebook.com/share/166n2f5LS2/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="bg-gold hover:bg-orange-600 w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300"
+            aria-label="Facebook"
+          ><i class="fab fa-facebook-f"></i>
+          </a>
+          <a
+            href="https://wa.me/9779855020288?text=Hello%2C%20Rastriya%20Shramik%20Mahasangh%20Nepal.%20I%20visited%20your%20website%20and%20have%20a%20question."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="bg-gold hover:bg-orange-600 w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300"
+            aria-label="WhatsApp"
+          >
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a
+            href="https://youtu.be/XbdMoZdlIbQ?si=zh4b24EBB9qC7RYW"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="bg-gold hover:bg-orange-600 w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300"
+            aria-label="YouTube"
+          >
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="#" class="bg-gold hover:bg-orange-600 w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+      <div class="md:col-span-1">
+        <h3 class="text-lg font-bold mb-6 uppercase tracking-wider text-white" data-translate="footer.quicklinks">Quick Links</h3>
+        <ul class="space-y-3">
+          <li>
+            <a href="about.html" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center nav-link-custom">
+              <i class="fas fa-angle-right mr-2 text-gold"></i>
+              <span data-translate="nav.about">About Us</span>
+            </a>
+          </li>
+          <li>
+            <a href="Updates.html" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center nav-link-custom">
+              <i class="fas fa-angle-right mr-2 text-gold"></i>
+              <span data-translate="footer.updates">Latest Updates</span>
+            </a>
+          </li>
+          <li>
+            <a href="Upcoming.html" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center nav-link-custom">
+              <i class="fas fa-angle-right mr-2 text-gold"></i>
+              <span data-translate="nav.events">Our Events</span>
+            </a>
+          </li>
+          <li>
+            <a href="Media_Coverage.html" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center nav-link-custom">
+              <i class="fas fa-angle-right mr-2 text-gold"></i>
+              <span data-translate="footer.media">Media Coverages</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="md:col-span-1">
+        <h3 class="text-lg font-bold mb-6 uppercase tracking-wider text-white" data-translate="nav.resources">Resources</h3>
+        <ul class="space-y-3">
+          <li>
+            <a href="Slogans.html" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center nav-link-custom">
+              <i class="fas fa-angle-right mr-2 text-gold"></i>
+              <span data-translate="nav.resources.slogans">Our Slogans</span>
+            </a>
+          </li>
+          <li>
+            <a href="Press_Releases.html" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center nav-link-custom">
+              <i class="fas fa-angle-right mr-2 text-gold"></i>
+              <span data-translate="nav.resources.press">Press Releases</span>
+            </a>
+          </li>
+          <li>
+            <a href="Publications.html" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center nav-link-custom">
+              <i class="fas fa-angle-right mr-2 text-gold"></i>
+              <span data-translate="nav.resources.publications">Publications</span>
+            </a>
+          </li>
+          <li>
+            <a href="Gallery.html" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center nav-link-custom">
+              <i class="fas fa-angle-right mr-2 text-gold"></i>
+              <span data-translate="nav.gallery">Gallery</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="md:col-span-1">
+        <h3 class="text-lg font-bold mb-6 uppercase tracking-wider text-white" data-translate="footer.contact">Contact Us</h3>
+        <ul class="space-y-4 mb-8">
+          <li class="flex items-start">
+            <i class="fas fa-map-marker-alt text-gold mt-1 mr-3"></i>
+            <a href="https://maps.app.goo.gl/4C8W3pM3qPDEQvMA9" target="_blank" class="text-white hover:text-yellow-200 transition-colors duration-300 nepali-numerals" data-translate="footer.address">Keshavdham, Guheswari Marg - 8, Kathmandu, Nepal</a>
+          </li>
+          <li class="flex items-center">
+            <i class="fas fa-phone-alt text-gold mr-3"></i>
+            <a href="tel:+977-9855020288" class="text-white hover:text-yellow-200 transition-colors duration-300 phone-number nepali-numerals" data-original="+977-9855020288">+977-9855020288</a>
+          </li>
+          <li class="flex items-center">
+            <i class="fas fa-envelope text-gold mr-3"></i>
+            <a href="mailto:rashtriyashramikm@gmail.com" class="text-white hover:text-yellow-200 transition-colors duration-300">rashtriyashramikm@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-orange-800 pt-4">
+      <div class="flex justify-center">
+        <p class="text-white text-sm">
+          © <span id="current-year"></span> <span data-translate="footer.copyright">Rastriya Shramik Mahasangh Nepal. All rights reserved.</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+<button id="back-to-top" class="fixed bottom-6 right-6 bg-orange text-white p-3 rounded-full shadow-lg transition-all duration-300 opacity-0 invisible hover:bg-gold">
+  <i class="fas fa-arrow-up"></i>
+</button>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+<script>
+const translations = {
+  en: {
+    "announcement.slogan1": "Rastra Heet!",
+    "announcement.slogan2": "Udyog Heet!",
+    "announcement.slogan3": "Shramik Heet!",
+    "organization.name": "Rastriya Shramik Mahasangh",
+    "organization.country": "Nepal",
+    "nav.home": "Home",
+    "nav.about": "About",
+    "nav.about.story": "Our Story",
+    "nav.about.structure": "Organizational Structure",
+    "nav.about.leadership": "Leadership",
+    "nav.resources": "Resources",
+    "nav.resources.slogans": "Our Slogans",
+    "nav.resources.press": "Press Releases",
+    "nav.resources.publications": "Publications",
+    "nav.events": "Events",
+    "nav.gallery": "Gallery",
+    "search.placeholder": "Search...",
+    "hero.title": "Our Gallery",
+    "hero.subtitle": "Capturing moments of unity, advocacy, and empowerment in our journey to uplift workers across Nepal",
+    "breadcrumb.home": "Home",
+    "breadcrumb.gallery": "Gallery",
+    "stats.events": "Events",
+    "stats.rallies": "Rallies",
+    "stats.meetings": "Meetings",
+    "stats.achievements": "Achievements",
+    "filter.all": "All",
+    "filter.rallies": "Rallies",
+    "filter.meetings": "Meetings",
+    "filter.events": "Events",
+    "filter.achievements": "Achievements",
+    "gallery.item1.title": "Annual Planning Meeting",
+    "gallery.item1.description": "Gen. Secretary delivering a keynote address on strategic labor initiatives",
+    "gallery.item2.title": "Establishment of Delhi Unit of RSM Nepal",
+    "gallery.item2.description": "Unit launched with active participation of Nepali workers in India",
+    "gallery.item3.title": "BMS India–RSM Nepal Leadership Dialogue",
+    "gallery.item3.description": "Addressing key labor issues faced by Nepali workers in India",
+    "gallery.item4.title": "Vishwakarma Puja Celebration",
+    "gallery.item4.description": "General Secretary delivering an address honoring the spirit of labor and craftsmanship",
+    "gallery.item6.title": "Meeting with ILO & SARTUC Representatives",
+    "gallery.item6.description": "RSM Nepal leaders discussing regional labor rights and collaborative initiatives",
+    "gallery.item7.title": "Vishwakarma Puja Rituals",
+    "gallery.item7.description": "Traditional worship ceremony celebrating the deity of labor and craftsmanship",
+    "gallery.item11.title": "Executive Committee of Ghar Grihasti Shramik Sangh",
+    "gallery.item11.description": "Committee members participating in the traditional celebration of labor and skill",
+    "gallery.item13.title": "Meeting on Agricultural Workers' Issues",
+    "gallery.item13.description": "RSM Nepal leaders submitting farmers' labor issues at Kathmandu District Office",
+    "gallery.item14.title": "Farmers' Labor Rights Meeting",
+    "gallery.item14.description": "Submitting farmers' labor issues at Mahottari District Office",
+    "gallery.item15.title": "Karyakarta Training Program",
+    "gallery.item15.description": "RSM Nepal conducting training session in Chitwan",
+    "gallery.item16.title": "Meeting with BMS Leaders",
+    "gallery.item16.description": "Discussing issues of Nepali workers and labor policies",
+    "gallery.item17.title": "Sugarcane Farmers' Subsidy",
+    "gallery.item17.description": "Krishi Shramik Sangh presenting concerns at Nawalparasi office",
+    "gallery.item18.title": "Farmers' Subsidy Memorandum",
+    "gallery.item18.description": "Krishi Shramik Sangh presenting concerns at Saptari office",
+    "gallery.item19.title": "Workers' Rights Protest",
+    "gallery.item19.description": "Varun Beverages employees demand labor rights – Nawalparasi",
+    "gallery.item20.title": "Leaders' Meeting",
+    "gallery.item20.description": "RSM Nepal meets Confederation of Nepalese Professionals' leaders",
+    "gallery.item21.title": "Leaders' Meeting",
+    "gallery.item21.description": "BMS, RSM Nepal, ILO & SARTUC leaders in discussion",
+    "gallery.item23.title": "Book Release",
+    "gallery.item23.description": "Sangathan Mantra Book Bimochan at the First Rastriya Yojana Baithak of RSM Nepal",
+    "footer.description": "Empowering workers through unity, advocacy, and action since 2080 B.S.",
+    "footer.quicklinks": "Quick Links",
+    "footer.updates": "Latest Updates",
+    "footer.media": "Media Coverages",
+    "footer.contact": "Contact Us",
+    "footer.address": "Keshavdham, Guheswari Marg - 8, Kathmandu, Nepal",
+    "footer.copyright": "Rastriya Shramik Mahasangh Nepal. All rights reserved.",
+    "meta.title": "Gallery - Rastriya Shramik Mahasangh Nepal",
+    "meta.description": "Explore our gallery showcasing the activities, events, and achievements of Rastriya Shramik Mahasangh Nepal."
+  },
+  ne: {
+    "announcement.slogan1": "राष्ट्र हित!",
+    "announcement.slogan2": "उद्योग हित!",
+    "announcement.slogan3": "श्रमिक हित!",
+    "organization.name": "राष्ट्रिय श्रमिक महासंघ",
+    "organization.country": "नेपाल",
+    "nav.home": "गृहपृष्ठ",
+    "nav.about": "हाम्रो बारेमा",
+    "nav.about.story": "हाम्रो कथा",
+    "nav.about.structure": "संगठनात्मक संरचना",
+    "nav.about.leadership": "नेतृत्व",
+    "nav.resources": "संसाधनहरू",
+    "nav.resources.slogans": "हाम्रा नाराहरू",
+    "nav.resources.press": "प्रेस विज्ञप्तिहरू",
+    "nav.resources.publications": "प्रकाशनहरू",
+    "nav.events": "कार्यक्रमहरू",
+    "nav.gallery": "ग्यालरी",
+    "search.placeholder": "खोज्नुहोस्...",
+    "hero.title": "हाम्रो ग्यालरी",
+    "hero.subtitle": "नेपालभरि श्रमिकहरूलाई उन्नत गर्ने हाम्रो यात्रामा एकता, वकालत र सशक्तिकरणका क्षणहरूको अभिलेख",
+    "breadcrumb.home": "गृहपृष्ठ",
+    "breadcrumb.gallery": "ग्यालरी",
+    "stats.events": "कार्यक्रमहरू",
+    "stats.rallies": "र्‍यालीहरू",
+    "stats.meetings": "भेलाहरू",
+    "stats.achievements": "उपलब्धिहरू",
+    "filter.all": "सबै",
+    "filter.rallies": "र्‍यालीहरू",
+    "filter.meetings": "भेलाहरू",
+    "filter.events": "कार्यक्रमहरू",
+    "filter.achievements": "उपलब्धिहरू",
+    "gallery.item1.title": "वार्षिक योजना बैठक",
+    "gallery.item1.description": "महासचिवले रणनीतिक श्रम पहलहरूमा मुख्य भाषण दिँदै",
+    "gallery.item2.title": "आरएसएम नेपालको दिल्ली इकाईको स्थापना",
+    "gallery.item2.description": "भारतमा नेपाली श्रमिकहरूको सक्रिय सहभागितामा इकाई सुरू गरियो",
+    "gallery.item3.title": "बीएमएस भारत–आरएसएम नेपाल नेतृत्व संवाद",
+    "gallery.item3.description": "भारतमा नेपाली श्रमिकहरूले सामना गरा मेकुख्य श्रम मुद्दाहरूमा छलफल",
+    "gallery.item4.title": "विश्वकर्मा पूजा उत्सव",
+    "gallery.item4.description": "श्रम र कारीगरीको भावनाको सम्मान गर्दै महासचिले भाषण दिँदै",
+    "gallery.item6.title": "आईएलओ र सार्टक प्रतिनिधिहरूसँग भेट",
+    "gallery.item6.description": "आरएसएम नेपाल नेताहरूले क्षेत्रीय श्रम अधिकार र सहयोगी पहलहरूमा छलफल गर्दै",
+    "gallery.item7.title": "विश्वकर्मा पूजा अनुष्ठानहरू",
+    "gallery.item7.description": "श्रम र कारीगरीको देवताको उत्सव मनाउने परम्परागत पूजा समारोह",
+    "gallery.item11.title": "घर गृहस्थी श्रमिक संघको कार्यकारी समिति",
+    "gallery.item11.description": "श्रम र कौशलको परम्परागत उत्सवमा सहभागी हुने समिति सदस्यहरू",
+    "gallery.item13.title": "कृषि श्रमिकहरूका मुद्दाहरूमा भेट",
+    "gallery.item13.description": "आरएसएम नेपाल नेताहरूले काठमाडौं जिल्ला कार्यालयमा किसान श्रमिक मुद्दाहरू पेश गर्दै",
+    "gallery.item14.title": "किसान श्रम अधिकार भेला",
+    "gallery.item14.description": "महोत्तरी जिल्ला कार्यालयमा किसान श्रमिक मुद्दाहरू पेश गर्दै",
+    "gallery.item15.title": "कार्यकर्ता तालिम कार्यक्रम",
+    "gallery.item15.description": "चितवनमा आरएसएम नेपालले तालिम सत्र सञ्चालन गर्दै",
+    "gallery.item16.title": "बीएमएस नेताहरूसँग भेट",
+    "gallery.item16.description": "नेपाली श्रमिकहरू र श्रम नीतिहरूका मुद्दाहरूमा छलफल गर्दै",
+    "gallery.item17.title": "उखु किसानहरूको अनुदान",
+    "gallery.item17.description": "कृषि श्रमिक संघले नवलपरासी कार्यालयमा चासनाहरू प्रस्तुत गर्दै",
+    "gallery.item18.title": "किसान अनुदान स्मारक",
+    "gallery.item18.description": "कृषि श्रमिक संघले सप्तरी कार्यालयमा चासनाहरू प्रस्तुत गर्दै",
+    "gallery.item19.title": "श्रमिक अधिकार विरोध",
+    "gallery.item19.description": "वरुण पेय पदार्थ कर्मचारीहरूले श्रम अधिकार माग्दै - नवलपरासी",
+    "gallery.item20.title": "नेताहरूको भेट",
+    "gallery.item20.description": "आरएसएम नेपालले नेपाली पेशेवरहरूको संघका नेताहरूसँग भेट",
+    "gallery.item21.title": "नेताहरूको भेट",
+    "gallery.item21.description": "बीएमएस, आरएसएम नेपाल, आईएलओ र सार्टक नेताहरू छलफलमा",
+    "gallery.item23.title": "पुस्तक विमोचन",
+    "gallery.item23.description": "आरएसएम नेपालको पहिलो राष्ट्रिय योजना बैठकमा संगठन मन्त्र पुस्तक विमोचन",
+    "footer.description": "एकता, वकालत र कार्यबाट २०८० बि.स. देखि श्रमिकहरूलाई सशक्त बनाउँदै",
+    "footer.quicklinks": "द्रुत लिङ्कहरू",
+    "footer.updates": "नवीनतम अपडेटहरू",
+    "footer.media": "मिडिया कभरेजहरू",
+    "footer.contact": "हामीलाई सम्पर्क गर्नुहोस्",
+    "footer.address": "केशवधाम, गुहेश्वरी मार्ग - ८, काठमाडौं, नेपाल",
+    "footer.copyright": "सर्वाधिकार राष्ट्रिय श्रमिक महासंघमा सुरक्षित",
+    "meta.title": "ग्यालरी - राष्ट्रिय श्रमिक महासंघ नेपाल",
+    "meta.description": "राष्ट्रिय श्रमिक महासंघ नेपालका क्रियाकलापहरू, कार्यक्रमहरू र उपलब्धिहरू प्रदर्शन गर्ने हाम्रो ग्यालरी अन्वेषण गर्नुहोस्।"
+  }
+};
+const internalLinks = [
+  'Landing_Page.html', 'about.html', 'Slogans.html', 'Press_Releases.html', 'Publications.html', 'Upcoming.html', 'Media_Coverage.html', 'gallery.html', 'Updates.html'
+];
+function convertToNepaliNumerals(str) {
+  const englishDigits = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+  const nepaliDigits = ['०', '१', '२', '३', '४', '५', '६', '७', '८', '९'];
+  return str.split('').map(char => {
+    const index = englishDigits.indexOf(char);
+    return index !== -1 ? nepaliDigits[index] : char;
+  }).join('');
+}
+function getCurrentADYear() {
+  return new Date().getFullYear();
+}
+function updatePageContent(lang) {
+  document.documentElement.lang = lang;
+  document.querySelectorAll('[data-translate]').forEach(element => {
+    const key = element.getAttribute('data-translate');
+    if (translations[lang] && translations[lang][key]) {
+      element.textContent = translations[lang][key];
+    }
+  });
+  document.querySelectorAll('[data-translate-placeholder]').forEach(element => {
+    const key = element.getAttribute('data-translate-placeholder');
+    if (translations[lang] && translations[lang][key]) {
+      element.placeholder = translations[lang][key];
+    }
+  });
+  const currentYearElement = document.getElementById('current-year');
+  if (currentYearElement) {
+    const currentYear = getCurrentADYear().toString();
+    currentYearElement.textContent = lang === 'ne' ? convertToNepaliNumerals(currentYear) : currentYear;
+  }
+  document.querySelectorAll('.nepali-numerals').forEach(el => {
+    const original = el.getAttribute('data-original');
+    if (original) {
+      el.textContent = lang === 'ne' ? convertToNepaliNumerals(original) : original;
+    }
+  });
+  document.querySelectorAll('.phone-number').forEach(el => {
+    const original = el.getAttribute('data-original');
+    if (original) {
+      el.textContent = lang === 'ne' ? convertToNepaliNumerals(original) : original;
+    }
+  });
+  if (translations[lang].meta) {
+    document.title = translations[lang].meta.title;
+    document.querySelector('meta[name="description"]').setAttribute('content', translations[lang].meta.description);
+  }
+  updateLanguageButtonState(lang);
+}
+function updateLanguageButtonState(lang) {
+  const langButtons = document.querySelectorAll('.lang-toggle');
+  langButtons.forEach(btn => {
+    btn.classList.remove('bg-white', 'text-orange');
+    btn.classList.add('text-white');
+  });
+  if (lang === 'en') {
+    document.getElementById('lang-en').classList.add('bg-white', 'text-orange');
+    document.getElementById('lang-en').classList.remove('text-white');
+    document.getElementById('mobile-lang-en').classList.add('bg-white', 'text-orange');
+    document.getElementById('mobile-lang-en').classList.remove('text-white');
+  } else {
+    document.getElementById('lang-ne').classList.add('bg-white', 'text-orange');
+    document.getElementById('lang-ne').classList.remove('text-white');
+    document.getElementById('mobile-lang-ne').classList.add('bg-white', 'text-orange');
+    document.getElementById('mobile-lang-ne').classList.remove('text-white');
+  }
+}
+function handleLanguageChange(lang) {
+  const currentLang = document.documentElement.lang;
+  if (currentLang !== lang) {
+    updatePageContent(lang);
+    localStorage.setItem('language', lang);
+  }
+}
+document.addEventListener('DOMContentLoaded', function() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const urlLang = urlParams.get('lang');
+  const savedLang = localStorage.getItem('language') || 'en';
+  const initialLang = urlLang || savedLang;
+  updatePageContent(initialLang);
+  document.getElementById('lang-en').addEventListener('click', () => handleLanguageChange('en'));
+  document.getElementById('lang-ne').addEventListener('click', () => handleLanguageChange('ne'));
+  document.getElementById('mobile-lang-en').addEventListener('click', () => handleLanguageChange('en'));
+  document.getElementById('mobile-lang-ne').addEventListener('click', () => handleLanguageChange('ne'));
+  document.querySelectorAll('.nav-link-custom').forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const currentUrl = new URL(link.href, window.location.origin);
+      currentUrl.searchParams.set('lang', document.documentElement.lang);
+      window.location.href = currentUrl.toString();
+    });
+  });
+  AOS.init({ duration: 1000, once: true, disable: 'mobile' });
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const closeMobileMenu = document.getElementById('close-mobile-menu');
+  const mobileMenu = document.getElementById('mobile-menu');
+  mobileMenuButton.addEventListener('click', () => mobileMenu.classList.toggle('active'));
+  closeMobileMenu.addEventListener('click', () => mobileMenu.classList.remove('active'));
+  const mobileSubmenuToggles = document.querySelectorAll('.mobile-submenu-toggle');
+  mobileSubmenuToggles.forEach(toggle => {
+    toggle.addEventListener('click', () => {
+      const targetId = toggle.getAttribute('data-target');
+      const targetSubmenu = document.getElementById(targetId);
+      const icon = toggle.querySelector('i');
+      targetSubmenu.classList.toggle('hidden');
+      icon.classList.toggle('fa-chevron-down');
+      icon.classList.toggle('fa-chevron-up');
+    });
+  });
+  const searchToggle = document.getElementById('search-toggle');
+  const mobileSearchToggle = document.getElementById('mobile-search-toggle');
+  const searchBar = document.getElementById('search-bar');
+  searchToggle.addEventListener('click', () => {
+    searchBar.classList.toggle('active');
+    if (searchBar.classList.contains('active')) searchBar.querySelector('input').focus();
+  });
+  mobileSearchToggle.addEventListener('click', () => {
+    searchBar.classList.toggle('active');
+    if (searchBar.classList.contains('active')) searchBar.querySelector('input').focus();
+  });
+  const searchForm = document.getElementById('search-form');
+  const searchInput = document.getElementById('search-input');
+  if (searchForm && searchInput) {
+    searchForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const searchTerm = searchInput.value.trim();
+      if (searchTerm) {
+        alert(`Searching for: ${searchTerm}`);
+        searchInput.value = '';
+        searchBar.classList.remove('active');
+      }
+    });
+  }
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const galleryItems = document.querySelectorAll('.gallery-item');
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+      const filter = button.getAttribute('data-filter');
+      galleryItems.forEach(item => {
+        if (filter === 'all' || item.getAttribute('data-filter') === filter) {
+          item.style.display = 'block';
+          setTimeout(() => {
+            item.style.opacity = '1';
+            item.style.transform = 'scale(1)';
+          }, 10);
+        } else {
+          item.style.opacity = '0';
+          item.style.transform = 'scale(0.8)';
+          setTimeout(() => {
+            item.style.display = 'none';
+          }, 300);
+        }
+      });
+    });
+  });
+  const imageWrappers = document.querySelectorAll('.image-wrapper');
+  imageWrappers.forEach(wrapper => {
+    const img = wrapper.querySelector('img');
+    img.addEventListener('load', () => wrapper.classList.add('loaded'));
+  });
+  const backToTopButton = document.getElementById('back-to-top');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      backToTopButton.classList.remove('opacity-0', 'invisible');
+      backToTopButton.classList.add('opacity-100', 'visible');
+    } else {
+      backToTopButton.classList.add('opacity-0', 'invisible');
+      backToTopButton.classList.remove('opacity-100', 'visible');
+    }
+  });
+  backToTopButton.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+  lightbox.option({
+    'resizeDuration': 200,
+    'wrapAround': true,
+    'albumLabel': 'Image %1 of %2',
+    'fadeDuration': 300,
+    'imageFadeDuration': 300
+  });
+});
+</script>
+</body>
+</html>
