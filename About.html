@@ -54,6 +54,7 @@ overflow-x: hidden;
 }
 .nepali-font {
 font-family: 'Mukta', sans-serif;
+font-size: large;
 }
 .parallax-bg {
 background-attachment: fixed;
@@ -910,10 +911,10 @@ background: var(--dark-orange);
   <!-- Announcement Bar with Fade Effect -->
   <div class="announcement-fade">
     <div class="container mx-auto px-4">
-      <div class="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 md:gap-x-4 lg:gap-x-6 text-sm md:text-base font-semibold overflow-x-auto py-1">
-        <span class="whitespace-nowrap transition-colors duration-300 hover:text-yellow-300 px-1">Rastra heet!</span>
-        <span class="whitespace-nowrap transition-colors duration-300 hover:text-yellow-300 px-1">Udyog Heet!</span>
-        <span class="whitespace-nowrap transition-colors duration-300 hover:text-yellow-300 px-1">Shramik Heet!</span>
+      <div class="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 md:gap-x-4 lg:gap-x-6 text-lg md:text-xl font-semibold overflow-x-auto py-1">
+        <span class="whitespace-nowrap transition-colors duration-300 hover:text-yellow-300 px-1" data-i18n="announcement1">Rastra heet!</span>
+        <span class="whitespace-nowrap transition-colors duration-300 hover:text-yellow-300 px-1" data-i18n="announcement2">Udyog heet!</span>
+        <span class="whitespace-nowrap transition-colors duration-300 hover:text-yellow-300 px-1" data-i18n="announcement3">Shramik heet!</span>
       </div>
     </div>
   </div>
@@ -926,41 +927,41 @@ background: var(--dark-orange);
           <img src="logo.jpg" alt="Rastriya Shramik Mahasangh Nepal Logo" class="h-20 md:h-24 lg:h-28 transition-transform duration-300 hover:scale-105">
         </div>
         <div class="organization-name ml-3 md:ml-4">
-          <h1 class="text-lg md:text-xl lg:text-2xl font-bold transition-colors duration-300 hover:text-yellow-100">Rastriya Shramik Mahasangh</h1>
-          <p class="text-sm md:text-base lg:text-lg transition-colors duration-300 hover:text-yellow-200">Nepal</p>
+          <h1 class="text-xl md:text-2xl lg:text-3xl font-bold transition-colors duration-300 hover:text-yellow-100" data-i18n="organizationName">Rastriya Shramik Mahasangh</h1>
+          <p class="text-sm md:text-base lg:text-lg transition-colors duration-300 hover:text-yellow-200" data-i18n="organizationLocation">Nepal</p>
         </div>
       </a>
       
       <!-- Navigation Links (Center) -->
       <nav class="nav-links hidden lg:flex items-center justify-center flex-grow mx-4 lg:mx-8">
-        <a href="index.html" class="nav-link-item px-3 py-2 rounded-lg text-white font-medium transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md">Home</a>
+        <a href="index.html" class="nav-link-item px-3 py-2 rounded-lg text-white font-medium transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md" data-i18n="home">Home</a>
         
         <!-- About Dropdown -->
         <div class="relative dropdown">
-          <a href="About.html" class="nav-link-item px-3 py-2 rounded-lg text-white font-medium flex items-center transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md dropdown-toggle">
+          <a href="About.html" class="nav-link-item px-3 py-2 rounded-lg text-white font-medium flex items-center transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md dropdown-toggle" data-i18n="about">
             About <i class="fas fa-chevron-down ml-1 text-xs"></i>
           </a>
           <div class="dropdown-menu absolute left-0 flex-col bg-white text-gray-800 mt-1 rounded-md shadow-lg py-1 w-48">
-            <a href="About.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600">Our Story</a>
-            <a href="About.html#organizational-structure" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600">Organizational Structure</a>
-            <a href="About.html#central-executive-committee" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600">Leadership</a>
+            <a href="About.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600" data-i18n="ourStory">Our Story</a>
+            <a href="About.html#organizational-structure" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600" data-i18n="organizationalStructure">Organizational Structure</a>
+            <a href="About.html#central-executive-committee" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600" data-i18n="leadership">Leadership</a>
           </div>
         </div>
         
         <!-- Resources Dropdown -->
         <div class="relative dropdown">
-          <button class="nav-link-item px-3 py-2 rounded-lg text-white font-medium flex items-center transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md dropdown-toggle">
+          <button class="nav-link-item px-3 py-2 rounded-lg text-white font-medium flex items-center transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md dropdown-toggle" data-i18n="resources">
             Resources <i class="fas fa-chevron-down ml-1 text-xs"></i>
           </button>
           <div class="dropdown-menu absolute left-0 flex-col bg-white text-gray-800 mt-1 rounded-md shadow-lg py-1 w-56">
-            <a href="Slogans.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600">Our Slogans</a>
-            <a href="Press_Releases.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600">Press Releases</a>
-            <a href="Publications.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600">Publications</a>
+            <a href="Slogans.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600" data-i18n="ourSlogans">Our Slogans</a>
+            <a href="Press_Releases.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600" data-i18n="pressReleases">Press Releases</a>
+            <a href="Publications.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600" data-i18n="publications">Publications</a>
           </div>
         </div>
         
-        <a href="Upcoming.html" class="nav-link-item px-3 py-2 rounded-lg text-white font-medium transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md">Events</a>
-        <a href="Gallery.html" class="nav-link-item px-3 py-2 rounded-lg text-white font-medium transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md">Gallery</a>
+        <a href="Upcoming.html" class="nav-link-item px-3 py-2 rounded-lg text-white font-medium transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md" data-i18n="events">Events</a>
+        <a href="Gallery.html" class="nav-link-item px-3 py-2 rounded-lg text-white font-medium transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md" data-i18n="gallery">Gallery</a>
       </nav>
       
       <!-- Language and Search (Right) -->
@@ -1021,60 +1022,71 @@ background: var(--dark-orange);
       <a href="index.html" class="flex items-center no-underline">
         <img src="logo.jpg" alt="Rastriya Shramik Mahasangh Nepal Logo" class="h-16">
         <div class="ml-3">
-          <h1 class="text-lg font-bold text-white">Rastriya Shramik Mahasangh</h1>
-          <p class="text-sm text-white">Nepal</p>
+          <h1 class="text-lg font-bold text-white" data-i18n="organizationName">Rastriya Shramik Mahasangh</h1>
+          <p class="text-sm text-white" data-i18n="organizationLocation">Nepal</p>
         </div>
       </a>
     </div>
     
     <div class="p-4 space-y-2 overflow-y-auto max-h-[calc(100vh-180px)]">
-      <a href="index.html" class="block py-2 px-4 rounded-lg hover:bg-gold hover:text-dark-orange transition-all duration-300">Home</a>
+      <a href="index.html" class="block py-2 px-4 rounded-lg hover:bg-gold hover:text-dark-orange transition-all duration-300" data-i18n="home">Home</a>
       
       <div class="py-1">
         <button class="flex justify-between items-center w-full py-2 px-4 rounded-lg hover:bg-gold hover:text-dark-orange transition-all duration-300 mobile-submenu-toggle" data-target="about-submenu">
-          About <i class="fas fa-chevron-down text-xs transition-transform duration-300"></i>
+          <span data-i18n="about">About</span> <i class="fas fa-chevron-down text-xs transition-transform duration-300"></i>
         </button>
         <div id="about-submenu" class="hidden pl-6 mt-1 space-y-1 bg-gray-700 rounded-lg">
-          <a href="About.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600">Our Story</a>
-          <a href="About.html#organizational-structure" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600">Organizational Structure</a>
-          <a href="About.html#central-executive-committee" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600">Leadership</a>
+          <a href="About.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600" data-i18n="ourStory">Our Story</a>
+          <a href="About.html#organizational-structure" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600" data-i18n="organizationalStructure">Organizational Structure</a>
+          <a href="About.html#central-executive-committee" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600" data-i18n="leadership">Leadership</a>
         </div>
       </div>
       
       <div class="py-1">
         <button class="flex justify-between items-center w-full py-2 px-4 rounded-lg hover:bg-gold hover:text-dark-orange transition-all duration-300 mobile-submenu-toggle" data-target="resources-submenu">
-          Resources <i class="fas fa-chevron-down text-xs transition-transform duration-300"></i>
+          <span data-i18n="resources">Resources</span> <i class="fas fa-chevron-down text-xs transition-transform duration-300"></i>
         </button>
         <div id="resources-submenu" class="hidden pl-6 mt-1 space-y-1 bg-gray-700 rounded-lg">
-          <a href="Slogans.html" class="block py-2 px-4 hover:bg-orange-100 transition-colors duration-300">Our Slogans</a>
-          <a href="Press_Releases.html" class="block py-2 px-4 hover:bg-orange-100 transition-colors duration-300">Press Releases</a>
-          <a href="Publications.html" class="block py-2 px-4 hover:bg-orange-100 transition-colors duration-300">Publications</a>
+          <a href="Slogans.html" class="block py-2 px-4 hover:bg-orange-100 transition-colors duration-300" data-i18n="ourSlogans">Our Slogans</a>
+          <a href="Press_Releases.html" class="block py-2 px-4 hover:bg-orange-100 transition-colors duration-300" data-i18n="pressReleases">Press Releases</a>
+          <a href="Publications.html" class="block py-2 px-4 hover:bg-orange-100 transition-colors duration-300" data-i18n="publications">Publications</a>
         </div>
       </div>
       
-      <a href="Upcoming.html" class="block py-2 px-4 rounded-lg hover:bg-gold hover:text-dark-orange transition-all duration-300">Events</a>
-      <a href="gallery.html" class="block py-2 px-4 rounded-lg hover:bg-gold hover:text-dark-orange transition-all duration-300">Gallery</a>
+      <a href="Upcoming.html" class="block py-2 px-4 rounded-lg hover:bg-gold hover:text-dark-orange transition-all duration-300" data-i18n="events">Events</a>
+      <a href="Gallery.html" class="block py-2 px-4 rounded-lg hover:bg-gold hover:text-dark-orange transition-all duration-300" data-i18n="gallery">Gallery</a>
     </div>
   </div>
 </header>
-
+<!-- About Hero Section -->
+<section class="about-hero">
+  <div class="about-hero-bg"></div>
+  <div class="about-hero-overlay"></div>
+  <div class="about-content">
+    <h1 data-i18n="pageTitle">About Us</h1>
+    <p data-i18n="pageSubtitle">Discover our history, mission, and commitment to workers' rights in Nepal</p>
+  </div>
+  <div class="about-breadcrumb">
+    <a href="index.html" data-i18n="home">Home</a> / <span data-i18n="about">About</span>
+  </div>
+</section>
 <!-- About Story Section -->
 <section class="about-story">
   <div class="story-container">
     <img src="logo.jpg" alt="Rastriya Shramik Mahasangh Nepal Logo Watermark" class="story-logo-watermark">
     <div class="text-center max-w-3xl mx-auto" data-aos="fade-up">
-      <h2 class="text-3xl font-bold text-orange mb-6 section-title">Our Story</h2>
-      <p class="story-intro">
+      <h2 class="text-3xl font-bold text-orange mb-6 section-title" data-i18n="ourStory">Our Story</h2>
+      <p class="story-intro" data-i18n="storyParagraph1">
         Nepal, an ancient and sacred land steeped in wisdom and tradition, has long been guided by the teachings of sages and monks who imparted not only material knowledge but also profound moral and ethical principles. Throughout history, structured frameworks have governed the delicate balance between the presiding class and laborers, establishing regulations and ethical norms to foster harmony and progress.
       </p>
     </div>
     
-    <div class="story-highlight" data-aos="fade-up" data-aos-delay="200">
+    <div class="story-highlight" data-aos="fade-up" data-aos-delay="200" data-i18n="storyHighlight">
       "Nationalise the Labour, Labourise the Industries, Industrialise the Nation"
     </div>
     
     <div class="story-content" data-aos="fade-up" data-aos-delay="300">
-      <p class="story-intro">
+      <p class="story-intro" data-i18n="storyParagraph2">
         In contemporary Nepal, our constitution, aligned with trade union laws, enshrines provisions for the protection and holistic development of workers' rights. Workers form the backbone of nation-building; no country can advance without their unwavering dedication and contributions. Yet, despite the proliferation of labor organizations, many remain entangled in political affiliations, often manipulated for partisan gains. This exploitation has stymied the success of trade union movements, reducing workers to mere vote banks and perpetuating their deprivation of essential rights and benefits.
       </p>
       
@@ -1083,88 +1095,85 @@ background: var(--dark-orange);
           <img src="Gallery/Gallery1.jpeg" alt="Rastriya Shramik Mahasangh Nepal members united in solidarity" loading="lazy">
         </div>
         <div class="story-text">
-          <p class="story-intro">
-            Amid this challenging landscape, originally founded as <span class="key-phrase">Rastriya Krishi Shramik Sangh Nepal</span> on Chaitra 11, 2068, evolved on Baishak 11, 2080 into <span class="key-phrase">Rastriya Shramik Mahasangh Nepal</span>, as an independent beacon of hope dedicated to safeguarding Nepal's sovereign soil, its rich cultural diversity, mesmerizing heritage, and national identity while elevating the living standards of the working class for comprehensive national development. We stand as an independent force, safeguarding Nepal's sovereignty, cultural heritage, and national identity while elevating workers' living standards for national progress.
+          <p class="story-intro" data-i18n="storyParagraph3">
+            Amid this challenging landscape, originally founded as <span class="key-phrase" data-i18n="originalName">Rastriya Krishi Shramik Sangh Nepal</span> on Chaitra 11, 2068, evolved on Baishak 11, 2080 into <span class="key-phrase" data-i18n="currentName">Rastriya Shramik Mahasangh Nepal</span>, as an independent beacon of hope dedicated to safeguarding Nepal's sovereign soil, its rich cultural diversity, mesmerizing heritage, and national identity while elevating the living standards of the working class for comprehensive national development. We stand as an independent force, safeguarding Nepal's sovereignty, cultural heritage, and national identity while elevating workers' living standards for national progress.
           </p>
         </div>
       </div>
       
-      <p class="story-intro">
-        Committed to <span class="key-phrase">industrializing the nation</span>, creating labor-oriented industries, and nationalizing the workforce, our principles prioritize national interest, industrial development, and labor rights. Operated by workers for workers, we remain free from government, business, political, foreign, or personal influences, embodying true autonomy in labor advocacy.
+      <p class="story-intro" data-i18n="storyParagraph4">
+        Committed to <span class="key-phrase" data-i18n="industrializingNation">industrializing the nation</span>, creating labor-oriented industries, and nationalizing the workforce, our principles prioritize national interest, industrial development, and labor rights. Operated by workers for workers, we remain free from government, business, political, foreign, or personal influences, embodying true autonomy in labor advocacy.
       </p>
       
       <div class="story-timeline" data-aos="fade-up" data-aos-delay="500">
-        <h3 class="timeline-title text-2xl font-bold text-orange mb-4">Phases of Struggle</h3>
+        <h3 class="timeline-title text-2xl font-bold text-orange mb-4" data-i18n="phasesOfStruggle">Phases of Struggle</h3>
         <div class="timeline-item">
           <div class="timeline-dot"></div>
-          <h4 class="timeline-title">2067 B.S.</h4>
-          <p class="timeline-desc">Established as Rastriya Krishi Shramik Sangh with a mission to safeguard worker welfare</p>
+          <h4 class="timeline-title" data-date="2067 B.S." data-date-ne="२०६७ बि.सं.">2067 B.S.</h4>
+          <p class="timeline-desc" data-i18n="timeline2067">Established as Rastriya Krishi Shramik Sangh with a mission to safeguard worker welfare</p>
         </div>
         <div class="timeline-item">
           <div class="timeline-dot"></div>
-          <h4 class="timeline-title">Poush 2077 B.S.</h4>
-          <p class="timeline-desc">Led pivotal protests for sugarcane farmers, compelling sugar mill owners to settle outstanding dues worth crores, addressing long-standing grievances in the agricultural sector.</p>
+          <h4 class="timeline-title" data-date="Poush 2077 B.S." data-date-ne="पौष २०७७ बि.सं.">Poush 2077 B.S.</h4>
+          <p class="timeline-desc" data-i18n="timeline2077">Led pivotal protests for sugarcane farmers, compelling sugar mill owners to settle outstanding dues worth crores, addressing long-standing grievances in the agricultural sector.</p>
         </div>
         <div class="timeline-item">
           <div class="timeline-dot"></div>
-          <h4 class="timeline-title">2080 B.S.</h4>
-          <p class="timeline-desc">Establishment of Rastriya Shramik Mahasangh Nepal as an independent organization</p>
+          <h4 class="timeline-title" data-date="2080 B.S." data-date-ne="२०८० बि.सं.">2080 B.S.</h4>
+          <p class="timeline-desc" data-i18n="timeline2080">Establishment of Rastriya Shramik Mahasangh Nepal as an independent organization</p>
         </div>
         <div class="timeline-item">
           <div class="timeline-dot"></div>
-          <h4 class="timeline-title">2080 B.S.</h4>
-          <p class="timeline-desc">Actively protected rights in key industries like Varun Beverages (PepsiCola) and Mount Everest Brewery, championing fair wages, job security, and improved working conditions through sustained movements.</p>
+          <h4 class="timeline-title" data-date="2080 B.S." data-date-ne="२०८० बि.सं.">2080 B.S.</h4>
+          <p class="timeline-desc" data-i18n="timeline2080b">Actively protected rights in key industries like Varun Beverages (PepsiCola) and Mount Everest Brewery, championing fair wages, job security, and improved working conditions through sustained movements.</p>
         </div>
         <div class="timeline-item">
           <div class="timeline-dot"></div>
-          <h4 class="timeline-title">2081 B.S.</h4>
-          <p class="timeline-desc">Submitted an eight-point demand memorandum to the Nepal government via Chief District Officers, spotlighting challenges faced by farmers and agricultural workers in our agriculture-dominant nation, urging systemic resolutions.</p>
+          <h4 class="timeline-title" data-date="2081 B.S." data-date-ne="२०८१ बि.सं.">2081 B.S.</h4>
+          <p class="timeline-desc" data-i18n="timeline2081">Submitted an eight-point demand memorandum to the Nepal government via Chief District Officers, spotlighting challenges faced by farmers and agricultural workers in our agriculture-dominant nation, urging systemic resolutions.</p>
         </div>
         <div class="timeline-item">
           <div class="timeline-dot"></div>
-          <h4 class="timeline-title">2081 B.S.</h4>
-          <p class="timeline-desc">Implementation of employment programs across different districts to uplift living standards of informal sector workers</p>
+          <h4 class="timeline-title" data-date="2081 B.S." data-date-ne="२०८१ बि.सं.">2081 B.S.</h4>
+          <p class="timeline-desc" data-i18n="timeline2081b">Implementation of employment programs across different districts to uplift living standards of informal sector workers</p>
         </div>
         <div class="timeline-item">
           <div class="timeline-dot"></div>
-          <h4 class="timeline-title">Present Day</h4>
-          <p class="timeline-desc">Continuing to spearhead labor movements, implement district-level employment programs for informal sector workers, and ensure social security while fighting for comprehensive worker prosperity.</p>
+          <h4 class="timeline-title" data-i18n="presentDay">Present Day</h4>
+          <p class="timeline-desc" data-i18n="presentDayDesc">Continuing to spearhead labor movements, implement district-level employment programs for informal sector workers, and ensure social security while fighting for comprehensive worker prosperity.</p>
         </div>
       </div>
       
-      <div class="story-highlight" data-aos="fade-up" data-aos-delay="600">
+      <div class="story-highlight" data-aos="fade-up" data-aos-delay="600" data-i18n="storyCallToAction">
         We invite all workers and laborers to unite in rebuilding our nation, championing prosperity, and advancing workers' rights and well-being.
       </div>
     </div>
   </div>
 </section>
-
 <!-- Organizational Structure Section -->
 <section class="org-structure" id="organizational-structure">
   <div class="structure-container">
     <div class="text-center max-w-3xl mx-auto" data-aos="fade-up">
-      <h2 class="text-3xl font-bold text-orange mb-6 section-title">Organizational Structure</h2>
-      <p class="story-intro">
-        The <span class="key-phrase">Rastriya Shramik Mahasangh Nepal</span> is a robust federation encompassing 11 specialized unions and 2 industrial units, with provincial and district committees established across all provinces of Nepal. Each affiliated union maintains its own provincial and district committees, ensuring grassroots representation and effective advocacy for workers nationwide.
+      <h2 class="text-3xl font-bold text-orange mb-6 section-title" data-i18n="organizationalStructure">Organizational Structure</h2>
+      <p class="story-intro" data-i18n="orgStructureDesc">
+        The <span class="key-phrase" data-i18n="organizationFullName">Rastriya Shramik Mahasangh Nepal</span> is a robust federation encompassing 11 specialized unions and 2 industrial units, with provincial and district committees established across all provinces of Nepal. Each affiliated union maintains its own provincial and district committees, ensuring grassroots representation and effective advocacy for workers nationwide.
       </p>
     </div>
     
     <div class="structure-image" data-aos="fade-up" data-aos-delay="200">
       <img src="About/Org_str.png" alt="Rastriya Shramik Mahasangh Nepal Organizational Structure" loading="lazy">
     </div>
-
     <div class="structure-image" data-aos="fade-up" data-aos-delay="200">
       <img src="About/Org_str2.png" alt="Rastriya Shramik Mahasangh Nepal Organizational Structure" loading="lazy">
     </div>
   </div>
 </section>
-
 <!-- Kendriya Karya Samiti Section -->
 <section class="leadership-section" id="central-executive-committee">
   <div class="leadership-container">
     <div class="text-center max-w-3xl mx-auto" data-aos="fade-up">
-      <h2 class="text-3xl font-bold text-orange mb-6 section-title">Central Executive Committee</h2>
-      <p class="story-intro">
+      <h2 class="text-3xl font-bold text-orange mb-6 section-title" data-i18n="centralExecutiveCommittee">Central Executive Committee</h2>
+      <p class="story-intro" data-i18n="centralExecutiveDesc">
         The Central Executive Committee (Kendriya Karya Samiti) serves as the pinnacle of decision-making within Rastriya Shramik Mahasangh Nepal, comprising visionary leaders who steer our mission with unwavering dedication to workers' empowerment.
       </p>
     </div>
@@ -1174,15 +1183,15 @@ background: var(--dark-orange);
       <div class="leader-card">
         <div class="leader-image">
           <img src="About/Members/man.png" alt="Mr. Hiralal Yadav" class="object-top" loading="lazy">
-          <div class="leader-badge">President</div>
+          <div class="leader-badge" data-i18n="president">President</div>
         </div>
         <div class="leader-info">
-          <h3 class="leader-name">Mr. Hiralal Yadav</h3>
-          <p class="leader-designation">President</p>
+          <h3 class="leader-name" data-i18n-name="Hiralal Yadav">Mr. Hiralal Yadav</h3>
+          <p class="leader-designation" data-i18n="president">President</p>
           <div class="leader-contact">
             <div class="leader-contact-item">
               <i class="fas fa-phone"></i>
-              <span>9863762517</span>
+              <span data-phone="9863762517">9863762517</span>
             </div>
           </div>
         </div>
@@ -1192,15 +1201,15 @@ background: var(--dark-orange);
       <div class="leader-card">
         <div class="leader-image">
           <img src="About/Members/man.png" alt="Mr. Laxmi Bhatta" class="object-top" loading="lazy">
-          <div class="leader-badge">Vice President</div>
+          <div class="leader-badge" data-i18n="vicePresident">Vice President</div>
         </div>
         <div class="leader-info">
-          <h3 class="leader-name">Mr. Laxmi Bhatta</h3>
-          <p class="leader-designation">Vice President</p>
+          <h3 class="leader-name" data-i18n-name="Laxmi Bhatta">Mr. Laxmi Bhatta</h3>
+          <p class="leader-designation" data-i18n="vicePresident">Vice President</p>
           <div class="leader-contact">
             <div class="leader-contact-item">
               <i class="fas fa-phone"></i>
-              <span>9858750113</span>
+              <span data-phone="9858750113">9858750113</span>
             </div>
           </div>
         </div>
@@ -1210,15 +1219,15 @@ background: var(--dark-orange);
       <div class="leader-card">
         <div class="leader-image">
           <img src="About/Members/man.png" alt="Mr. Govinda Paudel" class="object-top" loading="lazy">
-          <div class="leader-badge">Vice President</div>
+          <div class="leader-badge" data-i18n="vicePresident">Vice President</div>
         </div>
         <div class="leader-info">
-          <h3 class="leader-name">Mr. Govinda Paudel</h3>
-          <p class="leader-designation">Vice President</p>
+          <h3 class="leader-name" data-i18n-name="Govinda Paudel">Mr. Govinda Paudel</h3>
+          <p class="leader-designation" data-i18n="vicePresident">Vice President</p>
           <div class="leader-contact">
             <div class="leader-contact-item">
               <i class="fas fa-phone"></i>
-              <span>9851165018</span>
+              <span data-phone="9851165018">9851165018</span>
             </div>
           </div>
         </div>
@@ -1227,15 +1236,15 @@ background: var(--dark-orange);
       <div class="leader-card">
         <div class="leader-image">
           <img src="About/Members/Executive Committee/Mem_3.png" alt="Mrs. Radha Kumari Kayastha" class="object-top" loading="lazy">
-          <div class="leader-badge">Vice President</div>
+          <div class="leader-badge" data-i18n="vicePresident">Vice President</div>
         </div>
         <div class="leader-info">
-          <h3 class="leader-name">Mrs. Radha Kumari Kayastha</h3>
-          <p class="leader-designation">Vice President</p>
+          <h3 class="leader-name" data-i18n-name="Radha Kumari Kayastha">Mrs. Radha Kumari Kayastha</h3>
+          <p class="leader-designation" data-i18n="vicePresident">Vice President</p>
           <div class="leader-contact">
             <div class="leader-contact-item">
               <i class="fas fa-phone"></i>
-              <span>9841915790</span>
+              <span data-phone="9841915790">9841915790</span>
             </div>
           </div>
         </div>
@@ -1244,15 +1253,15 @@ background: var(--dark-orange);
       <div class="leader-card">
         <div class="leader-image">
           <img src="About/Members/man.png" alt="Mr. Sitaram Agrawal" class="object-top" loading="lazy">
-          <div class="leader-badge">Treasurer</div>
+          <div class="leader-badge" data-i18n="treasurer">Treasurer</div>
         </div>
         <div class="leader-info">
-          <h3 class="leader-name">Mr. Sitaram Agrawal</h3>
-          <p class="leader-designation">Treasurer</p>
+          <h3 class="leader-name" data-i18n-name="Sitaram Agrawal">Mr. Sitaram Agrawal</h3>
+          <p class="leader-designation" data-i18n="treasurer">Treasurer</p>
           <div class="leader-contact">
             <div class="leader-contact-item">
               <i class="fas fa-phone"></i>
-              <span>9851045024</span>
+              <span data-phone="9851045024">9851045024</span>
             </div>
           </div>
         </div>
@@ -1261,15 +1270,15 @@ background: var(--dark-orange);
       <div class="leader-card">
         <div class="leader-image">
           <img src="About/Members/Executive Committee/Mem_2.png" alt="Mr. Gopal Yadav" class="object-top" loading="lazy">
-          <div class="leader-badge">General Secretary</div>
+          <div class="leader-badge" data-i18n="generalSecretary">General Secretary</div>
         </div>
         <div class="leader-info">
-          <h3 class="leader-name">Mr. Gopal Yadav</h3>
-          <p class="leader-designation">General Secretary</p>
+          <h3 class="leader-name" data-i18n-name="Gopal Yadav">Mr. Gopal Yadav</h3>
+          <p class="leader-designation" data-i18n="generalSecretary">General Secretary</p>
           <div class="leader-contact">
             <div class="leader-contact-item">
               <i class="fas fa-phone"></i>
-              <span>9855020288</span>
+              <span data-phone="9855020288">9855020288</span>
             </div>
           </div>
         </div>
@@ -1278,15 +1287,15 @@ background: var(--dark-orange);
       <div class="leader-card">
         <div class="leader-image">
           <img src="About/Members/Executive Committee/Mem_1.jpeg" alt="Dr. Santosh Kumar Karn" class="object-top" loading="lazy">
-          <div class="leader-badge">Secretary</div>
+          <div class="leader-badge" data-i18n="secretary">Secretary</div>
         </div>
         <div class="leader-info">
-          <h3 class="leader-name">Dr. Santosh Kumar Karn</h3>
-          <p class="leader-designation">Secretary</p>
+          <h3 class="leader-name" data-i18n-name="Santosh Kumar Karn">Dr. Santosh Kumar Karn</h3>
+          <p class="leader-designation" data-i18n="secretary">Secretary</p>
           <div class="leader-contact">
             <div class="leader-contact-item">
               <i class="fas fa-phone"></i>
-              <span>9844026652</span>
+              <span data-phone="9844026652">9844026652</span>
             </div>
           </div>
         </div>
@@ -1295,15 +1304,15 @@ background: var(--dark-orange);
       <div class="leader-card">
         <div class="leader-image">
           <img src="About/Members/man.png" alt="Mr. Ajay Prasad Kurmi" class="object-top" loading="lazy">
-          <div class="leader-badge">Secretary</div>
+          <div class="leader-badge" data-i18n="secretary">Secretary</div>
         </div>
         <div class="leader-info">
-          <h3 class="leader-name">Mr. Ajay Prasad Kurmi</h3>
-          <p class="leader-designation">Secretary</p>
+          <h3 class="leader-name" data-i18n-name="Ajay Prasad Kurmi">Mr. Ajay Prasad Kurmi</h3>
+          <p class="leader-designation" data-i18n="secretary">Secretary</p>
           <div class="leader-contact">
             <div class="leader-contact-item">
               <i class="fas fa-phone"></i>
-              <span></span>
+              <span data-phone=""></span>
             </div>
           </div>
         </div>
@@ -1312,15 +1321,15 @@ background: var(--dark-orange);
       <div class="leader-card">
         <div class="leader-image">
           <img src="About/Members/man.png" alt="Mr. Chandra Mohan Chaudhary" class="object-top" loading="lazy">
-          <div class="leader-badge">Head of Public Reations</div>
+          <div class="leader-badge" data-i18n="headOfPublicRelations">Head of Public Relations</div>
         </div>
         <div class="leader-info">
-          <h3 class="leader-name">Mr. Chandra Mohan Chaudhary</h3>
-          <p class="leader-designation">Head of Public Reations</p>
+          <h3 class="leader-name" data-i18n-name="Chandra Mohan Chaudhary">Mr. Chandra Mohan Chaudhary</h3>
+          <p class="leader-designation" data-i18n="headOfPublicRelations">Head of Public Relations</p>
           <div class="leader-contact">
             <div class="leader-contact-item">
               <i class="fas fa-phone"></i>
-              <span>9844033348</span>
+              <span data-phone="9844033348">9844033348</span>
             </div>
           </div>
         </div>
@@ -1329,15 +1338,15 @@ background: var(--dark-orange);
       <div class="leader-card">
         <div class="leader-image">
           <img src="About/Members/woman.png" alt="Mrs. Manda Kumari Karn" class="object-top" loading="lazy">
-          <div class="leader-badge">Women Chief</div>
+          <div class="leader-badge" data-i18n="womenChief">Women Chief</div>
         </div>
         <div class="leader-info">
-          <h3 class="leader-name">Mrs. Manda Kumari Karn</h3>
-          <p class="leader-designation">Women Chief</p>
+          <h3 class="leader-name" data-i18n-name="Manda Kumari Karn">Mrs. Manda Kumari Karn</h3>
+          <p class="leader-designation" data-i18n="womenChief">Women Chief</p>
           <div class="leader-contact">
             <div class="leader-contact-item">
               <i class="fas fa-phone"></i>
-              <span>9812173918</span>
+              <span data-phone="9812173918">9812173918</span>
             </div>
           </div>
         </div>
@@ -1346,15 +1355,15 @@ background: var(--dark-orange);
       <div class="leader-card">
         <div class="leader-image">
           <img src="About/Members/man.png" alt="Mr. Janak Prasad Kurmi" class="object-top" loading="lazy">
-          <div class="leader-badge">Training Chief</div>
+          <div class="leader-badge" data-i18n="trainingChief">Training Chief</div>
         </div>
         <div class="leader-info">
-          <h3 class="leader-name">Mr. Janak Prasad Kurmi</h3>
-          <p class="leader-designation">Training Chief</p>
+          <h3 class="leader-name" data-i18n-name="Janak Prasad Kurmi">Mr. Janak Prasad Kurmi</h3>
+          <p class="leader-designation" data-i18n="trainingChief">Training Chief</p>
           <div class="leader-contact">
             <div class="leader-contact-item">
               <i class="fas fa-phone"></i>
-              <span>9864041182</span>
+              <span data-phone="9864041182">9864041182</span>
             </div>
           </div>
         </div>
@@ -1363,15 +1372,15 @@ background: var(--dark-orange);
       <div class="leader-card">
         <div class="leader-image">
           <img src="About/Members/man.png" alt="Mr. Rajendra Prasad Acharya" class="object-top" loading="lazy">
-          <div class="leader-badge">Industry Chief</div>
+          <div class="leader-badge" data-i18n="industryChief">Industry Chief</div>
         </div>
         <div class="leader-info">
-          <h3 class="leader-name">Mr. Rajendra Prasad Acharya</h3>
-          <p class="leader-designation">Industry Chief</p>
+          <h3 class="leader-name" data-i18n-name="Rajendra Prasad Acharya">Mr. Rajendra Prasad Acharya</h3>
+          <p class="leader-designation" data-i18n="industryChief">Industry Chief</p>
           <div class="leader-contact">
             <div class="leader-contact-item">
               <i class="fas fa-phone"></i>
-              <span>9845112166</span>
+              <span data-phone="9845112166">9845112166</span>
             </div>
           </div>
         </div>
@@ -1380,15 +1389,15 @@ background: var(--dark-orange);
       <div class="leader-card">
         <div class="leader-image">
           <img src="About/Members/man.png" alt="Mr. Narayan Prasad Paudel" class="object-top" loading="lazy">
-          <div class="leader-badge">Member</div>
+          <div class="leader-badge" data-i18n="member">Member</div>
         </div>
         <div class="leader-info">
-          <h3 class="leader-name">Mr. Narayan Prasad Paudel</h3>
-          <p class="leader-designation">Member</p>
+          <h3 class="leader-name" data-i18n-name="Narayan Prasad Paudel">Mr. Narayan Prasad Paudel</h3>
+          <p class="leader-designation" data-i18n="member">Member</p>
           <div class="leader-contact">
             <div class="leader-contact-item">
               <i class="fas fa-phone"></i>
-              <span>9845246278</span>
+              <span data-phone="9845246278">9845246278</span>
             </div>
           </div>
         </div>
@@ -1397,15 +1406,15 @@ background: var(--dark-orange);
       <div class="leader-card">
         <div class="leader-image">
           <img src="About/Members/man.png" alt="Mr. Jogendra Paswan" class="object-top" loading="lazy">
-          <div class="leader-badge">Member</div>
+          <div class="leader-badge" data-i18n="member">Member</div>
         </div>
         <div class="leader-info">
-          <h3 class="leader-name">Mr. Jogendra Paswan</h3>
-          <p class="leader-designation">Member</p>
+          <h3 class="leader-name" data-i18n-name="Jogendra Paswan">Mr. Jogendra Paswan</h3>
+          <p class="leader-designation" data-i18n="member">Member</p>
           <div class="leader-contact">
             <div class="leader-contact-item">
               <i class="fas fa-phone"></i>
-              <span>9842822446</span>
+              <span data-phone="9842822446">9842822446</span>
             </div>
           </div>
         </div>
@@ -1414,15 +1423,15 @@ background: var(--dark-orange);
       <div class="leader-card">
         <div class="leader-image">
           <img src="About/Members/woman.png" alt="Mrs. Sunita Kumari Yadav" class="object-top" loading="lazy">
-          <div class="leader-badge">Member</div>
+          <div class="leader-badge" data-i18n="member">Member</div>
         </div>
         <div class="leader-info">
-          <h3 class="leader-name">Mrs. Sunita Kumari Yadav</h3>
-          <p class="leader-designation">Member</p>
+          <h3 class="leader-name" data-i18n-name="Sunita Kumari Yadav">Mrs. Sunita Kumari Yadav</h3>
+          <p class="leader-designation" data-i18n="member">Member</p>
           <div class="leader-contact">
             <div class="leader-contact-item">
               <i class="fas fa-phone"></i>
-              <span>9824793040</span>
+              <span data-phone="9824793040">9824793040</span>
             </div>
           </div>
         </div>
@@ -1431,15 +1440,15 @@ background: var(--dark-orange);
       <div class="leader-card">
         <div class="leader-image">
           <img src="About/Members/man.png" alt="Mr. Dharmavir Arya" class="object-top" loading="lazy">
-          <div class="leader-badge">Member</div>
+          <div class="leader-badge" data-i18n="member">Member</div>
         </div>
         <div class="leader-info">
-          <h3 class="leader-name">Mr. Dharmavir Arya</h3>
-          <p class="leader-designation">Member</p>
+          <h3 class="leader-name" data-i18n-name="Dharmavir Arya">Mr. Dharmavir Arya</h3>
+          <p class="leader-designation" data-i18n="member">Member</p>
           <div class="leader-contact">
             <div class="leader-contact-item">
               <i class="fas fa-phone"></i>
-              <span>9842104084</span>
+              <span data-phone="9842104084">9842104084</span>
             </div>
           </div>
         </div>
@@ -1448,15 +1457,15 @@ background: var(--dark-orange);
       <div class="leader-card">
         <div class="leader-image">
           <img src="About/Members/man.png" alt="Mr. Guddu Shah Baniya" class="object-top" loading="lazy">
-          <div class="leader-badge">Member</div>
+          <div class="leader-badge" data-i18n="member">Member</div>
         </div>
         <div class="leader-info">
-          <h3 class="leader-name">Mr. Guddu Shah Baniya</h3>
-          <p class="leader-designation">Member</p>
+          <h3 class="leader-name" data-i18n-name="Guddu Shah Baniya">Mr. Guddu Shah Baniya</h3>
+          <p class="leader-designation" data-i18n="member">Member</p>
           <div class="leader-contact">
             <div class="leader-contact-item">
               <i class="fas fa-phone"></i>
-              <span>9845416632</span>
+              <span data-phone="9845416632">9845416632</span>
             </div>
           </div>
         </div>
@@ -1465,15 +1474,15 @@ background: var(--dark-orange);
       <div class="leader-card">
         <div class="leader-image">
           <img src="About/Members/man.png" alt="Mr. Niwas Yadav" class="object-top" loading="lazy">
-          <div class="leader-badge">Member</div>
+          <div class="leader-badge" data-i18n="member">Member</div>
         </div>
         <div class="leader-info">
-          <h3 class="leader-name">Mr. Niwas Yadav</h3>
-          <p class="leader-designation">Member</p>
+          <h3 class="leader-name" data-i18n-name="Niwas Yadav">Mr. Niwas Yadav</h3>
+          <p class="leader-designation" data-i18n="member">Member</p>
           <div class="leader-contact">
             <div class="leader-contact-item">
               <i class="fas fa-phone"></i>
-              <span>9766297810</span>
+              <span data-phone="9766297810">9766297810</span>
             </div>
           </div>
         </div>
@@ -1482,15 +1491,15 @@ background: var(--dark-orange);
       <div class="leader-card">
         <div class="leader-image">
           <img src="About/Members/man.png" alt="Mr. Dipendra Thakur" class="object-top" loading="lazy">
-          <div class="leader-badge">Member</div>
+          <div class="leader-badge" data-i18n="member">Member</div>
         </div>
         <div class="leader-info">
-          <h3 class="leader-name">Mr. Dipendra Thakur</h3>
-          <p class="leader-designation">Member</p>
+          <h3 class="leader-name" data-i18n-name="Dipendra Thakur">Mr. Dipendra Thakur</h3>
+          <p class="leader-designation" data-i18n="member">Member</p>
           <div class="leader-contact">
             <div class="leader-contact-item">
               <i class="fas fa-phone"></i>
-              <span>9807797997</span>
+              <span data-phone="9807797997">9807797997</span>
             </div>
           </div>
         </div>
@@ -1499,13 +1508,12 @@ background: var(--dark-orange);
     </div>
   </div>
 </section>
-
 <!-- State-Level Members Section -->
 <section class="leadership-section">
   <div class="leadership-container">
     <div class="text-center max-w-3xl mx-auto" data-aos="fade-up">
-      <h2 class="text-3xl font-bold text-orange mb-6 section-title">State-Level Leadership</h2>
-      <p class="story-intro">
+      <h2 class="text-3xl font-bold text-orange mb-6 section-title" data-i18n="stateLevelLeadership">State-Level Leadership</h2>
+      <p class="story-intro" data-i18n="stateLevelDesc">
         Our provincial leadership embodies the spirit of Rastriya Shramik Mahasangh Nepal across Nepal's diverse regions, ensuring localized implementation of our core values and advocacy efforts.
       </p>
     </div>
@@ -1515,15 +1523,15 @@ background: var(--dark-orange);
       <div class="leader-card">
         <div class="leader-image">
           <img src="About/Members/State Leadership/Mem_1.jpeg" alt="Mr. Sanjay Kumar Lal" class="object-top" loading="lazy">
-          <div class="leader-badge">Bagmati Province</div>
+          <div class="leader-badge" data-i18n="bagmatiProvince">Bagmati Province</div>
         </div>
         <div class="leader-info">
-          <h3 class="leader-name">Mr. Sanjay Kumar Lal</h3>
-          <p class="leader-designation">President</p>
+          <h3 class="leader-name" data-i18n-name="Sanjay Kumar Lal">Mr. Sanjay Kumar Lal</h3>
+          <p class="leader-designation" data-i18n="president">President</p>
           <div class="leader-contact">
             <div class="leader-contact-item">
               <i class="fas fa-phone"></i>
-              <span>9851155171</span>
+              <span data-phone="9851155171">9851155171</span>
             </div>
           </div>
         </div>
@@ -1533,69 +1541,66 @@ background: var(--dark-orange);
       <div class="leader-card">
         <div class="leader-image">
           <img src="About/Members/man.png" alt="Mr. K. B. Tamang" class="object-top" loading="lazy">
-          <div class="leader-badge">Bagmati Province</div>
+          <div class="leader-badge" data-i18n="bagmatiProvince">Bagmati Province</div>
         </div>
         <div class="leader-info">
-          <h3 class="leader-name">Mr. K. B. Tamang</h3>
-          <p class="leader-designation">Secretary</p>
+          <h3 class="leader-name" data-i18n-name="K. B. Tamang">Mr. K. B. Tamang</h3>
+          <p class="leader-designation" data-i18n="secretary">Secretary</p>
           <div class="leader-contact">
             <div class="leader-contact-item">
               <i class="fas fa-phone"></i>
-              <span>9851185971</span>
+              <span data-phone="9851185971">9851185971</span>
             </div>
           </div>
         </div>
       </div>
-
       <!-- State Leader -->
       <div class="leader-card">
         <div class="leader-image">
           <img src="About/Members/State Leadership/Mem_2.jpeg" alt="Mr. Rahul Kumar Jha" class="object-top" loading="lazy">
-          <div class="leader-badge">Bagmati Province</div>
+          <div class="leader-badge" data-i18n="bagmatiProvince">Bagmati Province</div>
         </div>
         <div class="leader-info">
-          <h3 class="leader-name">Mr. Rahul Kumar Jha</h3>
-          <p class="leader-designation">Secretary</p>
+          <h3 class="leader-name" data-i18n-name="Rahul Kumar Jha">Mr. Rahul Kumar Jha</h3>
+          <p class="leader-designation" data-i18n="secretary">Secretary</p>
           <div class="leader-contact">
             <div class="leader-contact-item">
               <i class="fas fa-phone"></i>
-              <span>9844509000</span>
+              <span data-phone="9844509000">9844509000</span>
             </div>
           </div>
         </div>
       </div>
-
       <!-- State Leader -->
       <div class="leader-card">
         <div class="leader-image">
           <img src="About/Members/State Leadership/Mem_5.png" alt="Mr. Chandrashekhar Joshi" class="object-top" loading="lazy">
-          <div class="leader-badge">Bagmati Province</div>
+          <div class="leader-badge" data-i18n="bagmatiProvince">Bagmati Province</div>
         </div>
         <div class="leader-info">
-          <h3 class="leader-name">Mr. Chandrashekhar Joshi</h3>
-          <p class="leader-designation">Sangathan Secretary</p>
+          <h3 class="leader-name" data-i18n-name="Chandrashekhar Joshi">Mr. Chandrashekhar Joshi</h3>
+          <p class="leader-designation" data-i18n="sangathanSecretary">Sangathan Secretary</p>
           <div class="leader-contact">
             <!-- <div class="leader-contact-item">
               <i class="fas fa-phone"></i>
-              <span></span>
+              <span data-phone=""></span>
             </div> -->
           </div>
         </div>
       </div>
-
       <!-- State Leader -->
       <div class="leader-card">
         <div class="leader-image">
           <img src="About/Members/State Leadership/Mem_4.png" alt="Mr. Mohan Khatri" class="object-top" loading="lazy">
-          <div class="leader-badge">Bagmati Province</div>
+          <div class="leader-badge" data-i18n="bagmatiProvince">Bagmati Province</div>
         </div>
         <div class="leader-info">
-          <h3 class="leader-name">Mr. Mohan Khatri</h3>
-          <p class="leader-designation">Member</p>
+          <h3 class="leader-name" data-i18n-name="Mohan Khatri">Mr. Mohan Khatri</h3>
+          <p class="leader-designation" data-i18n="member">Member</p>
           <div class="leader-contact">
             <!-- <div class="leader-contact-item">
               <i class="fas fa-phone"></i>
-              <span></span>
+              <span data-phone=""></span>
             </div> -->
           </div>
         </div>
@@ -1605,15 +1610,15 @@ background: var(--dark-orange);
       <div class="leader-card">
         <div class="leader-image">
           <img src="About/Members/man.png" alt="" class="object-top" loading="lazy">
-          <div class="leader-badge">Madhesh Province</div>
+          <div class="leader-badge" data-i18n="madheshProvince">Madhesh Province</div>
         </div>
         <div class="leader-info">
-          <h3 class="leader-name"></h3>
-          <p class="leader-designation">President</p>
+          <h3 class="leader-name" data-i18n-name=""></h3>
+          <p class="leader-designation" data-i18n="president">President</p>
           <div class="leader-contact">
             <!-- <div class="leader-contact-item">
               <i class="fas fa-phone"></i>
-              <span>9813154784</span>
+              <span data-phone="9813154784">9813154784</span>
             </div> -->
           </div>
         </div>
@@ -1623,15 +1628,15 @@ background: var(--dark-orange);
       <div class="leader-card">
         <div class="leader-image">
           <img src="About/Members/man.png" alt="Mr. Chandrar Yadav" class="object-top" loading="lazy">
-          <div class="leader-badge">Madhesh Province</div>
+          <div class="leader-badge" data-i18n="madheshProvince">Madhesh Province</div>
         </div>
         <div class="leader-info">
-          <h3 class="leader-name">Mr. Chandrar Yadav</h3>
-          <p class="leader-designation">Secretary</p>
+          <h3 class="leader-name" data-i18n-name="Chandrar Yadav">Mr. Chandrar Yadav</h3>
+          <p class="leader-designation" data-i18n="secretary">Secretary</p>
           <div class="leader-contact">
             <div class="leader-contact-item">
               <i class="fas fa-phone"></i>
-              <span>9824707093</span>
+              <span data-phone="9824707093">9824707093</span>
             </div>
           </div>
         </div>
@@ -1641,15 +1646,15 @@ background: var(--dark-orange);
       <div class="leader-card">
         <div class="leader-image">
           <img src="About/Members/man.png" alt="Mr. Ganesh Rajbanshi" class="object-top" loading="lazy">
-          <div class="leader-badge">Koshi Province</div>
+          <div class="leader-badge" data-i18n="koshiProvince">Koshi Province</div>
         </div>
         <div class="leader-info">
-          <h3 class="leader-name">Mr. Ganesh Rajbanshi</h3>
-          <p class="leader-designation">President</p>
+          <h3 class="leader-name" data-i18n-name="Ganesh Rajbanshi">Mr. Ganesh Rajbanshi</h3>
+          <p class="leader-designation" data-i18n="president">President</p>
           <div class="leader-contact">
             <div class="leader-contact-item">
               <i class="fas fa-phone"></i>
-              <span>9842400983</span>
+              <span data-phone="9842400983">9842400983</span>
             </div>
           </div>
         </div>
@@ -1659,15 +1664,15 @@ background: var(--dark-orange);
       <div class="leader-card">
         <div class="leader-image">
           <img src="About/Members/man.png" alt="Mr. Dharmavir Arya" class="object-top" loading="lazy">
-          <div class="leader-badge">Koshi Province</div>
+          <div class="leader-badge" data-i18n="koshiProvince">Koshi Province</div>
         </div>
         <div class="leader-info">
-          <h3 class="leader-name">Mr. Dharmavir Arya</h3>
-          <p class="leader-designation">Secretary</p>
+          <h3 class="leader-name" data-i18n-name="Dharmavir Arya">Mr. Dharmavir Arya</h3>
+          <p class="leader-designation" data-i18n="secretary">Secretary</p>
           <div class="leader-contact">
             <div class="leader-contact-item">
               <i class="fas fa-phone"></i>
-              <span>9842104084</span>
+              <span data-phone="9842104084">9842104084</span>
             </div>
           </div>
         </div>
@@ -1677,15 +1682,15 @@ background: var(--dark-orange);
       <div class="leader-card">
         <div class="leader-image">
           <img src="About/Members/man.png" alt="Mr. Upendra Nayak" class="object-top" loading="lazy">
-          <div class="leader-badge">Koshi Province</div>
+          <div class="leader-badge" data-i18n="koshiProvince">Koshi Province</div>
         </div>
         <div class="leader-info">
-          <h3 class="leader-name">Mr. Upendra Nayak</h3>
-          <p class="leader-designation">Secretary</p>
+          <h3 class="leader-name" data-i18n-name="Upendra Nayak">Mr. Upendra Nayak</h3>
+          <p class="leader-designation" data-i18n="secretary">Secretary</p>
           <div class="leader-contact">
             <div class="leader-contact-item">
               <i class="fas fa-phone"></i>
-              <span>9813154784</span>
+              <span data-phone="9813154784">9813154784</span>
             </div>
           </div>
         </div>
@@ -1695,15 +1700,15 @@ background: var(--dark-orange);
       <div class="leader-card">
         <div class="leader-image">
           <img src="About/Members/State Leadership/Mem_3.png" alt="Mr. Anil Agrahari" class="object-top" loading="lazy">
-          <div class="leader-badge">Lumbini Province</div>
+          <div class="leader-badge" data-i18n="lumbiniProvince">Lumbini Province</div>
         </div>
         <div class="leader-info">
-          <h3 class="leader-name">Mr. Anil Agrahari</h3>
-          <p class="leader-designation">Coordinator</p>
+          <h3 class="leader-name" data-i18n-name="Anil Agrahari">Mr. Anil Agrahari</h3>
+          <p class="leader-designation" data-i18n="coordinator">Coordinator</p>
           <div class="leader-contact">
             <div class="leader-contact-item">
               <i class="fas fa-phone"></i>
-              <span>9847281425</span>
+              <span data-phone="9847281425">9847281425</span>
             </div>
           </div>
         </div>
@@ -1712,13 +1717,12 @@ background: var(--dark-orange);
     </div>
   </div>
 </section>
-
 <!-- Unions Section -->
 <section class="unions-section">
   <div class="unions-container">
     <div class="text-center max-w-3xl mx-auto" data-aos="fade-up">
-      <h2 class="text-3xl font-bold text-orange mb-6 section-title">Our Affiliated Unions</h2>
-      <p class="story-intro">
+      <h2 class="text-3xl font-bold text-orange mb-6 section-title" data-i18n="affiliatedUnions">Our Affiliated Unions</h2>
+      <p class="story-intro" data-i18n="affiliatedUnionsDesc">
         Rastriya Shramik Mahasangh Nepal unites 11 specialized unions, each championing workers in distinct sectors. Explore their missions and leadership.
       </p>
     </div>
@@ -1730,9 +1734,9 @@ background: var(--dark-orange);
           <img src="About/Unions/Krishi.png" alt="Rastriya Krishi Shramik Sangh Nepal" loading="lazy" style="width:170px; height:auto;">
         </div>
         <div class="union-info">
-          <h3 class="union-name">Rastriya Krishi Shramik Sangh Nepal</h3>
-          <p class="union-description">Championing agricultural workers and farmers for fair wages and sustainable practices.</p>
-          <button class="union-btn view-union-details" data-union="krishi">View Details</button>
+          <h3 class="union-name" data-i18n="krishiSanghName">Rastriya Krishi Shramik Sangh Nepal</h3>
+          <p class="union-description" data-i18n="krishiSanghDesc">Championing agricultural workers and farmers for fair wages and sustainable practices.</p>
+          <button class="union-btn view-union-details" data-union="krishi" data-i18n="viewDetails">View Details</button>
         </div>
       </div>
       
@@ -1742,9 +1746,9 @@ background: var(--dark-orange);
           <img src="About/Unions/Nai.png" alt="Rastriya Nai Shramik Sangh Nepal" loading="lazy">
         </div>
         <div class="union-info">
-          <h3 class="union-name">Rastriya Nai Shramik Sangh Nepal</h3>
-          <p class="union-description">Advocating for barbers and hairdressers' professional rights and development.</p>
-          <button class="union-btn view-union-details" data-union="nai">View Details</button>
+          <h3 class="union-name" data-i18n="naiSanghName">Rastriya Nai Shramik Sangh Nepal</h3>
+          <p class="union-description" data-i18n="naiSanghDesc">Advocating for barbers and hairdressers' professional rights and development.</p>
+          <button class="union-btn view-union-details" data-union="nai" data-i18n="viewDetails">View Details</button>
         </div>
       </div>
       
@@ -1754,9 +1758,9 @@ background: var(--dark-orange);
           <img src="About/Unions/Rang.png" alt="Rastriya Rangrohan Shramik Sangh Nepal" loading="lazy">
         </div>
         <div class="union-info">
-          <h3 class="union-name">Rastriya Rangrohan Shramik Sangh Nepal</h3>
-          <p class="union-description">Protecting painters and dyeing workers with focus on safety and fair pay.</p>
-          <button class="union-btn view-union-details" data-union="rangrohan">View Details</button>
+          <h3 class="union-name" data-i18n="rangrohanSanghName">Rastriya Rangrohan Shramik Sangh Nepal</h3>
+          <p class="union-description" data-i18n="rangrohanSanghDesc">Protecting painters and dyeing workers with focus on safety and fair pay.</p>
+          <button class="union-btn view-union-details" data-union="rangrohan" data-i18n="viewDetails">View Details</button>
         </div>
       </div>
       
@@ -1765,9 +1769,9 @@ background: var(--dark-orange);
           <img src="About/Unions/Kastha.png" alt="Rastriya Kastha Shramik Sangh Nepal" loading="lazy">
         </div>
         <div class="union-info">
-          <h3 class="union-name">Rastriya Kastha Shramik Sangh Nepal</h3>
-          <p class="union-description">Supporting carpenters and woodworkers in skill enhancement and rights protection.</p>
-          <button class="union-btn view-union-details" data-union="kastha">View Details</button>
+          <h3 class="union-name" data-i18n="kasthaSanghName">Rastriya Kastha Shramik Sangh Nepal</h3>
+          <p class="union-description" data-i18n="kasthaSanghDesc">Supporting carpenters and woodworkers in skill enhancement and rights protection.</p>
+          <button class="union-btn view-union-details" data-union="kastha" data-i18n="viewDetails">View Details</button>
         </div>
       </div>
       
@@ -1776,9 +1780,9 @@ background: var(--dark-orange);
           <img src="About/Unions/Plumber.png" alt="Rastriya Plumber Shramik Sangh Nepal" loading="lazy">
         </div>
         <div class="union-info">
-          <h3 class="union-name">Rastriya Plumber Shramik Sangh Nepal</h3>
-          <p class="union-description">Ensuring plumbers' fair wages and safe working environments.</p>
-          <button class="union-btn view-union-details" data-union="plumber">View Details</button>
+          <h3 class="union-name" data-i18n="plumberSanghName">Rastriya Plumber Shramik Sangh Nepal</h3>
+          <p class="union-description" data-i18n="plumberSanghDesc">Ensuring plumbers' fair wages and safe working environments.</p>
+          <button class="union-btn view-union-details" data-union="plumber" data-i18n="viewDetails">View Details</button>
         </div>
       </div>
       
@@ -1787,9 +1791,9 @@ background: var(--dark-orange);
           <img src="About/Unions/Grihasti.png" alt="Rastriya Ghar Grihsti Shramik Sangh Nepal" loading="lazy">
         </div>
         <div class="union-info">
-          <h3 class="union-name">Rastriya Ghar Grihsti Shramik Sangh Nepal</h3>
-          <p class="union-description">Upholding dignity and rights for domestic workers.</p>
-          <button class="union-btn view-union-details" data-union="ghar">View Details</button>
+          <h3 class="union-name" data-i18n="gharGrihstiSanghName">Rastriya Ghar Grihsti Shramik Sangh Nepal</h3>
+          <p class="union-description" data-i18n="gharGrihstiSanghDesc">Upholding dignity and rights for domestic workers.</p>
+          <button class="union-btn view-union-details" data-union="ghar" data-i18n="viewDetails">View Details</button>
         </div>
       </div>
       
@@ -1798,9 +1802,9 @@ background: var(--dark-orange);
           <img src="About/Unions/Nirman.png" alt="Rastriya Nirman Shramik Sangh Nepal" loading="lazy">
         </div>
         <div class="union-info">
-          <h3 class="union-name">Rastriya Nirman Shramik Sangh Nepal</h3>
-          <p class="union-description">Advocating safety and compensation for construction workers.</p>
-          <button class="union-btn view-union-details" data-union="nirman">View Details</button>
+          <h3 class="union-name" data-i18n="nirmanSanghName">Rastriya Nirman Shramik Sangh Nepal</h3>
+          <p class="union-description" data-i18n="nirmanSanghDesc">Advocating safety and compensation for construction workers.</p>
+          <button class="union-btn view-union-details" data-union="nirman" data-i18n="viewDetails">View Details</button>
         </div>
       </div>
       
@@ -1809,9 +1813,9 @@ background: var(--dark-orange);
           <img src="About/Unions/Rickshaw.png" alt="Rastriya Auto Ricksaw chalak Shramik Sangh Nepal" loading="lazy">
         </div>
         <div class="union-info">
-          <h3 class="union-name">Rastriya Auto Rickshaw Chalak Shramik Sangh Nepal</h3>
-          <p class="union-description">Fighting for fair fares and conditions for auto rickshaw drivers.</p>
-          <button class="union-btn view-union-details" data-union="autorickshaw">View Details</button>
+          <h3 class="union-name" data-i18n="autoRickshawSanghName">Rastriya Auto Rickshaw Chalak Shramik Sangh Nepal</h3>
+          <p class="union-description" data-i18n="autoRickshawSanghDesc">Fighting for fair fares and conditions for auto rickshaw drivers.</p>
+          <button class="union-btn view-union-details" data-union="autorickshaw" data-i18n="viewDetails">View Details</button>
         </div>
       </div>
       
@@ -1820,9 +1824,9 @@ background: var(--dark-orange);
           <img src="About/Unions/Kabadi.png" alt="Rastriya Kabadi Shramik Sangh Nepal" loading="lazy">
         </div>
         <div class="union-info">
-          <h3 class="union-name">Rastriya Kabadi Shramik Sangh Nepal</h3>
-          <p class="union-description">Promoting dignified work for waste pickers and recyclers.</p>
-          <button class="union-btn view-union-details" data-union="kabadi">View Details</button>
+          <h3 class="union-name" data-i18n="kabadiSanghName">Rastriya Kabadi Shramik Sangh Nepal</h3>
+          <p class="union-description" data-i18n="kabadiSanghDesc">Promoting dignified work for waste pickers and recyclers.</p>
+          <button class="union-btn view-union-details" data-union="kabadi" data-i18n="viewDetails">View Details</button>
         </div>
       </div>
       
@@ -1831,9 +1835,9 @@ background: var(--dark-orange);
           <img src="About/Unions/Itta Bhatta.png" alt="Rastriya Itta Bhatta Shramik Sangh Nepal" loading="lazy">
         </div>
         <div class="union-info">
-          <h3 class="union-name">Rastriya Itta Bhatta Shramik Sangh Nepal</h3>
-          <p class="union-description">Supporting brick kiln workers in fair practices.</p>
-          <button class="union-btn view-union-details" data-union="ittavatta">View Details</button>
+          <h3 class="union-name" data-i18n="ittaBhattaSanghName">Rastriya Itta Bhatta Shramik Sangh Nepal</h3>
+          <p class="union-description" data-i18n="ittaBhattaSanghDesc">Supporting brick kiln workers in fair practices.</p>
+          <button class="union-btn view-union-details" data-union="ittavatta" data-i18n="viewDetails">View Details</button>
         </div>
       </div>
       
@@ -1842,22 +1846,21 @@ background: var(--dark-orange);
           <img src="About/Unions/teacher.png" alt="Nepal Rastriya Shikshak Sangh" loading="lazy">
         </div>
         <div class="union-info">
-          <h3 class="union-name">Nepal Rastriya Shikshak Sangh</h3>
-          <p class="union-description">Empowering teachers for better education and conditions.</p>
-          <button class="union-btn view-union-details" data-union="shikshak">View Details</button>
+          <h3 class="union-name" data-i18n="shikshakSanghName">Nepal Rastriya Shikshak Sangh</h3>
+          <p class="union-description" data-i18n="shikshakSanghDesc">Empowering teachers for better education and conditions.</p>
+          <button class="union-btn view-union-details" data-union="shikshak" data-i18n="viewDetails">View Details</button>
         </div>
       </div>
     </div>
   </div>
 </section>
-
 <!-- Industrial Units Section -->
 <section class="unions-section">
   <div class="unions-container">
     <div class="text-center max-w-3xl mx-auto" data-aos="fade-up">
-      <h2 class="text-3xl font-bold text-orange mb-6 section-title">Industrial Units</h2>
-      <p class="story-intro">
-        Under <span class="key-phrase">Rastriya Audhogik Shramik Sangh Nepal</span>, our two industrial units represent key sectors, driving worker rights in manufacturing.
+      <h2 class="text-3xl font-bold text-orange mb-6 section-title" data-i18n="industrialUnits">Industrial Units</h2>
+      <p class="story-intro" data-i18n="industrialUnitsDesc">
+        Under <span class="key-phrase" data-i18n="audhogikSanghName">Rastriya Audhogik Shramik Sangh Nepal</span>, our two industrial units represent key sectors, driving worker rights in manufacturing.
       </p>
     </div>
     
@@ -1868,9 +1871,9 @@ background: var(--dark-orange);
           <img src="About/Unions/brewery.png" alt="Mount Everest Brewery" loading="lazy">
         </div>
         <div class="union-info">
-          <h3 class="union-name">Mount Everest Brewery</h3>
-          <p class="union-description">Bharatpur, Chitwan - Advocating for beverage industry workers.</p>
-          <button class="union-btn view-industrial-details" data-industrial="mounteverest">View Details</button>
+          <h3 class="union-name" data-i18n="mountEverestBrewery">Mount Everest Brewery</h3>
+          <p class="union-description" data-i18n="mountEverestBreweryDesc">Bharatpur, Chitwan - Advocating for beverage industry workers.</p>
+          <button class="union-btn view-industrial-details" data-industrial="mounteverest" data-i18n="viewDetails">View Details</button>
         </div>
       </div>
       
@@ -1880,15 +1883,14 @@ background: var(--dark-orange);
           <img src="About/Unions/beverage.png" alt="Varun Beverage Pvt. Ltd." loading="lazy">
         </div>
         <div class="union-info">
-          <h3 class="union-name">Varun Beverage Pvt. Ltd.</h3>
-          <p class="union-description">Ramgram, Nawalparasi - Championing bottling sector labor rights.</p>
-          <button class="union-btn view-industrial-details" data-industrial="varun">View Details</button>
+          <h3 class="union-name" data-i18n="varunBeverage">Varun Beverage Pvt. Ltd.</h3>
+          <p class="union-description" data-i18n="varunBeverageDesc">Ramgram, Nawalparasi - Championing bottling sector labor rights.</p>
+          <button class="union-btn view-industrial-details" data-industrial="varun" data-i18n="viewDetails">View Details</button>
         </div>
       </div>
     </div>
   </div>
 </section>
-
 <!-- Footer -->
 <footer class="text-white pt-16 pb-8 px-4" style="background: linear-gradient(135deg, var(--primary-orange), var(--dark-orange));">
   <div class="container mx-auto">
@@ -1898,11 +1900,11 @@ background: var(--dark-orange);
         <a href="index.html" class="flex items-center mb-6 transition-transform duration-300 hover:scale-105">
           <img src="logo.jpg" alt="Rastriya Shramik Mahasangh Nepal Logo" class="h-24 md:h-28 mr-3">
           <div>
-            <h3 class="text-xl font-bold">Rastriya Shramik Mahasangh</h3>
-            <p class="text-sm text-white-300">नेपाल</p>
+            <h3 class="text-xl font-bold" data-i18n="organizationName">Rastriya Shramik Mahasangh</h3>
+            <p class="text-sm text-white-300" data-i18n="organizationLocation">नेपाल</p>
           </div>
         </a>
-        <p class="text-white mb-6">
+        <p class="text-white mb-6" data-i18n="footerDescription">
           Empowering workers through unity, advocacy, and action since 2080 B.S.
         </p>
         <div class="flex space-x-4">
@@ -1911,6 +1913,7 @@ background: var(--dark-orange);
             target="_blank"
             rel="noopener noreferrer"
             class="bg-gold hover:bg-orange-600 w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300"
+            aria-label="Facebook"
           ><i class="fab fa-facebook-f"></i>
           </a>
           <a
@@ -1918,7 +1921,7 @@ background: var(--dark-orange);
             target="_blank"
             rel="noopener noreferrer"
             class="bg-gold hover:bg-orange-600 w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300"
-            aria-label="Chat on WhatsApp"
+            aria-label="WhatsApp"
           >
             <i class="fab fa-whatsapp"></i>
           </a>
@@ -1927,86 +1930,86 @@ background: var(--dark-orange);
             target="_blank"
             rel="noopener noreferrer"
             class="bg-gold hover:bg-orange-600 w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300"
-            aria-label="Watch on YouTube"
+            aria-label="YouTube"
           >
             <i class="fab fa-youtube"></i>
           </a>
-          <a href="#" class="bg-gold hover:bg-orange-600 w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300">
+          <a href="#" class="bg-gold hover:bg-orange-600 w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300" aria-label="Instagram">
             <i class="fab fa-instagram"></i>
           </a>
         </div>
       </div>
       <!-- Quick Links -->
       <div class="md:col-span-1">
-        <h3 class="text-lg font-bold mb-6 uppercase tracking-wider text-white">Quick Links</h3>
+        <h3 class="text-lg font-bold mb-6 uppercase tracking-wider text-white" data-i18n="quickLinks">Quick Links</h3>
         <ul class="space-y-3">
           <li>
             <a href="About.html" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center">
               <i class="fas fa-angle-right mr-2 text-gold"></i>
-              About Us
+              <span data-i18n="aboutUs">About Us</span>
             </a>
           </li>
           <li>
             <a href="Updates.html" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center">
               <i class="fas fa-angle-right mr-2 text-gold"></i>
-              Latest Updates
+              <span data-i18n="latestUpdates">Latest Updates</span>
             </a>
           </li>
           <li>
             <a href="Upcoming.html" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center">
               <i class="fas fa-angle-right mr-2 text-gold"></i>
-              Our Events
+              <span data-i18n="ourEvents">Our Events</span>
             </a>
           </li>
           <li>
             <a href="Media_Coverage.html" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center">
               <i class="fas fa-angle-right mr-2 text-gold"></i>
-              Media Coverages
+              <span data-i18n="mediaCoverages">Media Coverages</span>
             </a>
           </li>
         </ul>
       </div>
       <!-- Resources -->
       <div class="md:col-span-1">
-        <h3 class="text-lg font-bold mb-6 uppercase tracking-wider text-white">Resources</h3>
+        <h3 class="text-lg font-bold mb-6 uppercase tracking-wider text-white" data-i18n="resources">Resources</h3>
         <ul class="space-y-3">
           <li>
             <a href="Slogans.html" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center">
               <i class="fas fa-angle-right mr-2 text-gold"></i>
-              Our Slogans
+              <span data-i18n="ourSlogans">Our Slogans</span>
             </a>
           </li>
           <li>
             <a href="Press_Releases.html" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center">
               <i class="fas fa-angle-right mr-2 text-gold"></i>
-              Press Releases
+              <span data-i18n="pressReleases">Press Releases</span>
             </a>
           </li>
           <li>
             <a href="Publications.html" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center">
               <i class="fas fa-angle-right mr-2 text-gold"></i>
-              Publications
+              <span data-i18n="publications">Publications</span>
             </a>
           </li>
           <li>
             <a href="Gallery.html" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center">
               <i class="fas fa-angle-right mr-2 text-gold"></i>
-              Gallery
+              <span data-i18n="gallery">Gallery</span>
             </a>
           </li>
         </ul>
       </div>
       <!-- Contact & Newsletter -->
       <div class="md:col-span-1">
-        <h3 class="text-lg font-bold mb-6 uppercase tracking-wider text-white">Contact Us</h3>
+        <h3 class="text-lg font-bold mb-6 uppercase tracking-wider text-white" data-i18n="contactUs">Contact Us</h3>
         <ul class="space-y-4 mb-8">
           <li class="flex items-start">
             <i class="fas fa-map-marker-alt text-gold mt-1 mr-3"></i>
-            <a href="https://maps.app.goo.gl/4C8W3pM3qPDEQvMA9" target="_blank" class="text-white hover:text-yellow-200 transition-colors duration-300">Keshavdham, Guheswari Marg - 8, Kathmandu, Nepal</a>
+            <a href="https://maps.app.goo.gl/4C8W3pM3qPDEQvMA9" target="_blank" class="text-white hover:text-yellow-200 transition-colors duration-300" data-address="Keshavdham, Guheswari Marg - 8, Kathmandu, Nepal">Keshavdham, Guheswari Marg - 8, Kathmandu, Nepal</a>
           </li>
           <li class="flex items-center">
             <i class="fas fa-phone-alt text-gold mr-3"></i>
-            <a href="tel:+9779855020288" class="text-white hover:text-yellow-200 transition-colors duration-300">+977-9855020288</a>
+            <a href="tel:+9779855020288" class="text-white hover:text-yellow-200 transition-colors duration-300" data-phone="+977-9855020288">+977-9855020288</a>
           </li>
           <li class="flex items-center">
             <i class="fas fa-envelope text-gold mr-3"></i>
@@ -2018,19 +2021,17 @@ background: var(--dark-orange);
     <!-- Bottom Bar -->
     <div class="border-t border-orange-800 pt-4">
       <div class="flex justify-center">
-        <p class="text-white text-sm">
+        <p class="text-white text-sm" data-i18n="copyright">
           &copy; <span id="current-year"></span> Rastriya Shramik Mahasangh Nepal. All rights reserved.
         </p>
       </div>
     </div>
   </div>
 </footer>
-
 <!-- Back to Top Button -->
 <button id="back-to-top" class="fixed bottom-6 right-6 bg-orange text-white p-3 rounded-full shadow-lg transition-all duration-300 opacity-0 invisible hover:bg-gold">
   <i class="fas fa-arrow-up"></i>
 </button>
-
 <!-- Union Details Modal -->
 <div class="modal-overlay" id="unionModal">
   <div class="modal-content">
@@ -2041,16 +2042,15 @@ background: var(--dark-orange);
     <div class="modal-body">
       <div class="modal-description" id="unionModalDescription"></div>
       <div class="modal-leadership" id="unionModalLeadership">
-        <h3>Union Leadership</h3>
+        <h3 data-i18n="unionLeadership">Union Leadership</h3>
         <div class="modal-leaders-grid" id="unionLeadersGrid"></div>
       </div>
     </div>
     <div class="modal-footer">
-      <button class="close-modal-btn" id="closeUnionModalBtn">Close</button>
+      <button class="close-modal-btn" id="closeUnionModalBtn" data-i18n="close">Close</button>
     </div>
   </div>
 </div>
-
 <!-- Industrial Unit Details Modal -->
 <div class="modal-overlay" id="industrialModal">
   <div class="modal-content">
@@ -2062,14 +2062,554 @@ background: var(--dark-orange);
       <div class="modal-description" id="industrialModalDescription"></div>
     </div>
     <div class="modal-footer">
-      <button class="close-modal-btn" id="closeIndustrialModalBtn">Close</button>
+      <button class="close-modal-btn" id="closeIndustrialModalBtn" data-i18n="close">Close</button>
     </div>
   </div>
 </div>
-
 <!-- Scripts -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
+// Language data structure with all translations
+const translations = {
+  en: {
+    // Navigation
+    home: "Home",
+    about: "About",
+    ourStory: "Our Story",
+    organizationalStructure: "Organizational Structure",
+    leadership: "Leadership",
+    resources: "Resources",
+    ourSlogans: "Our Slogans",
+    pressReleases: "Press Releases",
+    publications: "Publications",
+    events: "Events",
+    gallery: "Gallery",
+    
+    // Page Title
+    pageTitle: "About Us",
+    pageSubtitle: "Discover our history, mission, and commitment to workers' rights in Nepal",
+    
+    // Organization
+    organizationName: "Rastriya Shramik Mahasangh",
+    organizationLocation: "Nepal",
+    organizationFullName: "Rastriya Shramik Mahasangh Nepal",
+    
+    // Announcement
+    announcement1: "Rastra heet!",
+    announcement2: "Udyog Heet!",
+    announcement3: "Shramik Heet!",
+    
+    // Search and Menu
+    search: "Search",
+    menu: "Menu",
+    close: "Close",
+    
+    // Our Story Section
+    ourStory: "Our Story",
+    storyParagraph1: "Nepal, an ancient and sacred land steeped in wisdom and tradition, has long been guided by the teachings of sages and monks who imparted not only material knowledge but also profound moral and ethical principles. Throughout history, structured frameworks have governed the delicate balance between the presiding class and laborers, establishing regulations and ethical norms to foster harmony and progress.",
+    storyHighlight: "Nationalise the Labour, Labourise the Industries, Industrialise the Nation",
+    storyParagraph2: "In contemporary Nepal, our constitution, aligned with trade union laws, enshrines provisions for the protection and holistic development of workers' rights. Workers form the backbone of nation-building; no country can advance without their unwavering dedication and contributions. Yet, despite the proliferation of labor organizations, many remain entangled in political affiliations, often manipulated for partisan gains. This exploitation has stymied the success of trade union movements, reducing workers to mere vote banks and perpetuating their deprivation of essential rights and benefits.",
+    originalName: "Rastriya Krishi Shramik Sangh Nepal",
+    currentName: "Rastriya Shramik Mahasangh Nepal",
+    storyParagraph3: "Amid this challenging landscape, originally founded as Rastriya Krishi Shramik Sangh Nepal on Chaitra 11, 2068, evolved on Baishak 11, 2080 into Rastriya Shramik Mahasangh Nepal, as an independent beacon of hope dedicated to safeguarding Nepal's sovereign soil, its rich cultural diversity, mesmerizing heritage, and national identity while elevating the living standards of the working class for comprehensive national development. We stand as an independent force, safeguarding Nepal's sovereignty, cultural heritage, and national identity while elevating workers' living standards for national progress.",
+    industrializingNation: "industrializing the nation",
+    storyParagraph4: "Committed to industrializing the nation, creating labor-oriented industries, and nationalizing the workforce, our principles prioritize national interest, industrial development, and labor rights. Operated by workers for workers, we remain free from government, business, political, foreign, or personal influences, embodying true autonomy in labor advocacy.",
+    
+    // Timeline
+    phasesOfStruggle: "Phases of Struggle",
+    timeline2067: "Established as Rastriya Krishi Shramik Sangh with a mission to safeguard worker welfare",
+    timeline2077: "Led pivotal protests for sugarcane farmers, compelling sugar mill owners to settle outstanding dues worth crores, addressing long-standing grievances in the agricultural sector.",
+    timeline2080: "Establishment of Rastriya Shramik Mahasangh Nepal as an independent organization",
+    timeline2080b: "Actively protected rights in key industries like Varun Beverages (PepsiCola) and Mount Everest Brewery, championing fair wages, job security, and improved working conditions through sustained movements.",
+    timeline2081: "Submitted an eight-point demand memorandum to the Nepal government via Chief District Officers, spotlighting challenges faced by farmers and agricultural workers in our agriculture-dominant nation, urging systemic resolutions.",
+    timeline2081b: "Implementation of employment programs across different districts to uplift living standards of informal sector workers",
+    presentDay: "Present Day",
+    presentDayDesc: "Continuing to spearhead labor movements, implement district-level employment programs for informal sector workers, and ensure social security while fighting for comprehensive worker prosperity.",
+    storyCallToAction: "We invite all workers and laborers to unite in rebuilding our nation, championing prosperity, and advancing workers' rights and well-being.",
+    
+    // Organizational Structure
+    orgStructureDesc: "The Rastriya Shramik Mahasangh Nepal is a robust federation encompassing 11 specialized unions and 2 industrial units, with provincial and district committees established across all provinces of Nepal. Each affiliated union maintains its own provincial and district committees, ensuring grassroots representation and effective advocacy for workers nationwide.",
+    
+    // Leadership
+    centralExecutiveCommittee: "Central Executive Committee",
+    centralExecutiveDesc: "The Central Executive Committee (Kendriya Karya Samiti) serves as the pinnacle of decision-making within Rastriya Shramik Mahasangh Nepal, comprising visionary leaders who steer our mission with unwavering dedication to workers' empowerment.",
+    president: "President",
+    vicePresident: "Vice President",
+    treasurer: "Treasurer",
+    generalSecretary: "General Secretary",
+    secretary: "Secretary",
+    headOfPublicRelations: "Head of Public Relations",
+    womenChief: "Women Chief",
+    trainingChief: "Training Chief",
+    industryChief: "Industry Chief",
+    member: "Member",
+    sangathanSecretary: "Sangathan Secretary",
+    
+    // State Level Leadership
+    stateLevelLeadership: "State-Level Leadership",
+    stateLevelDesc: "Our provincial leadership embodies the spirit of Rastriya Shramik Mahasangh Nepal across Nepal's diverse regions, ensuring localized implementation of our core values and advocacy efforts.",
+    bagmatiProvince: "Bagmati Province",
+    madheshProvince: "Madhesh Province",
+    koshiProvince: "Koshi Province",
+    lumbiniProvince: "Lumbini Province",
+    coordinator: "Coordinator",
+    
+    // Unions
+    affiliatedUnions: "Our Affiliated Unions",
+    affiliatedUnionsDesc: "Rastriya Shramik Mahasangh Nepal unites 11 specialized unions, each championing workers in distinct sectors. Explore their missions and leadership.",
+    krishiSanghName: "Rastriya Krishi Shramik Sangh Nepal",
+    krishiSanghDesc: "Championing agricultural workers and farmers for fair wages and sustainable practices.",
+    naiSanghName: "Rastriya Nai Shramik Sangh Nepal",
+    naiSanghDesc: "Advocating for barbers and hairdressers' professional rights and development.",
+    rangrohanSanghName: "Rastriya Rangrohan Shramik Sangh Nepal",
+    rangrohanSanghDesc: "Protecting painters and dyeing workers with focus on safety and fair pay.",
+    kasthaSanghName: "Rastriya Kastha Shramik Sangh Nepal",
+    kasthaSanghDesc: "Supporting carpenters and woodworkers in skill enhancement and rights protection.",
+    plumberSanghName: "Rastriya Plumber Shramik Sangh Nepal",
+    plumberSanghDesc: "Ensuring plumbers' fair wages and safe working environments.",
+    gharGrihstiSanghName: "Rastriya Ghar Grihsti Shramik Sangh Nepal",
+    gharGrihstiSanghDesc: "Upholding dignity and rights for domestic workers.",
+    nirmanSanghName: "Rastriya Nirman Shramik Sangh Nepal",
+    nirmanSanghDesc: "Advocating safety and compensation for construction workers.",
+    autoRickshawSanghName: "Rastriya Auto Rickshaw Chalak Shramik Sangh Nepal",
+    autoRickshawSanghDesc: "Fighting for fair fares and conditions for auto rickshaw drivers.",
+    kabadiSanghName: "Rastriya Kabadi Shramik Sangh Nepal",
+    kabadiSanghDesc: "Promoting dignified work for waste pickers and recyclers.",
+    ittaBhattaSanghName: "Rastriya Itta Bhatta Shramik Sangh Nepal",
+    ittaBhattaSanghDesc: "Supporting brick kiln workers in fair practices.",
+    shikshakSanghName: "Nepal Rastriya Shikshak Sangh",
+    shikshakSanghDesc: "Empowering teachers for better education and conditions.",
+    
+    // Industrial Units
+    industrialUnits: "Industrial Units",
+    industrialUnitsDesc: "Under Rastriya Audhogik Shramik Sangh Nepal, our two industrial units represent key sectors, driving worker rights in manufacturing.",
+    audhogikSanghName: "Rastriya Audhogik Shramik Sangh Nepal",
+    mountEverestBrewery: "Mount Everest Brewery",
+    mountEverestBreweryDesc: "Bharatpur, Chitwan - Advocating for beverage industry workers.",
+    varunBeverage: "Varun Beverage Pvt. Ltd.",
+    varunBeverageDesc: "Ramgram, Nawalparasi - Championing bottling sector labor rights.",
+    
+    // Buttons and Modals
+    viewDetails: "View Details",
+    unionLeadership: "Union Leadership",
+    
+    // Footer
+    quickLinks: "Quick Links",
+    aboutUs: "About Us",
+    latestUpdates: "Latest Updates",
+    ourEvents: "Our Events",
+    mediaCoverages: "Media Coverages",
+    contactUs: "Contact Us",
+    footerDescription: "Empowering workers through unity, advocacy, and action since 2080 B.S.",
+    copyright: "© {year} Rastriya Shramik Mahasangh Nepal. All rights reserved.",
+    
+    // Names
+    HiralalYadav: "Hiralal Yadav",
+    LaxmiBhatta: "Laxmi Bhatta",
+    GovindaPaudel: "Govinda Paudel",
+    RadhaKumariKayastha: "Radha Kumari Kayastha",
+    SitaramAgrawal: "Sitaram Agrawal",
+    GopalYadav: "Gopal Yadav",
+    SantoshKumarKarn: "Santosh Kumar Karn",
+    AjayPrasadKurmi: "Ajay Prasad Kurmi",
+    ChandraMohanChaudhary: "Chandra Mohan Chaudhary",
+    MandaKumariKarn: "Manda Kumari Karn",
+    JanakPrasadKurmi: "Janak Prasad Kurmi",
+    RajendraPrasadAcharya: "Rajendra Prasad Acharya",
+    NarayanPrasadPaudel: "Narayan Prasad Paudel",
+    JogendraPaswan: "Jogendra Paswan",
+    SunitaKumariYadav: "Sunita Kumari Yadav",
+    DharmavirArya: "Dharmavir Arya",
+    GudduShahBaniya: "Guddu Shah Baniya",
+    NiwasYadav: "Niwas Yadav",
+    DipendraThakur: "Dipendra Thakur",
+    SanjayKumarLal: "Sanjay Kumar Lal",
+    KBTamang: "K. B. Tamang",
+    RahulKumarJha: "Rahul Kumar Jha",
+    ChandrashekharJoshi: "Chandrashekhar Joshi",
+    MohanKhatri: "Mohan Khatri",
+    ChandrarYadav: "Chandrar Yadav",
+    GaneshRajbanshi: "Ganesh Rajbanshi",
+    UpendraNayak: "Upendra Nayak",
+    AnilAgrahari: "Anil Agrahari"
+  },
+  ne: {
+    // Navigation
+    home: "गृहपृष्ठ",
+    about: "हाम्रो बारेमा",
+    ourStory: "हाम्रो कथा",
+    organizationalStructure: "संगठनात्मक संरचना",
+    leadership: "नेतृत्व",
+    resources: "संसाधनहरू",
+    ourSlogans: "हाम्रा नाराहरू",
+    pressReleases: "प्रेस विज्ञप्तिहरू",
+    publications: "प्रकाशनहरू",
+    events: "कार्यक्रमहरू",
+    gallery: "ग्यालरी",
+    
+    // Page Title
+    pageTitle: "हाम्रो बारेमा",
+    pageSubtitle: "नेपालमा श्रमिक अधिकारको लागि हाम्रो इतिहास, लक्ष्य र प्रतिबद्धता अन्वेषण गर्नुहोस्",
+    
+    // Organization
+    organizationName: "राष्ट्रिय श्रमिक महासंघ",
+    organizationLocation: "नेपाल",
+    organizationFullName: "राष्ट्रिय श्रमिक महासंघ नेपाल",
+    
+    // Announcement
+    announcement1: "राष्ट्र हित!",
+    announcement2: "उद्योग हित!",
+    announcement3: "श्रमिक हित!",
+    
+    // Search and Menu
+    search: "खोज्नुहोस्",
+    menu: "मेनु",
+    close: "बन्द गर्नुहोस्",
+    
+    // Our Story Section
+    ourStory: "हाम्रो कथा",
+    storyParagraph1: "ज्ञान र परम्परामा डुबेको नेपाल, एउटा प्राचीन र पवित्र भूमि, लामो समयदेखि ऋषि र साधुहरूको शिक्षाद्वारा मार्गदर्शन गरिएको छ, जसले केवल भौतिक ज्ञान नभएर गहिरो नैतिक र नैतिक सिद्धान्तहरू प्रदान गरेका थिए। इतिहास भरि, संरचित ढाँचाहरूले शासक वर्ग र श्रमिकहरू बीचको नाजुको सन्तुलनलाई नियन्त्रित गरेका छन्, सामन्जस्य र प्रगतिको लागि नियमहरू र नैतिक मानदण्डहरू स्थापित गरेका छन्।",
+    storyHighlight: "श्रमिकलाई राष्ट्रियकरण गर्ने, उद्योगलाई श्रमिकीकरण गर्ने, राष्ट्रलाई औद्योगिकरण गर्ने",
+    storyParagraph2: "समकालीन नेपालमा, हाम्रो संविधानले, ट्रेड युनियन कानूनहरूसँग मेल खाएर, श्रमिक अधिकारहरूको संरक्षण र समग्र विकासको लागि प्रावधानहरू समावेश गर्दछ। श्रमिकहरू राष्ट्र निर्माणको रीढ हुन्; कुनै पनि देश तिनीहरूको अडिग प्रतिबद्धता र योगदान बिना अघि बढ्न सक्दैन। तर, श्रम संगठनहरूको वृद्धि भए पनि, धेरै राजनीतिक संबद्धतामा फसेका छन्, प्रायः पक्षीय लाभको लागि हेरफेर गरिन्छ। यो शोषणले ट्रेड युनियन आन्दोलनहरूको सफलतालाई अवरोध गरेको छ, श्रमिकहरूलाई मात्र मत बैंक बनाएर उनीहरूको आवश्यक अधिकारहरू र सुविधाहरूबाट वञ्चित गराउँदै छ।",
+    originalName: "राष्ट्रिय कृषि श्रमिक संघ नेपाल",
+    currentName: "राष्ट्रिय श्रमिक महासंघ नेपाल",
+    storyParagraph3: "यो चुनौती परिदृश्यमा, मूल रूपमा चैत्र ११, २०६८ मा राष्ट्रिय कृषि श्रमिक संघ नेपालको रूपमा स्थापित, बैशाख ११, २०८० मा राष्ट्रिय श्रमिक महासंघ नेपालको रूपमा विकसित भयो, नेपालको सार्वभौमिक माटो, यसको समृद्ध सांस्कृतिक विविधता, मोहक सम्पदा, र राष्ट्रिय पहिचानको संरक्षण गर्न र श्रमिक वर्गको जीवनस्तर माथि उठाउने साथै समग्र राष्ट्रिय विकासको लागि समर्पित स्वतन्त्र आशाको प्रतीकको रूपमा। हामी स्वतन्त्र शक्तिको रूपमा उभिएका छौं, नेपालको सार्वभौमिकता, सांस्कृतिक सम्पदा, र राष्ट्रिय पहिचानको संरक्षण गर्दै र राष्ट्रिय प्रगतिको लागि श्रमिकहरूको जीवनस्तर माथि उठाउँदैछौं।",
+    industrializingNation: "राष्ट्रलाई औद्योगिकरण गर्ने",
+    storyParagraph4: "राष्ट्रलाई औद्योगिकरण गर्ने, श्रमिक-उन्मुख उद्योगहरू सिर्जना गर्ने, र कामदारहरूलाई राष्ट्रियकरण गर्ने प्रतिबद्ध, हाम्रा सिद्धान्तहरूले राष्ट्रिय हित, औद्योगिक विकास, र श्रमिक अधिकारहरूलाई प्राथमिकता दिन्छन्। श्रमिकहरू द्वारा श्रमिकहरूको लागि सञ्चालित, हामी सरकार, व्यवसाय, राजनीति, विदेशी, वा व्यक्तिगत प्रभावहरूबाट मुक्त छौं, श्रम अधिवक्तामा वास्तविक स्वायत्ताको प्रतिनिधित्व गर्दछौं।",
+    
+    // Timeline
+    phasesOfStruggle: "संघर्षका चरणहरू",
+    timeline2067: "श्रमिक कल्याणको संरक्षण गर्ने उद्देश्यसहित राष्ट्रिय कृषि श्रमिक संघको रूपमा स्थापना",
+    timeline2077: "गन्ना किसानहरूको लागि निर्णायक विरोध प्रदर्शनको नेतृत्व गर्दै, चीनी मिल मालिकहरूलाई करोडौंको बकाया रकम तिर्न बाध्य बनाउँदै, कृषि क्षेत्रमा लामो समयदेखि चलिआएको गुनासोहरू सम्बोधन गर्दै",
+    timeline2080: "स्वतन्त्र संगठनको रूपमा राष्ट्रिय श्रमिक महासंघ नेपालको स्थापना",
+    timeline2080b: "भरुण पेयस्तल (पेप्सीकोला) र माउन्ट एभरेस्ट ब्रुअरी जस्ता प्रमुख उद्योगहरूमा श्रमिक अधिकारहरूको सक्रिय संरक्षण गर्दै, उचित तलब, रोजगारी सुरक्षा, र सुधारित काम गर्ने वातावरणको लागि निरन्तर आन्दोलनहरू मार्फत अगुवा देखाउँदै",
+    timeline2081: "मुख्य जिल्ला अधिकारीहरू मार्फत नेपाल सरकारलाई आठ-बुँदे माग पत्र पेश गर्दै, हाम्रो कृषि-प्रधान राष्ट्रमा किसानहरू र कृषि श्रमिकहरूले सामना गरेका चुनौतीहरूलाई झल्काउँदै, प्रणालीगत समाधानको आग्रह गर्दै",
+    timeline2081b: "अनौपचारिक क्षेत्रका श्रमिकहरूको जीवनस्तर सुधार गर्न विभिन्न जिल्लाहरूमा रोजगारी कार्यक्रमहरू कार्यान्वयन",
+    presentDay: "वर्तमान",
+    presentDayDesc: "श्रमिक आन्दोलनहरूको नेतृत्व जारी राख्दै, अनौपचारिक क्षेत्रका श्रमिकहरूको लागि जिल्ला स्तरीय रोजगारी कार्यक्रमहरू कार्यान्वयन गर्दै, र सामाजिक सुरक्षा सुनिश्चित गर्दै समग्र श्रमिक समृद्धिको लागि संघर्ष गर्दै",
+    storyCallToAction: "हाम्रो राष्ट्र पुनर्निर्माण गर्न, समृद्धिको वकालता गर्न, र श्रमिक अधिकारहरू र कल्याणलाई अघि बढाउन सबै श्रमिकहरू र मजदुरहरूलाई एकित्रित हुन आह्वान गर्दछौं।",
+    
+    // Organizational Structure
+    orgStructureDesc: "राष्ट्रिय श्रमिक महासंघ नेपाल नेपालका सबै प्रदेशहरूमा स्थापित प्रादेशिक र जिल्ला समितिहरूसहित ११ विशेषज्ञ युनियनहरू र २ औद्योगिक इकाइहरू समावेश गर्ने एक बलियो संघ हो। प्रत्येक सम्बद्ध युनियनसँग आफ्नै प्रादेशिक र जिल्ला समितिहरू छन्, जसले देशभरका श्रमिकहरूको लागि घासरुट स्तरको प्रतिनिधित्व र प्रभावकारी अधिवक्ता सुनिश्चित गर्दछ।",
+    
+    // Leadership
+    centralExecutiveCommittee: "केन्द्रीय कार्यकारिणी समिति",
+    centralExecutiveDesc: "केन्द्रीय कार्यकारिणी समिति (केन्द्रिय कार्य समिति) राष्ट्रिय श्रमिक महासंघ नेपाल भित्र निर्णय लिने उच्चतम निकायको रूपमा काम गर्दछ, जसमा दूरदर्शी नेताहरू समावेश छन् जसले श्रमिक सशक्तिकरणको लागि अडिग प्रतिबद्धतासहित हाम्रो अभियानलाई निर्देशन गर्दछन्।",
+    president: "अध्यक्ष",
+    vicePresident: "उपाध्यक्ष",
+    treasurer: "कोषाध्यक्ष",
+    generalSecretary: "महासचिव",
+    secretary: "सचिव",
+    headOfPublicRelations: "सार्वजनिक सम्बन्ध प्रमुख",
+    womenChief: "महिला प्रमुख",
+    trainingChief: "तालिम प्रमुख",
+    industryChief: "उद्योग प्रमुख",
+    member: "सदस्य",
+    sangathanSecretary: "संगठन सचिव",
+    
+    // State Level Leadership
+    stateLevelLeadership: "प्रदेशीय स्तरको नेतृत्व",
+    stateLevelDesc: "हाम्रो प्रदेशीय नेतृत्वले नेपालको विविध क्षेत्रहरूमा राष्ट्रिय श्रमिक महासंघ नेपालको भावना व्यक्त गर्दछ, हाम्रा मूल मूल्यहरू र अधिवक्ता प्रयासहरूको स्थानीय कार्यान्वयन सुनिश्चित गर्दछ।",
+    bagmatiProvince: "बाग्मती प्रदेश",
+    madheshProvince: "मधेश प्रदेश",
+    koshiProvince: "कोशी प्रदेश",
+    lumbiniProvince: "लुम्बिनी प्रदेश",
+    coordinator: "समन्वयक",
+    
+    // Unions
+    affiliatedUnions: "हाम्रा सम्बद्ध संघहरू",
+    affiliatedUnionsDesc: "राष्ट्रिय श्रमिक महासंघ नेपालले ११ विशेषज्ञ संघहरूलाई एकीकृत गर्दछ, प्रत्येकले भिन्न-भिन्न क्षेत्रहरूमा श्रमिकहरूको वकालत गर्दछ। उनीहरूको अभियान र नेतृत्व अन्वेषण गर्नुहोस्।",
+    krishiSanghName: "राष्ट्रिय कृषि श्रमिक संघ नेपाल",
+    krishiSanghDesc: "कृषि श्रमिकहरू र किसानहरूको लागि उचित तलब र टिकाऊ अभ्यासहरूको वकालत गर्दै",
+    naiSanghName: "राष्ट्रिय नाई श्रमिक संघ नेपाल",
+    naiSanghDesc: "नाई र हेयरड्रेसरहरूको व्यावसायिक अधिकार र विकासको लागि वकालत गर्दै",
+    rangrohanSanghName: "राष्ट्रिय रंगरोहन श्रमिक संघ नेपाल",
+    rangrohanSanghDesc: "सुरक्षा र उचित तलबमा ध्यान केन्द्रित गर्दै चित्रकारहरू र रंगाई श्रमिकहरूको संरक्षण गर्दै",
+    kasthaSanghName: "राष्ट्रिय काष्ठ श्रमिक संघ नेपाल",
+    kasthaSanghDesc: "काठमिस्टहरू र वुडवर्करहरूको कौशल विकास र अधिकार संरक्षणमा समर्थन गर्दै",
+    plumberSanghName: "राष्ट्रिय प्लम्बर श्रमिक संघ नेपाल",
+    plumberSanghDesc: "प्लम्बरहरूको उचित तलब र सुरक्षित काम गर्ने वातावरण सुनिश्चित गर्दै",
+    gharGrihstiSanghName: "राष्ट्रिय घर गृहस्थी श्रमिक संघ नेपाल",
+    gharGrihstiSanghDesc: "घरेलु श्रमिकहरूको गरिमा र अधिकारहरूको प्रतिष्ठापना गर्दै",
+    nirmanSanghName: "राष्ट्रिय निर्माण श्रमिक संघ नेपाल",
+    nirmanSanghDesc: "निर्माण श्रमिकहरूको लागि सुरक्षा र क्षतिपूर्तिको वकालत गर्दै",
+    autoRickshawSanghName: "राष्ट्रिय अटो रिक्सा चालक श्रमिक संघ नेपाल",
+    autoRickshawSanghDesc: "अटो रिक्सा चालकहरूको लागि उचित किराया र सर्तहरूको लडाई गर्दै",
+    kabadiSanghName: "राष्ट्रिय कबाडी श्रमिक संघ नेपाल",
+    kabadiSanghDesc: "फोहोरा संकलनकर्ताहरू र पुन: प्रयोग गर्नेहरूको लागि गरिमापूर्ण कामको प्रवर्द्धन गर्दै",
+    ittaBhattaSanghName: "राष्ट्रिय इट्टा भट्टा श्रमिक संघ नेपाल",
+    ittaBhattaSanghDesc: "इट्टा भट्टा श्रमिकहरूको लागि उचित अभ्यासहरूमा समर्थन गर्दै",
+    shikshakSanghName: "नेपाल राष्ट्रिय शिक्षक संघ",
+    shikshakSanghDesc: "राम्रो शिक्षा र सर्तहरूको लागि शिक्षकहरूलाई सशक्त बनाउँदै",
+    
+    // Industrial Units
+    industrialUnits: "औद्योगिक इकाइहरू",
+    industrialUnitsDesc: "राष्ट्रिय औद्योगिक श्रमिक संघ नेपाल अन्तर्गत, हाम्रा दुई औद्योगिक इकाइहरूले प्रमुख क्षेत्रहरूको प्रतिनिधित्व गर्दछन्, उत्पादनमा श्रमिक अधिकारहरूलाई अगाडि बढाउँदै",
+    audhogikSanghName: "राष्ट्रिय औद्योगिक श्रमिक संघ नेपाल",
+    mountEverestBrewery: "माउन्ट एभरेस्ट ब्रुअरी",
+    mountEverestBreweryDesc: "भरतपुर, चितवन - पेय पदार्थ उद्योग श्रमिकहरूको लागि वकालत गर्दै",
+    varunBeverage: "वरुण बेभरेज प्रा. लि.",
+    varunBeverageDesc: "रामग्राम, नवलपरासी - बोतलिङ क्षेत्र श्रमिक अधिकारहरूको वकालत गर्दै",
+    
+    // Buttons and Modals
+    viewDetails: "विवरण हेर्नुहोस्",
+    unionLeadership: "संघ नेतृत्व",
+    
+    // Footer
+    quickLinks: "द्रुत लिङ्कहरू",
+    aboutUs: "हाम्रो बारेमा",
+    latestUpdates: "नवीनतम अपडेटहरू",
+    ourEvents: "हाम्रा कार्यक्रमहरू",
+    mediaCoverages: "मिडिया कभरेजहरू",
+    contactUs: "सम्पर्क गर्नुहोस्",
+    footerDescription: "बि.सं. २०८० देखि एकता, अधिवक्ता, र कार्यबाट श्रमिकहरूलाई सशक्त बनाउने काममा समर्पित।",
+    copyright: "© {year} सर्वाधिकार राष्ट्रिय श्रमिक महासंघमा सुरक्षित",
+    
+    // Names
+    HiralalYadav: "हीरालाल यादव",
+    LaxmiBhatta: "लक्ष्मी भट्ट",
+    GovindaPaudel: "गोविन्द पौडेल",
+    RadhaKumariKayastha: "राधा कुमारी कायस्थ",
+    SitaramAgrawal: "सीताराम अग्रवाल",
+    GopalYadav: "गोपाल यादव",
+    SantoshKumarKarn: "सन्तोष कुमार कर्ण",
+    AjayPrasadKurmi: "अजय प्रसाद कुर्मी",
+    ChandraMohanChaudhary: "चन्द्रमोहन चौधरी",
+    MandaKumariKarn: "मण्डा कुमारी कर्ण",
+    JanakPrasadKurmi: "जनक प्रसाद कुर्मी",
+    RajendraPrasadAcharya: "राजेन्द्र प्रसाद आचार्य",
+    NarayanPrasadPaudel: "नारायण प्रसाद पौडेल",
+    JogendraPaswan: "जोगेन्द्र पासवान",
+    SunitaKumariYadav: "सुनिता कुमारी यादव",
+    DharmavirArya: "धर्मवीर आर्य",
+    GudduShahBaniya: "गुड्डू शाह बनिया",
+    NiwasYadav: "निवास यादव",
+    DipendraThakur: "दीपेन्द्र ठाकुर",
+    SanjayKumarLal: "संजय कुमार लाल",
+    KBTamang: "के. बी. तामाङ",
+    RahulKumarJha: "राहुल कुमार झा",
+    ChandrashekharJoshi: "चन्द्रशेखर जोशी",
+    MohanKhatri: "मोहन खत्री",
+    ChandrarYadav: "चन्द्रार यादव",
+    GaneshRajbanshi: "गणेश राजवंशी",
+    UpendraNayak: "उपेन्द्र नायक",
+    AnilAgrahari: "अनिल अग्रहरी"
+  }
+};
+
+// Function to convert Arabic numerals to Nepali numerals
+function convertToNepaliNumerals(text) {
+  const arabicNumerals = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+  const nepaliNumerals = ['०', '१', '२', '३', '४', '५', '६', '७', '८', '९'];
+  
+  let convertedText = text;
+  for (let i = 0; i < arabicNumerals.length; i++) {
+    const regex = new RegExp(arabicNumerals[i], 'g');
+    convertedText = convertedText.replace(regex, nepaliNumerals[i]);
+  }
+  
+  return convertedText;
+}
+
+// Function to convert Nepali numerals to Arabic numerals
+function convertToArabicNumerals(text) {
+  const arabicNumerals = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+  const nepaliNumerals = ['०', '१', '२', '३', '४', '५', '६', '७', '८', '९'];
+  
+  let convertedText = text;
+  for (let i = 0; i < nepaliNumerals.length; i++) {
+    const regex = new RegExp(nepaliNumerals[i], 'g');
+    convertedText = convertedText.replace(regex, arabicNumerals[i]);
+  }
+  
+  return convertedText;
+}
+
+// Function to convert month names to Nepali
+function convertMonthToNepali(monthName) {
+  const monthMap = {
+    'Baishakh': 'बैशाख',
+    'Jestha': 'जेष्ठ',
+    'Asar': 'आषाढ',
+    'Shrawan': 'श्रावण',
+    'Bhadra': 'भाद्र',
+    'Ashwin': 'अश्विन',
+    'Kartik': 'कार्तिक',
+    'Mangsir': 'मंसिर',
+    'Poush': 'पौष',
+    'Magh': 'माघ',
+    'Falgun': 'फाल्गुन',
+    'Chaitra': 'चैत्र',
+    'Asoj': 'असोज'
+  };
+  
+  return monthMap[monthName] || monthName;
+}
+
+// Function to update the language
+function updateLanguage(lang) {
+  // Save the language preference to localStorage
+  localStorage.setItem('preferredLanguage', lang);
+  
+  // Update the language toggle buttons
+  const langEn = document.getElementById('lang-en');
+  const langNe = document.getElementById('lang-ne');
+  const mobileLangEn = document.getElementById('mobile-lang-en');
+  const mobileLangNe = document.getElementById('mobile-lang-ne');
+  
+  if (lang === 'en') {
+    // Desktop language toggle
+    if (langEn && langNe) {
+      langEn.classList.add('bg-white', 'text-orange');
+      langEn.classList.remove('text-white');
+      langNe.classList.remove('bg-white', 'text-orange');
+      langNe.classList.add('text-white');
+    }
+    
+    // Mobile language toggle
+    if (mobileLangEn && mobileLangNe) {
+      mobileLangEn.classList.add('bg-white', 'text-orange');
+      mobileLangEn.classList.remove('text-white');
+      mobileLangNe.classList.remove('bg-white', 'text-orange');
+      mobileLangNe.classList.add('text-white');
+    }
+  } else {
+    // Desktop language toggle
+    if (langEn && langNe) {
+      langNe.classList.add('bg-white', 'text-orange');
+      langNe.classList.remove('text-white');
+      langEn.classList.remove('bg-white', 'text-orange');
+      langEn.classList.add('text-white');
+    }
+    
+    // Mobile language toggle
+    if (mobileLangEn && mobileLangNe) {
+      mobileLangNe.classList.add('bg-white', 'text-orange');
+      mobileLangNe.classList.remove('text-white');
+      mobileLangEn.classList.remove('bg-white', 'text-orange');
+      mobileLangEn.classList.add('text-white');
+    }
+  }
+  
+  // Update the content based on the selected language
+  const translation = translations[lang];
+  
+  // Update all elements with data-i18n attribute
+  document.querySelectorAll('[data-i18n]').forEach(element => {
+    const key = element.getAttribute('data-i18n');
+    if (translation[key]) {
+      // Special handling for copyright with year placeholder
+      if (key === 'copyright') {
+        const currentYear = new Date().getFullYear();
+        element.innerHTML = translation[key].replace('{year}', currentYear);
+      } else {
+        element.textContent = translation[key];
+      }
+    }
+  });
+  
+  // Update elements with data-i18n-placeholder attribute
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
+    const key = element.getAttribute('data-i18n-placeholder');
+    if (translation[key]) {
+      element.placeholder = translation[key];
+    }
+  });
+  
+  // Update elements with data-i18n-aria-label attribute
+  document.querySelectorAll('[data-i18n-aria-label]').forEach(element => {
+    const key = element.getAttribute('data-i18n-aria-label');
+    if (translation[key]) {
+      element.setAttribute('aria-label', translation[key]);
+    }
+  });
+  
+  // Update names with data-i18n-name attribute
+  document.querySelectorAll('[data-i18n-name]').forEach(element => {
+    const key = element.getAttribute('data-i18n-name');
+    if (translation[key]) {
+      element.textContent = translation[key];
+    }
+  });
+  
+  // Update dates
+  document.querySelectorAll('.timeline-title').forEach(dateElement => {
+    const originalDate = dateElement.getAttribute('data-date');
+    const nepaliDate = dateElement.getAttribute('data-date-ne');
+    
+    if (lang === 'ne' && nepaliDate) {
+      dateElement.textContent = nepaliDate;
+    } else if (lang === 'en' && originalDate) {
+      dateElement.textContent = originalDate;
+    }
+  });
+  
+  // Update phone numbers with Nepali numerals
+  document.querySelectorAll('[data-phone]').forEach(phoneElement => {
+    const originalPhone = phoneElement.getAttribute('data-phone');
+    if (originalPhone) {
+      if (lang === 'ne') {
+        phoneElement.textContent = convertToNepaliNumerals(originalPhone);
+      } else {
+        phoneElement.textContent = originalPhone;
+      }
+    }
+  });
+  
+  // Update address with Nepali numerals
+  document.querySelectorAll('[data-address]').forEach(addressElement => {
+    const originalAddress = addressElement.getAttribute('data-address');
+    if (originalAddress) {
+      if (lang === 'ne') {
+        // Convert address to Nepali
+        let nepaliAddress = originalAddress;
+        // Convert place names
+        nepaliAddress = nepaliAddress.replace(/Keshavdham/g, 'केशवधाम');
+        nepaliAddress = nepaliAddress.replace(/Guheswari Marg/g, 'गुह्येश्वरी मार्ग');
+        nepaliAddress = nepaliAddress.replace(/Kathmandu/g, 'काठमाडौं');
+        nepaliAddress = nepaliAddress.replace(/Nepal/g, 'नेपाल');
+        
+        // Convert numerals to Nepali
+        nepaliAddress = convertToNepaliNumerals(nepaliAddress);
+        
+        addressElement.textContent = nepaliAddress;
+      } else {
+        addressElement.textContent = originalAddress;
+      }
+    }
+  });
+  
+  // Update HTML lang attribute
+  document.documentElement.lang = lang;
+  
+  // Add or remove nepali-font class to body for font switching
+  if (lang === 'ne') {
+    document.body.classList.add('nepali-font');
+  } else {
+    document.body.classList.remove('nepali-font');
+  }
+  
+  // Update page title and meta tags for SEO
+  if (lang === 'ne') {
+    document.title = "हाम्रो बारेमा - राष्ट्रिय श्रमिक महासंघ नेपाल";
+    document.querySelector('meta[name="description"]').setAttribute('content', 'राष्ट्रिय श्रमिक महासंघ नेपालको इतिहास, अभियान, नेतृत्व, र संगठनात्मक संरचनाको बारेमा जान्नुहोस्। नेपाल भरि श्रमिकहरूलाई सशक्त बनाउने हाम्रो यात्रा अन्वेषण गर्नुहोस्।');
+    document.querySelector('meta[property="og:title"]').setAttribute('content', 'हाम्रो बारेमा - राष्ट्रिय श्रमिक महासंघ नेपाल');
+    document.querySelector('meta[property="og:description"]').setAttribute('content', 'राष्ट्रिय श्रमिक महासंघ नेपालको इतिहास, अभियान, नेतृत्व, र संगठनात्मक संरचनाको बारेमा जान्नुहोस्।');
+    document.querySelector('meta[property="twitter:title"]').setAttribute('content', 'हाम्रो बारेमा - राष्ट्रिय श्रमिक महासंघ नेपाल');
+    document.querySelector('meta[property="twitter:description"]').setAttribute('content', 'राष्ट्रिय श्रमिक महासंघ नेपालको इतिहास, अभियान, नेतृत्व, र संगठनात्मक संरचनाको बारेमा जान्नुहोस्।');
+  } else {
+    document.title = "About Us - Rastriya Shramik Mahasangh Nepal";
+    document.querySelector('meta[name="description"]').setAttribute('content', 'Learn about Rastriya Shramik Mahasangh Nepal\'s history, mission, leadership, and organizational structure. Discover our journey in empowering workers across Nepal.');
+    document.querySelector('meta[property="og:title"]').setAttribute('content', 'About Us - Rastriya Shramik Mahasangh Nepal');
+    document.querySelector('meta[property="og:description"]').setAttribute('content', 'Learn about Rastriya Shramik Mahasangh Nepal\'s history, mission, leadership, and organizational structure.');
+    document.querySelector('meta[property="twitter:title"]').setAttribute('content', 'About Us - Rastriya Shramik Mahasangh Nepal');
+    document.querySelector('meta[property="twitter:description"]').setAttribute('content', 'Learn about Rastriya Shramik Mahasangh Nepal\'s history, mission, leadership, and organizational structure.');
+  }
+}
+
+// Check for saved language preference or default to English
+const savedLanguage = localStorage.getItem('preferredLanguage') || 'en';
+
 // Initialize AOS
 AOS.init({
   duration: 1000,
@@ -2078,6 +2618,39 @@ AOS.init({
 });
 
 document.addEventListener('DOMContentLoaded', function() {
+  // Set the initial language
+  updateLanguage(savedLanguage);
+  
+  // Language toggle event listeners
+  const langEn = document.getElementById('lang-en');
+  const langNe = document.getElementById('lang-ne');
+  const mobileLangEn = document.getElementById('mobile-lang-en');
+  const mobileLangNe = document.getElementById('mobile-lang-ne');
+  
+  if (langEn) {
+    langEn.addEventListener('click', function() {
+      updateLanguage('en');
+    });
+  }
+  
+  if (langNe) {
+    langNe.addEventListener('click', function() {
+      updateLanguage('ne');
+    });
+  }
+  
+  if (mobileLangEn) {
+    mobileLangEn.addEventListener('click', function() {
+      updateLanguage('en');
+    });
+  }
+  
+  if (mobileLangNe) {
+    mobileLangNe.addEventListener('click', function() {
+      updateLanguage('ne');
+    });
+  }
+  
   // Mobile Menu Toggle
   const mobileMenuButton = document.getElementById('mobile-menu-button');
   const closeMobileMenu = document.getElementById('close-mobile-menu');
@@ -2128,50 +2701,6 @@ document.addEventListener('DOMContentLoaded', function() {
       searchBar.querySelector('input').focus();
     }
   });
-  
-  // Language Toggle Functionality
-  const langEn = document.getElementById('lang-en');
-  const langNe = document.getElementById('lang-ne');
-  const mobileLangEn = document.getElementById('mobile-lang-en');
-  const mobileLangNe = document.getElementById('mobile-lang-ne');
-  
-  // Desktop language toggle
-  if (langEn && langNe) {
-    langEn.addEventListener('click', function() {
-      langEn.classList.add('bg-white', 'text-orange');
-      langEn.classList.remove('text-white');
-      langNe.classList.remove('bg-white', 'text-orange');
-      langNe.classList.add('text-white');
-      console.log('Language changed to English');
-    });
-    
-    langNe.addEventListener('click', function() {
-      langNe.classList.add('bg-white', 'text-orange');
-      langNe.classList.remove('text-white');
-      langEn.classList.remove('bg-white', 'text-orange');
-      langEn.classList.add('text-white');
-      console.log('Language changed to Nepali');
-    });
-  }
-  
-  // Mobile language toggle
-  if (mobileLangEn && mobileLangNe) {
-    mobileLangEn.addEventListener('click', function() {
-      mobileLangEn.classList.add('bg-white', 'text-orange');
-      mobileLangEn.classList.remove('text-white');
-      mobileLangNe.classList.remove('bg-white', 'text-orange');
-      mobileLangNe.classList.add('text-white');
-      console.log('Language changed to English');
-    });
-    
-    mobileLangNe.addEventListener('click', function() {
-      mobileLangNe.classList.add('bg-white', 'text-orange');
-      mobileLangNe.classList.remove('text-white');
-      mobileLangEn.classList.remove('bg-white', 'text-orange');
-      mobileLangEn.classList.add('text-white');
-      console.log('Language changed to Nepali');
-    });
-  }
   
   // Touch device dropdown handling
   const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
@@ -2245,111 +2774,345 @@ document.addEventListener('DOMContentLoaded', function() {
   // Union data (updated descriptions for eloquence)
   const unionData = {
     krishi: {
-      title: "Rastriya Krishi Shramik Sangh Nepal",
-      description: "As the premier union for agricultural laborers and farmers, we champion sustainable practices, fair remuneration, and access to vital resources, having led triumphant campaigns like the 2077 B.S. sugarcane farmers' protest that secured crores in pending payments.",
+      title: {
+        en: "Rastriya Krishi Shramik Sangh Nepal",
+        ne: "राष्ट्रिय कृषि श्रमिक संघ नेपाल"
+      },
+      description: {
+        en: "As the premier union for agricultural laborers and farmers, we champion sustainable practices, fair remuneration, and access to vital resources, having led triumphant campaigns like the 2077 B.S. sugarcane farmers' protest that secured crores in pending payments.",
+        ne: "कृषि श्रमिकहरू र किसानहरूको लागि प्रमुख संघको रूपमा, हामी टिकाऊ अभ्यासहरू, उचित पारिश्रमिक, र आवश्यक स्रोतहरूमा पहुँचको वकालत गर्दछौं, जसले २०७७ बि.सं.को गन्ना किसान विरोध जस्ता विजयी अभियानहरूको नेतृत्व गरेको थियो, जसले बकाया भुक्तानीमा करोडौंको रकम सुरक्षित गरेको थियो।"
+      },
       leaders: [
-        { name: "Mr. Govinda Paudel", designation: "Acting President", image: "About/Members/man.png" },
-        { name: "", designation: "Vice President", image: "About/Members/man.png" },
-        { name: "Mr. Gopal Yadav", designation: "General Secretary", image: "About/Members/Unions/Krishi Sangh/Mem_1.png" },
-        { name: "Smt. Januka Dangal", designation: "Secretary", image: "About/Members/woman.png" },
-        { name: "Mr. Baidyanath Sharma", designation: "Treasurer", image: "About/Members/man.png" },
-        { name: "Mr. Kamal K.C.", designation: "Member", image: "About/Members/man.png" },
-        { name: "Smt. Riwol Devi Mandal", designation: "Member", image: "About/Members/woman.png" },
-        { name: "Mr. Vikas Giri", designation: "Member", image: "About/Members/man.png" },
-        { name: "Mr. Satish Mishra", designation: "Member", image: "About/Members/man.png" }
+        { 
+          name: { en: "Mr. Govinda Paudel", ne: "गोविन्द पौडेल" }, 
+          designation: { en: "Acting President", ne: "कार्यवाहक अध्यक्ष" }, 
+          image: "About/Members/man.png" 
+        },
+        { 
+          name: { en: "", ne: "" }, 
+          designation: { en: "Vice President", ne: "उपाध्यक्ष" }, 
+          image: "About/Members/man.png" 
+        },
+        { 
+          name: { en: "Mr. Gopal Yadav", ne: "गोपाल यादव" }, 
+          designation: { en: "General Secretary", ne: "महासचिव" }, 
+          image: "About/Members/Unions/Krishi Sangh/Mem_1.png" 
+        },
+        { 
+          name: { en: "Smt. Januka Dangal", ne: "जनुका डंगाल" }, 
+          designation: { en: "Secretary", ne: "सचिव" }, 
+          image: "About/Members/woman.png" 
+        },
+        { 
+          name: { en: "Mr. Baidyanath Sharma", ne: "बैद्यनाथ शर्मा" }, 
+          designation: { en: "Treasurer", ne: "कोषाध्यक्ष" }, 
+          image: "About/Members/man.png" 
+        },
+        { 
+          name: { en: "Mr. Kamal K.C.", ne: "कमल के.सी." }, 
+          designation: { en: "Member", ne: "सदस्य" }, 
+          image: "About/Members/man.png" 
+        },
+        { 
+          name: { en: "Smt. Riwol Devi Mandal", ne: "रिवोल देवी मण्डल" }, 
+          designation: { en: "Member", ne: "सदस्य" }, 
+          image: "About/Members/woman.png" 
+        },
+        { 
+          name: { en: "Mr. Vikas Giri", ne: "विकास गिरी" }, 
+          designation: { en: "Member", ne: "सदस्य" }, 
+          image: "About/Members/man.png" 
+        },
+        { 
+          name: { en: "Mr. Satish Mishra", ne: "सतीश मिश्र" }, 
+          designation: { en: "Member", ne: "सदस्य" }, 
+          image: "About/Members/man.png" 
+        }
       ]
     },
     nai: {
-      title: "Rastriya Nai Shramik Sangh Nepal",
-      description: "Committed to uplifting the profession of barbers and hairdressers by advocating for fair wages, secure livelihoods, and social recognition, while promoting advanced skill development, ethical practices, and safe, dignified workplaces. Through unity and empowerment, we strive to ensure that every professional in this field can work with pride and contribute to the cultural and economic fabric of Nepal.",
+      title: {
+        en: "Rastriya Nai Shramik Sangh Nepal",
+        ne: "राष्ट्रिय नाई श्रमिक संघ नेपाल"
+      },
+      description: {
+        en: "Committed to uplifting the profession of barbers and hairdressers by advocating for fair wages, secure livelihoods, and social recognition, while promoting advanced skill development, ethical practices, and safe, dignified workplaces. Through unity and empowerment, we strive to ensure that every professional in this field can work with pride and contribute to the cultural and economic fabric of Nepal.",
+        ne: "नाई र हेयरड्रेसरहरूको पेशालाई उचित तलब, सुरक्षित जीविकोपार्जन, र सामाजिक मान्यताको लागि वकालत गर्न प्रतिबद्ध गर्दै उनीहरूको पेशालाई उन्नति गर्न प्रतिबद्ध छौं। उन्नत कौशल विकास, नैतिक अभ्यासहरू, र सुरक्षित, गरिमापूर्ण कार्यस्थलहरूलाई प्रवर्द्धन गर्दै। एकता र सशक्तिकरण मार्फत, हामी यस क्षेत्रका हरेक व्यावसायिकले गर्व गरी काम गर्न सक्छन् र नेपालको सांस्कृतिक र आर्थिक संरचनामा योगदान गर्न सक्छन् भन्ने सुनिश्चित गर्नको लागि प्रयास गर्दछौं।"
+      },
       leaders: [
-        { name: "Mr. Birendra Thakur", designation: "President", image: "About/Members/man.png" },
-        { name: "Mr. Dipendra Thakur", designation: "Secretary", image: "About/Members/man.png" }
+        { 
+          name: { en: "Mr. Birendra Thakur", ne: "बीरेन्द्र ठाकुर" }, 
+          designation: { en: "President", ne: "अध्यक्ष" }, 
+          image: "About/Members/man.png" 
+        },
+        { 
+          name: { en: "Mr. Dipendra Thakur", ne: "दीपेन्द्र ठाकुर" }, 
+          designation: { en: "Secretary", ne: "सचिव" }, 
+          image: "About/Members/man.png" 
+        }
       ]
     },
     rangrohan: {
-      title: "Rastriya Rangrohan Shramik Sangh Nepal",
-      description: "Dedicated to advancing the profession of painters and decorators by advocating for fair labor rights, improved safety standards, and professional recognition. We work to enhance skills through training, promote the use of quality materials and sustainable techniques, and ensure dignified working conditions. Through solidarity and collective action, we strive to empower every member to achieve economic stability, creative excellence, and a respected place in Nepal’s growing construction and design sector.",
+      title: {
+        en: "Rastriya Rangrohan Shramik Sangh Nepal",
+        ne: "राष्ट्रिय रंगरोहन श्रमिक संघ नेपाल"
+      },
+      description: {
+        en: "Dedicated to advancing the profession of painters and decorators by advocating for fair labor rights, improved safety standards, and professional recognition. We work to enhance skills through training, promote the use of quality materials and sustainable techniques, and ensure members have access to social security and dignified livelihoods. Through solidarity and collective action, we aim to empower every painter to work with dignity, achieve economic stability, and play a vital role in Nepal's growing construction and design sector.",
+        ne: "चित्रकारहरू र सजावटीहरूको पेशालाई उचित श्रमिक अधिकारहरू, सुधारित सुरक्षा मापदण्डहरू, र व्यावसायिक मान्यताको लागि वकालत गर्न प्रतिबद्ध गर्दै। हामी तालिम मार्फत कौशल वृद्धि गर्न, गुणस्तरीय सामग्री र टिकाउ तकनीकहरूको प्रयोगलाई प्रवर्द्धन गर्न, र सदस्यहरूलाई सामाजिक सुरक्षा र गरिमापूर्ण जीविकोपार्जनमा पहुँच सुनिश्चित गर्न काम गर्दछौं। एकता र सामूहिक कार्यबाट, हामी हरेक चित्रकारलाई गरिमामा काम गर्न, आर्थिक स्थिरता प्राप्त गर्न, र नेपालको बढ्दो निर्माण र डिजाइन क्षेत्रमा महत्त्वपूर्ण भूमिका खेल्न सशक्त बनाउने लक्ष्य राख्दछौं।"
+      },
       leaders: [
-        { name: "Hari Ji", designation: "President", image: "About/Members/man.png" },
-        { name: "Mr. Chandra Mohan Chaudhary", designation: "Secretary", image: "About/Members/man.png" }
+        { 
+          name: { en: "Hari Ji", ne: "हरी जी" }, 
+          designation: { en: "President", ne: "अध्यक्ष" }, 
+          image: "About/Members/man.png" 
+        },
+        { 
+          name: { en: "Mr. Chandra Mohan Chaudhary", ne: "चन्द्रमोहन चौधरी" }, 
+          designation: { en: "Secretary", ne: "सचिव" }, 
+          image: "About/Members/man.png" 
+        }
       ]
     },
     kastha: {
-      title: "Rastriya Kastha Shramik Sangh Nepal",
-      description: "Committed to empowering carpenters, woodworkers, and furniture makers by championing fair wages, safe working conditions, and social recognition for their craft. We work to preserve traditional woodworking skills while embracing modern tools and sustainable practices, ensuring that members can compete in evolving markets. Through training, advocacy, and unity, we aim to create a future where every Kastha Shramik can work with dignity, achieve economic stability, and contribute to the cultural and economic growth of Nepal’s woodworking and furniture industry.",
+      title: {
+        en: "Rastriya Kastha Shramik Sangh Nepal",
+        ne: "राष्ट्रिय काष्ठ श्रमिक संघ नेपाल"
+      },
+      description: {
+        en: "Committed to empowering carpenters, woodworkers, and furniture makers by championing fair wages, safe working conditions, and social recognition for their craft. We work to preserve traditional woodworking skills while embracing modern tools and sustainable practices, ensuring that members can compete in evolving markets. Through training, advocacy, and unity, we aim to create a future where every Kastha Shramik can work with dignity, achieve economic stability, and contribute to the cultural and economic growth of Nepal's woodworking and furniture industry.",
+        ne: "ठपासी, वुडवर्करहरू, र फर्निचर निर्माताहरूलाई उनीहरूको कलाको लागि उचित तलब, सुरक्षित काम गर्ने वातावरण, र सामाजिक मान्यताको वकालत गर्न प्रतिबद्ध गर्दै। हामी परम्परागत वुडवर्किङ कौशलहरूलाई संरक्षण गर्दै आधुनिक उपकरणहरू र टिकाउ अभ्यासहरूलाई अपनाउँदै, सदस्यहरू विकसित बजारहरूमा प्रतिस्पर्धा गर्न सक्छन् भन्ने सुनिश्चित गर्दछौं। तालिम, अधिवक्ता, र एकता मार्फत, हामी हरेक काष्ठ श्रमिकले गरिमामा काम गर्न, आर्थिक स्थिरता प्राप्त गर्न, र नेपालको वुडवर्किङ र फर्निचर उद्योगको सांस्कृतिक र आर्थिक वृद्धिमा योगदान गर्न सक्ने भविष्य निर्माण गर्ने लक्ष्य राख्दछौं।"
+      },
       leaders: [
-        { name: "Mr. Anil Ojha", designation: "President", image: "About/Members/man.png" },
-        { name: "Mr. Niwas Yadav", designation: "Secretary", image: "About/Members/man.png" }
+        { 
+          name: { en: "Mr. Anil Ojha", ne: "अनिल ओझा" }, 
+          designation: { en: "President", ne: "अध्यक्ष" }, 
+          image: "About/Members/man.png" 
+        },
+        { 
+          name: { en: "Mr. Niwas Yadav", ne: "निवास यादव" }, 
+          designation: { en: "Secretary", ne: "सचिव" }, 
+          image: "About/Members/man.png" 
+        }
       ]
     },
     plumber: {
-      title: "Rastriya Plumber Shramik Sangh Nepal",
-      description: "Dedicated to uplifting plumbers and sanitation workers by advocating for fair wages, safe workplaces, and professional recognition for their essential services. We strive to enhance skills through modern training, promote the use of quality materials and sustainable water management practices, and ensure members have access to social security and dignified livelihoods. Through unity, advocacy, and continuous improvement, we aim to empower every plumber to work with pride, contribute to public health, and play a vital role in Nepal’s infrastructure and community well-being.",
+      title: {
+        en: "Rastriya Plumber Shramik Sangh Nepal",
+        ne: "राष्ट्रिय प्लम्बर श्रमिक संघ नेपाल"
+      },
+      description: {
+        en: "Dedicated to uplifting plumbers and sanitation workers by advocating for fair wages, safe workplaces, and professional recognition for their essential services. We strive to enhance skills through modern training, promote the use of quality materials and sustainable water management practices, and ensure members have access to social security and dignified livelihoods. Through unity, advocacy, and continuous improvement, we aim to empower every plumber to work with pride, contribute to public health, and play a vital role in Nepal's infrastructure and community well-being.",
+        ne: "प्लम्बरहरू र स्वच्छता श्रमिकहरूलाई उनीहरूको आवश्यक सेवाहरूको लागि उचित तलब, सुरक्षित कार्यस्थल, र व्यावसायिक मान्यताको वकालत गर्न प्रतिबद्ध गर्दै। हामी आधुनिक तालिम मार्फत कौशल वृद्धि गर्न, गुणस्तरीय सामग्री र टिकाउ पानी व्यवस्थापन अभ्यासहरूको प्रयोगलाई प्रवर्द्धन गर्न, र सदस्यहरूलाई सामाजिक सुरक्षा र गरिमापूर्ण जीविकोपार्जनमा पहुँच सुनिश्चित गर्न प्रयास गर्दछौं। एकता, अधिवक्ता, र निरन्तर सुधार मार्फत, हामी हरेक प्लम्बरलाई गर्व गरी काम गर्न, सार्वजनिक स्वास्थ्यमा योगदान गर्न, र नेपालको पूर्वाधार र समुदाय कल्याणमा महत्त्वपूर्ण भूमिका खेल्न सशक्त बनाउने लक्ष्य राख्दछौं।"
+      },
       leaders: [
-        { name: "", designation: "President", image: "About/Members/man.png" },
-        { name: "", designation: "Vice President", image: "About/Members/man.png" }
+        { 
+          name: { en: "", ne: "" }, 
+          designation: { en: "President", ne: "अध्यक्ष" }, 
+          image: "About/Members/man.png" 
+        },
+        { 
+          name: { en: "", ne: "" }, 
+          designation: { en: "Vice President", ne: "उपाध्यक्ष" }, 
+          image: "About/Members/man.png" 
+        }
       ]
     },
     ghar: {
-      title: "Rastriya Ghar Grihsti Shramik Sangh Nepal",
-      description: "Committed to empowering domestic workers by advocating for fair wages, safe and respectful working environments, and legal protections that recognize their invaluable contributions to households across Nepal. We focus on skill development, social security access, and raising awareness about workers’ rights, aiming to uplift the dignity and economic stability of every ghar grihsti shramik. Through solidarity and persistent advocacy, we strive to build a society where domestic work is valued, respected, and supported as a vital part of Nepal’s social and economic fabric.",
+      title: {
+        en: "Rastriya Ghar Grihsti Shramik Sangh Nepal",
+        ne: "राष्ट्रिय घर गृहस्थी श्रमिक संघ नेपाल"
+      },
+      description: {
+        en: "Committed to empowering domestic workers by advocating for fair wages, safe and respectful working environments, and legal protections that recognize their invaluable contributions to households across Nepal. We focus on skill development, social security access, and raising awareness about workers' rights, aiming to uplift the dignity and economic stability of every ghar grihsti shramik. Through solidarity and persistent advocacy, we strive to build a society where domestic work is valued, respected, and supported as a vital part of Nepal's social and economic fabric.",
+        ne: "घरेलु श्रमिकहरूलाई उचित तलब, सुरक्षित र आदरशील काम गर्ने वातावरण, र नेपाल भरका घरपरिवारहरूमा उनीहरूको अमूल्य योगदानलाई मान्यता दिने कानूनी संरक्षणको वकालत गर्न प्रतिबद्ध गर्दै। हामी कौशल विकास, सामाजिक सुरक्षा पहुँच, र श्रमिक अधिकारहरूको बारेमा जनचेतना बढाउने केन्द्रित छौं, प्रत्येक घर गृहस्थी श्रमिकको गरिमा र आर्थिक स्थिरता माथि उठाउने लक्ष्य राख्दछौं। एकता र लगातार अधिवक्ता मार्फत, हामी एउटा समाज निर्माण गर्न प्रयास गर्दछौं जहाँ घरेलु कामलाई मूल्याङ्कन गरिन्छ, सम्मान गरिन्छ, र नेपालको सामाजिक र आर्थिक संरचनाको एक महत्त्वपूर्ण भागको रूपमा समर्थन गरिन्छ।"
+      },
       leaders: [
-        { name: "Smt. Radha Kumari Kayastha", designation: "President", image: "About/Members/Unions/Ghar Grihasti Sangh/Mem_3.png" },
-        { name: "Smt. Pushpa Shah", designation: "Vice President", image: "About/Members/woman.png" },
-        { name: "Smt. Rajni Kumari Chaudhary", designation: "Secretary", image: "About/Members/Unions/Ghar Grihasti Sangh/Mem_2.png" },
-        { name: "Smt. Mamta Kumari", designation: "Treasurer", image: "About/Members/Unions/Ghar Grihasti Sangh/Mem_1.jpeg" },
-        { name: "Smt. Manda Kumari Karn", designation: "Deputy Secretary", image: "About/Members/woman.png" },
-        { name: "Smt. Sunita Devi Yadav", designation: "Member", image: "About/Members/woman.png" },
-        { name: "Smt. Ruma Kumari Dutt", designation: "Member", image: "About/Members/woman.png" },
-        { name: "Smt. Sarad Devi Magar", designation: "Member", image: "About/Members/woman.png" },
-        { name: "Smt. Gita Mizar", designation: "Member", image: "About/Members/woman.png" }
+        { 
+          name: { en: "Smt. Radha Kumari Kayastha", ne: "राधा कुमारी कायस्थ" }, 
+          designation: { en: "President", ne: "अध्यक्ष" }, 
+          image: "About/Members/Unions/Ghar Grihasti Sangh/Mem_3.png" 
+        },
+        { 
+          name: { en: "Smt. Pushpa Shah", ne: "पुष्पा शाह" }, 
+          designation: { en: "Vice President", ne: "उपाध्यक्ष" }, 
+          image: "About/Members/woman.png" 
+        },
+        { 
+          name: { en: "Smt. Rajni Kumari Chaudhary", ne: "रजनी कुमारी चौधरी" }, 
+          designation: { en: "Secretary", ne: "सचिव" }, 
+          image: "About/Members/Unions/Ghar Grihasti Sangh/Mem_2.png" 
+        },
+        { 
+          name: { en: "Smt. Mamta Kumari", ne: "ममता कुमारी" }, 
+          designation: { en: "Treasurer", ne: "कोषाध्यक्ष" }, 
+          image: "About/Members/Unions/Ghar Grihasti Sangh/Mem_1.jpeg" 
+        },
+        { 
+          name: { en: "Smt. Manda Kumari Karn", ne: "मण्डा कुमारी कर्ण" }, 
+          designation: { en: "Deputy Secretary", ne: "उप सचिव" }, 
+          image: "About/Members/woman.png" 
+        },
+        { 
+          name: { en: "Smt. Sunita Devi Yadav", ne: "सुनिता देवी यादव" }, 
+          designation: { en: "Member", ne: "सदस्य" }, 
+          image: "About/Members/woman.png" 
+        },
+        { 
+          name: { en: "Smt. Ruma Kumari Dutt", ne: "रूमा कुमारी दत्त" }, 
+          designation: { en: "Member", ne: "सदस्य" }, 
+          image: "About/Members/woman.png" 
+        },
+        { 
+          name: { en: "Smt. Sarad Devi Magar", ne: "सरद देवी मगर" }, 
+          designation: { en: "Member", ne: "सदस्य" }, 
+          image: "About/Members/woman.png" 
+        },
+        { 
+          name: { en: "Smt. Gita Mizar", ne: "गीता मिजार" }, 
+          designation: { en: "Member", ne: "सदस्य" }, 
+          image: "About/Members/woman.png" 
+        }
       ]
     },
     nirman: {
-      title: "Rastriya Nirman Shramik Sangh Nepal",
-      description: "Dedicated to advancing the rights and welfare of construction workers by advocating for safe working conditions, fair wages, and social security benefits. We emphasize skill enhancement, adoption of modern and sustainable construction techniques, and recognition of workers’ vital role in Nepal’s development. Through collective strength and continuous training, we aim to empower every construction laborer to work with dignity, achieve economic stability, and contribute meaningfully to building a prosperous and resilient Nepal.",
+      title: {
+        en: "Rastriya Nirman Shramik Sangh Nepal",
+        ne: "राष्ट्रिय निर्माण श्रमिक संघ नेपाल"
+      },
+      description: {
+        en: "Dedicated to advancing the rights and welfare of construction workers by advocating for safe working conditions, fair wages, and social security benefits. We emphasize skill enhancement, adoption of modern and sustainable construction techniques, and recognition of workers' vital role in Nepal's development. Through collective strength and continuous training, we aim to empower every construction laborer to work with dignity, achieve economic stability, and contribute meaningfully to building a prosperous and resilient Nepal.",
+        ne: "निर्माण श्रमिकहरूको अधिकार र कल्याणलाई अघि बढाउने, सुरक्षित काम गर्ने वातावरण, उचित तलब, र सामाजिक सुरक्षा लाभहरूको वकालत गर्न प्रतिबद्ध गर्दै। हामी कौशल वृद्धि, आधुनिक र टिकाउ निर्माण तकनीकहरूको अपनाउने, र नेपालको विकासमा श्रमिकहरूको महत्त्वपूर्ण भूमिकाको मान्यतामा जोड दिन्छौं। सामूहिक शक्ति र निरन्तर तालिम मार्फत, हामी हरेक निर्माण श्रमिकलाई गरिमामा काम गर्न, आर्थिक स्थिरता प्राप्त गर्न, र समृद्ध र लचिलो नेपाल निर्माण गर्नमा सार्थक योगदान गर्न सशक्त बनाउने लक्ष्य राख्दछौं।"
+      },
       leaders: [
-        { name: "Mr. Rajesh Gupta", designation: "President", image: "About/Members/man.png" },
-        { name: "Mr. Jogendra Paswan", designation: "Secretary", image: "About/Members/man.png" }
+        { 
+          name: { en: "Mr. Rajesh Gupta", ne: "राजेश गुप्ता" }, 
+          designation: { en: "President", ne: "अध्यक्ष" }, 
+          image: "About/Members/man.png" 
+        },
+        { 
+          name: { en: "Mr. Jogendra Paswan", ne: "जोगेन्द्र पासवान" }, 
+          designation: { en: "Secretary", ne: "सचिव" }, 
+          image: "About/Members/man.png" 
+        }
       ]
     },
     autorickshaw: {
-      title: "Rastriya Auto Rickshaw Chalak Shramik Sangh Nepal",
-      description: "Committed to representing and uplifting auto rickshaw drivers by advocating for fair fares, improved road safety, and access to social security benefits. We strive to enhance drivers’ skills through training programs, promote responsible and sustainable driving practices, and ensure dignified working conditions. Through collective action and solidarity, we aim to empower every auto rickshaw chalak to achieve economic stability, professional respect, and play a vital role in Nepal’s urban transportation ecosystem.",
+      title: {
+        en: "Rastriya Auto Rickshaw Chalak Shramik Sangh Nepal",
+        ne: "राष्ट्रिय अटो रिक्सा चालक श्रमिक संघ नेपाल"
+      },
+      description: {
+        en: "Committed to representing and uplifting auto rickshaw drivers by advocating for fair fares, improved road safety, and access to social security benefits. We strive to enhance drivers' skills through training programs, promote responsible and sustainable driving practices, and ensure dignified working conditions. Through collective action and solidarity, we aim to empower every auto rickshaw chalak to achieve economic stability, professional respect, and play a vital role in Nepal's urban transportation ecosystem.",
+        ne: "उचित किराया, सुधारित सडक सुरक्षा, र सामाजिक सुरक्षा लाभहरूमा पहुँचको वकालत गर्ने अटो रिक्सा चालकहरूको प्रतिनिधित्व गर्न र उन्नति गर्न प्रतिबद्ध गर्दै। हामी तालिम कार्यक्रमहरू मार्फत चालकहरूको कौशल वृद्धि गर्न, जिम्मेवार र टिकाउ ड्राइभिङ अभ्यासहरूलाई प्रवर्द्धन गर्न, र गरिमापूर्ण काम गर्ने वातावरण सुनिश्चित गर्न प्रयास गर्दछौं। सामूहिक कार्रवाई र एकता मार्फत, हामी हरेक अटो रिक्सा चालकलाई आर्थिक स्थिरता प्राप्त गर्न, व्यावसायिक सम्मान प्राप्त गर्न, र नेपालको शहरी यातायात प्रणालीमा महत्त्वपूर्ण भूमिका खेल्न सशक्त बनाउने लक्ष्य राख्दछौं।"
+      },
       leaders: [
-        { name: "Mr. Devendra Poudel", designation: "President", image: "About/Members/man.png" },
-        { name: "Mr. Jitendra Yadav", designation: "Secretary", image: "About/Members/man.png" }
+        { 
+          name: { en: "Mr. Devendra Poudel", ne: "देवेन्द्र पौडेल" }, 
+          designation: { en: "President", ne: "अध्यक्ष" }, 
+          image: "About/Members/man.png" 
+        },
+        { 
+          name: { en: "Mr. Jitendra Yadav", ne: "जितेन्द्र यादव" }, 
+          designation: { en: "Secretary", ne: "सचिव" }, 
+          image: "About/Members/man.png" 
+        }
       ]
     },
     kabadi: {
-      title: "Rastriya Kabadi Shramik Sangh Nepal",
-      description: "Dedicated to empowering kabadi (waste collection and recycling) workers by advocating for their rights to fair wages, safe and hygienic working conditions, and social security. We promote skill development in sustainable waste management and recycling techniques while fostering public awareness about the vital role kabadi workers play in environmental protection. Through unity and persistent advocacy, we strive to ensure that every kabadi shramik can work with dignity, improve their livelihoods, and contribute to building a cleaner, greener Nepal.",
+      title: {
+        en: "Rastriya Kabadi Shramik Sangh Nepal",
+        ne: "राष्ट्रिय कबाडी श्रमिक संघ नेपाल"
+      },
+      description: {
+        en: "Dedicated to empowering kabadi (waste collection and recycling) workers by advocating for their rights to fair wages, safe and hygienic working conditions, and social security. We promote skill development in sustainable waste management and recycling techniques while fostering public awareness about the vital role kabadi workers play in environmental protection. Through unity and persistent advocacy, we strive to ensure that every kabadi shramik can work with dignity, improve their livelihoods, and contribute to building a cleaner, greener Nepal.",
+        ne: "कबाडी (फोहोरा संकलन र पुन: प्रयोग) श्रमिकहरूलाई उनीहरूको उचित तलबको अधिकार, सुरक्षित र स्वच्छ काम गर्ने वातावरण, र सामाजिक सुरक्षाको वकालत गर्न प्रतिबद्ध गर्दै। हामी टिकाउ फोहोरा व्यवस्थापन र पुन: प्रयोग तकनीकहरूमा कौशल विकासलाई प्रवर्द्धन गर्दै जनचेतना बढाउँदै, वातावरण संरक्षणमा कबाडी श्रमिकहरूले खेल्ने महत्त्वपूर्ण भूमिकाको बारेमा। एकता र लगातार अधिवक्ता मार्फत, हामी हरेक कबाडी श्रमिकले गरिमामा काम गर्न, उनीहरूको जीविकोपार्जन सुधार्न, र नेपाललाई सफा, हरियो बनाउनमा योगदान गर्न सक्ने सुनिश्चित गर्न प्रयास गर्दछौं।"
+      },
       leaders: [
-        { name: "", designation: "President", image: "About/Members/man.png" },
-        { name: "Mr. Guddu Shah Baniya", designation: "Secretary", image: "About/Members/man.png" }
+        { 
+          name: { en: "", ne: "" }, 
+          designation: { en: "President", ne: "अध्यक्ष" }, 
+          image: "About/Members/man.png" 
+        },
+        { 
+          name: { en: "Mr. Guddu Shah Baniya", ne: "गुड्डू शाह बनिया" }, 
+          designation: { en: "Secretary", ne: "सचिव" }, 
+          image: "About/Members/man.png" 
+        }
       ]
     },
     ittavatta: {
-      title: "Rastriya Itta Vatta Shramik Sangh Nepal",
-      description: "Committed to uplifting brick kiln and clay workers by advocating for fair wages, improved health and safety standards, and social protections in a demanding work environment. We focus on skill development, adoption of sustainable and efficient production techniques, and securing dignified working conditions. Through solidarity and continuous advocacy, we strive to empower every itta-vatta shramik to achieve economic stability, workplace dignity, and a meaningful role in Nepal’s construction and infrastructure sectors.",
+      title: {
+        en: "Rastriya Itta Vatta Shramik Sangh Nepal",
+        ne: "राष्ट्रिय इट्टा भट्टा श्रमिक संघ नेपाल"
+      },
+      description: {
+        en: "Committed to uplifting brick kiln and clay workers by advocating for fair wages, improved health and safety standards, and social protections in a demanding work environment. We focus on skill development, adoption of sustainable and efficient production techniques, and securing dignified working conditions. Through solidarity and continuous advocacy, we strive to empower every itta-vatta shramik to achieve economic stability, workplace dignity, and a meaningful role in Nepal's construction and infrastructure sectors.",
+        ne: "इट्टा भट्टा र माटो श्रमिकहरूलाई उचित तलब, सुधारित स्वास्थ्य र सुरक्षा मापदण्डहरू, र मागबाहिरको काम गर्ने वातावरणमा सामाजिक संरक्षणको वकालत गर्न प्रतिबद्ध गर्दै। हामी कौशल विकास, टिकाउ र कुशल उत्पादन तकनीकहरूको अपनाउने, र गरिमापूर्ण काम गर्ने वातावरण सुरक्षित गर्नमा केन्द्रित छौं। एकता र निरन्तर अधिवक्ता मार्फत, हामी हरेक इट्टा-भट्टा श्रमिकलाई आर्थिक स्थिरता प्राप्त गर्न, कार्यस्थल गरिमा, र नेपालको निर्माण र पूर्वाधार क्षेत्रहरूमा सार्थक भूमिका खेल्न सशक्त बनाउने लक्ष्य राख्दछौं।"
+      },
       leaders: [
-        { name: "Mr. Lalbihari Yadav", designation: "President", image: "About/Members/man.png" },
-        { name: "Mr. Narayan Prasad Poudel", designation: "Secretary", image: "About/Members/man.png" }
+        { 
+          name: { en: "Mr. Lalbihari Yadav", ne: "लालबिहारी यादव" }, 
+          designation: { en: "President", ne: "अध्यक्ष" }, 
+          image: "About/Members/man.png" 
+        },
+        { 
+          name: { en: "Mr. Narayan Prasad Paudel", ne: "नारायण प्रसाद पौडेल" }, 
+          designation: { en: "Secretary", ne: "सचिव" }, 
+          image: "About/Members/man.png" 
+        }
       ]
     },
     shikshak: {
-      title: "Nepal Rastriya Shikshak Sangh",
-      description: "Dedicated to empowering teachers across Nepal by advocating for fair compensation, professional development, and improved working conditions in educational institutions nationwide. We strive to enhance teaching skills through continuous training, promote educational equity, and uphold the dignity of the teaching profession. Through collective effort and steadfast commitment, we aim to ensure that every educator is valued, motivated, and equipped to contribute meaningfully to Nepal’s future by shaping generations of learners.",
+      title: {
+        en: "Nepal Rastriya Shikshak Sangh",
+        ne: "नेपाल राष्ट्रिय शिक्षक संघ"
+      },
+      description: {
+        en: "Dedicated to empowering teachers across Nepal by advocating for fair compensation, professional development, and improved working conditions in educational institutions nationwide. We strive to enhance teaching skills through continuous training, promote educational equity, and uphold the dignity of the teaching profession. Through collective effort and steadfast commitment, we aim to ensure that every educator is valued, motivated, and equipped to contribute meaningfully to Nepal's future by shaping generations of learners.",
+        ne: "नेपाल भरका शिक्षकहरूलाई उचित पारिश्रमिक, व्यावसायिक विकास, र राष्ट्रव्यापी शैक्षिक संस्थाहरूमा सुधारित काम गर्ने वातावरणको वकालत गर्न प्रतिबद्ध गर्दै। हामी निरन्तर तालिम मार्फत शिक्षण कौशल वृद्धि गर्न, शैक्षिक समानता प्रवर्द्धन गर्न, र शिक्षण पेशाको गरिमा कायम गर्न प्रयास गर्दछौं। सामूहिक प्रयास र अडिग प्रतिबद्धता मार्फत, हामी हरेक शिक्षकलाई मूल्याङ्कन गरिने, प्रेरित गराउने, र शिक्षार्थीहरूका पुस्तालाई आकार दिएर नेपालको भविष्यमा सार्थक योगदान गर्न सक्ने भन्ने लक्ष्य राख्दछौं।"
+      },
       leaders: [
-        { name: "Dr. Santosh Kumar Karn", designation: "President", image: "About/Members/Unions/Sikshak sangh/Mem_1.jpeg" },
-        { name: "Mr. Arjun Gupta", designation: "Vice President", image: "About/Members/man.png" },
-        { name: "Smt. Chandramukhi Chaudhary", designation: "Vice President", image: "About/Members/woman.png" },
-        { name: "Mr. Ujjwal Prashant", designation: "General Secretary", image: "About/Members/Unions/Sikshak sangh/Mem_2.png" },
-        { name: "Mr. Janak Prasad Kurmi", designation: "Secretary", image: "About/Members/man.png" },
-        { name: "Smt. Januka Dhungel", designation: "Treasurer", image: "About/Members/woman.png" },
-        { name: "Mr. Abhishek Shah", designation: "Member", image: "About/Members/man.png" },
-        { name: "Mr. Ghanshyam Shah", designation: "Member", image: "About/Members/man.png" }
+        { 
+          name: { en: "Dr. Santosh Kumar Karn", ne: "डा. सन्तोष कुमार कर्ण" }, 
+          designation: { en: "President", ne: "अध्यक्ष" }, 
+          image: "About/Members/Unions/Sikshak sangh/Mem_1.jpeg" 
+        },
+        { 
+          name: { en: "Mr. Arjun Gupta", ne: "अर्जुन गुप्ता" }, 
+          designation: { en: "Vice President", ne: "उपाध्यक्ष" }, 
+          image: "About/Members/man.png" 
+        },
+        { 
+          name: { en: "Smt. Chandramukhi Chaudhary", ne: "चन्द्रमुखी चौधरी" }, 
+          designation: { en: "Vice President", ne: "उपाध्यक्ष" }, 
+          image: "About/Members/woman.png" 
+        },
+        { 
+          name: { en: "Mr. Ujjwal Prashant", ne: "उज्वल प्रशान्त" }, 
+          designation: { en: "General Secretary", ne: "महासचिव" }, 
+          image: "About/Members/Unions/Sikshak sangh/Mem_2.png" 
+        },
+        { 
+          name: { en: "Mr. Janak Prasad Kurmi", ne: "जनक प्रसाद कुर्मी" }, 
+          designation: { en: "Secretary", ne: "सचिव" }, 
+          image: "About/Members/man.png" 
+        },
+        { 
+          name: { en: "Smt. Januka Dhungel", ne: "जनुका ढुंगेल" }, 
+          designation: { en: "Treasurer", ne: "कोषाध्यक्ष" }, 
+          image: "About/Members/woman.png" 
+        },
+        { 
+          name: { en: "Mr. Abhishek Shah", ne: "अभिषेक शाह" }, 
+          designation: { en: "Member", ne: "सदस्य" }, 
+          image: "About/Members/man.png" 
+        },
+        { 
+          name: { en: "Mr. Ghanshyam Shah", ne: "घनश्याम शाह" }, 
+          designation: { en: "Member", ne: "सदस्य" }, 
+          image: "About/Members/man.png" 
+        }
       ]
     }
   };
@@ -2359,19 +3122,34 @@ document.addEventListener('DOMContentLoaded', function() {
     button.addEventListener('click', function() {
       const unionKey = this.getAttribute('data-union');
       const union = unionData[unionKey];
+      const currentLang = localStorage.getItem('preferredLanguage') || 'en';
+      
       if (union) {
-        unionModalTitle.textContent = union.title;
-        unionModalDescription.textContent = union.description;
+        unionModalTitle.textContent = union.title[currentLang];
+        unionModalDescription.textContent = union.description[currentLang];
         unionLeadersGrid.innerHTML = '';
+        
+        // Update modal title
+        const modalTitle = document.querySelector('#unionModalLeadership h3');
+        if (modalTitle) {
+          modalTitle.textContent = translations[currentLang].unionLeadership;
+        }
+        
+        // Update close button text
+        const closeBtn = document.getElementById('closeUnionModalBtn');
+        if (closeBtn) {
+          closeBtn.textContent = translations[currentLang].close;
+        }
+        
         union.leaders.forEach(leader => {
           const leaderCard = document.createElement('div');
           leaderCard.className = 'modal-leader-card';
           leaderCard.innerHTML = `
             <div class="modal-leader-image">
-              <img src="${leader.image}" alt="${leader.name}">
+              <img src="${leader.image}" alt="${leader.name[currentLang]}">
             </div>
-            <div class="modal-leader-name">${leader.name}</div>
-            <div class="modal-leader-designation">${leader.designation}</div>
+            <div class="modal-leader-name">${leader.name[currentLang]}</div>
+            <div class="modal-leader-designation">${leader.designation[currentLang]}</div>
           `;
           unionLeadersGrid.appendChild(leaderCard);
         });
@@ -2402,12 +3180,24 @@ document.addEventListener('DOMContentLoaded', function() {
   
   const industrialData = {
     mounteverest: {
-      title: "Mount Everest Brewery",
-      description: "In Bharatpur, Chitwan, this premier beverage manufacturer exemplifies our commitment to labor rights, with our union securing fair practices and worker welfare in a vital economic sector."
+      title: {
+        en: "Mount Everest Brewery",
+        ne: "माउन्ट एभरेस्ट ब्रुअरी"
+      },
+      description: {
+        en: "In Bharatpur, Chitwan, this premier beverage manufacturer exemplifies our commitment to labor rights, with our union securing fair practices and worker welfare in a vital economic sector.",
+        ne: "भरतपुर, चितवनमा रहेको यो प्रमुख पेय पदार्थ निर्माताले हाम्रो श्रमिक अधिकार प्रति प्रतिबद्धताको उदाहरण दिन्छ, हाम्रो संघले महत्त्वपूर्ण आर्थिक क्षेत्रमा उचित अभ्यास र श्रमिक कल्याण सुरक्षित गर्दछ।"
+      }
     },
     varun: {
-      title: "Varun Beverage Pvt. Ltd.",
-      description: "Based in Ramgram, Nawalparasi, this bottling powerhouse benefits from our dedicated advocacy, ensuring equitable conditions and setting industry standards for labor excellence."
+      title: {
+        en: "Varun Beverage Pvt. Ltd.",
+        ne: "वरुण बेभरेज प्रा. लि."
+      },
+      description: {
+        en: "Based in Ramgram, Nawalparasi, this bottling powerhouse benefits from our dedicated advocacy, ensuring equitable conditions and setting industry standards for labor excellence.",
+        ne: "रामग्राम, नवलपरासीमा आधारित, यो बोतलिङ शक्तिकेन्द्रले हाम्रो समर्पित अधिवक्ताबाट लाभ उठाउँदै, समानतामूलक सर्तहरू सुनिश्चित गर्दै र श्रमिक उत्कृष्टको लागि उद्योग मापदण्ड कायम गर्दछ।"
+      }
     }
   };
   
@@ -2415,9 +3205,18 @@ document.addEventListener('DOMContentLoaded', function() {
     button.addEventListener('click', function() {
       const industrialKey = this.getAttribute('data-industrial');
       const industrial = industrialData[industrialKey];
+      const currentLang = localStorage.getItem('preferredLanguage') || 'en';
+      
       if (industrial) {
-        industrialModalTitle.textContent = industrial.title;
-        industrialModalDescription.textContent = industrial.description;
+        industrialModalTitle.textContent = industrial.title[currentLang];
+        industrialModalDescription.textContent = industrial.description[currentLang];
+        
+        // Update close button text
+        const closeBtn = document.getElementById('closeIndustrialModalBtn');
+        if (closeBtn) {
+          closeBtn.textContent = translations[currentLang].close;
+        }
+        
         industrialModal.classList.add('active');
         document.body.style.overflow = 'hidden';
       }
