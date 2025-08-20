@@ -1096,7 +1096,7 @@ background: var(--dark-orange);
       <!-- Publication 1 -->
       <div class="publication-card" data-aos="fade-up" data-aos-delay="100" data-category="brochure">
         <div class="publication-image">
-          <img src="../Publications/Broucher English.png" alt="RSMSN Brochure" class="object-top" loading="lazy">
+          <img src="../Publications/Broucher English.png" alt="RSMN Brochure" class="object-top" loading="lazy">
           <div class="publication-badge" data-i18n="brochure">Brochure</div>
         </div>
         <div class="publication-details">
@@ -1104,7 +1104,7 @@ background: var(--dark-orange);
             <i class="far fa-calendar-alt"></i>
             <span class="date" data-date="Magh 01, 2080" data-date-ne="माघ ०१, २०८०">Magh 01, 2080</span>
           </div>
-          <h3 class="publication-title" data-i18n="publication1Title">RSMSN Brochure</h3>
+          <h3 class="publication-title" data-i18n="publication1Title">RSMN Brochure</h3>
           <p class="publication-description" data-i18n="publication1Desc">Official document on the organization's labor rights work, achievements, and worker solidarity initiatives.</p>
           <div class="publication-meta">
             <span><i class="far fa-file-pdf"></i> PDF</span>
@@ -1112,14 +1112,46 @@ background: var(--dark-orange);
           </div>
           <div class="publication-actions">
             <button class="publication-btn publication-btn-primary view-publication" 
-                    data-title="RSMSN Brochure"
-                    data-title-ne="आर.एस.एम.एस.एन ब्रोशर"
+                    data-title="RSMN Brochure"
+                    data-title-ne="आर.एस.एम.एन ब्रोशर"
                     data-date="Magh 01, 2080"
                     data-date-ne="माघ ०१, २०८०"
                     data-description="This official brochure provides a comprehensive overview of Rastriya Shramik Mahasangh Nepal's mission, vision, and ongoing work to protect and promote workers' rights across Nepal. It highlights our major achievements, organizational structure, and key initiatives in labor advocacy."
                     data-description-ne="यो आधिकारिक ब्रोशरले राष्ट्रिय श्रमिक महासंघ नेपालको अभियान, दृष्टि, र नेपाल भरि श्रमिकहरूको अधिकार सुरक्षित गर्ने र प्रवर्द्धन गर्ने चलिरहेको कामको व्यापक अवलोकन प्रदान गर्दछ। यसले हाम्रा प्रमुख उपलब्धिहरू, संगठनात्मक संरचना, र श्रम अधिवक्तामा हाम्रा मुख्य पहलहरूलाई हाइलाइट गर्दछ।"
                     data-pdf="../Publications/Broucher English.pdf" data-i18n="viewDetails">View Details</button>
             <a href="../Publications/Broucher English.pdf" download class="publication-btn publication-btn-secondary" data-i18n="download">
+              <i class="fas fa-download"></i> <span data-i18n="download">Download</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="publication-card" data-aos="fade-up" data-aos-delay="100" data-category="handbook">
+        <div class="publication-image">
+          <img src="Publications/Bidhan.png" alt="RSMN Statute" class="object-top" loading="lazy">
+          <div class="publication-badge" data-i18n="handbook">Handbook</div>
+        </div>
+        <div class="publication-details">
+          <div class="publication-date">
+            <i class="far fa-calendar-alt"></i>
+            <span class="date" data-date="2079" data-date-ne="२०७९">2079</span>
+          </div>
+          <h3 class="publication-title" data-i18n="publication2Title">RSMN Statute</h3>
+          <p class="publication-description" data-i18n="publication2Desc">Official document outlining the organization's rules, objectives, and operational structure.</p>
+          <div class="publication-meta">
+            <span><i class="far fa-file-pdf"></i> PDF</span>
+            <span><i class="fas fa-download"></i> 54.8 MB</span>
+          </div>
+          <div class="publication-actions">
+            <button class="publication-btn publication-btn-primary view-publication" 
+                    data-title="RSMN Statute"
+                    data-title-ne="आर.एस.एम.एन विधान"
+                    data-date="2079"
+                    data-date-ne="२०७९"
+                    data-description="The Rashtriya Shramik Mahasangh Nepal Statute is an official and legally binding document that defines the organization's rules, principles, and objectives. It outlines the operational structure and governance framework through which the organization conducts its activities and fulfills its mission."
+                    data-description-ne="राष्ट्रिय श्रमिक महासंघ नेपालको विधान एउटा आधिकारिक र कानूनी रूपमा बाध्यकारी दस्तावेज हो जसले संस्थाका नियमहरू, सिद्धान्तहरू, र उद्देश्यहरूलाई परिभाषित गर्दछ। यसले संस्थाले आफ्ना गतिविधिहरू सञ्चालन गर्न र आफ्नो मिशन पूरा गर्न प्रयोग गर्ने परिचालन संरचना र शासन ढाँचाको रूपरेखा पनि प्रस्तुत गर्दछ।"
+                    data-pdf="Publications/bidhan.pdf" data-i18n="viewDetails">View Details</button>
+            <a href="Publications/bidhan.pdf" download class="publication-btn publication-btn-secondary" data-i18n="download">
               <i class="fas fa-download"></i> <span data-i18n="download">Download</span>
             </a>
           </div>
@@ -1331,12 +1363,15 @@ const translations = {
     publicationsDescription: "Explore our collection of resources designed to empower workers with knowledge, rights information, and advocacy tools",
     allPublications: "All Publications",
     handbooks: "Handbooks",
+    handbook: "Handbook",
     reports: "Reports",
     guides: "Guides",
     brochures: "Brochures",
     brochure: "Brochure",
     publication1Title: "RSMSN Brochure",
     publication1Desc: "Official document on the organization's labor rights work, achievements, and worker solidarity initiatives.",
+    publication2Title: "RSMSN Statute",
+    publication2Desc: "Official document outlining the organization's rules, objectives, and operational structure.",
     viewDetails: "View Details",
     download: "Download",
     
@@ -1389,12 +1424,15 @@ const translations = {
     publicationsDescription: "ज्ञान, अधिकार जानकारी, र अधिवक्ता उपकरणहरूसहित श्रमिकहरूलाई सशक्त बनाउने लागि डिजाइन गरिएका हाम्रा संसाधनहरूको संग्रह अन्वेषण गर्नुहोस्",
     allPublications: "सबै प्रकाशनहरू",
     handbooks: "हातपुस्तिकाहरू",
+    handbook: "हातपुस्तिका",
     reports: "प्रतिवेदनहरू",
     guides: "मार्गदर्शकहरू",
     brochures: "ब्रोशरहरू",
     brochure: "ब्रोशर",
-    publication1Title: "आर.एस.एम.एस.एन ब्रोशर",
+    publication1Title: "आर.एस.एम.एन ब्रोशर",
     publication1Desc: "संगठनको श्रमिक अधिकार काम, उपलब्धिहरू, र श्रमिक एकता पहलहरूको बारेमा आधिकारिक कागजात।",
+    publication2Title: "आर.एस.एम.एन विधान",
+    publication2Desc: "संगठनको नियम, उद्देश्य र संगठनात्मक संरचनाको बारेमा आधिकारिक कागजात।",
     viewDetails: "विवरण हेर्नुहोस्",
     download: "डाउनलोड गर्नुहोस्",
     
