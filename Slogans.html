@@ -45,6 +45,7 @@ overflow-x: hidden;
 }
 .nepali-font {
 font-family: 'Mukta', sans-serif;
+font-size: large;
 }
 .nepali-numerals {
   font-family: 'Mukta', sans-serif;
@@ -599,10 +600,10 @@ color: var(--primary-gold);
   <!-- Announcement Bar with Fade Effect -->
   <div class="announcement-fade">
     <div class="container mx-auto px-4">
-      <div class="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 md:gap-x-4 lg:gap-x-6 text-sm md:text-base font-semibold overflow-x-auto py-1">
-        <span class="whitespace-nowrap transition-colors duration-300 hover:text-yellow-300 px-1">Rastra heet!</span>
-        <span class="whitespace-nowrap transition-colors duration-300 hover:text-yellow-300 px-1">Udyog Heet!</span>
-        <span class="whitespace-nowrap transition-colors duration-300 hover:text-yellow-300 px-1">Shramik Heet!</span>
+      <div class="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 md:gap-x-4 lg:gap-x-6 text-lg md:text-xl font-semibold overflow-x-auto py-1">
+        <span class="whitespace-nowrap transition-colors duration-300 hover:text-yellow-300 px-1" data-i18n="announcement1">Rastra heet!</span>
+        <span class="whitespace-nowrap transition-colors duration-300 hover:text-yellow-300 px-1" data-i18n="announcement2">Udyog heet!</span>
+        <span class="whitespace-nowrap transition-colors duration-300 hover:text-yellow-300 px-1" data-i18n="announcement3">Shramik heet!</span>
       </div>
     </div>
   </div>
@@ -615,41 +616,41 @@ color: var(--primary-gold);
           <img src="logo.jpg" alt="Rastriya Shramik Mahasangh Nepal Logo" class="h-20 md:h-24 lg:h-28 transition-transform duration-300 hover:scale-105">
         </div>
         <div class="organization-name ml-3 md:ml-4">
-          <h1 class="text-lg md:text-xl lg:text-2xl font-bold transition-colors duration-300 hover:text-yellow-100">Rastriya Shramik Mahasangh</h1>
-          <p class="text-sm md:text-base lg:text-lg transition-colors duration-300 hover:text-yellow-200">Nepal</p>
+          <h1 class="text-xl md:text-2xl lg:text-3xl font-bold transition-colors duration-300 hover:text-yellow-100" data-i18n="organizationName">Rastriya Shramik Mahasangh</h1>
+          <p class="text-sm md:text-base lg:text-lg transition-colors duration-300 hover:text-yellow-200" data-i18n="organizationLocation">Nepal</p>
         </div>
       </a>
       
       <!-- Navigation Links (Center) -->
       <nav class="nav-links hidden lg:flex items-center justify-center flex-grow mx-4 lg:mx-8">
-        <a href="index.html" class="nav-link-item px-3 py-2 rounded-lg text-white font-medium transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md">Home</a>
+        <a href="index.html" class="nav-link-item px-3 py-2 rounded-lg text-white font-medium transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md" data-i18n="home">Home</a>
         
         <!-- About Dropdown -->
         <div class="relative dropdown">
-          <a href="About.html" class="nav-link-item px-3 py-2 rounded-lg text-white font-medium flex items-center transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md dropdown-toggle">
+          <a href="About.html" class="nav-link-item px-3 py-2 rounded-lg text-white font-medium flex items-center transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md dropdown-toggle" data-i18n="about">
             About <i class="fas fa-chevron-down ml-1 text-xs"></i>
           </a>
           <div class="dropdown-menu absolute left-0 flex-col bg-white text-gray-800 mt-1 rounded-md shadow-lg py-1 w-48">
-            <a href="About.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600">Our Story</a>
-            <a href="About.html#organizational-structure" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600">Organizational Structure</a>
-            <a href="About.html#central-executive-committee" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600">Leadership</a>
+            <a href="About.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600" data-i18n="ourStory">Our Story</a>
+            <a href="About.html#organizational-structure" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600" data-i18n="organizationalStructure">Organizational Structure</a>
+            <a href="About.html#central-executive-committee" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600" data-i18n="leadership">Leadership</a>
           </div>
         </div>
         
         <!-- Resources Dropdown -->
         <div class="relative dropdown">
-          <button class="nav-link-item px-3 py-2 rounded-lg text-white font-medium flex items-center transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md dropdown-toggle">
+          <button class="nav-link-item px-3 py-2 rounded-lg text-white font-medium flex items-center transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md dropdown-toggle" data-i18n="resources">
             Resources <i class="fas fa-chevron-down ml-1 text-xs"></i>
           </button>
           <div class="dropdown-menu absolute left-0 flex-col bg-white text-gray-800 mt-1 rounded-md shadow-lg py-1 w-56">
-            <a href="Slogans.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600">Our Slogans</a>
-            <a href="Press_Releases.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600">Press Releases</a>
-            <a href="Publications.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600">Publications</a>
+            <a href="Slogans.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600" data-i18n="ourSlogans">Our Slogans</a>
+            <a href="Press_Releases.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600" data-i18n="pressReleases">Press Releases</a>
+            <a href="Publications.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600" data-i18n="publications">Publications</a>
           </div>
         </div>
         
-        <a href="Upcoming.html" class="nav-link-item px-3 py-2 rounded-lg text-white font-medium transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md">Events</a>
-        <a href="Gallery.html" class="nav-link-item px-3 py-2 rounded-lg text-white font-medium transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md">Gallery</a>
+        <a href="Upcoming.html" class="nav-link-item px-3 py-2 rounded-lg text-white font-medium transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md" data-i18n="events">Events</a>
+        <a href="Gallery.html" class="nav-link-item px-3 py-2 rounded-lg text-white font-medium transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md" data-i18n="gallery">Gallery</a>
       </nav>
       
       <!-- Language and Search (Right) -->
@@ -710,39 +711,39 @@ color: var(--primary-gold);
       <a href="index.html" class="flex items-center no-underline">
         <img src="logo.jpg" alt="Rastriya Shramik Mahasangh Nepal Logo" class="h-16">
         <div class="ml-3">
-          <h1 class="text-lg font-bold text-white">Rastriya Shramik Mahasangh</h1>
-          <p class="text-sm text-white">Nepal</p>
+          <h1 class="text-lg font-bold text-white" data-i18n="organizationName">Rastriya Shramik Mahasangh</h1>
+          <p class="text-sm text-white" data-i18n="organizationLocation">Nepal</p>
         </div>
       </a>
     </div>
     
     <div class="p-4 space-y-2 overflow-y-auto max-h-[calc(100vh-180px)]">
-      <a href="index.html" class="block py-2 px-4 rounded-lg hover:bg-gold hover:text-dark-orange transition-all duration-300">Home</a>
+      <a href="index.html" class="block py-2 px-4 rounded-lg hover:bg-gold hover:text-dark-orange transition-all duration-300" data-i18n="home">Home</a>
       
       <div class="py-1">
         <button class="flex justify-between items-center w-full py-2 px-4 rounded-lg hover:bg-gold hover:text-dark-orange transition-all duration-300 mobile-submenu-toggle" data-target="about-submenu">
-          About <i class="fas fa-chevron-down text-xs transition-transform duration-300"></i>
+          <span data-i18n="about">About</span> <i class="fas fa-chevron-down text-xs transition-transform duration-300"></i>
         </button>
         <div id="about-submenu" class="hidden pl-6 mt-1 space-y-1 bg-gray-700 rounded-lg">
-          <a href="About.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600">Our Story</a>
-          <a href="About.html#organizational-structure" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600">Organizational Structure</a>
-          <a href="About.html#central-executive-committee" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600">Leadership</a>
+          <a href="About.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600" data-i18n="ourStory">Our Story</a>
+          <a href="About.html#organizational-structure" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600" data-i18n="organizationalStructure">Organizational Structure</a>
+          <a href="About.html#central-executive-committee" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600" data-i18n="leadership">Leadership</a>
         </div>
       </div>
       
       <div class="py-1">
         <button class="flex justify-between items-center w-full py-2 px-4 rounded-lg hover:bg-gold hover:text-dark-orange transition-all duration-300 mobile-submenu-toggle" data-target="resources-submenu">
-          Resources <i class="fas fa-chevron-down text-xs transition-transform duration-300"></i>
+          <span data-i18n="resources">Resources</span> <i class="fas fa-chevron-down text-xs transition-transform duration-300"></i>
         </button>
         <div id="resources-submenu" class="hidden pl-6 mt-1 space-y-1 bg-gray-700 rounded-lg">
-          <a href="Slogans.html" class="block py-2 px-4 hover:bg-orange-100 transition-colors duration-300">Our Slogans</a>
-          <a href="Press_Releases.html" class="block py-2 px-4 hover:bg-orange-100 transition-colors duration-300">Press Releases</a>
-          <a href="Publications.html" class="block py-2 px-4 hover:bg-orange-100 transition-colors duration-300">Publications</a>
+          <a href="Slogans.html" class="block py-2 px-4 hover:bg-orange-100 transition-colors duration-300" data-i18n="ourSlogans">Our Slogans</a>
+          <a href="Press_Releases.html" class="block py-2 px-4 hover:bg-orange-100 transition-colors duration-300" data-i18n="pressReleases">Press Releases</a>
+          <a href="Publications.html" class="block py-2 px-4 hover:bg-orange-100 transition-colors duration-300" data-i18n="publications">Publications</a>
         </div>
       </div>
       
-      <a href="Upcoming.html" class="block py-2 px-4 rounded-lg hover:bg-gold hover:text-dark-orange transition-all duration-300">Events</a>
-      <a href="gallery.html" class="block py-2 px-4 rounded-lg hover:bg-gold hover:text-dark-orange transition-all duration-300">Gallery</a>
+      <a href="Upcoming.html" class="block py-2 px-4 rounded-lg hover:bg-gold hover:text-dark-orange transition-all duration-300" data-i18n="events">Events</a>
+      <a href="Gallery.html" class="block py-2 px-4 rounded-lg hover:bg-gold hover:text-dark-orange transition-all duration-300" data-i18n="gallery">Gallery</a>
     </div>
   </div>
 </header>
@@ -750,17 +751,17 @@ color: var(--primary-gold);
   <div class="principles-hero-bg"></div>
   <div class="principles-hero-overlay"></div>
   <div class="principles-content">
-    <h1 data-aos="fade-up" data-translate="hero.title">Our Slogans</h1>
-    <p data-aos="fade-up" data-aos-delay="100" data-translate="hero.subtitle">The spirit of our struggle and the vision we share for a just and prosperous Nepal.</p>
+    <h1 data-aos="fade-up" data-i18n="heroTitle">Our Slogans</h1>
+    <p data-aos="fade-up" data-aos-delay="100" data-i18n="heroSubtitle">The spirit of our struggle and the vision we share for a just and prosperous Nepal.</p>
   </div>
   <div class="principles-breadcrumb">
-    <a href="Landing_Page.html" class="nav-link-custom" data-translate="breadcrumb.home">Home</a> / <span data-translate="breadcrumb.slogans">Our Slogans</span>
+    <a href="Landing_Page.html" class="nav-link-custom" data-i18n="breadcrumbHome">Home</a> / <span data-i18n="breadcrumbSlogans">Our Slogans</span>
   </div>
 </section>
 <section class="principles-intro">
   <div class="principles-container">
     <div class="text-center max-w-3xl mx-auto" data-aos="fade-up">
-      <p class="text-gray-700 text-lg" data-translate="intro.text">
+      <p class="text-gray-700 text-lg" data-i18n="introText">
         At Rastriya Shramik Mahasangh Nepal, our slogans are the heartbeat of our movement. They carry the voices of workers, ignite our resolve, and unite us in the fight for justice and dignity across Nepal.
       </p>
     </div>
@@ -769,10 +770,10 @@ color: var(--primary-gold);
 <section class="principles-quote">
   <div class="principles-container">
     <div class="principles-quote-content" data-aos="fade-up">
-      <p class="principles-quote-text" data-translate="quote.text">
+      <p class="principles-quote-text" data-i18n="quoteText">
         Slogans are not just words we chant; they are the spirit of our struggle, the call for solidarity, and the promise of a better tomorrow for every worker.
       </p>
-      <p class="principles-quote-author" data-translate="quote.author">— Rastriya Shramik Mahasangh Nepal</p>
+      <p class="principles-quote-author" data-i18n="quoteAuthor">— Rastriya Shramik Mahasangh Nepal</p>
     </div>
   </div>
 </section>
@@ -786,8 +787,8 @@ color: var(--primary-gold);
           <i class="fas fa-flag"></i>
         </div>
         <div class="principle-content">
-          <h3 class="principle-nepali" data-translate="principle1.nepali">नेपाल आमाको जय</h3>
-          <p class="principle-english" data-translate="principle1.english">Victory to Mother Nepal!</p>
+          <h3 class="principle-nepali">नेपाल आमाको जय</h3>
+          <p class="principle-english">Victory to Mother Nepal!</p>
         </div>
       </div>
       
@@ -798,8 +799,8 @@ color: var(--primary-gold);
           <i class="fas fa-briefcase"></i>
         </div>
         <div class="principle-content">
-          <h3 class="principle-nepali" data-translate="principle2.nepali">देशको हितमा गर्छौँ काम, कामको लिन्छौँ पूरा दाम!</h3>
-          <p class="principle-english" data-translate="principle2.english">Working for the nation, demanding fair pay!</p>
+          <h3 class="principle-nepali">देशको हितमा गर्छौँ काम, कामको लिन्छौँ पूरा दाम!</h3>
+          <p class="principle-english">Working for the nation, demanding fair pay!</p>
         </div>
       </div>
       
@@ -810,8 +811,8 @@ color: var(--primary-gold);
           <i class="fas fa-coins"></i>
         </div>
         <div class="principle-content">
-          <h3 class="principle-nepali" data-translate="principle3.nepali">श्रमको पुंजी, श्रमको मान, मागिरहेछ मजदुर किसान!</h3>
-          <p class="principle-english" data-translate="principle3.english">Laborer's wealth, laborer's pride — the ask of workers and farmers!</p>
+          <h3 class="principle-nepali">श्रमको पुंजी, श्रमको मान, मागिरहेछ मजदुर किसान!</h3>
+          <p class="principle-english">Laborer's wealth, laborer's pride — the ask of workers and farmers!</p>
         </div>
       </div>
       
@@ -822,8 +823,8 @@ color: var(--primary-gold);
           <i class="fas fa-users"></i>
         </div>
         <div class="principle-content">
-          <h3 class="principle-nepali" data-translate="principle4.nepali">को बनाउछ नेपाल महान? मजदुर किसान! मजदुर किसान!</h3>
-          <p class="principle-english" data-translate="principle4.english">Who makes Nepal great? Workers and farmers united!</p>
+          <h3 class="principle-nepali">को बनाउछ नेपाल महान? मजदुर किसान! मजदुर किसान!</h3>
+          <p class="principle-english">Who makes Nepal great? Workers and farmers united!</p>
         </div>
       </div>
       
@@ -834,8 +835,8 @@ color: var(--primary-gold);
           <i class="fas fa-globe-asia"></i>
         </div>
         <div class="principle-content">
-          <h3 class="principle-nepali" data-translate="principle5.nepali">श्रमिक संसारलाई एक गरौँ!</h3>
-          <p class="principle-english" data-translate="principle5.english">Unite the working class, across all borders!</p>
+          <h3 class="principle-nepali">श्रमिक संसारलाई एक गरौँ!</h3>
+          <p class="principle-english">Unite the working class, across all borders!</p>
         </div>
       </div>
       
@@ -846,8 +847,8 @@ color: var(--primary-gold);
           <i class="fas fa-balance-scale"></i>
         </div>
         <div class="principle-content">
-          <h3 class="principle-nepali" data-translate="principle6.nepali">सरकारवाद, पुंजीवाद... शोषण गर्छन् एक समान!</h3>
-          <p class="principle-english" data-translate="principle6.english">State or capital — exploitation is the same!</p>
+          <h3 class="principle-nepali">सरकारवाद, पुंजीवाद... शोषण गर्छन् एक समान!</h3>
+          <p class="principle-english">State or capital — exploitation is the same!</p>
         </div>
       </div>
       
@@ -858,8 +859,8 @@ color: var(--primary-gold);
           <i class="fas fa-handshake"></i>
         </div>
         <div class="principle-content">
-          <h3 class="principle-nepali" data-translate="principle7.nepali">राष्ट्रभक्त श्रमिक... एक हौँ, एक हौँ!</h3>
-          <p class="principle-english" data-translate="principle7.english">Patriotic workers, united as one!</p>
+          <h3 class="principle-nepali">राष्ट्रभक्त श्रमिक... एक हौँ, एक हौँ!</h3>
+          <p class="principle-english">Patriotic workers, united as one!</p>
         </div>
       </div>
       
@@ -870,8 +871,8 @@ color: var(--primary-gold);
           <i class="fas fa-file-contract"></i>
         </div>
         <div class="principle-content">
-          <h3 class="principle-nepali" data-translate="principle8.nepali">ठेकाप्रथा समाप्त गर! समाप्त गर! पैसा र पसिनाको मूल्य सम्झाऔँ एक समान</h3>
-          <p class="principle-english" data-translate="principle8.english">End contract exploitation — value sweat and wages equally!</p>
+          <h3 class="principle-nepali">ठेकाप्रथा समाप्त गर! समाप्त गर! पैसा र पसिनाको मूल्य सम्झाऔँ एक समान</h3>
+          <p class="principle-english">End contract exploitation — value sweat and wages equally!</p>
         </div>
       </div>
     </div>
@@ -886,11 +887,11 @@ color: var(--primary-gold);
         <a href="index.html" class="flex items-center mb-6 transition-transform duration-300 hover:scale-105">
           <img src="logo.jpg" alt="Rastriya Shramik Mahasangh Nepal Logo" class="h-24 md:h-28 mr-3">
           <div>
-            <h3 class="text-xl font-bold">Rastriya Shramik Mahasangh</h3>
-            <p class="text-sm text-white-300">नेपाल</p>
+            <h3 class="text-xl font-bold" data-i18n="organizationName">Rastriya Shramik Mahasangh</h3>
+            <p class="text-sm text-white-300" data-i18n="organizationLocation">नेपाल</p>
           </div>
         </a>
-        <p class="text-white mb-6">
+        <p class="text-white mb-6" data-i18n="footerDescription">
           Empowering workers through unity, advocacy, and action since 2080 B.S.
         </p>
         <div class="flex space-x-4">
@@ -926,75 +927,75 @@ color: var(--primary-gold);
       </div>
       <!-- Quick Links -->
       <div class="md:col-span-1">
-        <h3 class="text-lg font-bold mb-6 uppercase tracking-wider text-white">Quick Links</h3>
+        <h3 class="text-lg font-bold mb-6 uppercase tracking-wider text-white" data-i18n="quickLinks">Quick Links</h3>
         <ul class="space-y-3">
           <li>
             <a href="About.html" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center">
               <i class="fas fa-angle-right mr-2 text-gold"></i>
-              About Us
+              <span data-i18n="aboutUs">About Us</span>
             </a>
           </li>
           <li>
             <a href="Updates.html" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center">
               <i class="fas fa-angle-right mr-2 text-gold"></i>
-              Latest Updates
+              <span data-i18n="latestUpdatesFooter">Latest Updates</span>
             </a>
           </li>
           <li>
             <a href="Upcoming.html" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center">
               <i class="fas fa-angle-right mr-2 text-gold"></i>
-              Our Events
+              <span data-i18n="ourEvents">Our Events</span>
             </a>
           </li>
           <li>
             <a href="Media_Coverage.html" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center">
               <i class="fas fa-angle-right mr-2 text-gold"></i>
-              Media Coverages
+              <span data-i18n="mediaCoverages">Media Coverages</span>
             </a>
           </li>
         </ul>
       </div>
       <!-- Resources -->
       <div class="md:col-span-1">
-        <h3 class="text-lg font-bold mb-6 uppercase tracking-wider text-white">Resources</h3>
+        <h3 class="text-lg font-bold mb-6 uppercase tracking-wider text-white" data-i18n="resourcesFooter">Resources</h3>
         <ul class="space-y-3">
           <li>
             <a href="Slogans.html" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center">
               <i class="fas fa-angle-right mr-2 text-gold"></i>
-              Our Slogans
+              <span data-i18n="ourSlogans">Our Slogans</span>
             </a>
           </li>
           <li>
             <a href="Press_Releases.html" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center">
               <i class="fas fa-angle-right mr-2 text-gold"></i>
-              Press Releases
+              <span data-i18n="pressReleases">Press Releases</span>
             </a>
           </li>
           <li>
             <a href="Publications.html" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center">
               <i class="fas fa-angle-right mr-2 text-gold"></i>
-              Publications
+              <span data-i18n="publications">Publications</span>
             </a>
           </li>
           <li>
             <a href="Gallery.html" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center">
               <i class="fas fa-angle-right mr-2 text-gold"></i>
-              Gallery
+              <span data-i18n="gallery">Gallery</span>
             </a>
           </li>
         </ul>
       </div>
       <!-- Contact & Newsletter -->
       <div class="md:col-span-1">
-        <h3 class="text-lg font-bold mb-6 uppercase tracking-wider text-white">Contact Us</h3>
+        <h3 class="text-lg font-bold mb-6 uppercase tracking-wider text-white" data-i18n="contactUs">Contact Us</h3>
         <ul class="space-y-4 mb-8">
           <li class="flex items-start">
             <i class="fas fa-map-marker-alt text-gold mt-1 mr-3"></i>
-            <a href="https://maps.app.goo.gl/4C8W3pM3qPDEQvMA9" target="_blank" class="text-white hover:text-yellow-200 transition-colors duration-300">Keshavdham, Guheswari Marg - 8, Kathmandu, Nepal</a>
+            <a href="https://maps.app.goo.gl/4C8W3pM3qPDEQvMA9" target="_blank" class="text-white hover:text-yellow-200 transition-colors duration-300" data-address="Keshavdham, Guheswari Marg - 8, Kathmandu, Nepal">Keshavdham, Guheswari Marg - 8, Kathmandu, Nepal</a>
           </li>
           <li class="flex items-center">
             <i class="fas fa-phone-alt text-gold mr-3"></i>
-            <a href="tel:+9779855020288" class="text-white hover:text-yellow-200 transition-colors duration-300">+977-9855020288</a>
+            <a href="tel:+9779855020288" class="text-white hover:text-yellow-200 transition-colors duration-300" data-phone="+977-9855020288">+977-9855020288</a>
           </li>
           <li class="flex items-center">
             <i class="fas fa-envelope text-gold mr-3"></i>
@@ -1006,7 +1007,7 @@ color: var(--primary-gold);
     <!-- Bottom Bar -->
     <div class="border-t border-orange-800 pt-4">
       <div class="flex justify-center">
-        <p class="text-white text-sm">
+        <p class="text-white text-sm" data-i18n="copyright">
           &copy; <span id="current-year"></span> Rastriya Shramik Mahasangh Nepal. All rights reserved.
         </p>
       </div>
@@ -1018,232 +1019,419 @@ color: var(--primary-gold);
 </button>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
+// Language data structure with all translations
 const translations = {
   en: {
-    "announcement.slogan1": "Rastra Heet!",
-    "announcement.slogan2": "Udyog Heet!",
-    "announcement.slogan3": "Shramik Heet!",
-    "organization.name": "Rastriya Shramik Mahasangh",
-    "organization.country": "Nepal",
-    "nav.home": "Home",
-    "nav.about": "About",
-    "nav.about.story": "Our Story",
-    "nav.about.structure": "Organizational Structure",
-    "nav.about.leadership": "Leadership",
-    "nav.resources": "Resources",
-    "nav.resources.slogans": "Our Slogans",
-    "nav.resources.press": "Press Releases",
-    "nav.resources.publications": "Publications",
-    "nav.events": "Events",
-    "nav.gallery": "Gallery",
-    "search.placeholder": "Search...",
-    "hero.title": "Our Slogans",
-    "hero.subtitle": "The spirit of our struggle and the vision we share for a just and prosperous Nepal.",
-    "breadcrumb.home": "Home",
-    "breadcrumb.slogans": "Our Slogans",
-    "intro.text": "At Rastriya Shramik Mahasangh Nepal, our slogans are the heartbeat of our movement. They carry the voices of workers, ignite our resolve, and unite us in the fight for justice and dignity across Nepal.",
-    "quote.text": "Slogans are not just words we chant; they are the spirit of our struggle, the call for solidarity, and the promise of a better tomorrow for every worker.",
-    "quote.author": "— Rastriya Shramik Mahasangh Nepal",
-    "principle1.nepali": "नेपाल आमाको जय",
-    "principle1.english": "Victory to Mother Nepal!",
-    "principle2.nepali": "देशको हितमा गर्छौँ काम, कामको लिन्छौँ पूरा दाम!",
-    "principle2.english": "Working for the nation, demanding fair pay!",
-    "principle3.nepali": "श्रमको पुंजी, श्रमको मान, मागिरहेछ मजदुर किसान!",
-    "principle3.english": "Laborer's wealth, laborer's pride — the ask of workers and farmers!",
-    "principle4.nepali": "को बनाउछ नेपाल महान? मजदुर किसान! मजदुर किसान!",
-    "principle4.english": "Who makes Nepal great? Workers and farmers united!",
-    "principle5.nepali": "श्रमिक संसारलाई एक गरौँ!",
-    "principle5.english": "Unite the working class, across all borders!",
-    "principle6.nepali": "सरकारवाद, पुंजीवाद... शोषण गर्छन् एक समान!",
-    "principle6.english": "State or capital — exploitation is the same!",
-    "principle7.nepali": "राष्ट्रभक्त श्रमिक... एक हौँ, एक हौँ!",
-    "principle7.english": "Patriotic workers, united as one!",
-    "principle8.nepali": "ठेकाप्रथा समाप्त गर! समाप्त गर! पैसा र पसिनाको मूल्य सम्झाऔँ एक समान",
-    "principle8.english": "End contract exploitation — value sweat and wages equally!",
-    "footer.description": "Empowering workers through unity, advocacy, and action since 2080 B.S.",
-    "footer.quicklinks": "Quick Links",
-    "footer.updates": "Latest Updates",
-    "footer.media": "Media Coverages",
-    "footer.contact": "Contact Us",
-    "footer.address": "Keshavdham, Guheswari Marg - 8, Kathmandu, Nepal",
-    "footer.copyright": "Rastriya Shramik Mahasangh Nepal. All rights reserved.",
-    "meta.title": "Our Slogans - Rastriya Shramik Mahasangh Nepal",
-    "meta.description": "Discover the core principles that guide Rastriya Shramik Mahasangh Nepal in our mission to empower workers and a stronger Nepal."
+    // Navigation
+    home: "Home",
+    about: "About",
+    ourStory: "Our Story",
+    organizationalStructure: "Organizational Structure",
+    leadership: "Leadership",
+    resources: "Resources",
+    ourSlogans: "Our Slogans",
+    pressReleases: "Press Releases",
+    publications: "Publications",
+    events: "Events",
+    gallery: "Gallery",
+    
+    // Hero Section
+    heroTitle: "Our Slogans",
+    heroSubtitle: "The spirit of our struggle and the vision we share for a just and prosperous Nepal.",
+    
+    // Breadcrumb
+    breadcrumbHome: "Home",
+    breadcrumbSlogans: "Our Slogans",
+    
+    // Introduction
+    introText: "At Rastriya Shramik Mahasangh Nepal, our slogans are the heartbeat of our movement. They carry the voices of workers, ignite our resolve, and unite us in the fight for justice and dignity across Nepal.",
+    
+    // Quote
+    quoteText: "Slogans are not just words we chant; they are the spirit of our struggle, the call for solidarity, and the promise of a better tomorrow for every worker.",
+    quoteAuthor: "— Rastriya Shramik Mahasangh Nepal",
+    
+    // Footer
+    quickLinks: "Quick Links",
+    aboutUs: "About Us",
+    latestUpdatesFooter: "Latest Updates",
+    ourEvents: "Our Events",
+    mediaCoverages: "Media Coverages",
+    resourcesFooter: "Resources",
+    contactUs: "Contact Us",
+    footerDescription: "Empowering workers through unity, advocacy, and action since 2080 B.S.",
+    copyright: "© {year} Rastriya Shramik Mahasangh Nepal. All rights reserved.",
+    
+    // Organization
+    organizationName: "Rastriya Shramik Mahasangh",
+    organizationLocation: "Nepal",
+    
+    // Announcement
+    announcement1: "Rastra heet!",
+    announcement2: "Udyog Heet!",
+    announcement3: "Shramik Heet!"
   },
   ne: {
-    "announcement.slogan1": "राष्ट्र हित!",
-    "announcement.slogan2": "उद्योग हित!",
-    "announcement.slogan3": "श्रमिक हित!",
-    "organization.name": "राष्ट्रिय श्रमिक महासंघ",
-    "organization.country": "नेपाल",
-    "nav.home": "गृहपृष्ठ",
-    "nav.about": "हाम्रो बारेमा",
-    "nav.about.story": "हाम्रो कथा",
-    "nav.about.structure": "संगठनात्मक संरचना",
-    "nav.about.leadership": "नेतृत्व",
-    "nav.resources": "संसाधनहरू",
-    "nav.resources.slogans": "हाम्रा नाराहरू",
-    "nav.resources.press": "प्रेस विज्ञप्तिहरू",
-    "nav.resources.publications": "प्रकाशनहरू",
-    "nav.events": "कार्यक्रमहरू",
-    "nav.gallery": "ग्यालरी",
-    "search.placeholder": "खोज्नुहोस्...",
-    "hero.title": "हाम्रा नाराहरू",
-    "hero.subtitle": "हाम्रो संघर्षको भावना र न्यायपूर्ण र समृद्ध नेपालको लागि हाम्रो साझा दृष्टि।",
-    "breadcrumb.home": "गृहपृष्ठ",
-    "breadcrumb.slogans": "हाम्रा नाराहरू",
-    "intro.text": "राष्ट्रिय श्रमिक महासंघ नेपालमा, हाम्रा नाराहरू हाम्रो आन्दोलनको धड्कन हुन्। तिनीहरूले श्रमिकहरूको स्वर बोक्छन्, हाम्रो संकल्पलाई प्रज्वलित गर्छन्, र नेपालभरि न्याय र गरिमाको लागि हाम्रो संघर्षमा हामीलाई एकजुट गर्छन्।",
-    "quote.text": "नाराहरू केवल हामीले जप्ने शब्दहरू होइनन्; तिनीहरू हाम्रो संघर्षको भावना, एकताको आह्वान, र हरेक श्रमिकको लागि राम्रो भविष्यको प्रतिज्ञा हुन्।",
-    "quote.author": "— राष्ट्रिय श्रमिक महासंघ नेपाल",
-    "principle1.nepali": "नेपाल आमाको जय",
-    "principle1.english": "Victory to Mother Nepal!",
-    "principle2.nepali": "देशको हितमा गर्छौँ काम, कामको लिन्छौँ पूरा दाम!",
-    "principle2.english": "Working for the nation, demanding fair pay!",
-    "principle3.nepali": "श्रमको पुंजी, श्रमको मान, मागिरहेछ मजदुर किसान!",
-    "principle3.english": "Laborer's wealth, laborer's pride — the ask of workers and farmers!",
-    "principle4.nepali": "को बनाउछ नेपाल महान? मजदुर किसान! मजदुर किसान!",
-    "principle4.english": "Who makes Nepal great? Workers and farmers united!",
-    "principle5.nepali": "श्रमिक संसारलाई एक गरौँ!",
-    "principle5.english": "Unite the working class, across all borders!",
-    "principle6.nepali": "सरकारवाद, पुंजीवाद... शोषण गर्छन् एक समान!",
-    "principle6.english": "State or capital — exploitation is the same!",
-    "principle7.nepali": "राष्ट्रभक्त श्रमिक... एक हौँ, एक हौँ!",
-    "principle7.english": "Patriotic workers, united as one!",
-    "principle8.nepali": "ठेकाप्रथा समाप्त गर! समाप्त गर! पैसा र पसिनाको मूल्य सम्झाऔँ एक समान",
-    "principle8.english": "End contract exploitation — value sweat and wages equally!",
-    "footer.description": "एकता, वकालत र कार्यबाट २०८० बि.स. देखि श्रमिकहरूलाई सशक्त बनाउँदै",
-    "footer.quicklinks": "द्रुत लिङ्कहरू",
-    "footer.updates": "नवीनतम अपडेटहरू",
-    "footer.media": "मिडिया कभरेजहरू",
-    "footer.contact": "हामीलाई सम्पर्क गर्नुहोस्",
-    "footer.address": "केशवधाम, गुहेश्वरी मार्ग - ८, काठमाडौं, नेपाल",
-    "footer.copyright": "सर्वाधिकार राष्ट्रिय श्रमिक महासंघमा सुरक्षित",
-    "meta.title": "हाम्रा नाराहरू - राष्ट्रिय श्रमिक महासंघ नेपाल",
-    "meta.description": "राष्ट्रिय श्रमिक महासंघ नेपालका क्रियाकलापहरू, कार्यक्रमहरू र उपलब्धिहरू प्रदर्शन गर्ने हाम्रो ग्यालरी अन्वेषण गर्नुहोस्।"
+    // Navigation
+    home: "गृहपृष्ठ",
+    about: "हाम्रो बारेमा",
+    ourStory: "हाम्रो कथा",
+    organizationalStructure: "संगठनात्मक संरचना",
+    leadership: "नेतृत्व",
+    resources: "संसाधनहरू",
+    ourSlogans: "हाम्रा नाराहरू",
+    pressReleases: "प्रेस विज्ञप्तिहरू",
+    publications: "प्रकाशनहरू",
+    events: "कार्यक्रमहरू",
+    gallery: "ग्यालरी",
+    
+    // Hero Section
+    heroTitle: "हाम्रा नाराहरू",
+    heroSubtitle: "हाम्रो संघर्षको भावना र न्यायपूर्ण र समृद्ध नेपालको लागि हाम्रो साझा दृष्टि।",
+    
+    // Breadcrumb
+    breadcrumbHome: "गृहपृष्ठ",
+    breadcrumbSlogans: "हाम्रा नाराहरू",
+    
+    // Introduction
+    introText: "राष्ट्रिय श्रमिक महासंघ नेपालमा, हाम्रा नाराहरू हाम्रो आन्दोलनको धड्कन हुन्। तिनीहरूले श्रमिकहरूको स्वर बोक्छन्, हाम्रो संकल्पलाई प्रज्वलित गर्छन्, र नेपालभरि न्याय र गरिमाको लागि हाम्रो संघर्षमा हामीलाई एकजुट गर्छन्।",
+    
+    // Quote
+    quoteText: "नाराहरू केवल हामीले जप्ने शब्दहरू होइनन्; तिनीहरू हाम्रो संघर्षको भावना, एकताको आह्वान, र हरेक श्रमिकको लागि राम्रो भविष्यको प्रतिज्ञा हुन्।",
+    quoteAuthor: "— राष्ट्रिय श्रमिक महासंघ नेपाल",
+    
+    // Footer
+    quickLinks: "द्रुत लिङ्कहरू",
+    aboutUs: "हाम्रो बारेमा",
+    latestUpdatesFooter: "नवीनतम अपडेटहरू",
+    ourEvents: "हाम्रा कार्यक्रमहरू",
+    mediaCoverages: "मिडिया कभरेजहरू",
+    resourcesFooter: "संसाधनहरू",
+    contactUs: "सम्पर्क गर्नुहोस्",
+    footerDescription: "एकता, वकालत र कार्यबाट २०८० बि.स. देखि श्रमिकहरूलाई सशक्त बनाउँदै",
+    copyright: "© {year} सर्वाधिकार राष्ट्रिय श्रमिक महासंघमा सुरक्षित",
+    
+    // Organization
+    organizationName: "राष्ट्रिय श्रमिक महासंघ",
+    organizationLocation: "नेपाल",
+    
+    // Announcement
+    announcement1: "राष्ट्र हित!",
+    announcement2: "उद्योग हित!",
+    announcement3: "श्रमिक हित!"
   }
 };
-const internalLinks = [
-  'Landing_Page.html', 'about.html', 'Slogans.html', 'Press_Releases.html', 'Publications.html', 'Upcoming.html', 'Media_Coverage.html', 'gallery.html', 'Updates.html'
-];
-function convertToNepaliNumerals(str) {
-  const englishDigits = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
-  const nepaliDigits = ['०', '१', '२', '३', '४', '५', '६', '७', '८', '९'];
-  return str.split('').map(char => {
-    const index = englishDigits.indexOf(char);
-    return index !== -1 ? nepaliDigits[index] : char;
-  }).join('');
-}
-function getCurrentADYear() {
-  return new Date().getFullYear();
-}
-function updatePageContent(lang) {
-  document.documentElement.lang = lang;
-  document.querySelectorAll('[data-translate]').forEach(element => {
-    const key = element.getAttribute('data-translate');
-    if (translations[lang] && translations[lang][key]) {
-      element.textContent = translations[lang][key];
-    }
-  });
-  document.querySelectorAll('[data-translate-placeholder]').forEach(element => {
-    const key = element.getAttribute('data-translate-placeholder');
-    if (translations[lang] && translations[lang][key]) {
-      element.placeholder = translations[lang][key];
-    }
-  });
-  const currentYearElement = document.getElementById('current-year');
-  if (currentYearElement) {
-    const currentYear = getCurrentADYear().toString();
-    currentYearElement.textContent = lang === 'ne' ? convertToNepaliNumerals(currentYear) : currentYear;
+
+// Function to convert Arabic numerals to Nepali numerals
+function convertToNepaliNumerals(text) {
+  const arabicNumerals = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+  const nepaliNumerals = ['०', '१', '२', '३', '४', '५', '६', '७', '८', '९'];
+  
+  let convertedText = text;
+  for (let i = 0; i < arabicNumerals.length; i++) {
+    const regex = new RegExp(arabicNumerals[i], 'g');
+    convertedText = convertedText.replace(regex, nepaliNumerals[i]);
   }
-  document.querySelectorAll('.nepali-numerals').forEach(el => {
-    const original = el.getAttribute('data-original');
-    if (original) {
-      el.textContent = lang === 'ne' ? convertToNepaliNumerals(original) : original;
-    }
-  });
-  document.querySelectorAll('.phone-number').forEach(el => {
-    const original = el.getAttribute('data-original');
-    if (original) {
-      el.textContent = lang === 'ne' ? convertToNepaliNumerals(original) : original;
-    }
-  });
-  if (translations[lang].meta) {
-    document.title = translations[lang].meta.title;
-    document.querySelector('meta[name="description"]').setAttribute('content', translations[lang].meta.description);
-  }
-  updateLanguageButtonState(lang);
+  
+  return convertedText;
 }
-function updateLanguageButtonState(lang) {
-  const langButtons = document.querySelectorAll('.lang-toggle');
-  langButtons.forEach(btn => {
-    btn.classList.remove('bg-white', 'text-orange');
-    btn.classList.add('text-white');
-  });
+
+// Function to convert Nepali numerals to Arabic numerals
+function convertToArabicNumerals(text) {
+  const arabicNumerals = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+  const nepaliNumerals = ['०', '१', '२', '३', '४', '५', '६', '७', '८', '९'];
+  
+  let convertedText = text;
+  for (let i = 0; i < nepaliNumerals.length; i++) {
+    const regex = new RegExp(nepaliNumerals[i], 'g');
+    convertedText = convertedText.replace(regex, arabicNumerals[i]);
+  }
+  
+  return convertedText;
+}
+
+// Function to update the language
+function updateLanguage(lang) {
+  // Save the language preference to localStorage
+  localStorage.setItem('preferredLanguage', lang);
+  
+  // Update the language toggle buttons
+  const langEn = document.getElementById('lang-en');
+  const langNe = document.getElementById('lang-ne');
+  const mobileLangEn = document.getElementById('mobile-lang-en');
+  const mobileLangNe = document.getElementById('mobile-lang-ne');
+  
   if (lang === 'en') {
-    document.getElementById('lang-en').classList.add('bg-white', 'text-orange');
-    document.getElementById('lang-en').classList.remove('text-white');
-    document.getElementById('mobile-lang-en').classList.add('bg-white', 'text-orange');
-    document.getElementById('mobile-lang-en').classList.remove('text-white');
+    // Desktop language toggle
+    if (langEn && langNe) {
+      langEn.classList.add('bg-white', 'text-orange');
+      langEn.classList.remove('text-white');
+      langNe.classList.remove('bg-white', 'text-orange');
+      langNe.classList.add('text-white');
+    }
+    
+    // Mobile language toggle
+    if (mobileLangEn && mobileLangNe) {
+      mobileLangEn.classList.add('bg-white', 'text-orange');
+      mobileLangEn.classList.remove('text-white');
+      mobileLangNe.classList.remove('bg-white', 'text-orange');
+      mobileLangNe.classList.add('text-white');
+    }
   } else {
-    document.getElementById('lang-ne').classList.add('bg-white', 'text-orange');
-    document.getElementById('lang-ne').classList.remove('text-white');
-    document.getElementById('mobile-lang-ne').classList.add('bg-white', 'text-orange');
-    document.getElementById('mobile-lang-ne').classList.remove('text-white');
+    // Desktop language toggle
+    if (langEn && langNe) {
+      langNe.classList.add('bg-white', 'text-orange');
+      langNe.classList.remove('text-white');
+      langEn.classList.remove('bg-white', 'text-orange');
+      langEn.classList.add('text-white');
+    }
+    
+    // Mobile language toggle
+    if (mobileLangEn && mobileLangNe) {
+      mobileLangNe.classList.add('bg-white', 'text-orange');
+      mobileLangNe.classList.remove('text-white');
+      mobileLangEn.classList.remove('bg-white', 'text-orange');
+      mobileLangEn.classList.add('text-white');
+    }
   }
-}
-function handleLanguageChange(lang) {
-  const currentLang = document.documentElement.lang;
-  if (currentLang !== lang) {
-    updatePageContent(lang);
-    localStorage.setItem('language', lang);
-  }
-}
-document.addEventListener('DOMContentLoaded', function() {
-  const urlParams = new URLSearchParams(window.location.search);
-  const urlLang = urlParams.get('lang');
-  const savedLang = localStorage.getItem('language') || 'en';
-  const initialLang = urlLang || savedLang;
-  updatePageContent(initialLang);
-  document.getElementById('lang-en').addEventListener('click', () => handleLanguageChange('en'));
-  document.getElementById('lang-ne').addEventListener('click', () => handleLanguageChange('ne'));
-  document.getElementById('mobile-lang-en').addEventListener('click', () => handleLanguageChange('en'));
-  document.getElementById('mobile-lang-ne').addEventListener('click', () => handleLanguageChange('ne'));
-  document.querySelectorAll('.nav-link-custom').forEach(link => {
-    link.addEventListener('click', (e) => {
-      e.preventDefault();
-      const currentUrl = new URL(link.href, window.location.origin);
-      currentUrl.searchParams.set('lang', document.documentElement.lang);
-      window.location.href = currentUrl.toString();
-    });
+  
+  // Update the content based on the selected language
+  const translation = translations[lang];
+  
+  // Update all elements with data-i18n attribute
+  document.querySelectorAll('[data-i18n]').forEach(element => {
+    const key = element.getAttribute('data-i18n');
+    if (translation[key]) {
+      // Special handling for copyright with year placeholder
+      if (key === 'copyright') {
+        const currentYear = new Date().getFullYear();
+        element.innerHTML = translation[key].replace('{year}', currentYear);
+      } else {
+        element.textContent = translation[key];
+      }
+    }
   });
-  AOS.init({ duration: 1000, once: true, disable: 'mobile' });
+  
+  // Update numbers in principle cards
+  document.querySelectorAll('.nepali-numerals').forEach(counter => {
+    const originalNumber = counter.getAttribute('data-original');
+    if (originalNumber) {
+      if (lang === 'ne') {
+        counter.textContent = convertToNepaliNumerals(originalNumber);
+      } else {
+        counter.textContent = originalNumber;
+      }
+    }
+  });
+  
+  // Update address with Nepali numerals
+  document.querySelectorAll('[data-address]').forEach(addressElement => {
+    const originalAddress = addressElement.getAttribute('data-address');
+    if (originalAddress) {
+      if (lang === 'ne') {
+        // Convert address to Nepali
+        let nepaliAddress = originalAddress;
+        // Convert place names
+        nepaliAddress = nepaliAddress.replace(/Keshavdham/g, 'केशवधाम');
+        nepaliAddress = nepaliAddress.replace(/Guheswari Marg/g, 'गुह्येश्वरी मार्ग');
+        nepaliAddress = nepaliAddress.replace(/Kathmandu/g, 'काठमाडौं');
+        nepaliAddress = nepaliAddress.replace(/Nepal/g, 'नेपाल');
+        
+        // Convert numerals to Nepali
+        nepaliAddress = convertToNepaliNumerals(nepaliAddress);
+        
+        addressElement.textContent = nepaliAddress;
+      } else {
+        addressElement.textContent = originalAddress;
+      }
+    }
+  });
+  
+  // Update phone numbers with Nepali numerals
+  document.querySelectorAll('[data-phone]').forEach(phoneElement => {
+    const originalPhone = phoneElement.getAttribute('data-phone');
+    if (originalPhone) {
+      if (lang === 'ne') {
+        phoneElement.textContent = convertToNepaliNumerals(originalPhone);
+      } else {
+        phoneElement.textContent = originalPhone;
+      }
+    }
+  });
+  
+  // Update meta tags for SEO
+  document.querySelector('title').textContent = lang === 'en' 
+    ? 'Our Slogans - Rastriya Shramik Mahasangh Nepal'
+    : 'हाम्रा नाराहरू - राष्ट्रिय श्रमिक महासंघ नेपाल';
+  
+  document.querySelector('meta[name="description"]').setAttribute('content', lang === 'en'
+    ? 'Discover the core principles that guide Rastriya Shramik Mahasangh Nepal in our mission to empower workers and a stronger Nepal.'
+    : 'राष्ट्रिय श्रमिक महासंघ नेपालका क्रियाकलापहरू, कार्यक्रमहरू र उपलब्धिहरू प्रदर्शन गर्ने हाम्रो ग्यालरी अन्वेषण गर्नुहोस्।');
+  
+  document.querySelector('meta[property="og:title"]').setAttribute('content', lang === 'en'
+    ? 'Our Slogans - Rastriya Shramik Mahasangh Nepal'
+    : 'हाम्रा नाराहरू - राष्ट्रिय श्रमिक महासंघ नेपाल');
+  
+  document.querySelector('meta[property="og:description"]').setAttribute('content', lang === 'en'
+    ? 'Discover the core principles that guide Rastriya Shramik Mahasangh Nepal in our mission to empower workers and a stronger Nepal.'
+    : 'राष्ट्रिय श्रमिक महासंघ नेपालका क्रियाकलापहरू, कार्यक्रमहरू र उपलब्धिहरू प्रदर्शन गर्ने हाम्रो ग्यालरी अन्वेषण गर्नुहोस्।');
+  
+  document.querySelector('meta[property="twitter:title"]').setAttribute('content', lang === 'en'
+    ? 'Our Slogans - Rastriya Shramik Mahasangh Nepal'
+    : 'हाम्रा नाराहरू - राष्ट्रिय श्रमिक महासंघ नेपाल');
+  
+  document.querySelector('meta[property="twitter:description"]').setAttribute('content', lang === 'en'
+    ? 'Discover the core principles that guide Rastriya Shramik Mahasangh Nepal in our mission to empower workers and a stronger Nepal.'
+    : 'राष्ट्रिय श्रमिक महासंघ नेपालका क्रियाकलापहरू, कार्यक्रमहरू र उपलब्धिहरू प्रदर्शन गर्ने हाम्रो ग्यालरी अन्वेषण गर्नुहोस्।');
+  
+  // Update HTML lang attribute
+  document.documentElement.lang = lang;
+  
+  // Add or remove nepali-font class to body for font switching
+  if (lang === 'ne') {
+    document.body.classList.add('nepali-font');
+  } else {
+    document.body.classList.remove('nepali-font');
+  }
+}
+
+// Initialize AOS
+AOS.init({
+  duration: 1000,
+  once: true,
+  disable: 'mobile'
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Check for saved language preference or default to English
+  const savedLanguage = localStorage.getItem('preferredLanguage') || 'en';
+  
+  // Set the initial language
+  updateLanguage(savedLanguage);
+  
+  // Mobile Menu Toggle
   const mobileMenuButton = document.getElementById('mobile-menu-button');
   const closeMobileMenu = document.getElementById('close-mobile-menu');
   const mobileMenu = document.getElementById('mobile-menu');
-  mobileMenuButton.addEventListener('click', () => mobileMenu.classList.toggle('active'));
-  closeMobileMenu.addEventListener('click', () => mobileMenu.classList.remove('active'));
+  
+  mobileMenuButton.addEventListener('click', () => {
+    mobileMenu.classList.toggle('active');
+  });
+  
+  closeMobileMenu.addEventListener('click', () => {
+    mobileMenu.classList.remove('active');
+  });
+  
+  // Mobile Submenu Toggle
   const mobileSubmenuToggles = document.querySelectorAll('.mobile-submenu-toggle');
   mobileSubmenuToggles.forEach(toggle => {
     toggle.addEventListener('click', () => {
       const targetId = toggle.getAttribute('data-target');
       const targetSubmenu = document.getElementById(targetId);
-      const icon = toggle.querySelector('i');
       targetSubmenu.classList.toggle('hidden');
-      icon.classList.toggle('fa-chevron-down');
-      icon.classList.toggle('fa-chevron-up');
+      // Toggle icon
+      const icon = toggle.querySelector('i');
+      if (targetSubmenu.classList.contains('hidden')) {
+        icon.classList.remove('fa-chevron-up');
+        icon.classList.add('fa-chevron-down');
+      } else {
+        icon.classList.remove('fa-chevron-down');
+        icon.classList.add('fa-chevron-up');
+      }
     });
   });
+  
+  // Search Toggle
   const searchToggle = document.getElementById('search-toggle');
   const mobileSearchToggle = document.getElementById('mobile-search-toggle');
   const searchBar = document.getElementById('search-bar');
+  
   searchToggle.addEventListener('click', () => {
     searchBar.classList.toggle('active');
-    if (searchBar.classList.contains('active')) searchBar.querySelector('input').focus();
+    if (searchBar.classList.contains('active')) {
+      searchBar.querySelector('input').focus();
+    }
   });
+  
   mobileSearchToggle.addEventListener('click', () => {
     searchBar.classList.toggle('active');
-    if (searchBar.classList.contains('active')) searchBar.querySelector('input').focus();
+    if (searchBar.classList.contains('active')) {
+      searchBar.querySelector('input').focus();
+    }
   });
+  
+  // Language Toggle Functionality
+  const langEn = document.getElementById('lang-en');
+  const langNe = document.getElementById('lang-ne');
+  const mobileLangEn = document.getElementById('mobile-lang-en');
+  const mobileLangNe = document.getElementById('mobile-lang-ne');
+  
+  // Desktop language toggle
+  if (langEn && langNe) {
+    langEn.addEventListener('click', function() {
+      updateLanguage('en');
+    });
+    
+    langNe.addEventListener('click', function() {
+      updateLanguage('ne');
+    });
+  }
+  
+  // Mobile language toggle
+  if (mobileLangEn && mobileLangNe) {
+    mobileLangEn.addEventListener('click', function() {
+      updateLanguage('en');
+    });
+    
+    mobileLangNe.addEventListener('click', function() {
+      updateLanguage('ne');
+    });
+  }
+  
+  // Touch device dropdown handling
+  const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+  
+  if (isTouchDevice) {
+    const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+    
+    dropdownToggles.forEach(toggle => {
+      toggle.addEventListener('click', function(e) {
+        e.preventDefault();
+        const dropdown = this.closest('.dropdown');
+        const dropdownMenu = dropdown.querySelector('.dropdown-menu');
+        
+        // Close other dropdowns
+        document.querySelectorAll('.dropdown-menu').forEach(menu => {
+          if (menu !== dropdownMenu) {
+            menu.classList.remove('active');
+          }
+        });
+        
+        document.querySelectorAll('.dropdown-toggle').forEach(t => {
+          if (t !== this) {
+            t.classList.remove('active');
+          }
+        });
+        
+        // Toggle current dropdown
+        dropdownMenu.classList.toggle('active');
+        this.classList.toggle('active');
+      });
+    });
+    
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('.dropdown')) {
+        document.querySelectorAll('.dropdown-menu').forEach(menu => {
+          menu.classList.remove('active');
+        });
+        document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+          toggle.classList.remove('active');
+        });
+      }
+    });
+  }
+  
+  // Search functionality
   const searchForm = document.getElementById('search-form');
   const searchInput = document.getElementById('search-input');
   if (searchForm && searchInput) {
@@ -1257,6 +1445,8 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   }
+  
+  // Back to Top Button
   const backToTopButton = document.getElementById('back-to-top');
   window.addEventListener('scroll', () => {
     if (window.scrollY > 300) {
@@ -1267,33 +1457,18 @@ document.addEventListener('DOMContentLoaded', function() {
       backToTopButton.classList.remove('opacity-100', 'visible');
     }
   });
+  
   backToTopButton.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
   });
-  const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-  if (isTouchDevice) {
-    const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
-    dropdownToggles.forEach(toggle => {
-      toggle.addEventListener('click', function(e) {
-        e.preventDefault();
-        const dropdown = this.closest('.dropdown');
-        const dropdownMenu = dropdown.querySelector('.dropdown-menu');
-        document.querySelectorAll('.dropdown-menu').forEach(menu => {
-          if (menu !== dropdownMenu) menu.classList.remove('active');
-        });
-        document.querySelectorAll('.dropdown-toggle').forEach(t => {
-          if (t !== this) t.classList.remove('active');
-        });
-        dropdownMenu.classList.toggle('active');
-        this.classList.toggle('active');
-      });
-    });
-    document.addEventListener('click', function(e) {
-      if (!e.target.closest('.dropdown')) {
-        document.querySelectorAll('.dropdown-menu').forEach(menu => menu.classList.remove('active'));
-        document.querySelectorAll('.dropdown-toggle').forEach(toggle => toggle.classList.remove('active'));
-      }
-    });
+  
+  // Set current year in footer
+  const currentYearElement = document.getElementById('current-year');
+  if (currentYearElement) {
+    currentYearElement.textContent = new Date().getFullYear();
   }
 });
 </script>

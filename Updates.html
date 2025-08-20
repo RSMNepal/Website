@@ -54,6 +54,7 @@ overflow-x: hidden;
 }
 .nepali-font {
 font-family: 'Mukta', sans-serif;
+font-size: large;
 }
 .parallax-bg {
 background-attachment: fixed;
@@ -919,10 +920,10 @@ background: var(--dark-orange);
   <!-- Announcement Bar with Fade Effect -->
   <div class="announcement-fade">
     <div class="container mx-auto px-4">
-      <div class="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 md:gap-x-4 lg:gap-x-6 text-sm md:text-base font-semibold overflow-x-auto py-1">
-        <span class="whitespace-nowrap transition-colors duration-300 hover:text-yellow-300 px-1">Rastra heet!</span>
-        <span class="whitespace-nowrap transition-colors duration-300 hover:text-yellow-300 px-1">Udyog Heet!</span>
-        <span class="whitespace-nowrap transition-colors duration-300 hover:text-yellow-300 px-1">Shramik Heet!</span>
+      <div class="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 md:gap-x-4 lg:gap-x-6 text-lg md:text-xl font-semibold overflow-x-auto py-1">
+        <span class="whitespace-nowrap transition-colors duration-300 hover:text-yellow-300 px-1" data-i18n="announcement1">Rastra heet!</span>
+        <span class="whitespace-nowrap transition-colors duration-300 hover:text-yellow-300 px-1" data-i18n="announcement2">Udyog heet!</span>
+        <span class="whitespace-nowrap transition-colors duration-300 hover:text-yellow-300 px-1" data-i18n="announcement3">Shramik heet!</span>
       </div>
     </div>
   </div>
@@ -935,41 +936,41 @@ background: var(--dark-orange);
           <img src="logo.jpg" alt="Rastriya Shramik Mahasangh Nepal Logo" class="h-20 md:h-24 lg:h-28 transition-transform duration-300 hover:scale-105">
         </div>
         <div class="organization-name ml-3 md:ml-4">
-          <h1 class="text-lg md:text-xl lg:text-2xl font-bold transition-colors duration-300 hover:text-yellow-100">Rastriya Shramik Mahasangh</h1>
-          <p class="text-sm md:text-base lg:text-lg transition-colors duration-300 hover:text-yellow-200">Nepal</p>
+          <h1 class="text-xl md:text-2xl lg:text-3xl font-bold transition-colors duration-300 hover:text-yellow-100" data-i18n="organizationName">Rastriya Shramik Mahasangh</h1>
+          <p class="text-sm md:text-base lg:text-lg transition-colors duration-300 hover:text-yellow-200" data-i18n="organizationLocation">Nepal</p>
         </div>
       </a>
       
       <!-- Navigation Links (Center) -->
       <nav class="nav-links hidden lg:flex items-center justify-center flex-grow mx-4 lg:mx-8">
-        <a href="index.html" class="nav-link-item px-3 py-2 rounded-lg text-white font-medium transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md">Home</a>
+        <a href="index.html" class="nav-link-item px-3 py-2 rounded-lg text-white font-medium transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md" data-i18n="home">Home</a>
         
         <!-- About Dropdown -->
         <div class="relative dropdown">
-          <a href="About.html" class="nav-link-item px-3 py-2 rounded-lg text-white font-medium flex items-center transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md dropdown-toggle">
+          <a href="About.html" class="nav-link-item px-3 py-2 rounded-lg text-white font-medium flex items-center transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md dropdown-toggle" data-i18n="about">
             About <i class="fas fa-chevron-down ml-1 text-xs"></i>
           </a>
           <div class="dropdown-menu absolute left-0 flex-col bg-white text-gray-800 mt-1 rounded-md shadow-lg py-1 w-48">
-            <a href="About.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600">Our Story</a>
-            <a href="About.html#organizational-structure" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600">Organizational Structure</a>
-            <a href="About.html#central-executive-committee" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600">Leadership</a>
+            <a href="About.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600" data-i18n="ourStory">Our Story</a>
+            <a href="About.html#organizational-structure" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600" data-i18n="organizationalStructure">Organizational Structure</a>
+            <a href="About.html#central-executive-committee" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600" data-i18n="leadership">Leadership</a>
           </div>
         </div>
         
         <!-- Resources Dropdown -->
         <div class="relative dropdown">
-          <button class="nav-link-item px-3 py-2 rounded-lg text-white font-medium flex items-center transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md dropdown-toggle">
+          <button class="nav-link-item px-3 py-2 rounded-lg text-white font-medium flex items-center transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md dropdown-toggle" data-i18n="resources">
             Resources <i class="fas fa-chevron-down ml-1 text-xs"></i>
           </button>
           <div class="dropdown-menu absolute left-0 flex-col bg-white text-gray-800 mt-1 rounded-md shadow-lg py-1 w-56">
-            <a href="Slogans.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600">Our Slogans</a>
-            <a href="Press_Releases.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600">Press Releases</a>
-            <a href="Publications.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600">Publications</a>
+            <a href="Slogans.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600" data-i18n="ourSlogans">Our Slogans</a>
+            <a href="Press_Releases.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600" data-i18n="pressReleases">Press Releases</a>
+            <a href="Publications.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600" data-i18n="publications">Publications</a>
           </div>
         </div>
         
-        <a href="Upcoming.html" class="nav-link-item px-3 py-2 rounded-lg text-white font-medium transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md">Events</a>
-        <a href="Gallery.html" class="nav-link-item px-3 py-2 rounded-lg text-white font-medium transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md">Gallery</a>
+        <a href="Upcoming.html" class="nav-link-item px-3 py-2 rounded-lg text-white font-medium transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md" data-i18n="events">Events</a>
+        <a href="Gallery.html" class="nav-link-item px-3 py-2 rounded-lg text-white font-medium transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md" data-i18n="gallery">Gallery</a>
       </nav>
       
       <!-- Language and Search (Right) -->
@@ -1030,39 +1031,39 @@ background: var(--dark-orange);
       <a href="index.html" class="flex items-center no-underline">
         <img src="logo.jpg" alt="Rastriya Shramik Mahasangh Nepal Logo" class="h-16">
         <div class="ml-3">
-          <h1 class="text-lg font-bold text-white">Rastriya Shramik Mahasangh</h1>
-          <p class="text-sm text-white">Nepal</p>
+          <h1 class="text-lg font-bold text-white" data-i18n="organizationName">Rastriya Shramik Mahasangh</h1>
+          <p class="text-sm text-white" data-i18n="organizationLocation">Nepal</p>
         </div>
       </a>
     </div>
     
     <div class="p-4 space-y-2 overflow-y-auto max-h-[calc(100vh-180px)]">
-      <a href="index.html" class="block py-2 px-4 rounded-lg hover:bg-gold hover:text-dark-orange transition-all duration-300">Home</a>
+      <a href="index.html" class="block py-2 px-4 rounded-lg hover:bg-gold hover:text-dark-orange transition-all duration-300" data-i18n="home">Home</a>
       
       <div class="py-1">
         <button class="flex justify-between items-center w-full py-2 px-4 rounded-lg hover:bg-gold hover:text-dark-orange transition-all duration-300 mobile-submenu-toggle" data-target="about-submenu">
-          About <i class="fas fa-chevron-down text-xs transition-transform duration-300"></i>
+          <span data-i18n="about">About</span> <i class="fas fa-chevron-down text-xs transition-transform duration-300"></i>
         </button>
         <div id="about-submenu" class="hidden pl-6 mt-1 space-y-1 bg-gray-700 rounded-lg">
-          <a href="About.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600">Our Story</a>
-          <a href="About.html#organizational-structure" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600">Organizational Structure</a>
-          <a href="About.html#central-executive-committee" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600">Leadership</a>
+          <a href="About.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600" data-i18n="ourStory">Our Story</a>
+          <a href="About.html#organizational-structure" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600" data-i18n="organizationalStructure">Organizational Structure</a>
+          <a href="About.html#central-executive-committee" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600" data-i18n="leadership">Leadership</a>
         </div>
       </div>
       
       <div class="py-1">
         <button class="flex justify-between items-center w-full py-2 px-4 rounded-lg hover:bg-gold hover:text-dark-orange transition-all duration-300 mobile-submenu-toggle" data-target="resources-submenu">
-          Resources <i class="fas fa-chevron-down text-xs transition-transform duration-300"></i>
+          <span data-i18n="resources">Resources</span> <i class="fas fa-chevron-down text-xs transition-transform duration-300"></i>
         </button>
         <div id="resources-submenu" class="hidden pl-6 mt-1 space-y-1 bg-gray-700 rounded-lg">
-          <a href="Slogans.html" class="block py-2 px-4 hover:bg-orange-100 transition-colors duration-300">Our Slogans</a>
-          <a href="Press_Releases.html" class="block py-2 px-4 hover:bg-orange-100 transition-colors duration-300">Press Releases</a>
-          <a href="Publications.html" class="block py-2 px-4 hover:bg-orange-100 transition-colors duration-300">Publications</a>
+          <a href="Slogans.html" class="block py-2 px-4 hover:bg-orange-100 transition-colors duration-300" data-i18n="ourSlogans">Our Slogans</a>
+          <a href="Press_Releases.html" class="block py-2 px-4 hover:bg-orange-100 transition-colors duration-300" data-i18n="pressReleases">Press Releases</a>
+          <a href="Publications.html" class="block py-2 px-4 hover:bg-orange-100 transition-colors duration-300" data-i18n="publications">Publications</a>
         </div>
       </div>
       
-      <a href="Upcoming.html" class="block py-2 px-4 rounded-lg hover:bg-gold hover:text-dark-orange transition-all duration-300">Events</a>
-      <a href="gallery.html" class="block py-2 px-4 rounded-lg hover:bg-gold hover:text-dark-orange transition-all duration-300">Gallery</a>
+      <a href="Upcoming.html" class="block py-2 px-4 rounded-lg hover:bg-gold hover:text-dark-orange transition-all duration-300" data-i18n="events">Events</a>
+      <a href="Gallery.html" class="block py-2 px-4 rounded-lg hover:bg-gold hover:text-dark-orange transition-all duration-300" data-i18n="gallery">Gallery</a>
     </div>
   </div>
 </header>
@@ -1071,28 +1072,28 @@ background: var(--dark-orange);
   <div class="updates-hero-bg"></div>
   <div class="updates-hero-overlay"></div>
   <div class="updates-content">
-    <h1>Updates</h1>
-    <p>Discover our latest initiatives, partnerships, and activities advancing workers' rights across Nepal</p>
+    <h1 data-i18n="updatesTitle">Updates</h1>
+    <p data-i18n="updatesSubtitle">Discover our latest initiatives, partnerships, and activities advancing workers' rights across Nepal</p>
   </div>
   <div class="updates-breadcrumb">
-    <a href="../Landing_Page.html">Home</a> / <span>Updates</span>
+    <a href="../Landing_Page.html" data-i18n="home">Home</a> / <span data-i18n="updates">Updates</span>
   </div>
 </section>
 <!-- Updates Section -->
 <section class="updates-section">
   <div class="updates-container">
     <div class="updates-header" data-aos="fade-up">
-      <h2 class="section-title">Latest Updates</h2>
-      <p>Explore our ongoing initiatives, partnerships, and activities that are making a difference for workers across Nepal</p>
+      <h2 class="section-title" data-i18n="latestUpdates">Latest Updates</h2>
+      <p data-i18n="updatesDescription">Explore our ongoing initiatives, partnerships, and activities that are making a difference for workers across Nepal</p>
     </div>
     
     <div class="updates-filter" data-aos="fade-up" data-aos-delay="100">
-      <button class="filter-btn active" data-filter="all">All Updates</button>
-      <button class="filter-btn" data-filter="initiatives">Initiatives</button>
-      <button class="filter-btn" data-filter="partnerships">Partnerships</button>
-      <button class="filter-btn" data-filter="training">Training</button>
-      <button class="filter-btn" data-filter="community">Community</button>
-      <button class="filter-btn" data-filter="development">Development</button>
+      <button class="filter-btn active" data-filter="all" data-i18n="allUpdates">All Updates</button>
+      <button class="filter-btn" data-filter="initiatives" data-i18n="initiatives">Initiatives</button>
+      <button class="filter-btn" data-filter="partnerships" data-i18n="partnerships">Partnerships</button>
+      <button class="filter-btn" data-filter="training" data-i18n="training">Training</button>
+      <button class="filter-btn" data-filter="community" data-i18n="community">Community</button>
+      <button class="filter-btn" data-filter="development" data-i18n="development">Development</button>
     </div>
     
     <div class="updates-grid">
@@ -1100,27 +1101,31 @@ background: var(--dark-orange);
       <div class="update-card" data-aos="fade-up" data-aos-delay="100" data-category="partnerships">
         <div class="update-image">
           <img src="Updates/Img4.jpeg" alt="RSM Nepal at BMS 70th Anniversary Program" class="object-top" loading="lazy">
-          <div class="update-badge">Partnership</div>
+          <div class="update-badge" data-i18n="partnership">Partnership</div>
         </div>
         <div class="update-details">
           <div class="update-date">
             <i class="far fa-calendar-alt"></i>
-            <span>Shrawan 07-08, 2082</span>
+            <span class="date" data-date="Shrawan 07-08, 2082" data-date-ne="श्रावण ०७-०८, २०८२">Shrawan 07-08, 2082</span>
           </div>
-          <h3 class="update-title">RSM Nepal at BMS 70th Anniversary Program</h3>
-          <p class="update-description">Strengthening regional labor solidarity through a historic celebration.</p>
+          <h3 class="update-title" data-i18n="update1Title">RSM Nepal at BMS 70th Anniversary Program</h3>
+          <p class="update-description" data-i18n="update1Desc">Strengthening regional labor solidarity through a historic celebration.</p>
           <div class="update-meta">
             <i class="fas fa-map-marker-alt"></i>
-            <span>New Delhi, India</span>
+            <span data-i18n="newDelhiIndia">New Delhi, India</span>
           </div>
           <div class="update-actions">
             <button class="update-btn update-btn-primary view-update-details" 
                     data-title="RSM Nepal at BMS 70th Anniversary Program"
+                    data-title-ne="आर.एस.एम. नेपाल बी.एम.एस.को ७०औं वार्षिकोत्सव कार्यक्रममा"
                     data-date="Shrawan 07-08, 2082"
-                    data-description="A high-level delegation from Rastriya Shramik Mahasangh Nepal (RSM Nepal) participated as honored guests in the two-day concluding program of Bharatiya Mazdoor Sangh’s (BMS) 70th anniversary in New Delhi. The event, attended by over 10,000 participants, featured impactful keynote speeches from BMS leaders, cultural performances, and discussions on the future of labor rights in the region. RSM Nepal’s presence underscored its commitment to fostering cross-border cooperation and unity among workers."
+                    data-date-ne="श्रावण ०७-०८, २०८२"
+                    data-description="A high-level delegation from Rastriya Shramik Mahasangh Nepal (RSM Nepal) participated as honored guests in the two-day concluding program of Bharatiya Mazdoor Sangh's (BMS) 70th anniversary in New Delhi. The event, attended by over 10,000 participants, featured impactful keynote speeches from BMS leaders, cultural performances, and discussions on the future of labor rights in the region. RSM Nepal's presence underscored its commitment to fostering cross-border cooperation and unity among workers."
+                    data-description-ne="राष्ट्रिय श्रमिक महासंघ नेपाल (आर.एस.एम. नेपाल) को उच्चस्तरीय प्रतिनिधिमण्डले नयाँ दिल्लीमा भारतीय मजदूर संघ (बी.एम.एस.) को ७०औं वार्षिकोत्सवको दुई दिने समापन कार्यक्रममा सम्मानित अतिथिको रूपमा भाग लिएका थिए। १०,००० भन्दा बढी सहभागीहरूले भाग लिएको यो कार्यक्रममा बी.एम.एस. नेताहरूबाट प्रभावशाली मुख्य भाषण, सांस्कृतिक प्रस्तुतीहरू, र क्षेत्रमा श्रमिक अधिकारको भविष्यबारे छलफल समावेश थिए। आर.एस.एम. नेपालको उपस्थितिले श्रमिकहरू बीच सीमापार सहकार्य र एकता बढाउने प्रतिबद्धतालाई जोड दिएको थियो।"
                     data-images='["Updates/Img4.jpeg", "Updates/Img3.jpeg"]'
                     data-highlights='["RSM Nepal dignitaries attended as special invitees", "Over 10,000 attendees from diverse sectors and regions", "Engagement in discussions on future labor rights initiatives", "Strengthening Nepal–India labor solidarity through cultural and strategic exchange"]'
-                    data-contact="rashtriyashramikm@gmail.com">Learn More</button>
+                    data-highlights-ne='["आर.एस.एम. नेपालका गण्यमान्य व्यक्तिहरू विशेष आमन्त्रितको रूपमा सहभागी भए", "विविध क्षेत्र र क्षेत्रहरूबाट १०,००० भन्दा बढी सहभागीहरू", "भविष्यका श्रमिक अधिकार पहलहरूमा छलफलमा सहभागिता", "सांस्कृतिक र रणनीतिक आदानप्रदान मार्फत नेपाल–भारत श्रमिक एकता बलियो"]'
+                    data-contact="rashtriyashramikm@gmail.com" data-i18n="learnMore">Learn More</button>
           </div>
         </div>
       </div>
@@ -1129,27 +1134,31 @@ background: var(--dark-orange);
       <div class="update-card" data-aos="fade-up" data-aos-delay="200" data-category="initiatives">
         <div class="update-image">
           <img src="Updates/Img2.jpeg" alt="Bilateral Labor Leadership Meet" class="object-top" loading="lazy">
-          <div class="update-badge">Initiative</div>
+          <div class="update-badge" data-i18n="initiative">Initiative</div>
         </div>
         <div class="update-details">
           <div class="update-date">
             <i class="far fa-calendar-alt"></i>
-            <span>Shrawan 02, 2082</span>
+            <span class="date" data-date="Shrawan 02, 2082" data-date-ne="श्रावण ०२, २०८२">Shrawan 02, 2082</span>
           </div>
-          <h3 class="update-title">Bilateral Labor Leadership Meet</h3>
-          <p class="update-description">A new chapter in cross-border cooperation for workers’ welfare.</p>
+          <h3 class="update-title" data-i18n="update2Title">Bilateral Labor Leadership Meet</h3>
+          <p class="update-description" data-i18n="update2Desc">A new chapter in cross-border cooperation for workers' welfare.</p>
           <div class="update-meta">
             <i class="fas fa-map-marker-alt"></i>
-            <span>New Delhi, India</span>
+            <span data-i18n="newDelhiIndia">New Delhi, India</span>
           </div>
           <div class="update-actions">
             <button class="update-btn update-btn-primary view-update-details" 
                     data-title="Bilateral Labor Leadership Meet"
+                    data-title-ne="द्विपक्षीय श्रमिक नेतृत्व भेला"
                     data-date="Shrawan 02, 2082"
+                    data-date-ne="श्रावण ०२, २०८२"
                     data-description="The Bilateral Labor Leadership Summit – New Delhi 2024 brought together the senior leadership of Rastriya Shramik Mahasangh Nepal and Bharatiya Mazdoor Sangh India for a landmark dialogue on pressing labor issues in the region. The leaders discussed strategies to address wage disparities, unsafe working environments, and gaps in social protection. The meeting concluded with a shared commitment to coordinated advocacy and actionable steps to improve the lives of workers in both countries."
+                    data-description-ne="द्विपक्षीय श्रमिक नेतृत्व शिखर सम्मेलन - नयाँ दिल्ली २०२४ ले क्षेत्रका ज्वलन्त श्रम समस्याहरूमाथि ऐतिहासिक संवादको लागि राष्ट्रिय श्रमिक महासंघ नेपाल र भारतीय मजदूर संघ भारतका वरिष्ठ नेतृत्वलाई एकै ठाउँमा ल्यायो। नेताहरूले तलब विसंगति, असुरक्षित कार्य वातावरण, र सामाजिक सुरक्षामा खाली ठाउँहरू सम्बोधन गर्ने रणनीतिहरूमा छलफल गरे। बैठक दुवै देशका श्रमिकहरूको जीवन सुधार गर्न समन्वित अधिवक्ता र कार्यात्मक चरणहरूमा साझेदारीको साथ समापन भयो।"
                     data-images='["Updates/Img2.jpeg", "Updates/Img1.jpeg"]'
                     data-highlights='["First formal bilateral summit between RSM Nepal and BMS India", "Focus on wage reform, workplace safety, and social protection", "Commitment to continued dialogue on future worker welfare initiative"]'
-                    data-contact="rashtriyashramikm@gmail.com">Learn More</button>
+                    data-highlights-ne='["आर.एस.एम. नेपाल र बी.एम.एस. भारत बीचको पहिलो औपचारिक द्विपक्षीय शिखर सम्मेलन", "तलब सुधार, कार्यस्थल सुरक्षा, र सामाजिक सुरक्षामा ध्यान केन्द्रित", "भविष्यका श्रमिक कल्याण पहलहरूमा निरन्तर संवादमा प्रतिबद्धता"]'
+                    data-contact="rashtriyashramikm@gmail.com" data-i18n="learnMore">Learn More</button>
           </div>
         </div>
       </div>
@@ -1158,27 +1167,31 @@ background: var(--dark-orange);
       <div class="update-card" data-aos="fade-up" data-aos-delay="100" data-category="community">
         <div class="update-image">
           <img src="Updates/Img6.jpg" alt="Madhesh Province Committee Formation" class="object-top" loading="lazy">
-          <div class="update-badge">Community</div>
+          <div class="update-badge" data-i18n="community">Community</div>
         </div>
         <div class="update-details">
           <div class="update-date">
             <i class="far fa-calendar-alt"></i>
-            <span>2081</span>
+            <span class="date" data-date="2081" data-date-ne="२०८१">2081</span>
           </div>
-          <h3 class="update-title">Madhesh Province Committee Formation</h3>
-          <p class="update-description">RSM Nepal establishes 15-member provincial working committee in Janakpur</p>
+          <h3 class="update-title" data-i18n="update3Title">Madhesh Province Committee Formation</h3>
+          <p class="update-description" data-i18n="update3Desc">RSM Nepal establishes 15-member provincial working committee in Janakpur</p>
           <div class="update-meta">
             <i class="fas fa-map-marker-alt"></i>
-            <span>Janakpur, Nepal</span>
+            <span data-i18n="janakpurNepal">Janakpur, Nepal</span>
           </div>
           <div class="update-actions">
             <button class="update-btn update-btn-primary view-update-details" 
                     data-title="Madhesh Province Committee Formation"
+                    data-title-ne="मधेश प्रदेश समिति गठन"
                     data-date="2081"
-                    data-description="As the only non-political trade union in the country, Rastriya Shramik Mahasangh Nepal convened a meeting in Janakpur, Madhesh Province, to expand its organizational reach. Under the chairmanship of Mr. Madan Karna and with the leadership of General Secretary Mr. Chander Yadav, a new 15-member provincial working committee was formed. This milestone reflects RSM Nepal’s commitment to strengthening grassroots labor representation across provinces."
+                    data-date-ne="२०८१"
+                    data-description="As the only non-political trade union in the country, Rastriya Shramik Mahasangh Nepal convened a meeting in Janakpur, Madhesh Province, to expand its organizational reach. Under the chairmanship of Mr. Madan Karna and with the leadership of General Secretary Mr. Chander Yadav, a new 15-member provincial working committee was formed. This milestone reflects RSM Nepal's commitment to strengthening grassroots labor representation across provinces."
+                    data-description-ne="देशको एकमात्र गैर-राजनीतिक ट्रेड युनियनको रूपमा, राष्ट्रिय श्रमिक महासंघ नेपालले आफ्नो संगठनात्मक पहुँच विस्तार गर्न मधेश प्रदेशको जनकपुरमा बैठक बोलाएको थियो। श्री मदन कर्णाको अध्यक्षता र महासचिव श्री चन्द्र यादवको नेतृत्वमा, एक नयाँ १५ सदस्यीय प्रदेशीय कार्य समिति गठन भयो। यो मीलको पत्थरले आर.एस.एम. नेपालको सबै प्रदेशहरूमा ग्रासरुट श्रमिक प्रतिनिधित्वलाई बलियो बनाउने प्रतिबद्धतालाई प्रतिबिम्बित गर्दछ।"
                     data-images='["Updates/Img6.jpg"]'
                     data-highlights='["Chaired by Mr. Madan Karna", "Leadership role by General Secretary Mr. Chander Yadav", "Formation of a 15-member provincial working committee"]'
-                    data-contact="rashtriyashramikm@gmail.com">Learn More</button>
+                    data-highlights-ne='["श्री मदन कर्णाको अध्यक्षतामा", "महासचिव श्री चन्द्र यादवको नेतृत्वको भूमिका", "१५ सदस्यीय प्रदेशीय कार्य समितिको गठन"]'
+                    data-contact="rashtriyashramikm@gmail.com" data-i18n="learnMore">Learn More</button>
           </div>
         </div>
       </div>
@@ -1186,28 +1199,32 @@ background: var(--dark-orange);
       <!-- Update 4 - Community -->
       <div class="update-card" data-aos="fade-up" data-aos-delay="100" data-category="initiatives">
         <div class="update-image">
-          <img src="Updates/Img10.jpg" alt="Sugarcane Farmers’ Outstanding Payment Issue" class="object-top" loading="lazy">
-          <div class="update-badge">Initiative</div>
+          <img src="Updates/Img10.jpg" alt="Sugarcane Farmers' Outstanding Payment Issue" class="object-top" loading="lazy">
+          <div class="update-badge" data-i18n="initiative">Initiative</div>
         </div>
         <div class="update-details">
           <div class="update-date">
             <i class="far fa-calendar-alt"></i>
-            <span>Asoj 30, 2081</span>
+            <span class="date" data-date="Asoj 30, 2081" data-date-ne="असोज ३०, २०८१">Asoj 30, 2081</span>
           </div>
-          <h3 class="update-title">Sugarcane Farmers’ Outstanding Payment Issue</h3>
-          <p class="update-description">Appeal to Government for Fair Settlement and Timely Support Price Fixation</p>
+          <h3 class="update-title" data-i18n="update4Title">Sugarcane Farmers' Outstanding Payment Issue</h3>
+          <p class="update-description" data-i18n="update4Desc">Appeal to Government for Fair Settlement and Timely Support Price Fixation</p>
           <div class="update-meta">
             <i class="fas fa-map-marker-alt"></i>
-            <span>Nawalparasi, Nepal</span>
+            <span data-i18n="nawalparasiNepal">Nawalparasi, Nepal</span>
           </div>
           <div class="update-actions">
             <button class="update-btn update-btn-primary view-update-details" 
-                    data-title="Sugarcane Farmers’ Outstanding Payment Issue"
+                    data-title="Sugarcane Farmers' Outstanding Payment Issue"
+                    data-title-ne="उखु किसानहरूको बक्युता भुक्तानी समस्या"
                     data-date="Asoj 30, 2081"
+                    data-date-ne="असोज ३०, २०८१"
                     data-description="The Rastriya Shramik Mahasangh Nepal, Nawalparasi has drawn the attention of the Government of Nepal through the District Administration Office regarding the long-pending dues of sugarcane farmers."
+                    data-description-ne="राष्ट्रिय श्रमिक महासंघ नेपाल, नवलपरासीले जिल्ला प्रशासन कार्यालय मार्फत नेपाल सरकारको ध्यानाकर्षण उखु किसानहरूको लामो समयदेखि बाँकी रकमको बारेमा गराएको छ।"
                     data-images='["Updates/Img10.jpg", "Updates/Img11.jpg"]'
                     data-highlights='["Government Role: Nepal Government and certain political leaders have failed to ensure timely settlement.", "Demand: Immediate intervention for payment clearance and proper fixation of support price on time.", "Action Taken: A formal attention letter has been submitted via the District Administration Office."]'
-                    data-contact="rashtriyashramikm@gmail.com">Learn More</button>
+                    data-highlights-ne='["सरकारको भूमिका: नेपाल सरकार र केही राजनीतिक नेताहरूले समयमै निपटान सुनिश्चित गर्न असफल भएका छन्।", "माग: भुक्तानी निकासा र समयमै समर्थन मूल्य उचित तय गर्न तत्काल हस्तक्षेप।", "कार्यवाही: जिल्ला प्रशासन कार्यालय मार्फत औपचारिक ध्यानाकर्षण पत्र पेश गरिएको छ।"]'
+                    data-contact="rashtriyashramikm@gmail.com" data-i18n="learnMore">Learn More</button>
           </div>
         </div>
       </div>
@@ -1216,57 +1233,64 @@ background: var(--dark-orange);
       <!-- Update 5 - Development -->
       <div class="update-card" data-aos="fade-up" data-aos-delay="300" data-category="initiatives">
         <div class="update-image">
-          <img src="Updates/Img5.jpg" alt="Farmers’ Pricing Protest" class="object-top" loading="lazy">
-          <div class="update-badge">Initiative</div>
+          <img src="Updates/Img5.jpg" alt="Farmers' Pricing Protest" class="object-top" loading="lazy">
+          <div class="update-badge" data-i18n="initiative">Initiative</div>
         </div>
         <div class="update-details">
           <div class="update-date">
             <i class="far fa-calendar-alt"></i>
-            <span>2080</span>
+            <span class="date" data-date="2080" data-date-ne="२०८०">2080</span>
           </div>
-          <h3 class="update-title">Farmers’ Pricing Protest</h3>
-          <p class="update-description">RSM Nepal raises voice against unfair crop rate determination</p>
+          <h3 class="update-title" data-i18n="update5Title">Farmers' Pricing Protest</h3>
+          <p class="update-description" data-i18n="update5Desc">RSM Nepal raises voice against unfair crop rate determination</p>
           <div class="update-meta">
             <i class="fas fa-map-marker-alt"></i>
-            <span>Kathmandu, Nepal</span>
+            <span data-i18n="kathmanduNepal">Kathmandu, Nepal</span>
           </div>
           <div class="update-actions">
             <button class="update-btn update-btn-primary view-update-details" 
-                    data-title="Farmers’ Pricing Protest"
+                    data-title="Farmers' Pricing Protest"
+                    data-title-ne="किसानहरूको मूल्य निर्धारण विरोध प्रदर्शन"
                     data-date="2080"
-                    data-description="Rastriya Krishi Shramik Sangh Nepal strongly opposed the government’s unilateral decision to set crop prices below production costs, favoring industrialists over farmers. According to procedure, such rates should be determined through a joint meeting of farmers’ representatives, industrial bodies, and the government. However, the decision was taken arbitrarily, undermining farmers’ interests and putting their livelihoods at risk. The organization reiterated that in an agrarian country like Nepal, farmers’ welfare must be central to policy, not sacrificed for industrial profit."
+                    data-date-ne="२०८०"
+                    data-description="Rastriya Krishi Shramik Sangh Nepal strongly opposed the government's unilateral decision to set crop prices below production costs, favoring industrialists over farmers. According to procedure, such rates should be determined through a joint meeting of farmers' representatives, industrial bodies, and the government. However, the decision was taken arbitrarily, undermining farmers' interests and putting their livelihoods at risk. The organization reiterated that in an agrarian country like Nepal, farmers' welfare must be central to policy, not sacrificed for industrial profit."
+                    data-description-ne="राष्ट्रिय कृषि श्रमिक संघ नेपालले सरकारले एकपक्षीय रूपमा उत्पादन लागत भन्दा तल बाली मूल्य तोक्ने निर्णयको तीव्र विरोध गर्यो, जसले किसानहरू भन्दा औद्योगिकहरूलाई फाइदा पुग्यो। प्रक्रिया अनुसार, यस्ता दरहरू किसान प्रतिनिधिहरू, औद्योगिक निकायहरू, र सरकारको संयुक्त बैठक मार्फत निर्धारण गर्नुपर्छ। तथापि, निर्णय स्वेच्छाचारी रूपमा गरिएको थियो, जसले किसानहरूको हितलाई कमजोर बनायो र उनीहरूको जीविकोपार्जनलाई जोखिममा पार्यो। संगठनले नेपाल जस्तो कृषि प्रधान देशमा, किसानको कल्याण नीतिको केन्द्र हुनुपर्छ, औद्योगिक नाफाको लागि बलिदान गर्नु हुँदैन भनेर दोहोर्यायो।"
                     data-images='["Updates/Img5.jpg"]'
-                    data-highlights='["Protest against government’s arbitrary crop price determination", "Farmers’ production costs ignored, rates fixed lower than cost", "Decision favored industrialists instead of farmers’ welfare", "Demand for transparent, participatory process involving farmers, industries, and government"]'
-                    data-contact="rashtriyashramikm@gmail.com">Learn More</button>
+                    data-highlights='["Protest against government's arbitrary crop price determination", "Farmers' production costs ignored, rates fixed lower than cost", "Decision favored industrialists instead of farmers' welfare", "Demand for transparent, participatory process involving farmers, industries, and government"]'
+                    data-highlights-ne='["सरकारको स्वेच्छाचारी बाली मूल्य निर्धारण विरुद्ध प्रदर्शन", "किसानहरूको उत्पादन लागत उपेक्षा गरिएको, लागत भन्दा कम दर तोकिएको", "निर्णयले किसानहरूको कल्याण भन्दा औद्योगिकहरूलाई प्राथमिकता दियो", "किसान, उद्योग, र सरकार सहित पारदर्शी, सहभागी प्रक्रियाको माग"]'
+                    data-contact="rashtriyashramikm@gmail.com" data-i18n="learnMore">Learn More</button>
           </div>
         </div>
       </div>
-
       <!-- Update 6 - Initiative -->
       <div class="update-card" data-aos="fade-up" data-aos-delay="200" data-category="partnerships">
         <div class="update-image">
           <img src="Updates/Img7.jpg" alt="Meeting with Varun Beverages Pvt. Ltd." class="object-top" loading="lazy">
-          <div class="update-badge">Partnership</div>
+          <div class="update-badge" data-i18n="partnership">Partnership</div>
         </div>
         <div class="update-details">
           <div class="update-date">
             <i class="far fa-calendar-alt"></i>
-            <span>Mangsir 16, 2079</span>
+            <span class="date" data-date="Mangsir 16, 2079" data-date-ne="मंसिर १६, २०७९">Mangsir 16, 2079</span>
           </div>
-          <h3 class="update-title">Meeting with Varun Beverages Pvt. Ltd.</h3>
-          <p class="update-description">RSM Nepal Industrial Union engages in dialogue with management at Nawalparasi unit</p>
+          <h3 class="update-title" data-i18n="update6Title">Meeting with Varun Beverages Pvt. Ltd.</h3>
+          <p class="update-description" data-i18n="update6Desc">RSM Nepal Industrial Union engages in dialogue with management at Nawalparasi unit</p>
           <div class="update-meta">
             <i class="fas fa-map-marker-alt"></i>
-            <span>Nawalparasi, Nepal</span>
+            <span data-i18n="nawalparasiNepal">Nawalparasi, Nepal</span>
           </div>
           <div class="update-actions">
             <button class="update-btn update-btn-primary view-update-details" 
                     data-title="Meeting with Varun Beverages Pvt. Ltd."
+                    data-title-ne="वरुण बेभरेजेस प्रा. लि. संग भेटघाट"
                     data-date="Mangsir 16, 2079"
+                    data-date-ne="मंसिर १६, २०७९"
                     data-description="The Industrial Union of Rastriya Shramik Sangh Nepal held a meeting with the management of Varun Beverages Pvt. Ltd., Nawalparasi. The discussion focused on strengthening labor–management relations and addressing issues of worker welfare."
+                    data-description-ne="राष्ट्रिय श्रमिक संघ नेपालको औद्योगिक संघले वरुण बेभरेजेस प्रा. लि., नवलपरासीको व्यवस्थापनसँग भेटघाट गरेको थियो। छलफल श्रमिक-व्यवस्थापन सम्बन्धलाई बलियो बनाउने र श्रमिक कल्याणका मुद्दाहरूलाई सम्बोधन गर्नमा केन्द्रित थियो।"
                     data-images='["Updates/Img7.jpg"]'
                     data-highlights='["Meeting held at Varun Beverages Pvt. Ltd., Nawalparasi", "Dialogue with company management on labor welfare matters"]'
-                    data-contact="rashtriyashramikm@gmail.com">Learn More</button>
+                    data-highlights-ne='["वरुण बेभरेजेस प्रा. लि., नवलपरासीमा भेटघाट भएको", "श्रमिक कल्याणका विषयमा कम्पनी व्यवस्थापनसँग संवाद"]'
+                    data-contact="rashtriyashramikm@gmail.com" data-i18n="learnMore">Learn More</button>
           </div>
         </div>
       </div>
@@ -1274,28 +1298,32 @@ background: var(--dark-orange);
       <!-- Update 7 - Partnership -->
       <div class="update-card" data-aos="fade-up" data-aos-delay="300" data-category="initiatives">
         <div class="update-image">
-          <img src="Updates/Img13.jpg" alt="Press Conference on Sugarcane Farmers’ Pending Payments" class="object-top" loading="lazy">
-          <div class="update-badge">Initiative</div>
+          <img src="Updates/Img13.jpg" alt="Press Conference on Sugarcane Farmers' Pending Payments" class="object-top" loading="lazy">
+          <div class="update-badge" data-i18n="initiative">Initiative</div>
         </div>
         <div class="update-details">
           <div class="update-date">
             <i class="far fa-calendar-alt"></i>
-            <span>Shrawan 16, 2078</span>
+            <span class="date" data-date="Shrawan 16, 2078" data-date-ne="श्रावण १६, २०७८">Shrawan 16, 2078</span>
           </div>
-          <h3 class="update-title">Press Conference on Sugarcane Farmers’ Pending Payments</h3>
-          <p class="update-description">RSM Nepal supports farmers’ movement for dues settlement and agricultural development</p>
+          <h3 class="update-title" data-i18n="update7Title">Press Conference on Sugarcane Farmers' Pending Payments</h3>
+          <p class="update-description" data-i18n="update7Desc">RSM Nepal supports farmers' movement for dues settlement and agricultural development</p>
           <div class="update-meta">
             <i class="fas fa-map-marker-alt"></i>
-            <span>Kathmandu, Nepal</span>
+            <span data-i18n="kathmanduNepal">Kathmandu, Nepal</span>
           </div>
           <div class="update-actions">
             <button class="update-btn update-btn-primary view-update-details" 
-                    data-title="Press Conference on Sugarcane Farmers’ Pending Payments"
+                    data-title="Press Conference on Sugarcane Farmers' Pending Payments"
+                    data-title-ne="उखु किसानहरूको बाँकी भुक्तानीमा प्रेस सम्मेलन"
                     data-date="Shrawan 16, 2078"
-                    data-description="With the participation of Rastriya Krishi Shramik Sangh, a press conference was held under the leadership of Rakesh Mishra, Patron of the Sugarcane Farmers’ Struggle Committee. The conference highlighted the ongoing struggle of farmers over the past three years to receive pending payments and called for enhanced support for agricultural development and protection."
+                    data-date-ne="श्रावण १६, २०७८"
+                    data-description="With the participation of Rastriya Krishi Shramik Sangh, a press conference was held under the leadership of Rakesh Mishra, Patron of the Sugarcane Farmers' Struggle Committee. The conference highlighted the ongoing struggle of farmers over the past three years to receive pending payments and called for enhanced support for agricultural development and protection."
+                    data-description-ne="राष्ट्रिय कृषि श्रमिक संघको सहभागितामा, उखु किसान संघर्ष समितिका संरक्षक राकेश मिश्राको नेतृत्वमा एक प्रेस सम्मेलन आयोजना गरिएको थियो। सम्मेलनले गत तीन वर्षदेखि बाँकी भुक्तानी प्राप्त गर्न किसानहरूको चलिरहेको संघर्षलाई प्रकाश पार्यो र कृषि विकास र संरक्षणको लागि बढी समर्थनको आह्वान गर्यो।"
                     data-images='["Updates/Img13.jpg"]'
-                    data-highlights='["Leadership: Rakesh Mishra, Patron of the Sugarcane Farmers’ Struggle Committee", "Issues Highlighted: Pending payments of sugarcane farmers for the past three years", "Objective: To raise public awareness and urge authorities for immediate resolution"]'
-                    data-contact="rashtriyashramikm@gmail.com">Learn More</button>
+                    data-highlights='["Leadership: Rakesh Mishra, Patron of the Sugarcane Farmers' Struggle Committee", "Issues Highlighted: Pending payments of sugarcane farmers for the past three years", "Objective: To raise public awareness and urge authorities for immediate resolution"]'
+                    data-highlights-ne='["नेतृत्व: उखु किसान संघर्ष समितिका संरक्षक राकेश मिश्र", "मुद्दाहरू: गत तीन वर्षदेखि उखु किसानहरूको बाँकी भुक्तानी", "उद्देश्य: जनचेतना जगाउने र तत्काल समाधानको लागि अधिकारीहरूलाई आह्वान गर्ने"]'
+                    data-contact="rashtriyashramikm@gmail.com" data-i18n="learnMore">Learn More</button>
           </div>
         </div>
       </div>     
@@ -1304,27 +1332,31 @@ background: var(--dark-orange);
       <div class="update-card" data-aos="fade-up" data-aos-delay="200" data-category="community">
         <div class="update-image">
           <img src="Updates/Img12.jpg" alt="National Executive Committee Meeting" class="object-top" loading="lazy">
-          <div class="update-badge">Community</div>
+          <div class="update-badge" data-i18n="community">Community</div>
         </div>
         <div class="update-details">
           <div class="update-date">
             <i class="far fa-calendar-alt"></i>
-            <span>Chaitra 12, 2077</span>
+            <span class="date" data-date="Chaitra 12, 2077" data-date-ne="चैत्र १२, २०७७">Chaitra 12, 2077</span>
           </div>
-          <h3 class="update-title">National Executive Committee Meeting</h3>
-          <p class="update-description">RSM Nepal holds key national committee meeting in Janakpur Dham</p>
+          <h3 class="update-title" data-i18n="update8Title">National Executive Committee Meeting</h3>
+          <p class="update-description" data-i18n="update8Desc">RSM Nepal holds key national committee meeting in Janakpur Dham</p>
           <div class="update-meta">
             <i class="fas fa-map-marker-alt"></i>
-            <span>Janakpur, Nepal</span>
+            <span data-i18n="janakpurNepal">Janakpur, Nepal</span>
           </div>
           <div class="update-actions">
             <button class="update-btn update-btn-primary view-update-details" 
                     data-title="National Executive Committee Meeting"
+                    data-title-ne="राष्ट्रिय कार्यकारिणी समिति बैठक"
                     data-date="Chaitra 12, 2077"
+                    data-date-ne="चैत्र १२, २०७७"
                     data-description="The National Working Committee of Rastriya Shramik Mahasangh Nepal convened on Chaitra 10–11 at Janakpur Dham, with the participation of various office bearers. The meeting focused on organizational strategies, policy planning, and strengthening labor representation across the country."
+                    data-description-ne="राष्ट्रिय श्रमिक महासंघ नेपालको राष्ट्रिय कार्य समितिले चैत्र १०–११ मा जनकपुर धाममा विभिन्न पदाधिकारीहरूको सहभागितामा बैठक गरेको थियो। बैठकले संगठनात्मक रणनीति, नीति योजना, र देशभर श्रमिक प्रतिनिधित्वलाई बलियो बनाउनमा ध्यान केन्द्रित गरेको थियो।"
                     data-images='["Updates/Img12.jpg"]'
                     data-highlights='["Purpose: Discussion on organizational strategies and policy planning", "Outcome: Strengthened coordination among national committee members"]'
-                    data-contact="rashtriyashramikm@gmail.com">Learn More</button>
+                    data-highlights-ne='["उद्देश्य: संगठनात्मक रणनीति र नीति योजनामा छलफल", "परिणाम: राष्ट्रिय समिति सदस्यहरू बीच समन्वय बलियो"]'
+                    data-contact="rashtriyashramikm@gmail.com" data-i18n="learnMore">Learn More</button>
           </div>
         </div>
       </div>      
@@ -1332,28 +1364,32 @@ background: var(--dark-orange);
       <!-- Update 9 - Community -->
       <div class="update-card" data-aos="fade-up" data-aos-delay="300" data-category="initiatives">
         <div class="update-image">
-          <img src="Updates/Img8.jpg" alt="Nationwide Sugarcane Farmers’ Protest at Maitighar Mandala" class="object-top" loading="lazy">
-          <div class="update-badge">Initiative</div>
+          <img src="Updates/Img8.jpg" alt="Nationwide Sugarcane Farmers' Protest at Maitighar Mandala" class="object-top" loading="lazy">
+          <div class="update-badge" data-i18n="initiative">Initiative</div>
         </div>
         <div class="update-details">
           <div class="update-date">
             <i class="far fa-calendar-alt"></i>
-            <span>Mangsir 27, 2077</span>
+            <span class="date" data-date="Mangsir 27, 2077" data-date-ne="मंसिर २७, २०७७">Mangsir 27, 2077</span>
           </div>
-          <h3 class="update-title">Nationwide Sugarcane Farmers’ Protest at Maitighar Mandala</h3>
-          <p class="update-description">Call for pending dues settlement of sugarcane farmers across Nepal</p>
+          <h3 class="update-title" data-i18n="update9Title">Nationwide Sugarcane Farmers' Protest at Maitighar Mandala</h3>
+          <p class="update-description" data-i18n="update9Desc">Call for pending dues settlement of sugarcane farmers across Nepal</p>
           <div class="update-meta">
             <i class="fas fa-map-marker-alt"></i>
-            <span>Kathmandu, Nepal</span>
+            <span data-i18n="kathmanduNepal">Kathmandu, Nepal</span>
           </div>
           <div class="update-actions">
             <button class="update-btn update-btn-primary view-update-details" 
-                    data-title="Nationwide Sugarcane Farmers’ Protest at Maitighar Mandala"
+                    data-title="Nationwide Sugarcane Farmers' Protest at Maitighar Mandala"
+                    data-title-ne="मैतीघर मण्डलमा देशव्यापी उखु किसानहरूको विरोध प्रदर्शन"
                     data-date="Mangsir 27, 2077"
+                    data-date-ne="मंसिर २७, २०७७"
                     data-description="Sugarcane farmers from across the country had announced a protest at Maitighar Mandala demanding payment of their long-pending dues. The movement aims to draw urgent government and industry attention to the financial hardships faced by farmers due to unpaid cane prices."
+                    data-description-ne="देशभरका उखु किसानहरूले आफ्नो लामो समयदेखि बाँकी रकमको भुक्तानी माग गर्दै मैतीघर मण्डलमा विरोध प्रदर्शन गर्ने घोषणा गरेका थिए। यो आन्दोलनको उद्देश्य बकाया उखु मूल्यका कारण किसानहरूले सामना गर्दै आएको वित्तीय कठिनाइको प्रति सरकार र उद्योगको तत्काल ध्यानाकर्षण आकर्षित गर्नु हो।"
                     data-images='["Updates/Img8.jpg", "Updates/Img9.jpg"]'
                     data-highlights='["Main Demand: Immediate settlement of long-overdue payments to sugarcane farmers", "Issue Highlight: Farmers struggling with debt, family expenses, and cultivation costs due to delayed payments", "Objective: To pressurize concerned authorities and sugar mills to release dues promptly"]'
-                    data-contact="rashtriyashramikm@gmail.com">Learn More</button>
+                    data-highlights-ne='["मुख्य माग: उखु किसानहरूलाई लामो समयदेखि बाँकी भुक्तानीको तत्काल निपटारी", "मुद्दा: ढिलाइ भएको भुक्तानीका कारण कर्जा, परिवार खर्च, र खेती लागतसँग जुधिरहेका किसानहरू", "उद्देश्य: सम्बन्धित निकायहरू र चिनी मिलहरूलाई बाँकी रकम चाँडो निकासा गर्न दबाब दिने"]'
+                    data-contact="rashtriyashramikm@gmail.com" data-i18n="learnMore">Learn More</button>
           </div>
         </div>
       </div>
@@ -1377,7 +1413,7 @@ background: var(--dark-orange);
       
       <!-- Update Highlights -->
       <div class="update-highlights">
-        <h3>Key Points</h3>
+        <h3 data-i18n="keyPoints">Key Points</h3>
         <ul id="updateHighlights">
           <!-- Highlights will be inserted here by JavaScript -->
         </ul>
@@ -1385,7 +1421,7 @@ background: var(--dark-orange);
       
       <!-- Update Gallery -->
       <div class="update-gallery">
-        <h3>Gallery</h3>
+        <h3 data-i18n="gallery">Gallery</h3>
         <div class="gallery-grid" id="updateGallery">
           <!-- Images will be inserted here by JavaScript -->
         </div>
@@ -1393,7 +1429,7 @@ background: var(--dark-orange);
       
       <!-- Update Contact -->
       <div class="update-contact">
-        <h3>Contact Information</h3>
+        <h3 data-i18n="contactInformation">Contact Information</h3>
         <p>
           <i class="fas fa-envelope"></i>
           <span id="updateContact"></span>
@@ -1401,7 +1437,7 @@ background: var(--dark-orange);
       </div>
     </div>
     <div class="modal-footer">
-      <button class="close-modal-btn" id="closeUpdateModalBtn">Close</button>
+      <button class="close-modal-btn" id="closeUpdateModalBtn" data-i18n="close">Close</button>
     </div>
   </div>
 </div>
@@ -1414,11 +1450,11 @@ background: var(--dark-orange);
         <a href="index.html" class="flex items-center mb-6 transition-transform duration-300 hover:scale-105">
           <img src="logo.jpg" alt="Rastriya Shramik Mahasangh Nepal Logo" class="h-24 md:h-28 mr-3">
           <div>
-            <h3 class="text-xl font-bold">Rastriya Shramik Mahasangh</h3>
-            <p class="text-sm text-white-300">नेपाल</p>
+            <h3 class="text-xl font-bold" data-i18n="organizationName">Rastriya Shramik Mahasangh</h3>
+            <p class="text-sm text-white-300" data-i18n="organizationLocation">नेपाल</p>
           </div>
         </a>
-        <p class="text-white mb-6">
+        <p class="text-white mb-6" data-i18n="footerDescription">
           Empowering workers through unity, advocacy, and action since 2080 B.S.
         </p>
         <div class="flex space-x-4">
@@ -1454,75 +1490,75 @@ background: var(--dark-orange);
       </div>
       <!-- Quick Links -->
       <div class="md:col-span-1">
-        <h3 class="text-lg font-bold mb-6 uppercase tracking-wider text-white">Quick Links</h3>
+        <h3 class="text-lg font-bold mb-6 uppercase tracking-wider text-white" data-i18n="quickLinks">Quick Links</h3>
         <ul class="space-y-3">
           <li>
             <a href="About.html" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center">
               <i class="fas fa-angle-right mr-2 text-gold"></i>
-              About Us
+              <span data-i18n="aboutUs">About Us</span>
             </a>
           </li>
           <li>
             <a href="Updates.html" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center">
               <i class="fas fa-angle-right mr-2 text-gold"></i>
-              Latest Updates
+              <span data-i18n="latestUpdatesFooter">Latest Updates</span>
             </a>
           </li>
           <li>
             <a href="Upcoming.html" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center">
               <i class="fas fa-angle-right mr-2 text-gold"></i>
-              Our Events
+              <span data-i18n="ourEvents">Our Events</span>
             </a>
           </li>
           <li>
             <a href="Media_Coverage.html" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center">
               <i class="fas fa-angle-right mr-2 text-gold"></i>
-              Media Coverages
+              <span data-i18n="mediaCoverages">Media Coverages</span>
             </a>
           </li>
         </ul>
       </div>
       <!-- Resources -->
       <div class="md:col-span-1">
-        <h3 class="text-lg font-bold mb-6 uppercase tracking-wider text-white">Resources</h3>
+        <h3 class="text-lg font-bold mb-6 uppercase tracking-wider text-white" data-i18n="resourcesFooter">Resources</h3>
         <ul class="space-y-3">
           <li>
             <a href="Slogans.html" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center">
               <i class="fas fa-angle-right mr-2 text-gold"></i>
-              Our Slogans
+              <span data-i18n="ourSlogans">Our Slogans</span>
             </a>
           </li>
           <li>
             <a href="Press_Releases.html" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center">
               <i class="fas fa-angle-right mr-2 text-gold"></i>
-              Press Releases
+              <span data-i18n="pressReleases">Press Releases</span>
             </a>
           </li>
           <li>
             <a href="Publications.html" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center">
               <i class="fas fa-angle-right mr-2 text-gold"></i>
-              Publications
+              <span data-i18n="publications">Publications</span>
             </a>
           </li>
           <li>
             <a href="Gallery.html" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center">
               <i class="fas fa-angle-right mr-2 text-gold"></i>
-              Gallery
+              <span data-i18n="gallery">Gallery</span>
             </a>
           </li>
         </ul>
       </div>
       <!-- Contact & Newsletter -->
       <div class="md:col-span-1">
-        <h3 class="text-lg font-bold mb-6 uppercase tracking-wider text-white">Contact Us</h3>
+        <h3 class="text-lg font-bold mb-6 uppercase tracking-wider text-white" data-i18n="contactUs">Contact Us</h3>
         <ul class="space-y-4 mb-8">
           <li class="flex items-start">
             <i class="fas fa-map-marker-alt text-gold mt-1 mr-3"></i>
-            <a href="https://maps.app.goo.gl/4C8W3pM3qPDEQvMA9" target="_blank" class="text-white hover:text-yellow-200 transition-colors duration-300">Keshavdham, Guheswari Marg - 8, Kathmandu, Nepal</a>
+            <a href="https://maps.app.goo.gl/4C8W3pM3qPDEQvMA9" target="_blank" class="text-white hover:text-yellow-200 transition-colors duration-300" data-address="Keshavdham, Guheswari Marg - 8, Kathmandu, Nepal">Keshavdham, Guheswari Marg - 8, Kathmandu, Nepal</a>
           </li>
           <li class="flex items-center">
             <i class="fas fa-phone-alt text-gold mr-3"></i>
-            <a href="tel:+9779855020288" class="text-white hover:text-yellow-200 transition-colors duration-300">+977-9855020288</a>
+            <a href="tel:+9779855020288" class="text-white hover:text-yellow-200 transition-colors duration-300" data-phone="+977-9855020288">+977-9855020288</a>
           </li>
           <li class="flex items-center">
             <i class="fas fa-envelope text-gold mr-3"></i>
@@ -1534,7 +1570,7 @@ background: var(--dark-orange);
     <!-- Bottom Bar -->
     <div class="border-t border-orange-800 pt-4">
       <div class="flex justify-center">
-        <p class="text-white text-sm">
+        <p class="text-white text-sm" data-i18n="copyright">
           &copy; <span id="current-year"></span> Rastriya Shramik Mahasangh Nepal. All rights reserved.
         </p>
       </div>
@@ -1548,6 +1584,447 @@ background: var(--dark-orange);
 <!-- Scripts -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
+// Language data structure with all translations
+const translations = {
+  en: {
+    // Navigation
+    home: "Home",
+    about: "About",
+    ourStory: "Our Story",
+    organizationalStructure: "Organizational Structure",
+    leadership: "Leadership",
+    resources: "Resources",
+    ourSlogans: "Our Slogans",
+    pressReleases: "Press Releases",
+    publications: "Publications",
+    events: "Events",
+    gallery: "Gallery",
+    
+    // Hero Section
+    updatesTitle: "Updates",
+    updatesSubtitle: "Discover our latest initiatives, partnerships, and activities advancing workers' rights across Nepal",
+    
+    // Updates Section
+    latestUpdates: "Latest Updates",
+    updatesDescription: "Explore our ongoing initiatives, partnerships, and activities that are making a difference for workers across Nepal",
+    allUpdates: "All Updates",
+    initiatives: "Initiatives",
+    partnerships: "Partnerships",
+    training: "Training",
+    community: "Community",
+    development: "Development",
+    
+    // Update Cards
+    partnership: "Partnership",
+    initiative: "Initiative",
+    community: "Community",
+    update1Title: "RSM Nepal at BMS 70th Anniversary Program",
+    update1Desc: "Strengthening regional labor solidarity through a historic celebration.",
+    update2Title: "Bilateral Labor Leadership Meet",
+    update2Desc: "A new chapter in cross-border cooperation for workers' welfare.",
+    update3Title: "Madhesh Province Committee Formation",
+    update3Desc: "RSM Nepal establishes 15-member provincial working committee in Janakpur",
+    update4Title: "Sugarcane Farmers' Outstanding Payment Issue",
+    update4Desc: "Appeal to Government for Fair Settlement and Timely Support Price Fixation",
+    update5Title: "Farmers' Pricing Protest",
+    update5Desc: "RSM Nepal raises voice against unfair crop rate determination",
+    update6Title: "Meeting with Varun Beverages Pvt. Ltd.",
+    update6Desc: "RSM Nepal Industrial Union engages in dialogue with management at Nawalparasi unit",
+    update7Title: "Press Conference on Sugarcane Farmers' Pending Payments",
+    update7Desc: "RSM Nepal supports farmers' movement for dues settlement and agricultural development",
+    update8Title: "National Executive Committee Meeting",
+    update8Desc: "RSM Nepal holds key national committee meeting in Janakpur Dham",
+    update9Title: "Nationwide Sugarcane Farmers' Protest at Maitighar Mandala",
+    update9Desc: "Call for pending dues settlement of sugarcane farmers across Nepal",
+    
+    // Locations
+    newDelhiIndia: "New Delhi, India",
+    janakpurNepal: "Janakpur, Nepal",
+    nawalparasiNepal: "Nawalparasi, Nepal",
+    kathmanduNepal: "Kathmandu, Nepal",
+    
+    // Modal
+    keyPoints: "Key Points",
+    gallery: "Gallery",
+    contactInformation: "Contact Information",
+    close: "Close",
+    learnMore: "Learn More",
+    
+    // Footer
+    quickLinks: "Quick Links",
+    aboutUs: "About Us",
+    latestUpdatesFooter: "Latest Updates",
+    ourEvents: "Our Events",
+    mediaCoverages: "Media Coverages",
+    resourcesFooter: "Resources",
+    contactUs: "Contact Us",
+    footerDescription: "Empowering workers through unity, advocacy, and action since 2080 B.S.",
+    copyright: "© {year} Rastriya Shramik Mahasangh Nepal. All rights reserved.",
+    
+    // Organization
+    organizationName: "Rastriya Shramik Mahasangh",
+    organizationLocation: "Nepal",
+    
+    // Announcement
+    announcement1: "Rastra heet!",
+    announcement2: "Udyog Heet!",
+    announcement3: "Shramik Heet!",
+    
+    // Other
+    search: "Search"
+  },
+  ne: {
+    // Navigation
+    home: "गृहपृष्ठ",
+    about: "हाम्रो बारेमा",
+    ourStory: "हाम्रो कथा",
+    organizationalStructure: "संगठनात्मक संरचना",
+    leadership: "नेतृत्व",
+    resources: "संसाधनहरू",
+    ourSlogans: "हाम्रा नाराहरू",
+    pressReleases: "प्रेस विज्ञप्तिहरू",
+    publications: "प्रकाशनहरू",
+    events: "कार्यक्रमहरू",
+    gallery: "ग्यालरी",
+    
+    // Hero Section
+    updatesTitle: "अपडेटहरू",
+    updatesSubtitle: "नेपाल भरि श्रमिक अधिकारलाई अघि बढाउने हाम्रा नवीनतम पहल, साझेदारी, र गतिविधिहरू पत्ता लगाउनुहोस्",
+    
+    // Updates Section
+    latestUpdates: "नवीनतम अपडेटहरू",
+    updatesDescription: "नेपाल भरि श्रमिकहरूको लागि फरक पार्ने हाम्रा चालू पहल, साझेदारी, र गतिविधिहरू अन्वेषण गर्नुहोस्",
+    allUpdates: "सबै अपडेटहरू",
+    initiatives: "पहलहरू",
+    partnerships: "साझेदारीहरू",
+    training: "तालिम",
+    community: "समुदाय",
+    development: "विकास",
+    
+    // Update Cards
+    partnership: "साझेदारी",
+    initiative: "पहल",
+    community: "समुदाय",
+    update1Title: "आर.एस.एम. नेपाल बी.एम.एस.को ७०औं वार्षिकोत्सव कार्यक्रममा",
+    update1Desc: "ऐतिहासिक उत्सव मार्फत क्षेत्रीय श्रमिक एकता बलियो बनाउँदै",
+    update2Title: "द्विपक्षीय श्रमिक नेतृत्व भेला",
+    update2Desc: "श्रमिक कल्याणको लागि सीमापार सहकार्यको नयाँ अध्याय",
+    update3Title: "मधेश प्रदेश समिति गठन",
+    update3Desc: "आर.एस.एम. नेपालले जनकपुरमा १५ सदस्यीय प्रदेशीय कार्य समिति गठन गर्यो",
+    update4Title: "उखु किसानहरूको बक्युता भुक्तानी समस्या",
+    update4Desc: "न्यायिक निपटारी र समयमै समर्थन मूल्य तोक्न सरकारमा अपिल",
+    update5Title: "किसानहरूको मूल्य निर्धारण विरोध प्रदर्शन",
+    update5Desc: "अन्यायपूर्ण बाली दर निर्धारण विरुद्ध आर.एस.एम. नेपालको आवाज",
+    update6Title: "वरुण बेभरेजेस प्रा. लि. संग भेटघाट",
+    update6Desc: "आर.एस.एम. नेपाल औद्योगिक संघले नवलपरासी इकाईमा व्यवस्थापनसँग संवाद",
+    update7Title: "उखु किसानहरूको बाँकी भुक्तानीमा प्रेस सम्मेलन",
+    update7Desc: "बाँकी निपटारी र कृषि विकासको लागि किसान आन्दोलनलाई आर.एस.एम. नेपालको समर्थन",
+    update8Title: "राष्ट्रिय कार्यकारिणी समिति बैठक",
+    update8Desc: "आर.एस.एम. नेपालले जनकपुर धाममा मुख्य राष्ट्रिय समिति बैठक गर्यो",
+    update9Title: "मैतीघर मण्डलमा देशव्यापी उखु किसानहरूको विरोध प्रदर्शन",
+    update9Desc: "नेपाल भरिका उखु किसानहरूको बाँकी भुक्तानी निपटारीको आह्वान",
+    
+    // Locations
+    newDelhiIndia: "नयाँ दिल्ली, भारत",
+    janakpurNepal: "जनकपुर, नेपाल",
+    nawalparasiNepal: "नवलपरासी, नेपाल",
+    kathmanduNepal: "काठमाडौं, नेपाल",
+    
+    // Modal
+    keyPoints: "मुख्य बुँदाहरू",
+    gallery: "ग्यालरी",
+    contactInformation: "सम्पर्क जानकारी",
+    close: "बन्द गर्नुहोस्",
+    learnMore: "थप जान्नुहोस्",
+    
+    // Footer
+    quickLinks: "द्रुत लिङ्कहरू",
+    aboutUs: "हाम्रो बारेमा",
+    latestUpdatesFooter: "नवीनतम अपडेटहरू",
+    ourEvents: "हाम्रा कार्यक्रमहरू",
+    mediaCoverages: "मिडिया कभरेजहरू",
+    resourcesFooter: "संसाधनहरू",
+    contactUs: "सम्पर्क गर्नुहोस्",
+    footerDescription: "एकता, वकालत र कार्यबाट २०८० बि.सं. देखि श्रमिकहरूलाई सशक्त बनाउँदै",
+    copyright: "© {year} सर्वाधिकार राष्ट्रिय श्रमिक महासंघमा सुरक्षित",
+    
+    // Organization
+    organizationName: "राष्ट्रिय श्रमिक महासंघ",
+    organizationLocation: "नेपाल",
+    
+    // Announcement
+    announcement1: "राष्ट्र हित!",
+    announcement2: "उद्योग हित!",
+    announcement3: "श्रमिक हित!",
+    
+    // Other
+    search: "खोज्नुहोस्"
+  }
+};
+// Function to convert Arabic numerals to Nepali numerals
+function convertToNepaliNumerals(text) {
+  const arabicNumerals = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+  const nepaliNumerals = ['०', '१', '२', '३', '४', '५', '६', '७', '८', '९'];
+  
+  let convertedText = text;
+  for (let i = 0; i < arabicNumerals.length; i++) {
+    const regex = new RegExp(arabicNumerals[i], 'g');
+    convertedText = convertedText.replace(regex, nepaliNumerals[i]);
+  }
+  
+  return convertedText;
+}
+// Function to convert Nepali numerals to Arabic numerals
+function convertToArabicNumerals(text) {
+  const arabicNumerals = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+  const nepaliNumerals = ['०', '१', '२', '३', '४', '५', '६', '७', '८', '९'];
+  
+  let convertedText = text;
+  for (let i = 0; i < nepaliNumerals.length; i++) {
+    const regex = new RegExp(nepaliNumerals[i], 'g');
+    convertedText = convertedText.replace(regex, arabicNumerals[i]);
+  }
+  
+  return convertedText;
+}
+// Function to convert month names to Nepali
+function convertMonthToNepali(monthName) {
+  const monthMap = {
+    'Baishakh': 'बैशाख',
+    'Jestha': 'जेष्ठ',
+    'Asar': 'आषाढ',
+    'Shrawan': 'श्रावण',
+    'Bhadra': 'भाद्र',
+    'Ashwin': 'अश्विन',
+    'Kartik': 'कार्तिक',
+    'Mangsir': 'मंसिर',
+    'Poush': 'पौष',
+    'Magh': 'माघ',
+    'Falgun': 'फाल्गुन',
+    'Chaitra': 'चैत्र',
+    'Asoj': 'असोज'
+  };
+  
+  return monthMap[monthName] || monthName;
+}
+// Store current modal data for language switching
+let currentModalData = null;
+// Function to update the language
+function updateLanguage(lang) {
+  // Save the language preference to localStorage
+  localStorage.setItem('preferredLanguage', lang);
+  
+  // Update the language toggle buttons
+  const langEn = document.getElementById('lang-en');
+  const langNe = document.getElementById('lang-ne');
+  const mobileLangEn = document.getElementById('mobile-lang-en');
+  const mobileLangNe = document.getElementById('mobile-lang-ne');
+  
+  if (lang === 'en') {
+    // Desktop language toggle
+    if (langEn && langNe) {
+      langEn.classList.add('bg-white', 'text-orange');
+      langEn.classList.remove('text-white');
+      langNe.classList.remove('bg-white', 'text-orange');
+      langNe.classList.add('text-white');
+    }
+    
+    // Mobile language toggle
+    if (mobileLangEn && mobileLangNe) {
+      mobileLangEn.classList.add('bg-white', 'text-orange');
+      mobileLangEn.classList.remove('text-white');
+      mobileLangNe.classList.remove('bg-white', 'text-orange');
+      mobileLangNe.classList.add('text-white');
+    }
+  } else {
+    // Desktop language toggle
+    if (langEn && langNe) {
+      langNe.classList.add('bg-white', 'text-orange');
+      langNe.classList.remove('text-white');
+      langEn.classList.remove('bg-white', 'text-orange');
+      langEn.classList.add('text-white');
+    }
+    
+    // Mobile language toggle
+    if (mobileLangEn && mobileLangNe) {
+      mobileLangNe.classList.add('bg-white', 'text-orange');
+      mobileLangNe.classList.remove('text-white');
+      mobileLangEn.classList.remove('bg-white', 'text-orange');
+      mobileLangEn.classList.add('text-white');
+    }
+  }
+  
+  // Update the content based on the selected language
+  const translation = translations[lang];
+  
+  // Update all elements with data-i18n attribute
+  document.querySelectorAll('[data-i18n]').forEach(element => {
+    const key = element.getAttribute('data-i18n');
+    if (translation[key]) {
+      // Special handling for copyright with year placeholder
+      if (key === 'copyright') {
+        const currentYear = new Date().getFullYear();
+        element.innerHTML = translation[key].replace('{year}', currentYear);
+      } else {
+        element.textContent = translation[key];
+      }
+    }
+  });
+  
+  // Update dates
+  document.querySelectorAll('.date').forEach(dateElement => {
+    const originalDate = dateElement.getAttribute('data-date');
+    if (originalDate) {
+      if (lang === 'ne') {
+        // Convert month names to Nepali
+        let nepaliDate = originalDate;
+        // Convert month names
+        Object.entries({
+          'Asar': 'आषाढ',
+          'Shrawan': 'श्रावण',
+          'Bhadra': 'भाद्र',
+          'Ashwin': 'अश्विन',
+          'Kartik': 'कार्तिक',
+          'Mangsir': 'मंसिर',
+          'Poush': 'पौष',
+          'Magh': 'माघ',
+          'Falgun': 'फाल्गुन',
+          'Chaitra': 'चैत्र',
+          'Baishakh': 'बैशाख',
+          'Jestha': 'जेष्ठ',
+          'Asoj': 'असोज'
+        }).forEach(([en, ne]) => {
+          nepaliDate = nepaliDate.replace(new RegExp(en, 'g'), ne);
+        });
+        
+        // Convert numerals to Nepali
+        nepaliDate = convertToNepaliNumerals(nepaliDate);
+        
+        dateElement.textContent = nepaliDate;
+      } else {
+        dateElement.textContent = originalDate;
+      }
+    }
+  });
+  
+  // Update address with Nepali numerals
+  document.querySelectorAll('[data-address]').forEach(addressElement => {
+    const originalAddress = addressElement.getAttribute('data-address');
+    if (originalAddress) {
+      if (lang === 'ne') {
+        // Convert address to Nepali
+        let nepaliAddress = originalAddress;
+        // Convert place names
+        nepaliAddress = nepaliAddress.replace(/Keshavdham/g, 'केशवधाम');
+        nepaliAddress = nepaliAddress.replace(/Guheswari Marg/g, 'गुह्येश्वरी मार्ग');
+        nepaliAddress = nepaliAddress.replace(/Kathmandu/g, 'काठमाडौं');
+        nepaliAddress = nepaliAddress.replace(/Nepal/g, 'नेपाल');
+        
+        // Convert numerals to Nepali
+        nepaliAddress = convertToNepaliNumerals(nepaliAddress);
+        
+        addressElement.textContent = nepaliAddress;
+      } else {
+        addressElement.textContent = originalAddress;
+      }
+    }
+  });
+  
+  // Update phone numbers with Nepali numerals
+  document.querySelectorAll('[data-phone]').forEach(phoneElement => {
+    const originalPhone = phoneElement.getAttribute('data-phone');
+    if (originalPhone) {
+      if (lang === 'ne') {
+        phoneElement.textContent = convertToNepaliNumerals(originalPhone);
+      } else {
+        phoneElement.textContent = originalPhone;
+      }
+    }
+  });
+  
+  // Update modal content if modal is open
+  const updateModal = document.getElementById('updateModal');
+  if (updateModal && updateModal.classList.contains('active') && currentModalData) {
+    // Update modal content with the new language
+    const updateModalTitle = document.getElementById('updateModalTitle');
+    const updateModalDate = document.getElementById('updateModalDate');
+    const updateModalDescription = document.getElementById('updateModalDescription');
+    const updateHighlights = document.getElementById('updateHighlights');
+    const updateContact = document.getElementById('updateContact');
+    
+    // Update title
+    if (lang === 'ne' && currentModalData.titleNe) {
+      updateModalTitle.textContent = currentModalData.titleNe;
+    } else if (lang === 'en' && currentModalData.titleEn) {
+      updateModalTitle.textContent = currentModalData.titleEn;
+    }
+    
+    // Update date
+    if (lang === 'ne' && currentModalData.dateNe) {
+      updateModalDate.textContent = currentModalData.dateNe;
+    } else if (lang === 'en' && currentModalData.dateEn) {
+      updateModalDate.textContent = currentModalData.dateEn;
+    }
+    
+    // Update description
+    if (lang === 'ne' && currentModalData.descriptionNe) {
+      updateModalDescription.textContent = currentModalData.descriptionNe;
+    } else if (lang === 'en' && currentModalData.descriptionEn) {
+      updateModalDescription.textContent = currentModalData.descriptionEn;
+    }
+    
+    // Update highlights
+    updateHighlights.innerHTML = '';
+    const highlights = lang === 'ne' ? currentModalData.highlightsNe : currentModalData.highlightsEn;
+    if (highlights) {
+      highlights.forEach(highlight => {
+        const li = document.createElement('li');
+        li.textContent = highlight;
+        updateHighlights.appendChild(li);
+      });
+    }
+    
+    // Update contact
+    updateContact.textContent = currentModalData.contact;
+  }
+  
+  // Update meta tags for SEO
+  document.querySelector('title').textContent = lang === 'en' 
+    ? 'Updates - Rastriya Shramik Mahasangh Nepal'
+    : 'अपडेटहरू - राष्ट्रिय श्रमिक महासंघ नेपाल';
+  
+  document.querySelector('meta[name="description"]').setAttribute('content', lang === 'en'
+    ? 'Stay updated with the latest initiatives, partnerships, and developments from Rastriya Shramik Mahasangh Nepal.'
+    : 'राष्ट्रिय श्रमिक महासंघ नेपालबाट नवीनतम पहल, साझेदारी, र विकासहरूसँग अपडेट रहनुहोस्।');
+  
+  document.querySelector('meta[property="og:title"]').setAttribute('content', lang === 'en'
+    ? 'Updates - Rastriya Shramik Mahasangh Nepal'
+    : 'अपडेटहरू - राष्ट्रिय श्रमिक महासंघ नेपाल');
+  
+  document.querySelector('meta[property="og:description"]').setAttribute('content', lang === 'en'
+    ? 'Stay updated with the latest initiatives, partnerships, and developments from Rastriya Shramik Mahasangh Nepal.'
+    : 'राष्ट्रिय श्रमिक महासंघ नेपालबाट नवीनतम पहल, साझेदारी, र विकासहरूसँग अपडेट रहनुहोस्।');
+  
+  document.querySelector('meta[property="twitter:title"]').setAttribute('content', lang === 'en'
+    ? 'Updates - Rastriya Shramik Mahasangh Nepal'
+    : 'अपडेटहरू - राष्ट्रिय श्रमिक महासंघ नेपाल');
+  
+  document.querySelector('meta[property="twitter:description"]').setAttribute('content', lang === 'en'
+    ? 'Stay updated with the latest initiatives, partnerships, and developments from Rastriya Shramik Mahasangh Nepal.'
+    : 'राष्ट्रिय श्रमिक महासंघ नेपालबाट नवीनतम पहल, साझेदारी, र विकासहरूसँग अपडेट रहनुहोस्।');
+  
+  // Update HTML lang attribute
+  document.documentElement.lang = lang;
+  
+  // Add or remove nepali-font class to body for font switching
+  if (lang === 'ne') {
+    document.body.classList.add('nepali-font');
+  } else {
+    document.body.classList.remove('nepali-font');
+  }
+}
+// Check for saved language preference or default to English
+const savedLanguage = localStorage.getItem('preferredLanguage') || 'en';
 // Initialize AOS
 AOS.init({
   duration: 1000,
@@ -1555,6 +2032,39 @@ AOS.init({
   disable: 'mobile'
 });
 document.addEventListener('DOMContentLoaded', function() {
+  // Set the initial language
+  updateLanguage(savedLanguage);
+  
+  // Language toggle event listeners
+  const langEn = document.getElementById('lang-en');
+  const langNe = document.getElementById('lang-ne');
+  const mobileLangEn = document.getElementById('mobile-lang-en');
+  const mobileLangNe = document.getElementById('mobile-lang-ne');
+  
+  if (langEn) {
+    langEn.addEventListener('click', function() {
+      updateLanguage('en');
+    });
+  }
+  
+  if (langNe) {
+    langNe.addEventListener('click', function() {
+      updateLanguage('ne');
+    });
+  }
+  
+  if (mobileLangEn) {
+    mobileLangEn.addEventListener('click', function() {
+      updateLanguage('en');
+    });
+  }
+  
+  if (mobileLangNe) {
+    mobileLangNe.addEventListener('click', function() {
+      updateLanguage('ne');
+    });
+  }
+  
   // Mobile Menu Toggle
   const mobileMenuButton = document.getElementById('mobile-menu-button');
   const closeMobileMenu = document.getElementById('close-mobile-menu');
@@ -1605,50 +2115,6 @@ document.addEventListener('DOMContentLoaded', function() {
       searchBar.querySelector('input').focus();
     }
   });
-  
-  // Language Toggle Functionality
-  const langEn = document.getElementById('lang-en');
-  const langNe = document.getElementById('lang-ne');
-  const mobileLangEn = document.getElementById('mobile-lang-en');
-  const mobileLangNe = document.getElementById('mobile-lang-ne');
-  
-  // Desktop language toggle
-  if (langEn && langNe) {
-    langEn.addEventListener('click', function() {
-      langEn.classList.add('bg-white', 'text-orange');
-      langEn.classList.remove('text-white');
-      langNe.classList.remove('bg-white', 'text-orange');
-      langNe.classList.add('text-white');
-      console.log('Language changed to English');
-    });
-    
-    langNe.addEventListener('click', function() {
-      langNe.classList.add('bg-white', 'text-orange');
-      langNe.classList.remove('text-white');
-      langEn.classList.remove('bg-white', 'text-orange');
-      langEn.classList.add('text-white');
-      console.log('Language changed to Nepali');
-    });
-  }
-  
-  // Mobile language toggle
-  if (mobileLangEn && mobileLangNe) {
-    mobileLangEn.addEventListener('click', function() {
-      mobileLangEn.classList.add('bg-white', 'text-orange');
-      mobileLangEn.classList.remove('text-white');
-      mobileLangNe.classList.remove('bg-white', 'text-orange');
-      mobileLangNe.classList.add('text-white');
-      console.log('Language changed to English');
-    });
-    
-    mobileLangNe.addEventListener('click', function() {
-      mobileLangNe.classList.add('bg-white', 'text-orange');
-      mobileLangNe.classList.remove('text-white');
-      mobileLangEn.classList.remove('bg-white', 'text-orange');
-      mobileLangEn.classList.add('text-white');
-      console.log('Language changed to Nepali');
-    });
-  }
   
   // Touch device dropdown handling
   const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
@@ -1752,28 +2218,52 @@ document.addEventListener('DOMContentLoaded', function() {
   // Open update modal when any "Learn More" button is clicked
   viewUpdateDetailsBtns.forEach(button => {
     button.addEventListener('click', function() {
-      const title = this.getAttribute('data-title');
-      const date = this.getAttribute('data-date');
-      const description = this.getAttribute('data-description');
+      const titleEn = this.getAttribute('data-title');
+      const titleNe = this.getAttribute('data-title-ne');
+      const dateEn = this.getAttribute('data-date');
+      const dateNe = this.getAttribute('data-date-ne');
+      const descriptionEn = this.getAttribute('data-description');
+      const descriptionNe = this.getAttribute('data-description-ne');
       const images = JSON.parse(this.getAttribute('data-images'));
-      const highlights = JSON.parse(this.getAttribute('data-highlights'));
+      const highlightsEn = JSON.parse(this.getAttribute('data-highlights'));
+      const highlightsNe = JSON.parse(this.getAttribute('data-highlights-ne'));
       const contact = this.getAttribute('data-contact');
       
-      updateModalTitle.textContent = title;
-      updateModalDate.textContent = date;
-      updateModalDescription.textContent = description;
+      // Store current modal data for language switching
+      currentModalData = {
+        titleEn: titleEn,
+        titleNe: titleNe,
+        dateEn: dateEn,
+        dateNe: dateNe,
+        descriptionEn: descriptionEn,
+        descriptionNe: descriptionNe,
+        highlightsEn: highlightsEn,
+        highlightsNe: highlightsNe,
+        contact: contact
+      };
+      
+      // Get current language
+      const currentLang = localStorage.getItem('preferredLanguage') || 'en';
+      
+      // Set modal content based on current language
+      updateModalTitle.textContent = currentLang === 'ne' && titleNe ? titleNe : titleEn;
+      updateModalDate.textContent = currentLang === 'ne' && dateNe ? dateNe : dateEn;
+      updateModalDescription.textContent = currentLang === 'ne' && descriptionNe ? descriptionNe : descriptionEn;
       updateContact.textContent = contact;
       
       // Clear existing content
       updateHighlights.innerHTML = '';
       updateGallery.innerHTML = '';
       
-      // Add highlights
-      highlights.forEach(highlight => {
-        const li = document.createElement('li');
-        li.textContent = highlight;
-        updateHighlights.appendChild(li);
-      });
+      // Add highlights based on current language
+      const highlights = currentLang === 'ne' ? highlightsNe : highlightsEn;
+      if (highlights) {
+        highlights.forEach(highlight => {
+          const li = document.createElement('li');
+          li.textContent = highlight;
+          updateHighlights.appendChild(li);
+        });
+      }
       
       // Add images to the gallery
       images.forEach((imageSrc, index) => {
@@ -1782,7 +2272,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         const imageElement = document.createElement('img');
         imageElement.src = imageSrc;
-        imageElement.alt = `${title} - Image ${index + 1}`;
+        imageElement.alt = `${currentLang === 'ne' && titleNe ? titleNe : titleEn} - Image ${index + 1}`;
         
         galleryItem.appendChild(imageElement);
         updateGallery.appendChild(galleryItem);
@@ -1791,6 +2281,9 @@ document.addEventListener('DOMContentLoaded', function() {
       // Show modal
       updateModal.classList.add('active');
       document.body.style.overflow = 'hidden'; // Prevent scrolling
+      
+      // Force a refresh of the modal content based on current language
+      updateLanguage(currentLang);
     });
   });
   
@@ -1798,6 +2291,7 @@ document.addEventListener('DOMContentLoaded', function() {
   function closeUpdateModalFunction() {
     updateModal.classList.remove('active');
     document.body.style.overflow = ''; // Restore scrolling
+    currentModalData = null; // Clear stored modal data
   }
   
   closeUpdateModalBtn.addEventListener('click', closeUpdateModalFunction);

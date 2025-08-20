@@ -54,6 +54,7 @@ overflow-x: hidden;
 }
 .nepali-font {
 font-family: 'Mukta', sans-serif;
+font-size: large;
 }
 .parallax-bg {
 background-attachment: fixed;
@@ -915,10 +916,10 @@ background: var(--dark-orange);
   <!-- Announcement Bar with Fade Effect -->
   <div class="announcement-fade">
     <div class="container mx-auto px-4">
-      <div class="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 md:gap-x-4 lg:gap-x-6 text-sm md:text-base font-semibold overflow-x-auto py-1">
-        <span class="whitespace-nowrap transition-colors duration-300 hover:text-yellow-300 px-1">Rastra heet!</span>
-        <span class="whitespace-nowrap transition-colors duration-300 hover:text-yellow-300 px-1">Udyog Heet!</span>
-        <span class="whitespace-nowrap transition-colors duration-300 hover:text-yellow-300 px-1">Shramik Heet!</span>
+      <div class="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 md:gap-x-4 lg:gap-x-6 text-lg md:text-xl font-semibold overflow-x-auto py-1">
+        <span class="whitespace-nowrap transition-colors duration-300 hover:text-yellow-300 px-1" data-i18n="announcement1">Rastra heet!</span>
+        <span class="whitespace-nowrap transition-colors duration-300 hover:text-yellow-300 px-1" data-i18n="announcement2">Udyog heet!</span>
+        <span class="whitespace-nowrap transition-colors duration-300 hover:text-yellow-300 px-1" data-i18n="announcement3">Shramik heet!</span>
       </div>
     </div>
   </div>
@@ -931,41 +932,41 @@ background: var(--dark-orange);
           <img src="logo.jpg" alt="Rastriya Shramik Mahasangh Nepal Logo" class="h-20 md:h-24 lg:h-28 transition-transform duration-300 hover:scale-105">
         </div>
         <div class="organization-name ml-3 md:ml-4">
-          <h1 class="text-lg md:text-xl lg:text-2xl font-bold transition-colors duration-300 hover:text-yellow-100">Rastriya Shramik Mahasangh</h1>
-          <p class="text-sm md:text-base lg:text-lg transition-colors duration-300 hover:text-yellow-200">Nepal</p>
+          <h1 class="text-xl md:text-2xl lg:text-3xl font-bold transition-colors duration-300 hover:text-yellow-100" data-i18n="organizationName">Rastriya Shramik Mahasangh</h1>
+          <p class="text-sm md:text-base lg:text-lg transition-colors duration-300 hover:text-yellow-200" data-i18n="organizationLocation">Nepal</p>
         </div>
       </a>
       
       <!-- Navigation Links (Center) -->
       <nav class="nav-links hidden lg:flex items-center justify-center flex-grow mx-4 lg:mx-8">
-        <a href="index.html" class="nav-link-item px-3 py-2 rounded-lg text-white font-medium transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md">Home</a>
+        <a href="index.html" class="nav-link-item px-3 py-2 rounded-lg text-white font-medium transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md" data-i18n="home">Home</a>
         
         <!-- About Dropdown -->
         <div class="relative dropdown">
-          <a href="About.html" class="nav-link-item px-3 py-2 rounded-lg text-white font-medium flex items-center transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md dropdown-toggle">
+          <a href="About.html" class="nav-link-item px-3 py-2 rounded-lg text-white font-medium flex items-center transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md dropdown-toggle" data-i18n="about">
             About <i class="fas fa-chevron-down ml-1 text-xs"></i>
           </a>
           <div class="dropdown-menu absolute left-0 flex-col bg-white text-gray-800 mt-1 rounded-md shadow-lg py-1 w-48">
-            <a href="About.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600">Our Story</a>
-            <a href="About.html#organizational-structure" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600">Organizational Structure</a>
-            <a href="About.html#central-executive-committee" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600">Leadership</a>
+            <a href="About.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600" data-i18n="ourStory">Our Story</a>
+            <a href="About.html#organizational-structure" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600" data-i18n="organizationalStructure">Organizational Structure</a>
+            <a href="About.html#central-executive-committee" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600" data-i18n="leadership">Leadership</a>
           </div>
         </div>
         
         <!-- Resources Dropdown -->
         <div class="relative dropdown">
-          <button class="nav-link-item px-3 py-2 rounded-lg text-white font-medium flex items-center transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md dropdown-toggle">
+          <button class="nav-link-item px-3 py-2 rounded-lg text-white font-medium flex items-center transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md dropdown-toggle" data-i18n="resources">
             Resources <i class="fas fa-chevron-down ml-1 text-xs"></i>
           </button>
           <div class="dropdown-menu absolute left-0 flex-col bg-white text-gray-800 mt-1 rounded-md shadow-lg py-1 w-56">
-            <a href="Slogans.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600">Our Slogans</a>
-            <a href="Press_Releases.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600">Press Releases</a>
-            <a href="Publications.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600">Publications</a>
+            <a href="Slogans.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600" data-i18n="ourSlogans">Our Slogans</a>
+            <a href="Press_Releases.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600" data-i18n="pressReleases">Press Releases</a>
+            <a href="Publications.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600" data-i18n="publications">Publications</a>
           </div>
         </div>
         
-        <a href="Upcoming.html" class="nav-link-item px-3 py-2 rounded-lg text-white font-medium transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md">Events</a>
-        <a href="Gallery.html" class="nav-link-item px-3 py-2 rounded-lg text-white font-medium transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md">Gallery</a>
+        <a href="Upcoming.html" class="nav-link-item px-3 py-2 rounded-lg text-white font-medium transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md" data-i18n="events">Events</a>
+        <a href="Gallery.html" class="nav-link-item px-3 py-2 rounded-lg text-white font-medium transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md" data-i18n="gallery">Gallery</a>
       </nav>
       
       <!-- Language and Search (Right) -->
@@ -1026,39 +1027,39 @@ background: var(--dark-orange);
       <a href="index.html" class="flex items-center no-underline">
         <img src="logo.jpg" alt="Rastriya Shramik Mahasangh Nepal Logo" class="h-16">
         <div class="ml-3">
-          <h1 class="text-lg font-bold text-white">Rastriya Shramik Mahasangh</h1>
-          <p class="text-sm text-white">Nepal</p>
+          <h1 class="text-lg font-bold text-white" data-i18n="organizationName">Rastriya Shramik Mahasangh</h1>
+          <p class="text-sm text-white" data-i18n="organizationLocation">Nepal</p>
         </div>
       </a>
     </div>
     
     <div class="p-4 space-y-2 overflow-y-auto max-h-[calc(100vh-180px)]">
-      <a href="index.html" class="block py-2 px-4 rounded-lg hover:bg-gold hover:text-dark-orange transition-all duration-300">Home</a>
+      <a href="index.html" class="block py-2 px-4 rounded-lg hover:bg-gold hover:text-dark-orange transition-all duration-300" data-i18n="home">Home</a>
       
       <div class="py-1">
         <button class="flex justify-between items-center w-full py-2 px-4 rounded-lg hover:bg-gold hover:text-dark-orange transition-all duration-300 mobile-submenu-toggle" data-target="about-submenu">
-          About <i class="fas fa-chevron-down text-xs transition-transform duration-300"></i>
+          <span data-i18n="about">About</span> <i class="fas fa-chevron-down text-xs transition-transform duration-300"></i>
         </button>
         <div id="about-submenu" class="hidden pl-6 mt-1 space-y-1 bg-gray-700 rounded-lg">
-          <a href="About.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600">Our Story</a>
-          <a href="About.html#organizational-structure" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600">Organizational Structure</a>
-          <a href="About.html#central-executive-committee" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600">Leadership</a>
+          <a href="About.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600" data-i18n="ourStory">Our Story</a>
+          <a href="About.html#organizational-structure" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600" data-i18n="organizationalStructure">Organizational Structure</a>
+          <a href="About.html#central-executive-committee" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600" data-i18n="leadership">Leadership</a>
         </div>
       </div>
       
       <div class="py-1">
         <button class="flex justify-between items-center w-full py-2 px-4 rounded-lg hover:bg-gold hover:text-dark-orange transition-all duration-300 mobile-submenu-toggle" data-target="resources-submenu">
-          Resources <i class="fas fa-chevron-down text-xs transition-transform duration-300"></i>
+          <span data-i18n="resources">Resources</span> <i class="fas fa-chevron-down text-xs transition-transform duration-300"></i>
         </button>
         <div id="resources-submenu" class="hidden pl-6 mt-1 space-y-1 bg-gray-700 rounded-lg">
-          <a href="Slogans.html" class="block py-2 px-4 hover:bg-orange-100 transition-colors duration-300">Our Slogans</a>
-          <a href="Press_Releases.html" class="block py-2 px-4 hover:bg-orange-100 transition-colors duration-300">Press Releases</a>
-          <a href="Publications.html" class="block py-2 px-4 hover:bg-orange-100 transition-colors duration-300">Publications</a>
+          <a href="Slogans.html" class="block py-2 px-4 hover:bg-orange-100 transition-colors duration-300" data-i18n="ourSlogans">Our Slogans</a>
+          <a href="Press_Releases.html" class="block py-2 px-4 hover:bg-orange-100 transition-colors duration-300" data-i18n="pressReleases">Press Releases</a>
+          <a href="Publications.html" class="block py-2 px-4 hover:bg-orange-100 transition-colors duration-300" data-i18n="publications">Publications</a>
         </div>
       </div>
       
-      <a href="Upcoming.html" class="block py-2 px-4 rounded-lg hover:bg-gold hover:text-dark-orange transition-all duration-300">Events</a>
-      <a href="gallery.html" class="block py-2 px-4 rounded-lg hover:bg-gold hover:text-dark-orange transition-all duration-300">Gallery</a>
+      <a href="Upcoming.html" class="block py-2 px-4 rounded-lg hover:bg-gold hover:text-dark-orange transition-all duration-300" data-i18n="events">Events</a>
+      <a href="Gallery.html" class="block py-2 px-4 rounded-lg hover:bg-gold hover:text-dark-orange transition-all duration-300" data-i18n="gallery">Gallery</a>
     </div>
   </div>
 </header>
@@ -1067,28 +1068,28 @@ background: var(--dark-orange);
   <div class="publications-hero-bg"></div>
   <div class="publications-hero-overlay"></div>
   <div class="publications-content">
-    <h1>Publications</h1>
-    <p>Access our comprehensive collection of reports, handbooks, and resources on workers' rights and labor advocacy</p>
+    <h1 data-i18n="publicationsTitle">Publications</h1>
+    <p data-i18n="publicationsSubtitle">Access our comprehensive collection of reports, handbooks, and resources on workers' rights and labor advocacy</p>
   </div>
   <div class="publications-breadcrumb">
-    <a href="Landing_Page.html">Home</a> / <span>Publications</span>
+    <a href="Landing_Page.html" data-i18n="home">Home</a> / <span data-i18n="publicationsTitle">Publications</span>
   </div>
 </section>
 <!-- Publications Section -->
 <section class="publications-section">
   <div class="publications-container">
     <div class="publications-header" data-aos="fade-up">
-      <h2 class="section-title">Our Publications</h2>
-      <p>Explore our collection of resources designed to empower workers with knowledge, rights information, and advocacy tools</p>
+      <h2 class="section-title" data-i18n="ourPublications">Our Publications</h2>
+      <p data-i18n="publicationsDescription">Explore our collection of resources designed to empower workers with knowledge, rights information, and advocacy tools</p>
     </div>
     
     <!-- Publication Filters -->
     <div class="publications-filters" data-aos="fade-up" data-aos-delay="100">
-      <button class="filter-btn active" data-filter="all">All Publications</button>
-      <button class="filter-btn" data-filter="handbook">Handbooks</button>
-      <button class="filter-btn" data-filter="report">Reports</button>
-      <button class="filter-btn" data-filter="guide">Guides</button>
-      <button class="filter-btn" data-filter="brochure">Brochures</button>
+      <button class="filter-btn active" data-filter="all" data-i18n="allPublications">All Publications</button>
+      <button class="filter-btn" data-filter="handbook" data-i18n="handbooks">Handbooks</button>
+      <button class="filter-btn" data-filter="report" data-i18n="reports">Reports</button>
+      <button class="filter-btn" data-filter="guide" data-i18n="guides">Guides</button>
+      <button class="filter-btn" data-filter="brochure" data-i18n="brochures">Brochures</button>
     </div>
     
     <div class="publications-grid">
@@ -1096,15 +1097,15 @@ background: var(--dark-orange);
       <div class="publication-card" data-aos="fade-up" data-aos-delay="100" data-category="brochure">
         <div class="publication-image">
           <img src="../Publications/Broucher English.png" alt="RSMSN Brochure" class="object-top" loading="lazy">
-          <div class="publication-badge">Brochure</div>
+          <div class="publication-badge" data-i18n="brochure">Brochure</div>
         </div>
         <div class="publication-details">
           <div class="publication-date">
             <i class="far fa-calendar-alt"></i>
-            <span>Magh 01, 2080</span>
+            <span class="date" data-date="Magh 01, 2080" data-date-ne="माघ ०१, २०८०">Magh 01, 2080</span>
           </div>
-          <h3 class="publication-title">RSMSN Brochure</h3>
-          <p class="publication-description">Official document on the organization's labor rights work, achievements, and worker solidarity initiatives.</p>
+          <h3 class="publication-title" data-i18n="publication1Title">RSMSN Brochure</h3>
+          <p class="publication-description" data-i18n="publication1Desc">Official document on the organization's labor rights work, achievements, and worker solidarity initiatives.</p>
           <div class="publication-meta">
             <span><i class="far fa-file-pdf"></i> PDF</span>
             <span><i class="fas fa-download"></i> 2.34 MB</span>
@@ -1112,165 +1113,18 @@ background: var(--dark-orange);
           <div class="publication-actions">
             <button class="publication-btn publication-btn-primary view-publication" 
                     data-title="RSMSN Brochure"
+                    data-title-ne="आर.एस.एम.एस.एन ब्रोशर"
                     data-date="Magh 01, 2080"
+                    data-date-ne="माघ ०१, २०८०"
                     data-description="This official brochure provides a comprehensive overview of Rastriya Shramik Mahasangh Nepal's mission, vision, and ongoing work to protect and promote workers' rights across Nepal. It highlights our major achievements, organizational structure, and key initiatives in labor advocacy."
-                    data-pdf="../Publications/Broucher English.pdf">View Details</button>
-            <a href="../Publications/Broucher English.pdf" download class="publication-btn publication-btn-secondary">
-              <i class="fas fa-download"></i> Download
+                    data-description-ne="यो आधिकारिक ब्रोशरले राष्ट्रिय श्रमिक महासंघ नेपालको अभियान, दृष्टि, र नेपाल भरि श्रमिकहरूको अधिकार सुरक्षित गर्ने र प्रवर्द्धन गर्ने चलिरहेको कामको व्यापक अवलोकन प्रदान गर्दछ। यसले हाम्रा प्रमुख उपलब्धिहरू, संगठनात्मक संरचना, र श्रम अधिवक्तामा हाम्रा मुख्य पहलहरूलाई हाइलाइट गर्दछ।"
+                    data-pdf="../Publications/Broucher English.pdf" data-i18n="viewDetails">View Details</button>
+            <a href="../Publications/Broucher English.pdf" download class="publication-btn publication-btn-secondary" data-i18n="download">
+              <i class="fas fa-download"></i> <span data-i18n="download">Download</span>
             </a>
           </div>
         </div>
       </div>
-      
-      <!-- Publication 2 -->
-      <!-- <div class="publication-card" data-aos="fade-up" data-aos-delay="200" data-category="handbook">
-        <div class="publication-image">
-          <img src="../img/publication2.jpg" alt="Workers Rights Handbook" class="object-top" loading="lazy">
-          <div class="publication-badge">Handbook</div>
-        </div>
-        <div class="publication-details">
-          <div class="publication-date">
-            <i class="far fa-calendar-alt"></i>
-            <span>November 20, 2023</span>
-          </div>
-          <h3 class="publication-title">Workers' Rights Handbook</h3>
-          <p class="publication-description">Comprehensive guide to understanding, protecting, and asserting your rights as a worker in Nepal.</p>
-          <div class="publication-meta">
-            <span><i class="far fa-file-pdf"></i> PDF</span>
-            <span><i class="fas fa-download"></i> 5.1 MB</span>
-          </div>
-          <div class="publication-actions">
-            <button class="publication-btn publication-btn-primary view-publication" 
-                    data-title="Workers' Rights Handbook"
-                    data-date="November 20, 2023"
-                    data-description="This comprehensive handbook provides detailed information on workers' rights under Nepali law. It covers topics such as minimum wage, working hours, leave entitlements, occupational health and safety, social security, and procedures for filing grievances and resolving disputes."
-                    data-pdf="../resources/publications/workers-rights-handbook.pdf">View Details</button>
-            <a href="../resources/publications/workers-rights-handbook.pdf" download class="publication-btn publication-btn-secondary">
-              <i class="fas fa-download"></i> Download
-            </a>
-          </div>
-        </div>
-      </div> -->
-      
-      <!-- Publication 3 -->
-      <!-- <div class="publication-card" data-aos="fade-up" data-aos-delay="300" data-category="guide">
-        <div class="publication-image">
-          <img src="../img/publication3.jpg" alt="Labor Law Guide" class="object-top" loading="lazy">
-          <div class="publication-badge">Guide</div>
-        </div>
-        <div class="publication-details">
-          <div class="publication-date">
-            <i class="far fa-calendar-alt"></i>
-            <span>September 10, 2023</span>
-          </div>
-          <h3 class="publication-title">Labor Law Guide</h3>
-          <p class="publication-description">Comprehensive guide to Nepal's labor laws for workers and employers, covering rights and responsibilities.</p>
-          <div class="publication-meta">
-            <span><i class="far fa-file-pdf"></i> PDF</span>
-            <span><i class="fas fa-download"></i> 3.7 MB</span>
-          </div>
-          <div class="publication-actions">
-            <button class="publication-btn publication-btn-primary view-publication" 
-                    data-title="Labor Law Guide"
-                    data-date="September 10, 2023"
-                    data-description="This detailed guide explains Nepal's labor legislation in accessible language, covering the Labor Act, regulations, and related laws. It serves as an essential resource for both workers seeking to understand their rights and employers aiming to comply with legal requirements."
-                    data-pdf="../resources/publications/labor-law-guide.pdf">View Details</button>
-            <a href="../resources/publications/labor-law-guide.pdf" download class="publication-btn publication-btn-secondary">
-              <i class="fas fa-download"></i> Download
-            </a>
-          </div>
-        </div>
-      </div> -->
-      
-      <!-- Publication 4 -->
-      <!-- <div class="publication-card" data-aos="fade-up" data-aos-delay="400" data-category="report">
-        <div class="publication-image">
-          <img src="../img/publication4.jpg" alt="Annual Report 2023" class="object-top" loading="lazy">
-          <div class="publication-badge">Report</div>
-        </div>
-        <div class="publication-details">
-          <div class="publication-date">
-            <i class="far fa-calendar-alt"></i>
-            <span>March 5, 2024</span>
-          </div>
-          <h3 class="publication-title">Annual Report 2023</h3>
-          <p class="publication-description">Comprehensive overview of our activities, achievements, and impact on workers' rights throughout 2023.</p>
-          <div class="publication-meta">
-            <span><i class="far fa-file-pdf"></i> PDF</span>
-            <span><i class="fas fa-download"></i> 7.2 MB</span>
-          </div>
-          <div class="publication-actions">
-            <button class="publication-btn publication-btn-primary view-publication" 
-                    data-title="Annual Report 2023"
-                    data-date="March 5, 2024"
-                    data-description="Our 2023 Annual Report provides a comprehensive overview of RSMN's activities, achievements, and impact on workers' rights throughout the year. It includes detailed accounts of our advocacy campaigns, training programs, legal support services, and statistical data on the workers we've reached and supported."
-                    data-pdf="../resources/publications/annual-report-2023.pdf">View Details</button>
-            <a href="../resources/publications/annual-report-2023.pdf" download class="publication-btn publication-btn-secondary">
-              <i class="fas fa-download"></i> Download
-            </a>
-          </div>
-        </div>
-      </div> -->
-      
-      <!-- Publication 5 -->
-      <!-- <div class="publication-card" data-aos="fade-up" data-aos-delay="500" data-category="handbook">
-        <div class="publication-image">
-          <img src="../img/publication5.jpg" alt="Occupational Safety Handbook" class="object-top" loading="lazy">
-          <div class="publication-badge">Handbook</div>
-        </div>
-        <div class="publication-details">
-          <div class="publication-date">
-            <i class="far fa-calendar-alt"></i>
-            <span>August 15, 2023</span>
-          </div>
-          <h3 class="publication-title">Occupational Safety Handbook</h3>
-          <p class="publication-description">Essential guide to workplace safety standards, hazard identification, and prevention measures for workers.</p>
-          <div class="publication-meta">
-            <span><i class="far fa-file-pdf"></i> PDF</span>
-            <span><i class="fas fa-download"></i> 4.8 MB</span>
-          </div>
-          <div class="publication-actions">
-            <button class="publication-btn publication-btn-primary view-publication" 
-                    data-title="Occupational Safety Handbook"
-                    data-date="August 15, 2023"
-                    data-description="This handbook provides essential information on occupational safety and health standards in Nepal. It covers hazard identification, risk assessment, prevention measures, emergency procedures, and workers' rights to a safe working environment across various industries."
-                    data-pdf="../resources/publications/occupational-safety-handbook.pdf">View Details</button>
-            <a href="../resources/publications/occupational-safety-handbook.pdf" download class="publication-btn publication-btn-secondary">
-              <i class="fas fa-download"></i> Download
-            </a>
-          </div>
-        </div>
-      </div> -->
-      
-      <!-- Publication 6 -->
-      <!-- <div class="publication-card" data-aos="fade-up" data-aos-delay="600" data-category="guide">
-        <div class="publication-image">
-          <img src="../img/publication6.jpg" alt="Social Security Guide" class="object-top" loading="lazy">
-          <div class="publication-badge">Guide</div>
-        </div>
-        <div class="publication-details">
-          <div class="publication-date">
-            <i class="far fa-calendar-alt"></i>
-            <span>June 30, 2023</span>
-          </div>
-          <h3 class="publication-title">Social Security Guide</h3>
-          <p class="publication-description">Complete guide to social security schemes, benefits, and application procedures for workers in Nepal.</p>
-          <div class="publication-meta">
-            <span><i class="far fa-file-pdf"></i> PDF</span>
-            <span><i class="fas fa-download"></i> 3.5 MB</span>
-          </div>
-          <div class="publication-actions">
-            <button class="publication-btn publication-btn-primary view-publication" 
-                    data-title="Social Security Guide"
-                    data-date="June 30, 2023"
-                    data-description="This comprehensive guide explains the social security system in Nepal, including contribution-based and non-contribution schemes. It provides detailed information on benefits such as health insurance, maternity protection, disability benefits, old-age pensions, and unemployment support."
-                    data-pdf="../resources/publications/social-security-guide.pdf">View Details</button>
-            <a href="../resources/publications/social-security-guide.pdf" download class="publication-btn publication-btn-secondary">
-              <i class="fas fa-download"></i> Download
-            </a>
-          </div>
-        </div>
-      </div> -->
     </div>
   </div>
 </section>
@@ -1289,23 +1143,23 @@ background: var(--dark-orange);
       <div class="modal-description" id="modalDescription"></div>
       <div class="pdf-container">
         <div class="pdf-header">
-          <h3 class="pdf-title">Publication Document</h3>
+          <h3 class="pdf-title" data-i18n="publicationDocument">Publication Document</h3>
           <a href="#" id="downloadPdf" class="download-btn" download>
-            <i class="fas fa-download"></i> Download PDF
+            <i class="fas fa-download"></i> <span data-i18n="download">Download</span> PDF
           </a>
         </div>
         <div class="pdf-viewer">
           <iframe id="modalPdf" src=""></iframe>
           <div id="pdfFallback" class="pdf-fallback">
             <i class="fas fa-file-pdf"></i>
-            <p>PDF viewer not supported in your browser</p>
-            <a id="pdfLink" href="#" target="_blank">Open PDF in New Tab</a>
+            <p data-i18n="pdfNotSupported">PDF viewer not supported in your browser</p>
+            <a id="pdfLink" href="#" target="_blank" data-i18n="openPdfNewTab">Open PDF in New Tab</a>
           </div>
         </div>
       </div>
     </div>
     <div class="modal-footer">
-      <button class="close-modal-btn" id="closeModalBtn">Close</button>
+      <button class="close-modal-btn" id="closeModalBtn" data-i18n="close">Close</button>
     </div>
   </div>
 </div>
@@ -1318,11 +1172,11 @@ background: var(--dark-orange);
         <a href="index.html" class="flex items-center mb-6 transition-transform duration-300 hover:scale-105">
           <img src="logo.jpg" alt="Rastriya Shramik Mahasangh Nepal Logo" class="h-24 md:h-28 mr-3">
           <div>
-            <h3 class="text-xl font-bold">Rastriya Shramik Mahasangh</h3>
-            <p class="text-sm text-white-300">नेपाल</p>
+            <h3 class="text-xl font-bold" data-i18n="organizationName">Rastriya Shramik Mahasangh</h3>
+            <p class="text-sm text-white-300" data-i18n="organizationLocation">नेपाल</p>
           </div>
         </a>
-        <p class="text-white mb-6">
+        <p class="text-white mb-6" data-i18n="footerDescription">
           Empowering workers through unity, advocacy, and action since 2080 B.S.
         </p>
         <div class="flex space-x-4">
@@ -1358,75 +1212,75 @@ background: var(--dark-orange);
       </div>
       <!-- Quick Links -->
       <div class="md:col-span-1">
-        <h3 class="text-lg font-bold mb-6 uppercase tracking-wider text-white">Quick Links</h3>
+        <h3 class="text-lg font-bold mb-6 uppercase tracking-wider text-white" data-i18n="quickLinks">Quick Links</h3>
         <ul class="space-y-3">
           <li>
             <a href="About.html" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center">
               <i class="fas fa-angle-right mr-2 text-gold"></i>
-              About Us
+              <span data-i18n="aboutUs">About Us</span>
             </a>
           </li>
           <li>
             <a href="Updates.html" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center">
               <i class="fas fa-angle-right mr-2 text-gold"></i>
-              Latest Updates
+              <span data-i18n="latestUpdatesFooter">Latest Updates</span>
             </a>
           </li>
           <li>
             <a href="Upcoming.html" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center">
               <i class="fas fa-angle-right mr-2 text-gold"></i>
-              Our Events
+              <span data-i18n="ourEvents">Our Events</span>
             </a>
           </li>
           <li>
             <a href="Media_Coverage.html" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center">
               <i class="fas fa-angle-right mr-2 text-gold"></i>
-              Media Coverages
+              <span data-i18n="mediaCoverages">Media Coverages</span>
             </a>
           </li>
         </ul>
       </div>
       <!-- Resources -->
       <div class="md:col-span-1">
-        <h3 class="text-lg font-bold mb-6 uppercase tracking-wider text-white">Resources</h3>
+        <h3 class="text-lg font-bold mb-6 uppercase tracking-wider text-white" data-i18n="resourcesFooter">Resources</h3>
         <ul class="space-y-3">
           <li>
             <a href="Slogans.html" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center">
               <i class="fas fa-angle-right mr-2 text-gold"></i>
-              Our Slogans
+              <span data-i18n="ourSlogans">Our Slogans</span>
             </a>
           </li>
           <li>
             <a href="Press_Releases.html" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center">
               <i class="fas fa-angle-right mr-2 text-gold"></i>
-              Press Releases
+              <span data-i18n="pressReleases">Press Releases</span>
             </a>
           </li>
           <li>
             <a href="Publications.html" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center">
               <i class="fas fa-angle-right mr-2 text-gold"></i>
-              Publications
+              <span data-i18n="publications">Publications</span>
             </a>
           </li>
           <li>
             <a href="Gallery.html" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center">
               <i class="fas fa-angle-right mr-2 text-gold"></i>
-              Gallery
+              <span data-i18n="gallery">Gallery</span>
             </a>
           </li>
         </ul>
       </div>
       <!-- Contact & Newsletter -->
       <div class="md:col-span-1">
-        <h3 class="text-lg font-bold mb-6 uppercase tracking-wider text-white">Contact Us</h3>
+        <h3 class="text-lg font-bold mb-6 uppercase tracking-wider text-white" data-i18n="contactUs">Contact Us</h3>
         <ul class="space-y-4 mb-8">
           <li class="flex items-start">
             <i class="fas fa-map-marker-alt text-gold mt-1 mr-3"></i>
-            <a href="https://maps.app.goo.gl/4C8W3pM3qPDEQvMA9" target="_blank" class="text-white hover:text-yellow-200 transition-colors duration-300">Keshavdham, Guheswari Marg - 8, Kathmandu, Nepal</a>
+            <a href="https://maps.app.goo.gl/4C8W3pM3qPDEQvMA9" target="_blank" class="text-white hover:text-yellow-200 transition-colors duration-300" data-address="Keshavdham, Guheswari Marg - 8, Kathmandu, Nepal">Keshavdham, Guheswari Marg - 8, Kathmandu, Nepal</a>
           </li>
           <li class="flex items-center">
             <i class="fas fa-phone-alt text-gold mr-3"></i>
-            <a href="tel:+9779855020288" class="text-white hover:text-yellow-200 transition-colors duration-300">+977-9855020288</a>
+            <a href="tel:+9779855020288" class="text-white hover:text-yellow-200 transition-colors duration-300" data-phone="+977-9855020288">+977-9855020288</a>
           </li>
           <li class="flex items-center">
             <i class="fas fa-envelope text-gold mr-3"></i>
@@ -1438,7 +1292,7 @@ background: var(--dark-orange);
     <!-- Bottom Bar -->
     <div class="border-t border-orange-800 pt-4">
       <div class="flex justify-center">
-        <p class="text-white text-sm">
+        <p class="text-white text-sm" data-i18n="copyright">
           &copy; <span id="current-year"></span> Rastriya Shramik Mahasangh Nepal. All rights reserved.
         </p>
       </div>
@@ -1452,13 +1306,383 @@ background: var(--dark-orange);
 <!-- Scripts -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
+// Language data structure with all translations
+const translations = {
+  en: {
+    // Navigation
+    home: "Home",
+    about: "About",
+    ourStory: "Our Story",
+    organizationalStructure: "Organizational Structure",
+    leadership: "Leadership",
+    resources: "Resources",
+    ourSlogans: "Our Slogans",
+    pressReleases: "Press Releases",
+    publications: "Publications",
+    events: "Events",
+    gallery: "Gallery",
+    
+    // Hero Section
+    publicationsTitle: "Publications",
+    publicationsSubtitle: "Access our comprehensive collection of reports, handbooks, and resources on workers' rights and labor advocacy",
+    
+    // Publications Section
+    ourPublications: "Our Publications",
+    publicationsDescription: "Explore our collection of resources designed to empower workers with knowledge, rights information, and advocacy tools",
+    allPublications: "All Publications",
+    handbooks: "Handbooks",
+    reports: "Reports",
+    guides: "Guides",
+    brochures: "Brochures",
+    brochure: "Brochure",
+    publication1Title: "RSMSN Brochure",
+    publication1Desc: "Official document on the organization's labor rights work, achievements, and worker solidarity initiatives.",
+    viewDetails: "View Details",
+    download: "Download",
+    
+    // Modal
+    publicationDocument: "Publication Document",
+    pdfNotSupported: "PDF viewer not supported in your browser",
+    openPdfNewTab: "Open PDF in New Tab",
+    close: "Close",
+    
+    // Footer
+    quickLinks: "Quick Links",
+    aboutUs: "About Us",
+    latestUpdatesFooter: "Latest Updates",
+    ourEvents: "Our Events",
+    mediaCoverages: "Media Coverages",
+    resourcesFooter: "Resources",
+    contactUs: "Contact Us",
+    footerDescription: "Empowering workers through unity, advocacy, and action since 2080 B.S.",
+    copyright: "© {year} Rastriya Shramik Mahasangh Nepal. All rights reserved.",
+    
+    // Organization
+    organizationName: "Rastriya Shramik Mahasangh",
+    organizationLocation: "Nepal",
+    
+    // Announcement
+    announcement1: "Rastra heet!",
+    announcement2: "Udyog Heet!",
+    announcement3: "Shramik Heet!"
+  },
+  ne: {
+    // Navigation
+    home: "गृहपृष्ठ",
+    about: "हाम्रो बारेमा",
+    ourStory: "हाम्रो कथा",
+    organizationalStructure: "संगठनात्मक संरचना",
+    leadership: "नेतृत्व",
+    resources: "संसाधनहरू",
+    ourSlogans: "हाम्रा नाराहरू",
+    pressReleases: "प्रेस विज्ञप्तिहरू",
+    publications: "प्रकाशनहरू",
+    events: "कार्यक्रमहरू",
+    gallery: "ग्यालरी",
+    
+    // Hero Section
+    publicationsTitle: "प्रकाशनहरू",
+    publicationsSubtitle: "श्रमिक अधिकार र श्रम अधिवक्तामा हाम्रा प्रतिवेदनहरू, हातपुस्तिकाहरू, र संसाधनहरूको व्यापक संग्रह पहुँच गर्नुहोस्",
+    
+    // Publications Section
+    ourPublications: "हाम्रा प्रकाशनहरू",
+    publicationsDescription: "ज्ञान, अधिकार जानकारी, र अधिवक्ता उपकरणहरूसहित श्रमिकहरूलाई सशक्त बनाउने लागि डिजाइन गरिएका हाम्रा संसाधनहरूको संग्रह अन्वेषण गर्नुहोस्",
+    allPublications: "सबै प्रकाशनहरू",
+    handbooks: "हातपुस्तिकाहरू",
+    reports: "प्रतिवेदनहरू",
+    guides: "मार्गदर्शकहरू",
+    brochures: "ब्रोशरहरू",
+    brochure: "ब्रोशर",
+    publication1Title: "आर.एस.एम.एस.एन ब्रोशर",
+    publication1Desc: "संगठनको श्रमिक अधिकार काम, उपलब्धिहरू, र श्रमिक एकता पहलहरूको बारेमा आधिकारिक कागजात।",
+    viewDetails: "विवरण हेर्नुहोस्",
+    download: "डाउनलोड गर्नुहोस्",
+    
+    // Modal
+    publicationDocument: "प्रकाशन कागजात",
+    pdfNotSupported: "तपाईंको ब्राउजरमा PDF दर्शक समर्थित छैन",
+    openPdfNewTab: "नयाँ ट्याबमा PDF खोल्नुहोस्",
+    close: "बन्द गर्नुहोस्",
+    
+    // Footer
+    quickLinks: "द्रुत लिङ्कहरू",
+    aboutUs: "हाम्रो बारेमा",
+    latestUpdatesFooter: "नवीनतम अपडेटहरू",
+    ourEvents: "हाम्रा कार्यक्रमहरू",
+    mediaCoverages: "मिडिया कभरेजहरू",
+    resourcesFooter: "संसाधनहरू",
+    contactUs: "सम्पर्क गर्नुहोस्",
+    footerDescription: "एकता, वकालत र कार्यबाट २०८० बि.स. देखि श्रमिकहरूलाई सशक्त बनाउँदै",
+    copyright: "© {year} सर्वाधिकार राष्ट्रिय श्रमिक महासंघमा सुरक्षित",
+    
+    // Organization
+    organizationName: "राष्ट्रिय श्रमिक महासंघ",
+    organizationLocation: "नेपाल",
+    
+    // Announcement
+    announcement1: "राष्ट्र हित!",
+    announcement2: "उद्योग हित!",
+    announcement3: "श्रमिक हित!"
+  }
+};
+
+// Function to convert Arabic numerals to Nepali numerals
+function convertToNepaliNumerals(text) {
+  const arabicNumerals = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+  const nepaliNumerals = ['०', '१', '२', '३', '४', '५', '६', '७', '८', '९'];
+  
+  let convertedText = text;
+  for (let i = 0; i < arabicNumerals.length; i++) {
+    const regex = new RegExp(arabicNumerals[i], 'g');
+    convertedText = convertedText.replace(regex, nepaliNumerals[i]);
+  }
+  
+  return convertedText;
+}
+
+// Function to convert Nepali numerals to Arabic numerals
+function convertToArabicNumerals(text) {
+  const arabicNumerals = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+  const nepaliNumerals = ['०', '१', '२', '३', '४', '५', '६', '७', '८', '९'];
+  
+  let convertedText = text;
+  for (let i = 0; i < nepaliNumerals.length; i++) {
+    const regex = new RegExp(nepaliNumerals[i], 'g');
+    convertedText = convertedText.replace(regex, arabicNumerals[i]);
+  }
+  
+  return convertedText;
+}
+
+// Function to convert month names to Nepali
+function convertMonthToNepali(monthName) {
+  const monthMap = {
+    'Baishakh': 'बैशाख',
+    'Jestha': 'जेष्ठ',
+    'Asar': 'आषाढ',
+    'Shrawan': 'श्रावण',
+    'Bhadra': 'भाद्र',
+    'Ashwin': 'अश्विन',
+    'Kartik': 'कार्तिक',
+    'Mangsir': 'मंसिर',
+    'Poush': 'पौष',
+    'Magh': 'माघ',
+    'Falgun': 'फाल्गुन',
+    'Chaitra': 'चैत्र'
+  };
+  
+  return monthMap[monthName] || monthName;
+}
+
+// Function to update the language
+function updateLanguage(lang) {
+  // Save the language preference to localStorage
+  localStorage.setItem('preferredLanguage', lang);
+  
+  // Update the language toggle buttons
+  const langEn = document.getElementById('lang-en');
+  const langNe = document.getElementById('lang-ne');
+  const mobileLangEn = document.getElementById('mobile-lang-en');
+  const mobileLangNe = document.getElementById('mobile-lang-ne');
+  
+  if (lang === 'en') {
+    // Desktop language toggle
+    if (langEn && langNe) {
+      langEn.classList.add('bg-white', 'text-orange');
+      langEn.classList.remove('text-white');
+      langNe.classList.remove('bg-white', 'text-orange');
+      langNe.classList.add('text-white');
+    }
+    
+    // Mobile language toggle
+    if (mobileLangEn && mobileLangNe) {
+      mobileLangEn.classList.add('bg-white', 'text-orange');
+      mobileLangEn.classList.remove('text-white');
+      mobileLangNe.classList.remove('bg-white', 'text-orange');
+      mobileLangNe.classList.add('text-white');
+    }
+  } else {
+    // Desktop language toggle
+    if (langEn && langNe) {
+      langNe.classList.add('bg-white', 'text-orange');
+      langNe.classList.remove('text-white');
+      langEn.classList.remove('bg-white', 'text-orange');
+      langEn.classList.add('text-white');
+    }
+    
+    // Mobile language toggle
+    if (mobileLangEn && mobileLangNe) {
+      mobileLangNe.classList.add('bg-white', 'text-orange');
+      mobileLangNe.classList.remove('text-white');
+      mobileLangEn.classList.remove('bg-white', 'text-orange');
+      mobileLangEn.classList.add('text-white');
+    }
+  }
+  
+  // Update the content based on the selected language
+  const translation = translations[lang];
+  
+  // Update all elements with data-i18n attribute
+  document.querySelectorAll('[data-i18n]').forEach(element => {
+    const key = element.getAttribute('data-i18n');
+    if (translation[key]) {
+      // Special handling for copyright with year placeholder
+      if (key === 'copyright') {
+        const currentYear = new Date().getFullYear();
+        element.innerHTML = translation[key].replace('{year}', currentYear);
+      } else {
+        element.textContent = translation[key];
+      }
+    }
+  });
+  
+  // Update dates
+  document.querySelectorAll('.date').forEach(dateElement => {
+    const originalDate = dateElement.getAttribute('data-date');
+    if (originalDate) {
+      if (lang === 'ne') {
+        // Convert month names to Nepali
+        let nepaliDate = originalDate;
+        // Convert month names
+        Object.entries({
+          'Asar': 'आषाढ',
+          'Shrawan': 'श्रावण',
+          'Bhadra': 'भाद्र',
+          'Ashwin': 'अश्विन',
+          'Kartik': 'कार्तिक',
+          'Mangsir': 'मंसिर',
+          'Poush': 'पौष',
+          'Magh': 'माघ',
+          'Falgun': 'फाल्गुन',
+          'Chaitra': 'चैत्र',
+          'Baishakh': 'बैशाख',
+          'Jestha': 'जेष्ठ'
+        }).forEach(([en, ne]) => {
+          nepaliDate = nepaliDate.replace(new RegExp(en, 'g'), ne);
+        });
+        
+        // Convert numerals to Nepali
+        nepaliDate = convertToNepaliNumerals(nepaliDate);
+        
+        dateElement.textContent = nepaliDate;
+      } else {
+        dateElement.textContent = originalDate;
+      }
+    }
+  });
+  
+  // Update address with Nepali numerals
+  document.querySelectorAll('[data-address]').forEach(addressElement => {
+    const originalAddress = addressElement.getAttribute('data-address');
+    if (originalAddress) {
+      if (lang === 'ne') {
+        // Convert address to Nepali
+        let nepaliAddress = originalAddress;
+        // Convert place names
+        nepaliAddress = nepaliAddress.replace(/Keshavdham/g, 'केशवधाम');
+        nepaliAddress = nepaliAddress.replace(/Guheswari Marg/g, 'गुह्येश्वरी मार्ग');
+        nepaliAddress = nepaliAddress.replace(/Kathmandu/g, 'काठमाडौं');
+        nepaliAddress = nepaliAddress.replace(/Nepal/g, 'नेपाल');
+        
+        // Convert numerals to Nepali
+        nepaliAddress = convertToNepaliNumerals(nepaliAddress);
+        
+        addressElement.textContent = nepaliAddress;
+      } else {
+        addressElement.textContent = originalAddress;
+      }
+    }
+  });
+  
+  // Update phone numbers with Nepali numerals
+  document.querySelectorAll('[data-phone]').forEach(phoneElement => {
+    const originalPhone = phoneElement.getAttribute('data-phone');
+    if (originalPhone) {
+      if (lang === 'ne') {
+        phoneElement.textContent = convertToNepaliNumerals(originalPhone);
+      } else {
+        phoneElement.textContent = originalPhone;
+      }
+    }
+  });
+  
+  // Update data attributes for modals
+  document.querySelectorAll('.view-publication').forEach(button => {
+    const titleEn = button.getAttribute('data-title');
+    const titleNe = button.getAttribute('data-title-ne');
+    const descriptionEn = button.getAttribute('data-description');
+    const descriptionNe = button.getAttribute('data-description-ne');
+    const dateEn = button.getAttribute('data-date');
+    const dateNe = button.getAttribute('data-date-ne');
+    
+    if (lang === 'ne' && titleNe) {
+      button.setAttribute('data-title', titleNe);
+    } else if (lang === 'en' && titleEn) {
+      button.setAttribute('data-title', titleEn);
+    }
+    
+    if (lang === 'ne' && descriptionNe) {
+      button.setAttribute('data-description', descriptionNe);
+    } else if (lang === 'en' && descriptionEn) {
+      button.setAttribute('data-description', descriptionEn);
+    }
+    if (lang === 'ne' && dateNe) {
+      button.setAttribute('data-date', dateNe);
+    } else if (lang === 'en' && dateEn) {
+      button.setAttribute('data-date', dateEn);
+    }
+  });
+  
+  // Update meta tags for SEO
+  document.querySelector('title').textContent = lang === 'en' 
+    ? 'Publications - Rastriya Shramik Mahasangh Nepal'
+    : 'प्रकाशनहरू - राष्ट्रिय श्रमिक महासंघ नेपाल';
+  
+  document.querySelector('meta[name="description"]').setAttribute('content', lang === 'en'
+    ? 'Explore official publications from Rastriya Shramik Mahasangh Nepal. Access reports, handbooks, and resources on workers\' rights and labor advocacy.'
+    : 'राष्ट्रिय श्रमिक महासंघ नेपालबाट आधिकारिक प्रकाशनहरू अन्वेषण गर्नुहोस्। श्रमिक अधिकार र श्रम अधिवक्तामा प्रतिवेदनहरू, हातपुस्तिकाहरू, र संसाधनहरू पहुँच गर्नुहोस्।');
+  
+  document.querySelector('meta[property="og:title"]').setAttribute('content', lang === 'en'
+    ? 'Publications - Rastriya Shramik Mahasangh Nepal'
+    : 'प्रकाशनहरू - राष्ट्रिय श्रमिक महासंघ नेपाल');
+  
+  document.querySelector('meta[property="og:description"]').setAttribute('content', lang === 'en'
+    ? 'Explore official publications from Rastriya Shramik Mahasangh Nepal. Access reports, handbooks, and resources on workers\' rights and labor advocacy.'
+    : 'राष्ट्रिय श्रमिक महासंघ नेपालबाट आधिकारिक प्रकाशनहरू अन्वेषण गर्नुहोस्। श्रमिक अधिकार र श्रम अधिवक्तामा प्रतिवेदनहरू, हातपुस्तिकाहरू, र संसाधनहरू पहुँच गर्नुहोस्।');
+  
+  document.querySelector('meta[property="twitter:title"]').setAttribute('content', lang === 'en'
+    ? 'Publications - Rastriya Shramik Mahasangh Nepal'
+    : 'प्रकाशनहरू - राष्ट्रिय श्रमिक महासंघ नेपाल');
+  
+  document.querySelector('meta[property="twitter:description"]').setAttribute('content', lang === 'en'
+    ? 'Explore official publications from Rastriya Shramik Mahasangh Nepal. Access reports, handbooks, and resources on workers\' rights and labor advocacy.'
+    : 'राष्ट्रिय श्रमिक महासंघ नेपालबाट आधिकारिक प्रकाशनहरू अन्वेषण गर्नुहोस्। श्रमिक अधिकार र श्रम अधिवक्तामा प्रतिवेदनहरू, हातपुस्तिकाहरू, र संसाधनहरू पहुँच गर्नुहोस्।');
+  
+  // Update HTML lang attribute
+  document.documentElement.lang = lang;
+  
+  // Add or remove nepali-font class to body for font switching
+  if (lang === 'ne') {
+    document.body.classList.add('nepali-font');
+  } else {
+    document.body.classList.remove('nepali-font');
+  }
+}
+
 // Initialize AOS
 AOS.init({
   duration: 1000,
   once: true,
   disable: 'mobile'
 });
+
 document.addEventListener('DOMContentLoaded', function() {
+  // Check for saved language preference or default to English
+  const savedLanguage = localStorage.getItem('preferredLanguage') || 'en';
+  
+  // Set the initial language
+  updateLanguage(savedLanguage);
+  
   // Mobile Menu Toggle
   const mobileMenuButton = document.getElementById('mobile-menu-button');
   const closeMobileMenu = document.getElementById('close-mobile-menu');
@@ -1519,38 +1743,22 @@ document.addEventListener('DOMContentLoaded', function() {
   // Desktop language toggle
   if (langEn && langNe) {
     langEn.addEventListener('click', function() {
-      langEn.classList.add('bg-white', 'text-orange');
-      langEn.classList.remove('text-white');
-      langNe.classList.remove('bg-white', 'text-orange');
-      langNe.classList.add('text-white');
-      console.log('Language changed to English');
+      updateLanguage('en');
     });
     
     langNe.addEventListener('click', function() {
-      langNe.classList.add('bg-white', 'text-orange');
-      langNe.classList.remove('text-white');
-      langEn.classList.remove('bg-white', 'text-orange');
-      langEn.classList.add('text-white');
-      console.log('Language changed to Nepali');
+      updateLanguage('ne');
     });
   }
   
   // Mobile language toggle
   if (mobileLangEn && mobileLangNe) {
     mobileLangEn.addEventListener('click', function() {
-      mobileLangEn.classList.add('bg-white', 'text-orange');
-      mobileLangEn.classList.remove('text-white');
-      mobileLangNe.classList.remove('bg-white', 'text-orange');
-      mobileLangNe.classList.add('text-white');
-      console.log('Language changed to English');
+      updateLanguage('en');
     });
     
     mobileLangNe.addEventListener('click', function() {
-      mobileLangNe.classList.add('bg-white', 'text-orange');
-      mobileLangNe.classList.remove('text-white');
-      mobileLangEn.classList.remove('bg-white', 'text-orange');
-      mobileLangEn.classList.add('text-white');
-      console.log('Language changed to Nepali');
+      updateLanguage('ne');
     });
   }
   

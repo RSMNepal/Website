@@ -54,6 +54,7 @@ overflow-x: hidden;
 }
 .nepali-font {
 font-family: 'Mukta', sans-serif;
+font-size: large;
 }
 .parallax-bg {
 background-attachment: fixed;
@@ -877,10 +878,10 @@ background: var(--dark-orange);
   <!-- Announcement Bar with Fade Effect -->
   <div class="announcement-fade">
     <div class="container mx-auto px-4">
-      <div class="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 md:gap-x-4 lg:gap-x-6 text-sm md:text-base font-semibold overflow-x-auto py-1">
-        <span class="whitespace-nowrap transition-colors duration-300 hover:text-yellow-300 px-1">Rastra heet!</span>
-        <span class="whitespace-nowrap transition-colors duration-300 hover:text-yellow-300 px-1">Udyog Heet!</span>
-        <span class="whitespace-nowrap transition-colors duration-300 hover:text-yellow-300 px-1">Shramik Heet!</span>
+      <div class="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 md:gap-x-4 lg:gap-x-6 text-lg md:text-xl font-semibold overflow-x-auto py-1">
+        <span class="whitespace-nowrap transition-colors duration-300 hover:text-yellow-300 px-1" data-i18n="announcement1">Rastra heet!</span>
+        <span class="whitespace-nowrap transition-colors duration-300 hover:text-yellow-300 px-1" data-i18n="announcement2">Udyog heet!</span>
+        <span class="whitespace-nowrap transition-colors duration-300 hover:text-yellow-300 px-1" data-i18n="announcement3">Shramik heet!</span>
       </div>
     </div>
   </div>
@@ -893,41 +894,41 @@ background: var(--dark-orange);
           <img src="logo.jpg" alt="Rastriya Shramik Mahasangh Nepal Logo" class="h-20 md:h-24 lg:h-28 transition-transform duration-300 hover:scale-105">
         </div>
         <div class="organization-name ml-3 md:ml-4">
-          <h1 class="text-lg md:text-xl lg:text-2xl font-bold transition-colors duration-300 hover:text-yellow-100">Rastriya Shramik Mahasangh</h1>
-          <p class="text-sm md:text-base lg:text-lg transition-colors duration-300 hover:text-yellow-200">Nepal</p>
+          <h1 class="text-xl md:text-2xl lg:text-3xl font-bold transition-colors duration-300 hover:text-yellow-100" data-i18n="organizationName">Rastriya Shramik Mahasangh</h1>
+          <p class="text-sm md:text-base lg:text-lg transition-colors duration-300 hover:text-yellow-200" data-i18n="organizationLocation">Nepal</p>
         </div>
       </a>
       
       <!-- Navigation Links (Center) -->
       <nav class="nav-links hidden lg:flex items-center justify-center flex-grow mx-4 lg:mx-8">
-        <a href="index.html" class="nav-link-item px-3 py-2 rounded-lg text-white font-medium transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md">Home</a>
+        <a href="index.html" class="nav-link-item px-3 py-2 rounded-lg text-white font-medium transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md" data-i18n="home">Home</a>
         
         <!-- About Dropdown -->
         <div class="relative dropdown">
-          <a href="About.html" class="nav-link-item px-3 py-2 rounded-lg text-white font-medium flex items-center transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md dropdown-toggle">
+          <a href="About.html" class="nav-link-item px-3 py-2 rounded-lg text-white font-medium flex items-center transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md dropdown-toggle" data-i18n="about">
             About <i class="fas fa-chevron-down ml-1 text-xs"></i>
           </a>
           <div class="dropdown-menu absolute left-0 flex-col bg-white text-gray-800 mt-1 rounded-md shadow-lg py-1 w-48">
-            <a href="About.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600">Our Story</a>
-            <a href="About.html#organizational-structure" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600">Organizational Structure</a>
-            <a href="About.html#central-executive-committee" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600">Leadership</a>
+            <a href="About.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600" data-i18n="ourStory">Our Story</a>
+            <a href="About.html#organizational-structure" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600" data-i18n="organizationalStructure">Organizational Structure</a>
+            <a href="About.html#central-executive-committee" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600" data-i18n="leadership">Leadership</a>
           </div>
         </div>
         
         <!-- Resources Dropdown -->
         <div class="relative dropdown">
-          <button class="nav-link-item px-3 py-2 rounded-lg text-white font-medium flex items-center transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md dropdown-toggle">
+          <button class="nav-link-item px-3 py-2 rounded-lg text-white font-medium flex items-center transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md dropdown-toggle" data-i18n="resources">
             Resources <i class="fas fa-chevron-down ml-1 text-xs"></i>
           </button>
           <div class="dropdown-menu absolute left-0 flex-col bg-white text-gray-800 mt-1 rounded-md shadow-lg py-1 w-56">
-            <a href="Slogans.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600">Our Slogans</a>
-            <a href="Press_Releases.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600">Press Releases</a>
-            <a href="Publications.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600">Publications</a>
+            <a href="Slogans.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600" data-i18n="ourSlogans">Our Slogans</a>
+            <a href="Press_Releases.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600" data-i18n="pressReleases">Press Releases</a>
+            <a href="Publications.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600" data-i18n="publications">Publications</a>
           </div>
         </div>
         
-        <a href="Upcoming.html" class="nav-link-item px-3 py-2 rounded-lg text-white font-medium transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md">Events</a>
-        <a href="Gallery.html" class="nav-link-item px-3 py-2 rounded-lg text-white font-medium transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md">Gallery</a>
+        <a href="Upcoming.html" class="nav-link-item px-3 py-2 rounded-lg text-white font-medium transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md" data-i18n="events">Events</a>
+        <a href="Gallery.html" class="nav-link-item px-3 py-2 rounded-lg text-white font-medium transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md" data-i18n="gallery">Gallery</a>
       </nav>
       
       <!-- Language and Search (Right) -->
@@ -988,62 +989,60 @@ background: var(--dark-orange);
       <a href="index.html" class="flex items-center no-underline">
         <img src="logo.jpg" alt="Rastriya Shramik Mahasangh Nepal Logo" class="h-16">
         <div class="ml-3">
-          <h1 class="text-lg font-bold text-white">Rastriya Shramik Mahasangh</h1>
-          <p class="text-sm text-white">Nepal</p>
+          <h1 class="text-lg font-bold text-white" data-i18n="organizationName">Rastriya Shramik Mahasangh</h1>
+          <p class="text-sm text-white" data-i18n="organizationLocation">Nepal</p>
         </div>
       </a>
     </div>
     
     <div class="p-4 space-y-2 overflow-y-auto max-h-[calc(100vh-180px)]">
-      <a href="index.html" class="block py-2 px-4 rounded-lg hover:bg-gold hover:text-dark-orange transition-all duration-300">Home</a>
+      <a href="index.html" class="block py-2 px-4 rounded-lg hover:bg-gold hover:text-dark-orange transition-all duration-300" data-i18n="home">Home</a>
       
       <div class="py-1">
         <button class="flex justify-between items-center w-full py-2 px-4 rounded-lg hover:bg-gold hover:text-dark-orange transition-all duration-300 mobile-submenu-toggle" data-target="about-submenu">
-          About <i class="fas fa-chevron-down text-xs transition-transform duration-300"></i>
+          <span data-i18n="about">About</span> <i class="fas fa-chevron-down text-xs transition-transform duration-300"></i>
         </button>
         <div id="about-submenu" class="hidden pl-6 mt-1 space-y-1 bg-gray-700 rounded-lg">
-          <a href="About.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600">Our Story</a>
-          <a href="About.html#organizational-structure" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600">Organizational Structure</a>
-          <a href="About.html#central-executive-committee" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600">Leadership</a>
+          <a href="About.html" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600" data-i18n="ourStory">Our Story</a>
+          <a href="About.html#organizational-structure" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600" data-i18n="organizationalStructure">Organizational Structure</a>
+          <a href="About.html#central-executive-committee" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600" data-i18n="leadership">Leadership</a>
         </div>
       </div>
       
       <div class="py-1">
         <button class="flex justify-between items-center w-full py-2 px-4 rounded-lg hover:bg-gold hover:text-dark-orange transition-all duration-300 mobile-submenu-toggle" data-target="resources-submenu">
-          Resources <i class="fas fa-chevron-down text-xs transition-transform duration-300"></i>
+          <span data-i18n="resources">Resources</span> <i class="fas fa-chevron-down text-xs transition-transform duration-300"></i>
         </button>
         <div id="resources-submenu" class="hidden pl-6 mt-1 space-y-1 bg-gray-700 rounded-lg">
-          <a href="Slogans.html" class="block py-2 px-4 hover:bg-orange-100 transition-colors duration-300">Our Slogans</a>
-          <a href="Press_Releases.html" class="block py-2 px-4 hover:bg-orange-100 transition-colors duration-300">Press Releases</a>
-          <a href="Publications.html" class="block py-2 px-4 hover:bg-orange-100 transition-colors duration-300">Publications</a>
+          <a href="Slogans.html" class="block py-2 px-4 hover:bg-orange-100 transition-colors duration-300" data-i18n="ourSlogans">Our Slogans</a>
+          <a href="Press_Releases.html" class="block py-2 px-4 hover:bg-orange-100 transition-colors duration-300" data-i18n="pressReleases">Press Releases</a>
+          <a href="Publications.html" class="block py-2 px-4 hover:bg-orange-100 transition-colors duration-300" data-i18n="publications">Publications</a>
         </div>
       </div>
       
-      <a href="Upcoming.html" class="block py-2 px-4 rounded-lg hover:bg-gold hover:text-dark-orange transition-all duration-300">Events</a>
-      <a href="gallery.html" class="block py-2 px-4 rounded-lg hover:bg-gold hover:text-dark-orange transition-all duration-300">Gallery</a>
+      <a href="Upcoming.html" class="block py-2 px-4 rounded-lg hover:bg-gold hover:text-dark-orange transition-all duration-300" data-i18n="events">Events</a>
+      <a href="Gallery.html" class="block py-2 px-4 rounded-lg hover:bg-gold hover:text-dark-orange transition-all duration-300" data-i18n="gallery">Gallery</a>
     </div>
   </div>
 </header>
-
 <!-- Hero Section -->
 <section class="press-hero">
   <div class="press-hero-bg"></div>
   <div class="press-hero-overlay"></div>
   <div class="press-content">
-    <h1>Press Releases</h1>
-    <p>Official statements and announcements from Rastriya Shramik Mahasangh Nepal</p>
+    <h1 data-i18n="pressReleasesTitle">Press Releases</h1>
+    <p data-i18n="pressReleasesSubtitle">Official statements and announcements from Rastriya Shramik Mahasangh Nepal</p>
   </div>
   <div class="press-breadcrumb">
-    <a href="Landing_Page.html">Home</a> / <span>Press Releases</span>
+    <a href="index.html" data-i18n="home">Home</a> / <span data-i18n="pressReleases">Press Releases</span>
   </div>
 </section>
-
 <!-- Press Releases Section -->
 <section class="press-section">
   <div class="press-container">
     <div class="press-header" data-aos="fade-up">
-      <h2 class="section-title">Latest Press Releases</h2>
-      <p>Stay informed with our official statements and announcements on workers' rights and advocacy efforts</p>
+      <h2 class="section-title" data-i18n="latestPressReleases">Latest Press Releases</h2>
+      <p data-i18n="pressReleasesDesc">Stay informed with our official statements and announcements on workers' rights and advocacy efforts</p>
     </div>
     
     <div class="press-grid">
@@ -1051,23 +1050,26 @@ background: var(--dark-orange);
       <div class="press-card" data-aos="fade-up" data-aos-delay="100">
         <div class="press-image">
           <img src="/Press_Releases/Press_release1.jpg" alt="Labor Policy Statement" class="object-top" loading="lazy">
-          <div class="press-badge">Press Release</div>
+          <div class="press-badge" data-i18n="pressRelease">Press Release</div>
         </div>
         <div class="press-details">
           <div class="press-date">
             <i class="far fa-calendar-alt"></i>
-            <span>Asar 28, 2082</span>
+            <span class="date" data-date="Asar 28, 2082" data-date-ne="आषाढ २८, २०८२">Asar 28, 2082</span>
           </div>
-          <h3 class="press-title">RSMN Demands Continued Fertilizer Subsidies for Farmers</h3>
-          <p class="press-description">Calls on government to reverse decision ending long-standing agricultural subsidies that support farmers across Nepal.</p>
+          <h3 class="press-title" data-i18n="pressRelease1Title">RSMN Demands Continued Fertilizer Subsidies for Farmers</h3>
+          <p class="press-description" data-i18n="pressRelease1Desc">Calls on government to reverse decision ending long-standing agricultural subsidies that support farmers across Nepal.</p>
           <div class="press-actions">
             <button class="press-btn press-btn-primary view-press-release" 
                     data-title="RSMN Demands Continued Fertilizer Subsidies for Farmers"
+                    data-title-ne="आर.एस.एम.एनले किसानहरूका लागि मलबत्ती सहायता जारी राख्यो माग"
                     data-date="Asar 28, 2082"
+                    data-date-ne="आषाढ २८, २०८२"
                     data-description="Rastriya Shramik Mahasangh Nepal urgently calls on the government to reverse its decision to end the long-standing fertilizer subsidy program that has been crucial for farmers across Nepal. This statement highlights the importance of continued support for agricultural workers and the potential negative impact of removing these subsidies on rural communities and food security."
-                    data-pdf="../Press_Releases/Press_release1.pdf">View Details</button>
-            <a href="/Press_Releases/Press_release1.pdf" download class="press-btn press-btn-secondary">
-              <i class="fas fa-download"></i> Download
+                    data-description-ne="राष्ट्रिय श्रमिक महासंघ नेपालले सरकारले दीर्घकालीन मलबत्ती सहायता कार्यक्रम अन्त्य गर्ने निर्णय उल्टाउन नेपाल भरि का किसानहरूका लागि महत्त्वपूर्ण रहेको यो कार्यक्रमको महत्त्व र यसलाई हटाउँदा ग्रामीण समुदाय र खाद्यान्न सुरक्षामा पर्ने नकारात्मक असरबारे यो वक्तव्यले जोड दिन्छ।"
+                    data-pdf="../Press_Releases/Press_release1.pdf" data-i18n="viewDetails">View Details</button>
+            <a href="/Press_Releases/Press_release1.pdf" download class="press-btn press-btn-secondary" data-i18n="download">
+              <i class="fas fa-download"></i> <span data-i18n="download">Download</span>
             </a>
           </div>
         </div>
@@ -1077,23 +1079,26 @@ background: var(--dark-orange);
       <div class="press-card" data-aos="fade-up" data-aos-delay="200">
         <div class="press-image">
           <img src="/Press_Releases/Press_release2.jpg" alt="Workers Rights Rally" class="object-top" loading="lazy">
-          <div class="press-badge">Press Release</div>
+          <div class="press-badge" data-i18n="pressRelease">Press Release</div>
         </div>
         <div class="press-details">
           <div class="press-date">
             <i class="far fa-calendar-alt"></i>
-            <span>Asar 08, 2082</span>
+            <span class="date" data-date="Asar 08, 2082" data-date-ne="आषाढ ०८, २०८२">Asar 08, 2082</span>
           </div>
-          <h3 class="press-title">Agricultural Workers' Union Submits Memorandum to Prime Minister</h3>
-          <p class="press-description">Appeals for preservation of the 30-year fertilizer subsidy program that has been essential for supporting farmers' livelihoods.</p>
+          <h3 class="press-title" data-i18n="pressRelease2Title">Agricultural Workers' Union Submits Memorandum to Prime Minister</h3>
+          <p class="press-description" data-i18n="pressRelease2Desc">Appeals for preservation of the 30-year fertilizer subsidy program that has been essential for supporting farmers' livelihoods.</p>
           <div class="press-actions">
             <button class="press-btn press-btn-primary view-press-release" 
                     data-title="Agricultural Workers' Union Submits Memorandum to PM"
+                    data-title-ne="कृषि श्रमिक संघले प्रधानमन्त्रीलाई स्मारक पत्र बुझायो"
                     data-date="Asar 08, 2082"
+                    data-date-ne="आषाढ ०८, २०८२"
                     data-description="The Agricultural Workers' Union under Rastriya Shramik Mahasangh Nepal has submitted a formal memorandum to the Prime Minister, appealing for the preservation of the 30-year fertilizer subsidy program. The memorandum outlines the critical importance of this program for farmers' livelihoods and agricultural productivity across the country."
-                    data-pdf="/Press_Releases/Press_release2.pdf">View Details</button>
-            <a href="/Press_Releases/Press_release2.pdf" download class="press-btn press-btn-secondary">
-              <i class="fas fa-download"></i> Download
+                    data-description-ne="राष्ट्रिय श्रमिक महासंघ नेपाल अन्तर्गत कृषि श्रमिक संघले प्रधानमन्त्रीलाई औपचारिक स्मारक पत्र बुझाएर किसानहरूका लागि ३० वर्षे मलबत्ती सहायता कार्यक्रम सुरक्षित गर्न अपिल गरेको छ। स्मारक पत्रले देशभरका किसानहरूको जीविकोपार्जन र कृषि उत्पादनताको लागि यो कार्यक्रमको महत्त्व बताउँदछ।"
+                    data-pdf="/Press_Releases/Press_release2.pdf" data-i18n="viewDetails">View Details</button>
+            <a href="/Press_Releases/Press_release2.pdf" download class="press-btn press-btn-secondary" data-i18n="download">
+              <i class="fas fa-download"></i> <span data-i18n="download">Download</span>
             </a>
           </div>
         </div>
@@ -1103,23 +1108,26 @@ background: var(--dark-orange);
       <div class="press-card" data-aos="fade-up" data-aos-delay="300">
         <div class="press-image">
           <img src="/Press_Releases/Press_release3.jpg" alt="Minimum Wage Increase" class="object-top" loading="lazy">
-          <div class="press-badge">Press Release</div>
+          <div class="press-badge" data-i18n="pressRelease">Press Release</div>
         </div>
         <div class="press-details">
           <div class="press-date">
             <i class="far fa-calendar-alt"></i>
-            <span>Asar 06, 2082</span>
+            <span class="date" data-date="Asar 06, 2082" data-date-ne="आषाढ ०६, २०८२">Asar 06, 2082</span>
           </div>
-          <h3 class="press-title">Union Seeks Immediate Government Action on Fertilizer Support</h3>
-          <p class="press-description">Stresses importance of subsidies in boosting agricultural output and supporting rural economies nationwide.</p>
+          <h3 class="press-title" data-i18n="pressRelease3Title">Union Seeks Immediate Government Action on Fertilizer Support</h3>
+          <p class="press-description" data-i18n="pressRelease3Desc">Stresses importance of subsidies in boosting agricultural output and supporting rural economies nationwide.</p>
           <div class="press-actions">
             <button class="press-btn press-btn-primary view-press-release" 
                     data-title="Union Seeks Immediate Government Action on Fertilizer Support"
+                    data-title-ne="संघले मलबत्ती सहायतामा सरकारी कारबाहीको तत्काल माग गर्यो"
                     data-date="Asar 06, 2082"
+                    data-date-ne="आषाढ ०६, २०८२"
                     data-description="Rastriya Shramik Mahasangh Nepal is seeking immediate government action to maintain and enhance fertilizer support for farmers. This press release stresses the critical importance of fertilizer subsidies in boosting agricultural output, supporting rural economies, and ensuring food security for all Nepali citizens."
-                    data-pdf="../Press_Releases/Press_release3.pdf">View Details</button>
-            <a href="/Press_Releases/Press_release3.pdf" download class="press-btn press-btn-secondary">
-              <i class="fas fa-download"></i> Download
+                    data-description-ne="राष्ट्रिय श्रमिक महासंघ नेपाल किसानहरूका लागि मलबत्ती सहायता कायम गर्ने र बढाउने सरकारी कारबाहीको तत्काल माग गर्दै छ। यो प्रेस विज्ञप्तिले कृषि उत्पादन बढाउन, ग्रामीण अर्थतन्त्रलाई समर्थन गर्न, र सबै नेपाली नागरिकहरूका लागि खाद्यान्न सुरक्षा सुनिश्चित गर्न मलबत्ती सहायताको महत्त्वमा जोड दिन्छ।"
+                    data-pdf="../Press_Releases/Press_release3.pdf" data-i18n="viewDetails">View Details</button>
+            <a href="/Press_Releases/Press_release3.pdf" download class="press-btn press-btn-secondary" data-i18n="download">
+              <i class="fas fa-download"></i> <span data-i18n="download">Download</span>
             </a>
           </div>
         </div>
@@ -1142,23 +1150,23 @@ background: var(--dark-orange);
       <div class="modal-description" id="modalDescription"></div>
       <div class="pdf-container">
         <div class="pdf-header">
-          <h3 class="pdf-title">Press Release Document</h3>
+          <h3 class="pdf-title" data-i18n="pressReleaseDocument">Press Release Document</h3>
           <a href="#" id="downloadPdf" class="download-btn" download>
-            <i class="fas fa-download"></i> Download PDF
+            <i class="fas fa-download"></i> <span data-i18n="download">Download</span> PDF
           </a>
         </div>
         <div class="pdf-viewer">
           <iframe id="modalPdf" src=""></iframe>
           <div id="pdfFallback" class="pdf-fallback">
             <i class="fas fa-file-pdf"></i>
-            <p>PDF viewer not supported in your browser</p>
-            <a id="pdfLink" href="#" target="_blank">Open PDF in New Tab</a>
+            <p data-i18n="pdfNotSupported">PDF viewer not supported in your browser</p>
+            <a id="pdfLink" href="#" target="_blank" data-i18n="openPdfNewTab">Open PDF in New Tab</a>
           </div>
         </div>
       </div>
     </div>
     <div class="modal-footer">
-      <button class="close-modal-btn" id="closeModalBtn">Close</button>
+      <button class="close-modal-btn" id="closeModalBtn" data-i18n="close">Close</button>
     </div>
   </div>
 </div>
@@ -1171,11 +1179,11 @@ background: var(--dark-orange);
         <a href="index.html" class="flex items-center mb-6 transition-transform duration-300 hover:scale-105">
           <img src="logo.jpg" alt="Rastriya Shramik Mahasangh Nepal Logo" class="h-24 md:h-28 mr-3">
           <div>
-            <h3 class="text-xl font-bold">Rastriya Shramik Mahasangh</h3>
-            <p class="text-sm text-white-300">नेपाल</p>
+            <h3 class="text-xl font-bold" data-i18n="organizationName">Rastriya Shramik Mahasangh</h3>
+            <p class="text-sm text-white-300" data-i18n="organizationLocation">नेपाल</p>
           </div>
         </a>
-        <p class="text-white mb-6">
+        <p class="text-white mb-6" data-i18n="footerDescription">
           Empowering workers through unity, advocacy, and action since 2080 B.S.
         </p>
         <div class="flex space-x-4">
@@ -1211,75 +1219,75 @@ background: var(--dark-orange);
       </div>
       <!-- Quick Links -->
       <div class="md:col-span-1">
-        <h3 class="text-lg font-bold mb-6 uppercase tracking-wider text-white">Quick Links</h3>
+        <h3 class="text-lg font-bold mb-6 uppercase tracking-wider text-white" data-i18n="quickLinks">Quick Links</h3>
         <ul class="space-y-3">
           <li>
             <a href="About.html" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center">
               <i class="fas fa-angle-right mr-2 text-gold"></i>
-              About Us
+              <span data-i18n="aboutUs">About Us</span>
             </a>
           </li>
           <li>
             <a href="Updates.html" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center">
               <i class="fas fa-angle-right mr-2 text-gold"></i>
-              Latest Updates
+              <span data-i18n="latestUpdatesFooter">Latest Updates</span>
             </a>
           </li>
           <li>
             <a href="Upcoming.html" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center">
               <i class="fas fa-angle-right mr-2 text-gold"></i>
-              Our Events
+              <span data-i18n="ourEvents">Our Events</span>
             </a>
           </li>
           <li>
             <a href="Media_Coverage.html" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center">
               <i class="fas fa-angle-right mr-2 text-gold"></i>
-              Media Coverages
+              <span data-i18n="mediaCoverages">Media Coverages</span>
             </a>
           </li>
         </ul>
       </div>
       <!-- Resources -->
       <div class="md:col-span-1">
-        <h3 class="text-lg font-bold mb-6 uppercase tracking-wider text-white">Resources</h3>
+        <h3 class="text-lg font-bold mb-6 uppercase tracking-wider text-white" data-i18n="resourcesFooter">Resources</h3>
         <ul class="space-y-3">
           <li>
             <a href="Slogans.html" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center">
               <i class="fas fa-angle-right mr-2 text-gold"></i>
-              Our Slogans
+              <span data-i18n="ourSlogans">Our Slogans</span>
             </a>
           </li>
           <li>
             <a href="Press_Releases.html" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center">
               <i class="fas fa-angle-right mr-2 text-gold"></i>
-              Press Releases
+              <span data-i18n="pressReleases">Press Releases</span>
             </a>
           </li>
           <li>
             <a href="Publications.html" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center">
               <i class="fas fa-angle-right mr-2 text-gold"></i>
-              Publications
+              <span data-i18n="publications">Publications</span>
             </a>
           </li>
           <li>
             <a href="Gallery.html" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center">
               <i class="fas fa-angle-right mr-2 text-gold"></i>
-              Gallery
+              <span data-i18n="gallery">Gallery</span>
             </a>
           </li>
         </ul>
       </div>
       <!-- Contact & Newsletter -->
       <div class="md:col-span-1">
-        <h3 class="text-lg font-bold mb-6 uppercase tracking-wider text-white">Contact Us</h3>
+        <h3 class="text-lg font-bold mb-6 uppercase tracking-wider text-white" data-i18n="contactUs">Contact Us</h3>
         <ul class="space-y-4 mb-8">
           <li class="flex items-start">
             <i class="fas fa-map-marker-alt text-gold mt-1 mr-3"></i>
-            <a href="https://maps.app.goo.gl/4C8W3pM3qPDEQvMA9" target="_blank" class="text-white hover:text-yellow-200 transition-colors duration-300">Keshavdham, Guheswari Marg - 8, Kathmandu, Nepal</a>
+            <a href="https://maps.app.goo.gl/4C8W3pM3qPDEQvMA9" target="_blank" class="text-white hover:text-yellow-200 transition-colors duration-300" data-address="Keshavdham, Guheswari Marg - 8, Kathmandu, Nepal">Keshavdham, Guheswari Marg - 8, Kathmandu, Nepal</a>
           </li>
           <li class="flex items-center">
             <i class="fas fa-phone-alt text-gold mr-3"></i>
-            <a href="tel:+9779855020288" class="text-white hover:text-yellow-200 transition-colors duration-300">+977-9855020288</a>
+            <a href="tel:+9779855020288" class="text-white hover:text-yellow-200 transition-colors duration-300" data-phone="+977-9855020288">+977-9855020288</a>
           </li>
           <li class="flex items-center">
             <i class="fas fa-envelope text-gold mr-3"></i>
@@ -1291,7 +1299,7 @@ background: var(--dark-orange);
     <!-- Bottom Bar -->
     <div class="border-t border-orange-800 pt-4">
       <div class="flex justify-center">
-        <p class="text-white text-sm">
+        <p class="text-white text-sm" data-i18n="copyright">
           &copy; <span id="current-year"></span> Rastriya Shramik Mahasangh Nepal. All rights reserved.
         </p>
       </div>
@@ -1305,13 +1313,394 @@ background: var(--dark-orange);
 <!-- Scripts -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
+// Language data structure with all translations
+const translations = {
+  en: {
+    // Navigation
+    home: "Home",
+    about: "About",
+    ourStory: "Our Story",
+    organizationalStructure: "Organizational Structure",
+    leadership: "Leadership",
+    resources: "Resources",
+    ourSlogans: "Our Slogans",
+    pressReleases: "Press Releases",
+    publications: "Publications",
+    events: "Events",
+    gallery: "Gallery",
+    
+    // Hero Section
+    pressReleasesTitle: "Press Releases",
+    pressReleasesSubtitle: "Official statements and announcements from Rastriya Shramik Mahasangh Nepal",
+    
+    // Press Releases Section
+    latestPressReleases: "Latest Press Releases",
+    pressReleasesDesc: "Stay informed with our official statements and announcements on workers' rights and advocacy efforts",
+    pressRelease: "Press Release",
+    pressRelease1Title: "RSMN Demands Continued Fertilizer Subsidies for Farmers",
+    pressRelease1Desc: "Calls on government to reverse decision ending long-standing agricultural subsidies that support farmers across Nepal.",
+    pressRelease2Title: "Agricultural Workers' Union Submits Memorandum to Prime Minister",
+    pressRelease2Desc: "Appeals for preservation of the 30-year fertilizer subsidy program that has been essential for supporting farmers' livelihoods.",
+    pressRelease3Title: "Union Seeks Immediate Government Action on Fertilizer Support",
+    pressRelease3Desc: "Stresses importance of subsidies in boosting agricultural output and supporting rural economies nationwide.",
+    viewDetails: "View Details",
+    download: "Download",
+    
+    // Modal
+    pressReleaseDocument: "Press Release Document",
+    pdfNotSupported: "PDF viewer not supported in your browser",
+    openPdfNewTab: "Open PDF in New Tab",
+    close: "Close",
+    
+    // Footer
+    quickLinks: "Quick Links",
+    aboutUs: "About Us",
+    latestUpdatesFooter: "Latest Updates",
+    ourEvents: "Our Events",
+    mediaCoverages: "Media Coverages",
+    resourcesFooter: "Resources",
+    contactUs: "Contact Us",
+    footerDescription: "Empowering workers through unity, advocacy, and action since 2080 B.S.",
+    copyright: "© {year} Rastriya Shramik Mahasangh Nepal. All rights reserved.",
+    
+    // Other
+    search: "Search",
+    menu: "Menu",
+    allRightsReserved: "All rights reserved",
+    
+    // Organization
+    organizationName: "Rastriya Shramik Mahasangh",
+    organizationLocation: "Nepal",
+    
+    // Announcement
+    announcement1: "Rastra heet!",
+    announcement2: "Udyog Heet!",
+    announcement3: "Shramik Heet!"
+  },
+  ne: {
+    // Navigation
+    home: "गृहपृष्ठ",
+    about: "हाम्रो बारेमा",
+    ourStory: "हाम्रो कथा",
+    organizationalStructure: "संगठनात्मक संरचना",
+    leadership: "नेतृत्व",
+    resources: "संसाधनहरू",
+    ourSlogans: "हाम्रा नाराहरू",
+    pressReleases: "प्रेस विज्ञप्तिहरू",
+    publications: "प्रकाशनहरू",
+    events: "कार्यक्रमहरू",
+    gallery: "ग्यालरी",
+    
+    // Hero Section
+    pressReleasesTitle: "प्रेस विज्ञप्तिहरू",
+    pressReleasesSubtitle: "राष्ट्रिय श्रमिक महासंघ नेपालबाट आधिकारिक वक्तव्य र घोषणाहरू",
+    
+    // Press Releases Section
+    latestPressReleases: "नवीनतम प्रेस विज्ञप्तिहरू",
+    pressReleasesDesc: "श्रमिक अधिकार र वकालत प्रयासहरूमाथि हाम्रा आधिकारिक वक्तव्य र घोषणाहरूसँगै जानकार रहनुहोस्",
+    pressRelease: "प्रेस विज्ञप्ति",
+    pressRelease1Title: "आर.एस.एम.एनले किसानहरूका लागि मलबत्ती सहायता जारी राख्यो माग",
+    pressRelease1Desc: "नेपाल भरि का किसानहरूलाई समर्थन गर्ने दीर्घकालीन कृषि सहायता कार्यक्रम अन्त्य गर्ने सरकारको निर्णय उल्टाउन आह्वान गर्दै",
+    pressRelease2Title: "कृषि श्रमिक संघले प्रधानमन्त्रीलाई स्मारक पत्र बुझायो",
+    pressRelease2Desc: "किसानहरूको जीविकोपार्जनलाई समर्थन गर्न अत्यावश्यक रहेको ३० वर्षे मलबत्ती सहायता कार्यक्रम संरक्षण गर्न अपिल गर्दै",
+    pressRelease3Title: "संघले मलबत्ती सहायतामा सरकारी कारबाहीको तत्काल माग गर्यो",
+    pressRelease3Desc: "देशव्यापी रूपमा कृषि उत्पादन बढाउने र ग्रामीण अर्थतन्त्रलाई समर्थन गर्ने सहायताको महत्वमा जोड दिँदै",
+    viewDetails: "विवरण हेर्नुहोस्",
+    download: "डाउनलोड गर्नुहोस्",
+    
+    // Modal
+    pressReleaseDocument: "प्रेस विज्ञप्ति कागजात",
+    pdfNotSupported: "तपाईंको ब्राउजरमा PDF दर्शक समर्थित छैन",
+    openPdfNewTab: "नयाँ ट्याबमा PDF खोल्नुहोस्",
+    close: "बन्द गर्नुहोस्",
+    
+    // Footer
+    quickLinks: "द्रुत लिङ्कहरू",
+    aboutUs: "हाम्रो बारेमा",
+    latestUpdatesFooter: "नवीनतम अपडेटहरू",
+    ourEvents: "हाम्रा कार्यक्रमहरू",
+    mediaCoverages: "मिडिया कभरेजहरू",
+    resourcesFooter: "संसाधनहरू",
+    contactUs: "सम्पर्क गर्नुहोस्",
+    footerDescription: "एकता, वकालत र कार्यबाट २०८० बि.स. देखि श्रमिकहरूलाई सशक्त बनाउँदै",
+    copyright: "© {year} सर्वाधिकार राष्ट्रिय श्रमिक महासंघमा सुरक्षित",
+    
+    // Other
+    search: "खोज्नुहोस्",
+    menu: "मेनु",
+    allRightsReserved: "सर्वाधिकार सुरक्षित",
+    
+    // Organization
+    organizationName: "राष्ट्रिय श्रमिक महासंघ",
+    organizationLocation: "नेपाल",
+    
+    // Announcement
+    announcement1: "राष्ट्र हित!",
+    announcement2: "उद्योग हित!",
+    announcement3: "श्रमिक हित!"
+  }
+};
+
+// Function to convert Arabic numerals to Nepali numerals
+function convertToNepaliNumerals(text) {
+  const arabicNumerals = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+  const nepaliNumerals = ['०', '१', '२', '३', '४', '५', '६', '७', '८', '९'];
+  
+  let convertedText = text;
+  for (let i = 0; i < arabicNumerals.length; i++) {
+    const regex = new RegExp(arabicNumerals[i], 'g');
+    convertedText = convertedText.replace(regex, nepaliNumerals[i]);
+  }
+  
+  return convertedText;
+}
+
+// Function to convert Nepali numerals to Arabic numerals
+function convertToArabicNumerals(text) {
+  const arabicNumerals = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+  const nepaliNumerals = ['०', '१', '२', '३', '४', '५', '६', '७', '८', '९'];
+  
+  let convertedText = text;
+  for (let i = 0; i < nepaliNumerals.length; i++) {
+    const regex = new RegExp(nepaliNumerals[i], 'g');
+    convertedText = convertedText.replace(regex, arabicNumerals[i]);
+  }
+  
+  return convertedText;
+}
+
+// Function to convert month names to Nepali
+function convertMonthToNepali(monthName) {
+  const monthMap = {
+    'Baishakh': 'बैशाख',
+    'Jestha': 'जेष्ठ',
+    'Asar': 'आषाढ',
+    'Shrawan': 'श्रावण',
+    'Bhadra': 'भाद्र',
+    'Ashwin': 'अश्विन',
+    'Kartik': 'कार्तिक',
+    'Mangsir': 'मंसिर',
+    'Poush': 'पौष',
+    'Magh': 'माघ',
+    'Falgun': 'फाल्गुन',
+    'Chaitra': 'चैत्र',
+    'Asoj': 'असोज'
+  };
+  
+  return monthMap[monthName] || monthName;
+}
+
+// Function to update the language
+function updateLanguage(lang) {
+  // Save the language preference to localStorage
+  localStorage.setItem('preferredLanguage', lang);
+  
+  // Update the language toggle buttons
+  const langEn = document.getElementById('lang-en');
+  const langNe = document.getElementById('lang-ne');
+  const mobileLangEn = document.getElementById('mobile-lang-en');
+  const mobileLangNe = document.getElementById('mobile-lang-ne');
+  
+  if (lang === 'en') {
+    // Desktop language toggle
+    if (langEn && langNe) {
+      langEn.classList.add('bg-white', 'text-orange');
+      langEn.classList.remove('text-white');
+      langNe.classList.remove('bg-white', 'text-orange');
+      langNe.classList.add('text-white');
+    }
+    
+    // Mobile language toggle
+    if (mobileLangEn && mobileLangNe) {
+      mobileLangEn.classList.add('bg-white', 'text-orange');
+      mobileLangEn.classList.remove('text-white');
+      mobileLangNe.classList.remove('bg-white', 'text-orange');
+      mobileLangNe.classList.add('text-white');
+    }
+  } else {
+    // Desktop language toggle
+    if (langEn && langNe) {
+      langNe.classList.add('bg-white', 'text-orange');
+      langNe.classList.remove('text-white');
+      langEn.classList.remove('bg-white', 'text-orange');
+      langEn.classList.add('text-white');
+    }
+    
+    // Mobile language toggle
+    if (mobileLangEn && mobileLangNe) {
+      mobileLangNe.classList.add('bg-white', 'text-orange');
+      mobileLangNe.classList.remove('text-white');
+      mobileLangEn.classList.remove('bg-white', 'text-orange');
+      mobileLangEn.classList.add('text-white');
+    }
+  }
+  
+  // Update the content based on the selected language
+  const translation = translations[lang];
+  
+  // Update all elements with data-i18n attribute
+  document.querySelectorAll('[data-i18n]').forEach(element => {
+    const key = element.getAttribute('data-i18n');
+    if (translation[key]) {
+      // Special handling for copyright with year placeholder
+      if (key === 'copyright') {
+        const currentYear = new Date().getFullYear();
+        element.innerHTML = translation[key].replace('{year}', currentYear);
+      } else {
+        element.textContent = translation[key];
+      }
+    }
+  });
+  
+  // Update dates
+  document.querySelectorAll('.date').forEach(dateElement => {
+    const originalDate = dateElement.getAttribute('data-date');
+    if (originalDate) {
+      if (lang === 'ne') {
+        // Convert month names to Nepali
+        let nepaliDate = originalDate;
+        // Convert month names
+        Object.entries({
+          'Asar': 'आषाढ',
+          'Shrawan': 'श्रावण',
+          'Bhadra': 'भाद्र',
+          'Ashwin': 'अश्विन',
+          'Kartik': 'कार्तिक',
+          'Mangsir': 'मंसिर',
+          'Poush': 'पौष',
+          'Magh': 'माघ',
+          'Falgun': 'फाल्गुन',
+          'Chaitra': 'चैत्र',
+          'Baishakh': 'बैशाख',
+          'Jestha': 'जेष्ठ',
+          'Asoj': 'असोज'
+        }).forEach(([en, ne]) => {
+          nepaliDate = nepaliDate.replace(new RegExp(en, 'g'), ne);
+        });
+        
+        // Convert numerals to Nepali
+        nepaliDate = convertToNepaliNumerals(nepaliDate);
+        
+        dateElement.textContent = nepaliDate;
+      } else {
+        dateElement.textContent = originalDate;
+      }
+    }
+  });
+  
+  // Update address with Nepali numerals
+  document.querySelectorAll('[data-address]').forEach(addressElement => {
+    const originalAddress = addressElement.getAttribute('data-address');
+    if (originalAddress) {
+      if (lang === 'ne') {
+        // Convert address to Nepali
+        let nepaliAddress = originalAddress;
+        // Convert place names
+        nepaliAddress = nepaliAddress.replace(/Keshavdham/g, 'केशवधाम');
+        nepaliAddress = nepaliAddress.replace(/Guheswari Marg/g, 'गुह्येश्वरी मार्ग');
+        nepaliAddress = nepaliAddress.replace(/Kathmandu/g, 'काठमाडौं');
+        nepaliAddress = nepaliAddress.replace(/Nepal/g, 'नेपाल');
+        
+        // Convert numerals to Nepali
+        nepaliAddress = convertToNepaliNumerals(nepaliAddress);
+        
+        addressElement.textContent = nepaliAddress;
+      } else {
+        addressElement.textContent = originalAddress;
+      }
+    }
+  });
+  
+  // Update phone numbers with Nepali numerals
+  document.querySelectorAll('[data-phone]').forEach(phoneElement => {
+    const originalPhone = phoneElement.getAttribute('data-phone');
+    if (originalPhone) {
+      if (lang === 'ne') {
+        phoneElement.textContent = convertToNepaliNumerals(originalPhone);
+      } else {
+        phoneElement.textContent = originalPhone;
+      }
+    }
+  });
+  
+  // Update data attributes for modals
+  document.querySelectorAll('.view-press-release').forEach(button => {
+    const titleEn = button.getAttribute('data-title');
+    const titleNe = button.getAttribute('data-title-ne');
+    const descriptionEn = button.getAttribute('data-description');
+    const descriptionNe = button.getAttribute('data-description-ne');
+    const dateEn = button.getAttribute('data-date');
+    const dateNe = button.getAttribute('data-date-ne');
+    
+    if (lang === 'ne' && titleNe) {
+      button.setAttribute('data-title', titleNe);
+    } else if (lang === 'en' && titleEn) {
+      button.setAttribute('data-title', titleEn);
+    }
+    
+    if (lang === 'ne' && descriptionNe) {
+      button.setAttribute('data-description', descriptionNe);
+    } else if (lang === 'en' && descriptionEn) {
+      button.setAttribute('data-description', descriptionEn);
+    }
+
+    if (lang === 'ne' && dateNe) {
+      button.setAttribute('data-date', dateNe);
+    } else if (lang === 'en' && dateEn) {
+      button.setAttribute('data-date', dateEn);
+    }
+  });
+  
+  // Update meta tags for SEO
+  document.querySelector('title').textContent = lang === 'en' 
+    ? 'Press Releases - Rastriya Shramik Mahasangh Nepal'
+    : 'प्रेस विज्ञप्तिहरू - राष्ट्रिय श्रमिक महासंघ नेपाल';
+  
+  document.querySelector('meta[name="description"]').setAttribute('content', lang === 'en'
+    ? 'Explore official press releases from Rastriya Shramik Mahasangh Nepal. Stay updated with our latest statements and announcements.'
+    : 'राष्ट्रिय श्रमिक महासंघ नेपालबाट आधिकारिक प्रेस विज्ञप्तिहरू अन्वेषण गर्नुहोस्। हाम्रा नवीनतम वक्तव्य र घोषणाहरूसँगै अपडेट रहनुहोस्।');
+  
+  document.querySelector('meta[property="og:title"]').setAttribute('content', lang === 'en'
+    ? 'Press Releases - Rastriya Shramik Mahasangh Nepal'
+    : 'प्रेस विज्ञप्तिहरू - राष्ट्रिय श्रमिक महासंघ नेपाल');
+  
+  document.querySelector('meta[property="og:description"]').setAttribute('content', lang === 'en'
+    ? 'Explore official press releases from Rastriya Shramik Mahasangh Nepal. Stay updated with our latest statements and announcements.'
+    : 'राष्ट्रिय श्रमिक महासंघ नेपालबाट आधिकारिक प्रेस विज्ञप्तिहरू अन्वेषण गर्नुहोस्। हाम्रा नवीनतम वक्तव्य र घोषणाहरूसँगै अपडेट रहनुहोस्।');
+  
+  document.querySelector('meta[property="twitter:title"]').setAttribute('content', lang === 'en'
+    ? 'Press Releases - Rastriya Shramik Mahasangh Nepal'
+    : 'प्रेस विज्ञप्तिहरू - राष्ट्रिय श्रमिक महासंघ नेपाल');
+  
+  document.querySelector('meta[property="twitter:description"]').setAttribute('content', lang === 'en'
+    ? 'Explore official press releases from Rastriya Shramik Mahasangh Nepal. Stay updated with our latest statements and announcements.'
+    : 'राष्ट्रिय श्रमिक महासंघ नेपालबाट आधिकारिक प्रेस विज्ञप्तिहरू अन्वेषण गर्नुहोस्। हाम्रा नवीनतम वक्तव्य र घोषणाहरूसँगै अपडेट रहनुहोस्।');
+  
+  // Update HTML lang attribute
+  document.documentElement.lang = lang;
+  
+  // Add or remove nepali-font class to body for font switching
+  if (lang === 'ne') {
+    document.body.classList.add('nepali-font');
+  } else {
+    document.body.classList.remove('nepali-font');
+  }
+}
+
+// Check for saved language preference or default to English
+const savedLanguage = localStorage.getItem('preferredLanguage') || 'en';
+
 // Initialize AOS
 AOS.init({
   duration: 1000,
   once: true,
   disable: 'mobile'
 });
+
 document.addEventListener('DOMContentLoaded', function() {
+  // Set the initial language
+  updateLanguage(savedLanguage);
+  
   // Mobile Menu Toggle
   const mobileMenuButton = document.getElementById('mobile-menu-button');
   const closeMobileMenu = document.getElementById('close-mobile-menu');
@@ -1372,38 +1761,22 @@ document.addEventListener('DOMContentLoaded', function() {
   // Desktop language toggle
   if (langEn && langNe) {
     langEn.addEventListener('click', function() {
-      langEn.classList.add('bg-white', 'text-orange');
-      langEn.classList.remove('text-white');
-      langNe.classList.remove('bg-white', 'text-orange');
-      langNe.classList.add('text-white');
-      console.log('Language changed to English');
+      updateLanguage('en');
     });
     
     langNe.addEventListener('click', function() {
-      langNe.classList.add('bg-white', 'text-orange');
-      langNe.classList.remove('text-white');
-      langEn.classList.remove('bg-white', 'text-orange');
-      langEn.classList.add('text-white');
-      console.log('Language changed to Nepali');
+      updateLanguage('ne');
     });
   }
   
   // Mobile language toggle
   if (mobileLangEn && mobileLangNe) {
     mobileLangEn.addEventListener('click', function() {
-      mobileLangEn.classList.add('bg-white', 'text-orange');
-      mobileLangEn.classList.remove('text-white');
-      mobileLangNe.classList.remove('bg-white', 'text-orange');
-      mobileLangNe.classList.add('text-white');
-      console.log('Language changed to English');
+      updateLanguage('en');
     });
     
     mobileLangNe.addEventListener('click', function() {
-      mobileLangNe.classList.add('bg-white', 'text-orange');
-      mobileLangNe.classList.remove('text-white');
-      mobileLangEn.classList.remove('bg-white', 'text-orange');
-      mobileLangEn.classList.add('text-white');
-      console.log('Language changed to Nepali');
+      updateLanguage('ne');
     });
   }
   
@@ -1478,6 +1851,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const closeModal = document.getElementById('closeModal');
   const viewPressReleaseBtns = document.querySelectorAll('.view-press-release');
   const pdfFallback = document.getElementById('pdfFallback');
+  
   // Open modal when any "View Details" button is clicked
   viewPressReleaseBtns.forEach(button => {
     button.addEventListener('click', function() {
@@ -1486,49 +1860,64 @@ document.addEventListener('DOMContentLoaded', function() {
       const description = this.getAttribute('data-description');
       const pdf = this.getAttribute('data-pdf');
       
-      modalTitle.textContent = title;
-      modalDate.textContent = date;
-      modalDescription.textContent = description;
-      
-      // Set PDF source
-      modalPdf.src = pdf;
-      pdfLink.href = pdf;
-      downloadPdf.href = pdf;
-      
-      // Show modal
-      modal.classList.add('active');
-      document.body.style.overflow = 'hidden'; // Prevent scrolling
+      if (modal && modalTitle && modalDate && modalDescription) {
+        modalTitle.textContent = title;
+        modalDate.textContent = date;
+        modalDescription.textContent = description;
+        
+        // Set PDF source
+        modalPdf.src = pdf;
+        pdfLink.href = pdf;
+        downloadPdf.href = pdf;
+        
+        // Show modal
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden'; // Prevent scrolling
+      }
     });
   });
+  
   // Close modal when close buttons are clicked
   function closeModalFunction() {
-    modal.classList.remove('active');
-    document.body.style.overflow = ''; // Restore scrolling
-    // Clear PDF source to stop loading
-    setTimeout(() => {
-      modalPdf.src = '';
-    }, 300);
-  }
-  closeModalBtn.addEventListener('click', closeModalFunction);
-  closeModal.addEventListener('click', closeModalFunction);
-  // Close modal when clicking outside the modal content
-  modal.addEventListener('click', function(e) {
-    if (e.target === modal) {
-      closeModalFunction();
+    if (modal) {
+      modal.classList.remove('active');
+      document.body.style.overflow = ''; // Restore scrolling
+      // Clear PDF source to stop loading
+      setTimeout(() => {
+        if (modalPdf) modalPdf.src = '';
+      }, 300);
     }
-  });
+  }
+  
+  if (closeModalBtn) closeModalBtn.addEventListener('click', closeModalFunction);
+  if (closeModal) closeModal.addEventListener('click', closeModalFunction);
+  
+  // Close modal when clicking outside the modal content
+  if (modal) {
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) {
+        closeModalFunction();
+      }
+    });
+  }
+  
   // Check if PDF can be displayed, otherwise show fallback
-  modalPdf.addEventListener('load', function() {
-    pdfFallback.style.display = 'none';
-  });
-  modalPdf.addEventListener('error', function() {
-    pdfFallback.style.display = 'block';
-  });
+  if (modalPdf && pdfFallback) {
+    modalPdf.addEventListener('load', function() {
+      pdfFallback.style.display = 'none';
+    });
+    
+    modalPdf.addEventListener('error', function() {
+      pdfFallback.style.display = 'block';
+    });
+  }
   
   // Close modal with Escape key
   document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape' && modal.classList.contains('active')) {
-      closeModalFunction();
+    if (e.key === 'Escape') {
+      if (modal && modal.classList.contains('active')) {
+        closeModalFunction();
+      }
     }
   });
   
