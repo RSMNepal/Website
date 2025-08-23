@@ -651,9 +651,18 @@ left: 0;
     font-size: 1.25rem;
   }
 }
-.key-phrase {
-font-weight: 700;
-color: var(--primary-orange);
+.key-phrase,
+span.key-phrase,
+p.key-phrase,
+div.key-phrase,
+h1.key-phrase,
+h2.key-phrase,
+h3.key-phrase,
+h4.key-phrase,
+h5.key-phrase,
+h6.key-phrase {
+  font-weight: 700 !important;
+  color: var(--primary-orange) !important;
 }
 /* Press Release Modal Styles */
 .modal-overlay {
@@ -2108,9 +2117,9 @@ const translations = {
     
     // About Us Preview
     whoWeAre: "Who We Are",
-    aboutParagraph1: "Established in 2080 B.S., Rastriya Shramik Mahasangh Nepal, originally founded as Rastriya Krishi Shramik Sangh Nepal in 2068 B.S., is the only independent organization dedicated to safeguarding the rights and interests of the working class and uplifting their living standards for overall national development.",
-    aboutParagraph2: "Our organization comprises 11 unions and 2 industrial units, with provincial committees and district committees in all provinces of Nepal. We are committed to the industrialization of the nation, labor-oriented industries, and the nationalization of workers.",
-    aboutParagraph3: "We stand firmly for protecting Nepal's soil, rich diversity, mesmerizing cultural heritage, and national identity, operating free from the influence of government, business owners, political parties, foreign ideologies, or personal leadership ambitions.",
+    aboutParagraph1: "Established in 2080 B.S., Rastriya Shramik Mahasangh Nepal, originally founded as <span class=\"key-phrase\">Rastriya Krishi Shramik Sangh Nepal</span> in 2068 B.S., is the only independent organization dedicated to safeguarding the rights and interests of the working class and uplifting their living standards for overall national development.",
+    aboutParagraph2: "Our organization comprises <span class=\"key-phrase\">11 unions</span> and <span class=\"key-phrase\">2 industrial units</span>, with provincial committees and district committees in all provinces of Nepal. We are committed to the industrialization of the nation, labor-oriented industries, and the nationalization of workers.",
+    aboutParagraph3: "We stand firmly for protecting Nepal's soil, rich diversity, mesmerizing cultural heritage, and national identity, <span class=\"key-phrase\">operating free from the influence</span> of government, business owners, political parties, foreign ideologies, or personal leadership ambitions.",
     fairWages: "Fighting for Fair Wages",
     safeWorkplaces: "Ensuring Safe Workplaces",
     buildingNation: "Building a Stronger Nation",
@@ -2182,7 +2191,7 @@ const translations = {
     publication2Title: "RSMN Statute",
     publication2Desc: "Official document outlining the organization's rules, objectives, and operational structure.",
     publication3Title: "RSMN Sangathan Mantra",
-    publication3Desc: "Collection of ideas and principles aimed at shaping the character and conduct of RSMN's members.",
+    publication3Desc: "Collection of ideas and principles aimed at shaping the character and conduct of RSMN's members",
     
     // In The News
     inTheNews: "In The News",
@@ -2292,9 +2301,9 @@ const translations = {
     
     // About Us Preview
     whoWeAre: "हामी को हौं",
-    aboutParagraph1: "वि.सं. २०८० मा स्थापित, राष्ट्रिय श्रमिक महासंघ नेपाल, मूल रूपमा वि.सं. २०६८ मा राष्ट्रिय कृषि श्रमिक संघ नेपालको रूपमा स्थापित, कामदार वर्गको अधिकार र हितको संरक्षण गर्न र उनीहरूको जीवनस्तर उन्नत गर्न समग्र राष्ट्रिय विकासको लागि समर्पित एकमात्र स्वतन्त्र संगठन हो।",
-    aboutParagraph2: "हाम्रो संगठनमा ११ वटा युनियन र २ वटा औद्योगिक इकाइहरू रहेका छन्, जसअन्तर्गत नेपालका सबै प्रदेशमा प्रादेशिक तथा जिल्ला समिति स्थापित छन्। हामी राष्ट्रको औद्योगिकरण, उद्योगको श्रमिकीकरण, र श्रमिकहरूको राष्ट्रियकरणको लागि प्रतिबद्ध छौं।",
-    aboutParagraph3: "हामी नेपालको माटो, समृद्ध विविधता, गौरवशाली सांस्कृतिक सम्पदा र राष्ट्रिय पहिचानको संरक्षणका लागि दृढतापूर्वक उभिएका छौँ। हामी सरकार, उद्योगपति, राजनीतिक दल, विदेशी विचारधारा वा व्यक्तिगत नेतृत्व–महत्त्वाकांक्षाको प्रभावबाट मुक्त रही स्वतन्त्र रूपमा सञ्चालन भइरहेका छौँ।",
+    aboutParagraph1: "वि.सं. २०८० मा स्थापित, राष्ट्रिय श्रमिक महासंघ नेपाल, मूल रूपमा वि.सं. २०६८ मा <span class=\"key-phrase\">राष्ट्रिय कृषि श्रमिक संघ नेपाल</span>को रूपमा स्थापित, कामदार वर्गको अधिकार र हितको संरक्षण गर्न र उनीहरूको जीवनस्तर उन्नत गर्न समग्र राष्ट्रिय विकासको लागि समर्पित एकमात्र स्वतन्त्र संगठन हो।",
+    aboutParagraph2: "हाम्रो संगठनमा <span class=\"key-phrase\">११ वटा युनियन</span> र <span class=\"key-phrase\">२ वटा औद्योगिक इकाइहरू</span> रहेका छन्, जसअन्तर्गत नेपालका सबै प्रदेशमा प्रादेशिक तथा जिल्ला समिति स्थापित छन्। हामी राष्ट्रको औद्योगिकरण, उद्योगको श्रमिकीकरण, र श्रमिकहरूको राष्ट्रियकरणको लागि प्रतिबद्ध छौं।",
+    aboutParagraph3: "हामी नेपालको माटो, समृद्ध विविधता, गौरवशाली सांस्कृतिक सम्पदा र राष्ट्रिय पहिचानको संरक्षणका लागि दृढतापूर्वक उभिएका छौँ। हामी सरकार, उद्योगपति, राजनीतिक दल, विदेशी विचारधारा वा व्यक्तिगत नेतृत्व–महत्त्वाकांक्षाको प्रभावबाट मुक्त रही <span class=\"key-phrase\">स्वतन्त्र रूपमा सञ्चालन</span> भइरहेका छौँ।",
     fairWages: "उचित पारिश्रमिकका लागि संघर्ष",
     safeWorkplaces: "सुरक्षित कार्यस्थल सुनिश्चितता",
     buildingNation: "सबल राष्ट्र निर्माण",
@@ -2553,7 +2562,7 @@ function updateLanguage(lang) {
         const currentYear = new Date().getFullYear();
         element.innerHTML = translation[key].replace('{year}', currentYear);
       } else {
-        element.textContent = translation[key];
+        element.innerHTML = translation[key]; // Changed from textContent to innerHTML
       }
     }
   });
