@@ -454,9 +454,18 @@ font-size: 1rem;
 line-height: 1.6;
 color: var(--text-light);
 }
-.key-phrase {
-font-weight: 700;
-color: var(--primary-orange);
+.key-phrase,
+span.key-phrase,
+p.key-phrase,
+div.key-phrase,
+h1.key-phrase,
+h2.key-phrase,
+h3.key-phrase,
+h4.key-phrase,
+h5.key-phrase,
+h6.key-phrase {
+  font-weight: 700 !important;
+  color: var(--primary-orange) !important;
 }
 /* Organizational Structure Section */
 .org-structure {
@@ -1059,7 +1068,7 @@ background: var(--dark-orange);
         </div>
       </div>
       
-      <a href="Upcoming.html" class="block py-2 px-4 rounded-lg hover:bg-gold hover:text-dark-orange transition-all duration-300" data-i18n="events">Events</a>
+      <a href="Upcoming.html" class="block py-2 px-4 rounded-lg hover:bg-gold hover:text-dark-orange transition-all duration-300" data-i18n="events">Our Events</a>
       <a href="Gallery.html" class="block py-2 px-4 rounded-lg hover:bg-gold hover:text-dark-orange transition-all duration-300" data-i18n="gallery">Gallery</a>
     </div>
   </div>
@@ -1167,10 +1176,10 @@ background: var(--dark-orange);
     </div>
     
     <div class="structure-image" data-aos="fade-up" data-aos-delay="200">
-      <img src="About/Org_str.png" alt="Rastriya Shramik Mahasangh Nepal Organizational Structure" loading="lazy" data-src-ne="About/Org_str_ne.png">
+      <img src="About/Org_str eng.png" alt="Rastriya Shramik Mahasangh Nepal Organizational Structure" loading="lazy" data-src-ne="About/Org_str.png">
     </div>
     <div class="structure-image" data-aos="fade-up" data-aos-delay="200">
-      <img src="About/Org_str2.png" alt="Rastriya Shramik Mahasangh Nepal Organizational Structure" loading="lazy" data-src-ne="About/Org_str2_ne.png">
+      <img src="About/Org_str2 eng.png" alt="Rastriya Shramik Mahasangh Nepal Organizational Structure" loading="lazy" data-src-ne="About/Org_str2.png">
     </div>
   </div>
 </section>
@@ -1606,6 +1615,24 @@ background: var(--dark-orange);
         <div class="leader-info">
           <h3 class="leader-name" data-i18n-name="MohanKhatri">Mr. Mohan Khatri</h3>
           <p class="leader-designation" data-i18n="member">Member</p>
+          <p class="province-designation" data-i18n="bagmatiProvince">Bagmati Province</p>
+          <div class="leader-contact">
+            <!-- <div class="leader-contact-item">
+              <i class="fas fa-phone"></i>
+              <span data-phone=""></span>
+            </div> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="leader-card">
+        <div class="leader-image">
+          <img src="About/Members/State Leadership/Mem_6.png" alt="Mr. Milan Tamang>" class="object-top" loading="lazy">
+          <!-- <div class="leader-badge" data-i18n="bagmatiProvince">Bagmati Province</div> -->
+        </div>
+        <div class="leader-info">
+          <h3 class="leader-name" data-i18n-name="MilanTamang">Mr. Milan Tamang</h3>
+          <p class="leader-designation" data-i18n="officesecretary">Office Secretary</p>
           <p class="province-designation" data-i18n="bagmatiProvince">Bagmati Province</p>
           <div class="leader-contact">
             <!-- <div class="leader-contact-item">
@@ -2160,6 +2187,7 @@ const translations = {
     industryChief: "Industry Chief",
     member: "Member",
     sangathanSecretary: "Sangathan Secretary",
+    officesecretary: "Office Secretary",
     
     // State Level Leadership
     stateLevelLeadership: "State-Level Leadership",
@@ -2244,6 +2272,7 @@ const translations = {
     RahulKumarJha: "Mr. Rahul Kumar Jha",
     ChandrashekharJoshi: "Mr. Chandrashekhar Joshi",
     MohanKhatri: "Mr. Mohan Khatri",
+    MilanTamang: "Mr. Milan Tamang",
     ChandrarYadav: "Mr. Chandrar Yadav",
     GaneshRajbanshi: "Mr. Ganesh Rajbanshi",
     UpendraNayak: "Mr. Upendra Nayak",
@@ -2289,16 +2318,16 @@ const translations = {
     storyParagraph2: "समकालीन नेपालमा हाम्रो संविधानले श्रम ऐन तथा ट्रेड युनियनसम्बन्धी कानुनसँग सुसङ्गत रही श्रमिक अधिकारको संरक्षण र समग्र विकासका लागि प्रावधानहरू सुनिश्चित गरेको छ। श्रमिकहरू राष्ट्रनिर्माणको मेरुदण्ड हुन्; उनीहरूको अटुट समर्पण र योगदानबिनाअघि कुनै पनि देश अगाडि बढ्न सक्दैन। यद्यपि श्रमिक संगठनहरूको विस्तार भए पनि, धेरैजसो राजनीतिक दलसँग गाँसिएका कारण प्रायः दलगत स्वार्थका लागि प्रयोग हुने गरेका छन्। यस्तो दुरुपयोगले ट्रेड युनियन आन्दोलनको सफलतालाई अवरुद्ध गर्दै श्रमिकलाई केवल मतदाता समूहमा सीमित बनाइरहेको छ र उनीहरूलाई आवश्यकीय अधिकार र सुविधा प्राप्त हुन नदिइरहेको छ।",
     originalName: "राष्ट्रिय कृषि श्रमिक संघ नेपाल",
     currentName: "राष्ट्रिय श्रमिक महासंघ नेपाल",
-    storyParagraph3: "यस चुनौतीपूर्ण परिवेशमा, राष्ट्रिय कृषि श्रमिक संघ नेपालका रूपमा चैत्र ११, २०६८ मा स्थापना भई, बैशाख ११, २०८० मा विकसित हुँदै राष्ट्रिय श्रमिक महासंघ नेपालको रूपमा उदित भएको यस संस्थाले, नेपालको सार्वभौमसत्ता, बहुरंगी सांस्कृतिक विविधता, गौरवशाली सम्पदा र राष्ट्रिय पहिचानको संरक्षणसहित श्रमिक वर्गको जीवनस्तर उन्नत गर्न र समग्र राष्ट्रिय विकासमा योगदान पुर्‍याउन स्वतन्त्र आशाको दीपको रूपमा आफूलाई स्थापित गरेको छ। हामी स्वतन्त्र शक्तिका रूपमा उभिँदै, नेपालको सार्वभौमसत्ता, सांस्कृतिक सम्पदा र राष्ट्रिय पहिचानको रक्षा गर्दै श्रमिक वर्गको जीवनस्तर अभिवृद्धि गर्न प्रतिबद्ध छौँ।",
+    storyParagraph3: "यस चुनौतीपूर्ण परिवेशमा, <span class=\"key-phrase\">राष्ट्रिय कृषि श्रमिक संघ नेपाल</span>का रूपमा चैत्र ११, २०६८ मा स्थापना भई, बैशाख ११, २०८० मा विकसित हुँदै <span class=\"key-phrase\">राष्ट्रिय श्रमिक महासंघ नेपाल</span>को रूपमा उदित भएको यस संस्थाले, नेपालको सार्वभौमसत्ता, बहुरंगी सांस्कृतिक विविधता, गौरवशाली सम्पदा र राष्ट्रिय पहिचानको संरक्षणसहित श्रमिक वर्गको जीवनस्तर उन्नत गर्न र समग्र राष्ट्रिय विकासमा योगदान पुर्‍याउन स्वतन्त्र आशाको दीपको रूपमा आफूलाई स्थापित गरेको छ। हामी स्वतन्त्र शक्तिका रूपमा उभिँदै, नेपालको सार्वभौमसत्ता, सांस्कृतिक सम्पदा र राष्ट्रिय पहिचानको रक्षा गर्दै श्रमिक वर्गको जीवनस्तर अभिवृद्धि गर्न प्रतिबद्ध छौँ।",
     industrializingNation: "राष्ट्रलाई औद्योगिकरण गर्ने",
-    storyParagraph4: "राष्ट्रलाई औद्योगिकीकरण गर्ने, श्रमिकमैत्री उद्योगहरू स्थापना गर्ने र श्रमशक्तिलाई राष्ट्रिय विकासको मूलधारमा समाहित गर्ने हाम्रो अटुट प्रतिबद्धता हो। हाम्रा सिद्धान्तहरूले राष्ट्रिय हित, औद्योगिक विकास र श्रमिक अधिकारलाई सर्वोपरि स्थान दिएका छन्। श्रमिक स्वयंको सहभागितामा, श्रमिककै हितका लागि सञ्चालित यस संगठन सरकार, व्यवसाय, राजनीति, विदेशी शक्ति वा व्यक्तिगत प्रभावबाट पूर्णतः स्वतन्त्र रहँदै श्रम पक्षसम्बन्धी वकालतमा वास्तविक स्वायत्तताको प्रतीक बनेको छ।",
+    storyParagraph4: "राष्ट्रलाई <span class=\"key-phrase\">औद्योगिकरण गर्ने</span>, श्रमिकमैत्री उद्योगहरू स्थापना गर्ने र श्रमशक्तिलाई राष्ट्रिय विकासको मूलधारमा समाहित गर्ने हाम्रो अटुट प्रतिबद्धता हो। हाम्रा सिद्धान्तहरूले राष्ट्रिय हित, औद्योगिक विकास र श्रमिक अधिकारलाई सर्वोपरि स्थान दिएका छन्। श्रमिक स्वयंको सहभागितामा, श्रमिककै हितका लागि सञ्चालित यस संगठन सरकार, व्यवसाय, राजनीति, विदेशी शक्ति वा व्यक्तिगत प्रभावबाट पूर्णतः स्वतन्त्र रहँदै श्रम पक्षसम्बन्धी वकालतमा वास्तविक स्वायत्तताको प्रतीक बनेको छ।",
     
     // Timeline
     phasesOfStruggle: "संघर्षका चरणहरू",
     timeline2067: "श्रमिक कल्याणको संरक्षण गर्ने उद्देश्यसहित राष्ट्रिय कृषि श्रमिक संघको रूपमा स्थापना",
     timeline2077: "उखु किसानका लागि ऐतिहासिक आन्दोलन सञ्चालन, जसबाट चिनी मिल व्यवसायीहरूलाई अर्बौँको बक्यौता तिर्न बाध्य पार्दै, कृषि क्षेत्रमा दशकौँदेखि थिचिएका गुनासोहरू सम्बोधन",
     timeline2080: "स्वतन्त्र संगठनको रूपमा राष्ट्रिय श्रमिक महासंघ नेपालको स्थापना",
-    timeline2080b: "वरुण बेभरेजेस (पेप्सीकोला) र माउण्ड एभरेष्ट ब्रुअरीज जस्ता ठूला उद्योगहरूमा श्रमिक अधिकारको सक्रिय रक्षा, उचित तलब, रोजगारीको सुरक्षा र श्रम–सर्त सुधारका लागि निरन्तर आन्दोलन",
+    timeline2080b: "वरुण बेभरेजस (पेप्सीकोला) र माउण्ड एभरेष्ट ब्रुअरीज जस्ता ठूला उद्योगहरूमा श्रमिक अधिकारको सक्रिय रक्षा, उचित तलब, रोजगारीको सुरक्षा र श्रम–सर्त सुधारका लागि निरन्तर आन्दोलन",
     timeline2081: "नेपाल कृषि–प्रधान राष्ट्र भएको परिप्रेक्ष्यमा किसान र कृषक श्रमिकले भोगिरहेका चुनौतीहरूलाई औँल्याउँदै प्रमुख जिल्ला अधिकारीमार्फत नेपाल सरकारलाई आठ बुँदे मागपत्र बुझाइ, प्रणालीगत समाधानको आग्रह",
     timeline2081b: "अव्यवस्थित (अनौपचारिक) क्षेत्रका श्रमिकहरूको जीवनस्तर उकास्न विभिन्न जिल्लामा रोजगारी कार्यक्रम कार्यान्वयन",
     presentDay: "वर्तमान",
@@ -2306,7 +2335,7 @@ const translations = {
     storyCallToAction: "हाम्रो राष्ट्र पुनर्निर्माण गर्न, समृद्धिको वकालता गर्न, र श्रमिक अधिकारहरू र कल्याणलाई अघि बढाउन सबै श्रमिकहरू र मजदुरहरूलाई एकित्रित हुन आह्वान गर्दछौं।",
     
     // Organizational Structure
-    orgStructureDesc: "राष्ट्रिय श्रमिक महासंघ नेपाल ११ वटा विशेषज्ञ संघ र २ वटा औद्योगिक इकाइहरूलाई समेट्ने एक सबल महासंघ हो, जसका प्रादेशिक र जिल्ला समिति नेपालका सबै प्रदेशमा स्थापना भइसकेका छन्। प्रत्येक सम्बद्ध संघले आफ्ना प्रादेशिक तथा जिल्ला समिति सञ्चालन गर्दै आएको छ, जसले देशभरका श्रमिकहरूको जमीनी प्रतिनिधित्व र प्रभावकारी पक्षसमर्थन सुनिश्चित गर्दछ।",
+    orgStructureDesc: "<span class=\"key-phrase\">राष्ट्रिय श्रमिक महासंघ नेपाल</span> ११ वटा विशेषज्ञ संघ र २ वटा औद्योगिक इकाइहरूलाई समेट्ने एक सबल महासंघ हो, जसका प्रादेशिक र जिल्ला समिति नेपालका सबै प्रदेशमा स्थापना भइसकेका छन्। प्रत्येक सम्बद्ध संघले आफ्ना प्रादेशिक तथा जिल्ला समिति सञ्चालन गर्दै आएको छ, जसले देशभरका श्रमिकहरूको जमीनी प्रतिनिधित्व र प्रभावकारी पक्षसमर्थन सुनिश्चित गर्दछ।",
     
     // Leadership
     centralExecutiveCommittee: "केन्द्रीय कार्यकारिणी समिति",
@@ -2322,6 +2351,7 @@ const translations = {
     industryChief: "उद्योग प्रमुख",
     member: "सदस्य",
     sangathanSecretary: "संगठन सचिव",
+    officesecretary: "कार्यालय सचिव",
     
     // State Level Leadership
     stateLevelLeadership: "प्रदेशीय स्तरको नेतृत्व",
@@ -2360,7 +2390,7 @@ const translations = {
     
     // Industrial Units
     industrialUnits: "औद्योगिक इकाइहरू",
-    industrialUnitsDesc: "राष्ट्रिय औद्योगिक श्रमिक संघ नेपाल अन्तर्गत, हाम्रा दुई औद्योगिक इकाइहरूले प्रमुख क्षेत्रहरूको प्रतिनिधित्व गर्दछन्, उत्पादनमा श्रमिक अधिकारहरूलाई अगाडि बढाउँदै",
+    industrialUnitsDesc: "<span class=\"key-phrase\">राष्ट्रिय औद्योगिक श्रमिक संघ नेपाल</span> अन्तर्गत, हाम्रा दुई औद्योगिक इकाइहरूले प्रमुख क्षेत्रहरूको प्रतिनिधित्व गर्दछन्, उत्पादनमा श्रमिक अधिकारहरूलाई अगाडि बढाउँदै",
     audhogikSanghName: "राष्ट्रिय औद्योगिक श्रमिक संघ नेपाल",
     mountEverestBrewery: "माउन्ट एभरेस्ट ब्रुअरी",
     mountEverestBreweryDesc: "भरतपुर, चितवन – पेय पदार्थ उद्योगका श्रमिकहरूको पक्षमा अग्रसर",
@@ -2405,7 +2435,8 @@ const translations = {
     KBTamang: "श्री के. बी. तामाङ",
     RahulKumarJha: "श्री राहुल कुमार झा",
     ChandrashekharJoshi: "श्री चन्द्रशेखर जोशी",
-    MohanKhatri: "श्री मोहन खत्री",
+    MohanKhatri: "श्री मोहन खत्री",    
+    MilanTamang: "श्री मिलन तामाङ",
     ChandrarYadav: "श्री चन्द्रार यादव",
     GaneshRajbanshi: "श्री गणेश राजवंशी",
     UpendraNayak: "श्री उपेन्द्र नायक",
@@ -2515,7 +2546,12 @@ function updateLanguage(lang) {
         const currentYear = new Date().getFullYear();
         element.innerHTML = translation[key].replace('{year}', currentYear);
       } else {
-        element.textContent = translation[key];
+        // Check if the translation string contains HTML tags
+        if (translation[key].includes('<')) {
+          element.innerHTML = translation[key];
+        } else {
+          element.textContent = translation[key];
+        }
       }
     }
   });
