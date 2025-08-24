@@ -858,6 +858,8 @@ background: var(--dark-orange);
   
   .logo-container img {
     height: 5rem;
+    width: auto; /* Add this */
+    object-fit: contain; /* Add this - maintains aspect ratio */
   }
   
   .organization-name h1 {
@@ -868,6 +870,7 @@ background: var(--dark-orange);
     font-size: 0.9rem;
   }
 }
+
 @media (max-width: 768px) {
   .announcement-fade {
     padding: 4px 0;
@@ -880,11 +883,13 @@ background: var(--dark-orange);
   .mobile-menu {
     width: 320px;
   }
-
+  
   /* Make logo and organization name more prominent */
   .logo-container img {
     height: 5rem;
-    padding-left: 5rem;
+    width: auto; /* Add this */
+    object-fit: contain; /* Add this */
+    padding-left: 1rem; /* Reduce padding */
   }
   
   .organization-name h1 {
@@ -895,6 +900,7 @@ background: var(--dark-orange);
     font-size: 0.9rem;
   }
 }
+
 @media (max-width: 480px) {
   .announcement-fade {
     padding: 4px 0;
@@ -906,8 +912,10 @@ background: var(--dark-orange);
   }
   
   .logo-container img {
-    height: 5rem;
-    padding-left: 2.5rem;
+    height: 6rem; /* Slightly smaller for very small screens */
+    width: auto; /* Add this */
+    object-fit: contain; /* Add this */
+    padding-left: 0.5rem; /* Reduce padding further */
   }
   
   .organization-name h1 {
@@ -921,7 +929,7 @@ background: var(--dark-orange);
   .mobile-menu {
     width: 280px;
   }
-
+  
   /* Adjust header padding for very small screens */
   .nav-container {
     padding: 0 0.5rem;
