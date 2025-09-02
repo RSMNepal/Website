@@ -47,7 +47,7 @@
 --text-light: #555555;
 }
 body {
-font-family: 'Poppins', sans-serif;
+font-family: 'Montserrat', sans-serif;
 background-color: var(--beige);
 color: var(--text-dark);
 overflow-x: hidden;
@@ -257,7 +257,6 @@ transform: translateX(0);
 #mobile-menu-overlay {
   display: none;
 }
-
 #mobile-menu-overlay.active {
   display: block;
 }
@@ -850,6 +849,36 @@ font-size: 0.95rem;
 .close-modal-btn:hover {
 background: var(--dark-orange);
 }
+/* Back to Top Button Styles */
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px;
+  background-color: var(--primary-orange);
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 999;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+#back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+#back-to-top:hover {
+  background-color: var(--dark-orange);
+}
 /* Improved Header Responsiveness */
 @media (max-width: 1024px) {
   .nav-container {
@@ -870,7 +899,6 @@ background: var(--dark-orange);
     font-size: 0.9rem;
   }
 }
-
 @media (max-width: 768px) {
   .announcement-fade {
     padding: 4px 0;
@@ -900,7 +928,6 @@ background: var(--dark-orange);
     font-size: 0.9rem;
   }
 }
-
 @media (max-width: 480px) {
   .announcement-fade {
     padding: 4px 0;
@@ -990,7 +1017,6 @@ background: var(--dark-orange);
     font-size: 1.25rem;
   }
 }
-
 /* Responsive adjustments */
 @media (max-width: 992px) {
   .about-content h1 {
@@ -1368,7 +1394,7 @@ background: var(--dark-orange);
       <!-- Leader 2 -->
       <div class="leader-card">
         <div class="leader-image">
-          <img src="About/Members/man.png" alt="Mr. Laxmi Bhatta" class="object-top" loading="lazy">
+          <img src="About/Members/Executive Committee/Mem_7.png" alt="Mr. Laxmi Bhatta" class="object-top" loading="lazy">
           <!-- <div class="leader-badge" data-i18n="vicePresident">Vice President</div> -->
         </div>
         <div class="leader-info">
@@ -1386,7 +1412,7 @@ background: var(--dark-orange);
       <!-- Add remaining leaders similarly -->
       <div class="leader-card">
         <div class="leader-image">
-          <img src="About/Members/man.png" alt="Mr. Govinda Paudel" class="object-top" loading="lazy">
+          <img src="About/Members/Executive Committee/Mem_9.png" alt="Mr. Govinda Paudel" class="object-top" loading="lazy">
           <!-- <div class="leader-badge" data-i18n="vicePresident">Vice President</div> -->
         </div>
         <div class="leader-info">
@@ -1454,7 +1480,7 @@ background: var(--dark-orange);
       
       <div class="leader-card">
         <div class="leader-image">
-          <img src="About/Members/man.png" alt="Mr. Ajay Prasad Kurmi" class="object-top" loading="lazy">
+          <img src="About/Members/Executive Committee/Mem_6.png" alt="Mr. Ajay Prasad Kurmi" class="object-top" loading="lazy">
           <!-- <div class="leader-badge" data-i18n="secretary">Secretary</div> -->
         </div>
         <div class="leader-info">
@@ -1470,7 +1496,7 @@ background: var(--dark-orange);
       </div>
       <div class="leader-card">
         <div class="leader-image">
-          <img src="About/Members/man.png" alt="Mr. Sitaram Agrawal" class="object-top" loading="lazy">
+          <img src="About/Members/Executive Committee/Mem_10.png" alt="Mr. Sitaram Agrawal" class="object-top" loading="lazy">
           <!-- <div class="leader-badge" data-i18n="treasurer">Treasurer</div> -->
         </div>
         <div class="leader-info">
@@ -1487,7 +1513,7 @@ background: var(--dark-orange);
       
       <div class="leader-card">
         <div class="leader-image">
-          <img src="About/Members/man.png" alt="Mr. Chandra Mohan Chaudhary" class="object-top" loading="lazy">
+          <img src="About/Members/Executive Committee/Mem_11.png" alt="Mr. Chandra Mohan Chaudhary" class="object-top" loading="lazy">
           <!-- <div class="leader-badge" data-i18n="headOfPublicRelations">Head of Public Relations</div> -->
         </div>
         <div class="leader-info">
@@ -1504,7 +1530,7 @@ background: var(--dark-orange);
       
       <div class="leader-card">
         <div class="leader-image">
-          <img src="About/Members/woman.png" alt="Mrs. Manda Kumari Karn" class="object-top" loading="lazy">
+          <img src="About/Members/Executive Committee/Mem_4.png" alt="Mrs. Manda Kumari Karn" class="object-top" loading="lazy">
           <!-- <div class="leader-badge" data-i18n="womenChief">Women Chief</div> -->
         </div>
         <div class="leader-info">
@@ -1521,7 +1547,7 @@ background: var(--dark-orange);
       
       <div class="leader-card">
         <div class="leader-image">
-          <img src="About/Members/man.png" alt="Mr. Janak Prasad Kurmi" class="object-top" loading="lazy">
+          <img src="About/Members/Executive Committee/Mem_5.png" alt="Mr. Janak Prasad Kurmi" class="object-top" loading="lazy">
           <!-- <div class="leader-badge" data-i18n="trainingChief">Training Chief</div> -->
         </div>
         <div class="leader-info">
@@ -1555,7 +1581,7 @@ background: var(--dark-orange);
       
       <div class="leader-card">
         <div class="leader-image">
-          <img src="About/Members/man.png" alt="Mr. Narayan Prasad Paudel" class="object-top" loading="lazy">
+          <img src="About/Members/Executive Committee/Mem_13.png" alt="Mr. Narayan Prasad Paudel" class="object-top" loading="lazy">
           <!-- <div class="leader-badge" data-i18n="member">Member</div> -->
         </div>
         <div class="leader-info">
@@ -1589,7 +1615,7 @@ background: var(--dark-orange);
       
       <div class="leader-card">
         <div class="leader-image">
-          <img src="About/Members/woman.png" alt="Mrs. Sunita Kumari Yadav" class="object-top" loading="lazy">
+          <img src="About/Members/Executive Committee/Mem_12.png" alt="Mrs. Sunita Kumari Yadav" class="object-top" loading="lazy">
           <!-- <div class="leader-badge" data-i18n="member">Member</div> -->
         </div>
         <div class="leader-info">
@@ -1606,7 +1632,7 @@ background: var(--dark-orange);
       
       <div class="leader-card">
         <div class="leader-image">
-          <img src="About/Members/man.png" alt="Mr. Dharmavir Arya" class="object-top" loading="lazy">
+          <img src="About/Members/Executive Committee/Mem_8.png" alt="Mr. Dharmavir Arya" class="object-top" loading="lazy">
           <!-- <div class="leader-badge" data-i18n="member">Member</div> -->
         </div>
         <div class="leader-info">
@@ -1657,7 +1683,7 @@ background: var(--dark-orange);
       
       <div class="leader-card">
         <div class="leader-image">
-          <img src="About/Members/man.png" alt="Mr. Dipendra Thakur" class="object-top" loading="lazy">
+          <img src="About/Members/Executive Committee/Mem_14.png" alt="Mr. Dipendra Thakur" class="object-top" loading="lazy">
           <!-- <div class="leader-badge" data-i18n="member">Member</div> -->
         </div>
         <div class="leader-info">
@@ -1759,7 +1785,6 @@ background: var(--dark-orange);
           </div>
         </div>
       </div>
-      <!-- State Leader -->
       <div class="leader-card">
         <div class="leader-image">
           <img src="About/Members/State Leadership/Mem_4.png" alt="Mr. Mohan Khatri" class="object-top" loading="lazy">
@@ -1777,7 +1802,6 @@ background: var(--dark-orange);
           </div>
         </div>
       </div>
-
       <div class="leader-card">
         <div class="leader-image">
           <img src="About/Members/State Leadership/Mem_6.png" alt="Mr. Milan Tamang>" class="object-top" loading="lazy">
@@ -1856,7 +1880,7 @@ background: var(--dark-orange);
       <!-- State Leader 6 -->
       <div class="leader-card">
         <div class="leader-image">
-          <img src="About/Members/man.png" alt="Mr. Dharmavir Arya" class="object-top" loading="lazy">
+          <img src="About/Members/State Leadership/Mem_8.png" alt="Mr. Dharmavir Arya" class="object-top" loading="lazy">
           <!-- <div class="leader-badge" data-i18n="koshiProvince">Koshi Province</div> -->
         </div>
         <div class="leader-info">
@@ -1951,12 +1975,12 @@ background: var(--dark-orange);
       <!-- Remaining unions similarly... -->
       <div class="union-card">
         <div class="union-image">
-          <img src="About/Unions/Rang.png" alt="Rastriya Rangrohan Shramik Sangh Nepal" loading="lazy">
+          <img src="About/Unions/Rang.png" alt="Rastriya Rangrogan Shramik Sangh Nepal" loading="lazy">
         </div>
         <div class="union-info">
-          <h3 class="union-name" data-i18n="rangrohanSanghName">Rastriya Rangrohan Shramik Sangh Nepal</h3>
-          <p class="union-description" data-i18n="rangrohanSanghDesc">Protecting painters and dyeing workers with focus on safety and fair pay.</p>
-          <button class="union-btn view-union-details" data-union="rangrohan" data-i18n="viewDetails">View Details</button>
+          <h3 class="union-name" data-i18n="rangroganSanghName">Rastriya Rangrogan Shramik Sangh Nepal</h3>
+          <p class="union-description" data-i18n="rangroganSanghDesc">Protecting painters and dyeing workers with focus on safety and fair pay.</p>
+          <button class="union-btn view-union-details" data-union="rangrogan" data-i18n="viewDetails">View Details</button>
         </div>
       </div>
       
@@ -2265,572 +2289,577 @@ background: var(--dark-orange);
 <!-- Scripts -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-// Language data structure with all translations
-const translations = {
-  en: {
-    // Navigation
-    home: "Home",
-    about: "About",
-    ourStory: "Our Story",
-    organizationalStructure: "Organizational Structure",
-    leadership: "Leadership",
-    resources: "Resources",
-    ourSlogans: "Our Slogans",
-    pressReleases: "Press Releases",
-    publications: "Publications",
-    events: "Events",
-    gallery: "Gallery",
-    
-    // Page Title
-    pageTitle: "About Us",
-    pageSubtitle: "Discover our history, mission, and commitment to workers' rights in Nepal",
-    
-    // Organization
-    organizationName: "Rastriya Shramik Mahasangh",
-    organizationLocation: "Nepal",
-    organizationFullName: "Rastriya Shramik Mahasangh Nepal",
-    
-    // Announcement
-    announcement1: "Rastra heet!",
-    announcement2: "Udyog heet!",
-    announcement3: "Shramik heet!",
-    
-    // Search and Menu
-    search: "Search",
-    menu: "Menu",
-    close: "Close",
-    
-    // Our Story Section
-    ourStory: "Our Story",
-    storyParagraph1: "Nepal, an ancient and sacred land steeped in wisdom and tradition, has long been guided by the teachings of sages and monks who imparted not only material knowledge but also profound moral and ethical principles. Throughout history, structured frameworks have governed the delicate balance between the presiding class and laborers, establishing regulations and ethical norms to foster harmony and progress.",
-    storyHighlight: "Nationalise the Labour, Labourise the Industries, Industrialise the Nation",
-    storyParagraph2: "In contemporary Nepal, our constitution, aligned with trade union laws, enshrines provisions for the protection and holistic development of workers' rights. Workers form the backbone of nation-building; no country can advance without their unwavering dedication and contributions. Yet, despite the proliferation of labor organizations, many remain entangled in political affiliations, often manipulated for partisan gains. This exploitation has stymied the success of trade union movements, reducing workers to mere vote banks and perpetuating their deprivation of essential rights and benefits.",
-    originalName: "Rastriya Krishi Shramik Sangh Nepal",
-    currentName: "Rastriya Shramik Mahasangh Nepal",
-    storyParagraph3: "Amid this challenging landscape, originally founded as <span class=\"key-phrase\">Rastriya Krishi Shramik Sangh Nepal</span> on Chaitra 11, 2068, evolved on Baishak 11, 2080 into <span class=\"key-phrase\">Rastriya Shramik Mahasangh Nepal</span>, as an independent beacon of hope dedicated to safeguarding Nepal's sovereign soil, its rich cultural diversity, mesmerizing heritage, and national identity while elevating the living standards of the working class for comprehensive national development. We stand as an independent force, safeguarding Nepal's sovereignty, cultural heritage, and national identity while elevating workers' living standards for national progress.",
-    industrializingNation: "industrializing the nation",
-    storyParagraph4: "Committed to <span class=\"key-phrase\">nationalising the labour, labourising the industries and industrialising the nation</span>, our principles prioritize national interest, industrial development, and labor rights. Operated by workers for workers, we remain free from government, business, political, foreign, or personal influences, embodying true autonomy in labor advocacy.",
-
-    // Timeline
-    phasesOfStruggle: "Phases of Struggle",
-    timeline2067: "Established as Rastriya Krishi Shramik Sangh with a mission to safeguard worker welfare",
-    timeline2077: "Led pivotal protests for sugarcane farmers, compelling sugar mill owners to settle outstanding dues worth crores, addressing long-standing grievances in the agricultural sector.",
-    timeline2080: "Establishment of Rastriya Shramik Mahasangh Nepal as an independent organization",
-    timeline2080b: "Actively protected rights in key industries like Varun Beverages (PepsiCola) and Mount Everest Brewery, championing fair wages, job security, and improved working conditions through sustained movements.",
-    timeline2081: "Submitted an eight-point demand memorandum to the Nepal government via Chief District Officers, spotlighting challenges faced by farmers and agricultural workers in our agriculture-dominant nation, urging systemic resolutions.",
-    timeline2081b: "Implementation of employment programs across different districts to uplift living standards of informal sector workers",
-    presentDay: "Present Day",
-    presentDayDesc: "Continuing to spearhead labor movements, implement district-level employment programs for informal sector workers, and ensure social security while fighting for comprehensive worker prosperity.",
-    storyCallToAction: "We invite all workers and laborers to unite in rebuilding our nation, championing prosperity, and advancing workers' rights and well-being.",
-
-    // Leadership
-    centralExecutiveCommittee: "Central Executive Committee",
-    centralExecutiveDesc: "The Central Executive Committee (Kendriya Karya Samiti) serves as the pinnacle of decision-making within Rastriya Shramik Mahasangh Nepal, comprising visionary leaders who steer our mission with unwavering dedication to workers' empowerment.",
-    president: "President",
-    vicePresident: "Vice President",
-    treasurer: "Treasurer",
-    generalSecretary: "General Secretary",
-    secretary: "Secretary",
-    headOfPublicRelations: "Head of Public Relations",
-    womenChief: "Women Chief",
-    trainingChief: "Training Chief",
-    industryChief: "Industry Chief",
-    member: "Member",
-    sangathanSecretary: "Sangathan Secretary",
-    officesecretary: "Office Secretary",
-    
-    // State Level Leadership
-    stateLevelLeadership: "State-Level Leadership",
-    stateLevelDesc: "Our provincial leadership embodies the spirit of Rastriya Shramik Mahasangh Nepal across Nepal's diverse regions, ensuring localized implementation of our core values and advocacy efforts.",
-    bagmatiProvince: "Bagmati Province",
-    madheshProvince: "Madhesh Province",
-    koshiProvince: "Koshi Province",
-    lumbiniProvince: "Lumbini Province",
-    coordinator: "Coordinator",
-    
-    // Unions
-    affiliatedUnions: "Our Affiliated Unions",
-    affiliatedUnionsDesc: "Rastriya Shramik Mahasangh Nepal unites 11 specialized unions, each championing workers in distinct sectors. Explore their missions and leadership.",
-    krishiSanghName: "Rastriya Krishi Shramik Sangh Nepal",
-    krishiSanghDesc: "Championing agricultural workers and farmers for fair wages and sustainable practices.",
-    naiSanghName: "Rastriya Nai Shramik Sangh Nepal",
-    naiSanghDesc: "Advocating for barbers and hairdressers' professional rights and development.",
-    rangrohanSanghName: "Rastriya Rangrohan Shramik Sangh Nepal",
-    rangrohanSanghDesc: "Protecting painters and dyeing workers with focus on safety and fair pay.",
-    kasthaSanghName: "Rastriya Kastha Shramik Sangh Nepal",
-    kasthaSanghDesc: "Supporting carpenters and woodworkers in skill enhancement and rights protection.",
-    plumberSanghName: "Rastriya Plumber Shramik Sangh Nepal",
-    plumberSanghDesc: "Ensuring plumbers' fair wages and safe working environments.",
-    gharGrihstiSanghName: "Rastriya Ghar Grihsti Shramik Sangh Nepal",
-    gharGrihstiSanghDesc: "Upholding dignity and rights for domestic workers.",
-    nirmanSanghName: "Rastriya Nirman Shramik Sangh Nepal",
-    nirmanSanghDesc: "Advocating safety and compensation for construction workers.",
-    autoRickshawSanghName: "Rastriya Auto Rickshaw Chalak Shramik Sangh Nepal",
-    autoRickshawSanghDesc: "Fighting for fair fares and conditions for auto rickshaw drivers.",
-    kabadiSanghName: "Rastriya Kabadi Shramik Sangh Nepal",
-    kabadiSanghDesc: "Promoting dignified work for waste pickers and recyclers.",
-    ittaBhattaSanghName: "Rastriya Itta Bhatta Shramik Sangh Nepal",
-    ittaBhattaSanghDesc: "Supporting brick kiln workers in fair practices.",
-    shikshakSanghName: "Nepal Rastriya Shikshak Sangh",
-    shikshakSanghDesc: "Empowering teachers for better education and conditions.",
-    
-    // Industrial Units
-    industrialUnits: "Industrial Units",
-    industrialUnitsDesc: "Under <span class=\"key-phrase\">Rastriya Audhogik Shramik Sangh Nepal</span>, our two industrial units represent key sectors, driving worker rights in manufacturing.",
-    audhogikSanghName: "Rastriya Audhogik Shramik Sangh Nepal",
-    mountEverestBrewery: "Mount Everest Brewery",
-    mountEverestBreweryDesc: "Bharatpur, Chitwan - Advocating for beverage industry workers.",
-    varunBeverage: "Varun Beverage Pvt. Ltd.",
-    varunBeverageDesc: "Ramgram, Nawalparasi - Championing bottling sector labor rights.",
-    
-    // Buttons and Modals
-    viewDetails: "View Details",
-    unionLeadership: "Union Leadership",
-    
-    // Footer
-    quickLinks: "Quick Links",
-    aboutUs: "About Us",
-    latestUpdates: "Latest Updates",
-    ourEvents: "Our Events",
-    mediaCoverages: "Media Coverages",
-    contactUs: "Contact Us",
-    footerDescription: "Empowering workers through unity, advocacy, and action since 2080 B.S.",
-    copyright: "© {year} Rastriya Shramik Mahasangh Nepal. All rights reserved.",
-    
-    // Names
-    HiralalYadav: "Mr. Hiralal Yadav",
-    LaxmiBhatta: "Mr. Laxmi Bhatta",
-    GovindaPaudel: "Mr. Govinda Paudel",
-    RadhaKumariKayastha: "Mrs. Radha Kumari Kayastha",
-    SitaramAgrawal: "Mr. Sitaram Agrawal",
-    GopalYadav: "Mr. Gopal Yadav",
-    SantoshKumarKarn: "Dr. Santosh Kumar Karn",
-    AjayPrasadKurmi: "Mr. Ajay Prasad Kurmi",
-    ChandraMohanChaudhary: "Mr. Chandra Mohan Chaudhary",
-    MandaKumariKarn: "Mrs. Manda Kumari Karn",
-    JanakPrasadKurmi: "Mr. Janak Prasad Kurmi",
-    RajendraPrasadAcharya: "Mr. Rajendra Prasad Acharya",
-    NarayanPrasadPaudel: "Mr. Narayan Prasad Paudel",
-    JogendraPaswan: "Mr. Jogendra Paswan",
-    SunitaKumariYadav: "Mrs. Sunita Kumari Yadav",
-    DharmavirArya: "Mr. Dharmavir Arya",
-    GudduShahBaniya: "Mr. Guddu Shah Baniya",
-    NiwasYadav: "Mr. Niwas Yadav",
-    DipendraThakur: "Mr. Dipendra Thakur",
-    SanjayKumarLal: "Mr. Sanjay Kumar Lal",
-    KBTamang: "Mr. K. B. Tamang",
-    RahulKumarJha: "Mr. Rahul Kumar Jha",
-    ChandrashekharJoshi: "Mr. Chandrashekhar Joshi",
-    MohanKhatri: "Mr. Mohan Khatri",
-    MilanTamang: "Mr. Milan Tamang",
-    ChandrarYadav: "Mr. Chandrar Yadav",
-    GaneshRajbanshi: "Mr. Ganesh Rajbanshi",
-    UpendraNayak: "Mr. Upendra Nayak",
-    AnilAgrahari: "Mr. Anil Agrahari"
-  },
-  ne: {
-    // Navigation
-    home: "गृहपृष्ठ",
-    about: "हाम्रो बारेमा",
-    ourStory: "हाम्रो कथा",
-    organizationalStructure: "संगठनात्मक संरचना",
-    leadership: "नेतृत्व",
-    resources: "संसाधनहरू",
-    ourSlogans: "हाम्रा नाराहरू",
-    pressReleases: "प्रेस विज्ञप्तिहरू",
-    publications: "प्रकाशनहरू",
-    events: "कार्यक्रमहरू",
-    gallery: "ग्यालरी",
-    
-    // Page Title
-    pageTitle: "हाम्रो बारेमा",
-    pageSubtitle: "हाम्रो इतिहास, उद्देश्य, र नेपालमा श्रमिक अधिकारप्रति हाम्रो प्रतिबद्धता बारे जान्नुहोस्",
-    
-    // Organization
-    organizationName: "राष्ट्रिय श्रमिक महासंघ",
-    organizationLocation: "नेपाल",
-    organizationFullName: "राष्ट्रिय श्रमिक महासंघ नेपाल",
-    
-    // Announcement
-    announcement1: "राष्ट्र हित!",
-    announcement2: "उद्योग हित!",
-    announcement3: "श्रमिक हित!",
-    
-    // Search and Menu
-    search: "खोज्नुहोस्",
-    menu: "मेनु",
-    close: "बन्द गर्नुहोस्",
-    
-    // Our Story Section
-    ourStory: "हाम्रो कथा",
-    storyParagraph1: "नेपाल, ज्ञान र परम्परामा डुबेको प्राचीन र पवित्र भूमि, शताब्दीयौँदेखि ऋषि–मुनी र साधुहरूको उपदेशद्वारा मार्गदर्शित रहँदै आएको छ। तिनले केवल भौतिक ज्ञान मात्र नभई गहिरा नैतिक मूल्य र आचरणका सिद्धान्तहरू पनि प्रदान गरेका थिए। इतिहासभरि, व्यवस्थित संरचनाहरूले शासक वर्ग र श्रमिकबीचको संवेदनशील सन्तुलनलाई नियमन गर्दै, सामञ्जस्य र प्रगतिका लागि नियम तथा आचारसंहिताहरू स्थापना गरेका छन्।",
-    storyHighlight: "श्रमिकको राष्ट्रियकरण, राष्ट्रको औद्योगिकरण, उद्योगको श्रमिकीकरण",
-    storyParagraph2: "समकालीन नेपालमा हाम्रो संविधानले श्रम ऐन तथा ट्रेड युनियनसम्बन्धी कानुनसँग सुसङ्गत रही श्रमिक अधिकारको संरक्षण र समग्र विकासका लागि प्रावधानहरू सुनिश्चित गरेको छ। श्रमिकहरू राष्ट्रनिर्माणको मेरुदण्ड हुन्; उनीहरूको अटुट समर्पण र योगदानबिनाअघि कुनै पनि देश अगाडि बढ्न सक्दैन। यद्यपि श्रमिक संगठनहरूको विस्तार भए पनि, धेरैजसो राजनीतिक दलसँग गाँसिएका कारण प्रायः दलगत स्वार्थका लागि प्रयोग हुने गरेका छन्। यस्तो दुरुपयोगले ट्रेड युनियन आन्दोलनको सफलतालाई अवरुद्ध गर्दै श्रमिकलाई केवल मतदाता समूहमा सीमित बनाइरहेको छ र उनीहरूलाई आवश्यकीय अधिकार र सुविधा प्राप्त हुन नदिइरहेको छ।",
-    originalName: "राष्ट्रिय कृषि श्रमिक संघ नेपाल",
-    currentName: "राष्ट्रिय श्रमिक महासंघ नेपाल",
-    storyParagraph3: "यस चुनौतीपूर्ण परिवेशमा, <span class=\"key-phrase\">राष्ट्रिय कृषि श्रमिक संघ नेपाल</span>का रूपमा चैत्र ११, २०६८ मा स्थापना भई, बैशाख ११, २०८० मा विकसित हुँदै <span class=\"key-phrase\">राष्ट्रिय श्रमिक महासंघ नेपाल</span>को रूपमा उदित भएको यस संस्थाले, नेपालको सार्वभौमसत्ता, बहुरंगी सांस्कृतिक विविधता, गौरवशाली सम्पदा र राष्ट्रिय पहिचानको संरक्षणसहित श्रमिक वर्गको जीवनस्तर उन्नत गर्न र समग्र राष्ट्रिय विकासमा योगदान पुर्‍याउन स्वतन्त्र आशाको दीपको रूपमा आफूलाई स्थापित गरेको छ। हामी स्वतन्त्र शक्तिका रूपमा उभिँदै, नेपालको सार्वभौमसत्ता, सांस्कृतिक सम्पदा र राष्ट्रिय पहिचानको रक्षा गर्दै श्रमिक वर्गको जीवनस्तर अभिवृद्धि गर्न प्रतिबद्ध छौँ।",
-    industrializingNation: "राष्ट्रलाई औद्योगिकरण गर्ने",
-    storyParagraph4: "<span class=\"key-phrase\">श्रमिकको राष्ट्रियकरण</span> गर्ने, <span class=\"key-phrase\">राष्ट्रको औद्योगिकरण</span> गर्ने र <span class=\"key-phrase\">उद्योगको श्रमिकीकरण</span> गर्ने हाम्रो अटुट प्रतिबद्धता हो। हाम्रा सिद्धान्तहरूले राष्ट्रिय हित, औद्योगिक विकास र श्रमिक अधिकारलाई सर्वोपरि स्थान दिएका छन्। श्रमिक स्वयंको सहभागितामा, श्रमिककै हितका लागि सञ्चालित यस संगठन सरकार, व्यवसाय, राजनीति, विदेशी शक्ति वा व्यक्तिगत प्रभावबाट पूर्णतः स्वतन्त्र रहँदै श्रम पक्षसम्बन्धी वकालतमा वास्तविक स्वायत्तताको प्रतीक बनेको छ।",
-    
-    // Timeline
-    phasesOfStruggle: "संघर्षका चरणहरू",
-    timeline2067: "श्रमिक कल्याणको संरक्षण गर्ने उद्देश्यसहित राष्ट्रिय कृषि श्रमिक संघको रूपमा स्थापना",
-    timeline2077: "उखु किसानका लागि ऐतिहासिक आन्दोलन सञ्चालन, जसबाट चिनी मिल व्यवसायीहरूलाई अर्बौँको बक्यौता तिर्न बाध्य पार्दै, कृषि क्षेत्रमा दशकौँदेखि थिचिएका गुनासोहरू सम्बोधन",
-    timeline2080: "स्वतन्त्र संगठनको रूपमा राष्ट्रिय श्रमिक महासंघ नेपालको स्थापना",
-    timeline2080b: "वरुण बेभरेजस (पेप्सीकोला) र माउण्ड एभरेष्ट ब्रुअरीज जस्ता ठूला उद्योगहरूमा श्रमिक अधिकारको सक्रिय रक्षा, उचित तलब, रोजगारीको सुरक्षा र श्रम–सर्त सुधारका लागि निरन्तर आन्दोलन",
-    timeline2081: "नेपाल कृषि–प्रधान राष्ट्र भएको परिप्रेक्ष्यमा किसान र कृषक श्रमिकले भोगिरहेका चुनौतीहरूलाई औँल्याउँदै प्रमुख जिल्ला अधिकारीमार्फत नेपाल सरकारलाई आठ बुँदे मागपत्र बुझाइ, प्रणालीगत समाधानको आग्रह",
-    timeline2081b: "अव्यवस्थित (अनौपचारिक) क्षेत्रका श्रमिकहरूको जीवनस्तर उकास्न विभिन्न जिल्लामा रोजगारी कार्यक्रम कार्यान्वयन",
-    presentDay: "वर्तमान",
-    presentDayDesc: "श्रम आन्दोलनको नेतृत्व निरन्तर गर्दै, अनौपचारिक क्षेत्रका श्रमिकका लागि जिल्लास्तरीय रोजगारी कार्यक्रम सञ्चालन, सामाजिक सुरक्षा सुनिश्चित, र श्रमिकको समग्र समृद्धिका लागि निरन्तर संघर्षरत",
-    storyCallToAction: "हाम्रो राष्ट्र पुनर्निर्माण गर्न, समृद्धिको वकालता गर्न, र श्रमिक अधिकारहरू र कल्याणलाई अघि बढाउन सबै श्रमिकहरू र मजदुरहरूलाई एकित्रित हुन आह्वान गर्दछौं।",
-    
-    // Organizational Structure
-    orgStructureDesc: "राष्ट्रिय श्रमिक महासंघ नेपाल <span class=\"key-phrase\">११ वटा विशेषज्ञ संघ र २ वटा औद्योगिक इकाइ</span>हरूलाई समेट्ने एक सबल महासंघ हो, जसका प्रादेशिक र जिल्ला समिति नेपालका सबै प्रदेशमा स्थापना भइसकेका छन्। प्रत्येक सम्बद्ध संघले आफ्ना प्रादेशिक तथा जिल्ला समिति सञ्चालन गर्दै आएको छ, जसले देशभरका श्रमिकहरूको जमीनी प्रतिनिधित्व र प्रभावकारी पक्षसमर्थन सुनिश्चित गर्दछ।",
-    
-    // Leadership
-    centralExecutiveCommittee: "केन्द्रीय कार्यकारिणी समिति",
-    centralExecutiveDesc: "केन्द्रिय कार्य समिति राष्ट्रिय श्रमिक महासंघ नेपालभित्र निर्णय गर्ने सर्वोच्च निकायका रूपमा कार्यरत छ। यसमा श्रमिक सशक्तीकरणप्रति अटुट प्रतिबद्धता र दूरदर्शी नेतृत्व गुण भएका अगुवाहरू समावेश छन्, जसले संगठनको अभियानलाई स्पष्ट दिशा र दृढतापूर्वक अघि बढाइरहेका छन्।",
-    president: "अध्यक्ष",
-    vicePresident: "उपाध्यक्ष",
-    treasurer: "कोषाध्यक्ष",
-    generalSecretary: "महासचिव",
-    secretary: "सचिव",
-    headOfPublicRelations: "सार्वजनिक सम्बन्ध प्रमुख",
-    womenChief: "महिला प्रमुख",
-    trainingChief: "तालिम प्रमुख",
-    industryChief: "उद्योग प्रमुख",
-    member: "सदस्य",
-    sangathanSecretary: "संगठन सचिव",
-    officesecretary: "कार्यालय सचिव",
-    
-    // State Level Leadership
-    stateLevelLeadership: "प्रदेशीय स्तरको नेतृत्व",
-    stateLevelDesc: "हाम्रो प्रदेशीय नेतृत्वले नेपालको विविध क्षेत्रहरूमा राष्ट्रिय श्रमिक महासंघ नेपालको भावना व्यक्त गर्दछ, हाम्रा मूल मूल्यहरू र अधिवक्ता प्रयासहरूको स्थानीय कार्यान्वयन सुनिश्चित गर्दछ।",
-    bagmatiProvince: "बाग्मती प्रदेश",
-    madheshProvince: "मधेश प्रदेश",
-    koshiProvince: "कोशी प्रदेश",
-    lumbiniProvince: "लुम्बिनी प्रदेश",
-    coordinator: "समन्वयक",
-    
-    // Unions
-    affiliatedUnions: "हाम्रा सम्बद्ध संघहरू",
-    affiliatedUnionsDesc: "राष्ट्रिय श्रमिक महासङ्घ नेपालसँग ११ वटा विशेषीकृत सङ्घहरू आवद्ध छन्, जसले आ–आफ्ना क्षेत्रका श्रमिक अधिकारका लागि नेतृत्व दिइरहेका छन्। तिनीहरूको उद्देश्य र नेतृत्वबारे जान्नुहोस्:",
-    krishiSanghName: "राष्ट्रिय कृषि श्रमिक संघ नेपाल",
-    krishiSanghDesc: "किसान र कृषक श्रमिकहरूको उचित पारिश्रमिक र दिगो अभ्यासका लागि अग्रसर",
-    naiSanghName: "राष्ट्रिय नाई श्रमिक संघ नेपाल",
-    naiSanghDesc: "नाई र कपाल काट्ने व्यवसायीहरूको व्यावसायिक अधिकार र विकासको पक्षमा आवाज",
-    rangrohanSanghName: "राष्ट्रिय रंगरोहन श्रमिक संघ नेपाल",
-    rangrohanSanghDesc: "रङ्गरोगन गर्ने श्रमिकहरूको सुरक्षा र उचित पारिश्रमिकमा केन्द्रित",
-    kasthaSanghName: "राष्ट्रिय काष्ठ श्रमिक संघ नेपाल",
-    kasthaSanghDesc: "सुतार र काठका कामदारहरूको सीप विकास र अधिकार संरक्षणमा सहायक",
-    plumberSanghName: "राष्ट्रिय प्लम्बर श्रमिक संघ नेपाल",
-    plumberSanghDesc: "प्लम्बरहरूको उचित पारिश्रमिक र सुरक्षित कार्य वातावरण सुनिश्चित गर्ने",
-    gharGrihstiSanghName: "राष्ट्रिय घर गृहस्थी श्रमिक संघ नेपाल",
-    gharGrihstiSanghDesc: "घरेलु श्रमिकहरूको गरिमा र अधिकारहरूको प्रतिष्ठापनामा केन्द्रित",
-    nirmanSanghName: "राष्ट्रिय निर्माण श्रमिक संघ नेपाल",
-    nirmanSanghDesc: "निर्माण श्रमिकहरूको सुरक्षा र क्षतिपूर्तिको पक्षमा आवाज",
-    autoRickshawSanghName: "राष्ट्रिय अटो रिक्सा चालक श्रमिक संघ नेपाल",
-    autoRickshawSanghDesc: "अटो रिक्सा चालकहरूको उचित भाडा र कार्य–सर्तका लागि संघर्षरत",
-    kabadiSanghName: "राष्ट्रिय कबाडी श्रमिक संघ नेपाल",
-    kabadiSanghDesc: "फोहोरा संकलनकर्ताहरू र पुन: प्रयोग गर्नेहरूको लागि गरिमापूर्ण कामको प्रवर्द्धन गर्ने",
-    ittaBhattaSanghName: "राष्ट्रिय इट्टा भट्टा श्रमिक संघ नेपाल",
-    ittaBhattaSanghDesc: "इट्टा भट्टा श्रमिकहरूको न्यायपूर्ण कार्यप्रणाली र अधिकारका लागि अग्रसर",
-    shikshakSanghName: "नेपाल राष्ट्रिय शिक्षक संघ",
-    shikshakSanghDesc: "शिक्षकहरूको सशक्तिकरणमार्फत गुणस्तरीय शिक्षा र उचित कार्य–सर्तको प्रवर्द्धनका लागि अग्रसर",
-    
-    // Industrial Units
-    industrialUnits: "औद्योगिक इकाइहरू",
-    industrialUnitsDesc: "<span class=\"key-phrase\">राष्ट्रिय औद्योगिक श्रमिक संघ नेपाल</span> अन्तर्गत, हाम्रा दुई औद्योगिक इकाइहरूले प्रमुख क्षेत्रहरूको प्रतिनिधित्व गर्दछन्, उत्पादनमा श्रमिक अधिकारहरूलाई अगाडि बढाउँदै",
-    audhogikSanghName: "राष्ट्रिय औद्योगिक श्रमिक संघ नेपाल",
-    mountEverestBrewery: "माउन्ट एभरेस्ट ब्रुअरी",
-    mountEverestBreweryDesc: "भरतपुर, चितवन – पेय पदार्थ उद्योगका श्रमिकहरूको पक्षमा अग्रसर",
-    varunBeverage: "वरुण बेभरेज प्रा. लि.",
-    varunBeverageDesc: "रामग्राम, नवलपरासी – बोतलिङ्ग क्षेत्रका श्रमिक अधिकारका लागि अग्रसर",
-    
-    // Buttons and Modals
-    viewDetails: "विवरण हेर्नुहोस्",
-    unionLeadership: "संघ नेतृत्व",
-    
-    // Footer
-    quickLinks: "द्रुत लिङ्कहरू",
-    aboutUs: "हाम्रो बारेमा",
-    latestUpdates: "नवीनतम अपडेटहरू",
-    ourEvents: "हाम्रा कार्यक्रमहरू",
-    mediaCoverages: "मिडिया कभरेजहरू",
-    contactUs: "सम्पर्क गर्नुहोस्",
-    footerDescription: "एकता, वकालत र कार्यबाट २०८० बि.स. देखि श्रमिकहरूलाई सशक्त बनाउँदै",
-    copyright: "© {year} सर्वाधिकार राष्ट्रिय श्रमिक महासंघमा सुरक्षित",
-    
-    // Names
-    HiralalYadav: "श्री हीरालाल यादव",
-    LaxmiBhatta: "श्री लक्ष्मी भट्ट",
-    GovindaPaudel: "श्री गोविन्द पौडेल",
-    RadhaKumariKayastha: "श्रीमती राधा कुमारी कायस्थ",
-    SitaramAgrawal: "श्री सीताराम अग्रवाल",
-    GopalYadav: "श्री गोपाल यादव",
-    SantoshKumarKarn: "डा. सन्तोष कुमार कर्ण",
-    AjayPrasadKurmi: "श्री अजय प्रसाद कुर्मी",
-    ChandraMohanChaudhary: "श्री चन्द्रमोहन चौधरी",
-    MandaKumariKarn: "श्रीमती मण्डा कुमारी कर्ण",
-    JanakPrasadKurmi: "श्री जनक प्रसाद कुर्मी",
-    RajendraPrasadAcharya: "श्री राजेन्द्र प्रसाद आचार्य",
-    NarayanPrasadPaudel: "श्री नारायण प्रसाद पौडेल",
-    JogendraPaswan: "श्री जोगेन्द्र पासवान",
-    SunitaKumariYadav: "श्रीमती सुनिता कुमारी यादव",
-    DharmavirArya: "श्री धर्मवीर आर्य",
-    GudduShahBaniya: "श्री गुड्डू शाह बनिया",
-    NiwasYadav: "श्री निवास यादव",
-    DipendraThakur: "श्री दीपेन्द्र ठाकुर",
-    SanjayKumarLal: "श्री संजय कुमार लाल",
-    KBTamang: "श्री के. बी. तामाङ",
-    RahulKumarJha: "श्री राहुल कुमार झा",
-    ChandrashekharJoshi: "श्री चन्द्रशेखर जोशी",
-    MohanKhatri: "श्री मोहन खत्री",    
-    MilanTamang: "श्री मिलन तामाङ",
-    ChandrarYadav: "श्री चन्द्रार यादव",
-    GaneshRajbanshi: "श्री गणेश राजवंशी",
-    UpendraNayak: "श्री उपेन्द्र नायक",
-    AnilAgrahari: "श्री अनिल अग्रहरी"
-  }
-};
-// Function to convert Arabic numerals to Nepali numerals
-function convertToNepaliNumerals(text) {
-  const arabicNumerals = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
-  const nepaliNumerals = ['०', '१', '२', '३', '४', '५', '६', '७', '८', '९'];
-  
-  let convertedText = text;
-  for (let i = 0; i < arabicNumerals.length; i++) {
-    const regex = new RegExp(arabicNumerals[i], 'g');
-    convertedText = convertedText.replace(regex, nepaliNumerals[i]);
-  }
-  
-  return convertedText;
-}
-// Function to convert Nepali numerals to Arabic numerals
-function convertToArabicNumerals(text) {
-  const arabicNumerals = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
-  const nepaliNumerals = ['०', '१', '२', '३', '४', '५', '६', '७', '८', '९'];
-  
-  let convertedText = text;
-  for (let i = 0; i < nepaliNumerals.length; i++) {
-    const regex = new RegExp(nepaliNumerals[i], 'g');
-    convertedText = convertedText.replace(regex, arabicNumerals[i]);
-  }
-  
-  return convertedText;
-}
-// Function to convert month names to Nepali
-function convertMonthToNepali(monthName) {
-  const monthMap = {
-    'Baishakh': 'बैशाख',
-    'Jestha': 'जेष्ठ',
-    'Asar': 'आषाढ',
-    'Shrawan': 'श्रावण',
-    'Bhadra': 'भाद्र',
-    'Ashwin': 'अश्विन',
-    'Kartik': 'कार्तिक',
-    'Mangsir': 'मंसिर',
-    'Poush': 'पौष',
-    'Magh': 'माघ',
-    'Falgun': 'फाल्गुन',
-    'Chaitra': 'चैत्र',
-    'Asoj': 'असोज'
+document.addEventListener('DOMContentLoaded', function() {
+  // Language data structure with all translations
+  const translations = {
+    en: {
+      // Navigation
+      home: "Home",
+      about: "About",
+      ourStory: "Our Story",
+      organizationalStructure: "Organizational Structure",
+      leadership: "Leadership",
+      resources: "Resources",
+      ourSlogans: "Our Slogans",
+      pressReleases: "Press Releases",
+      publications: "Publications",
+      events: "Events",
+      gallery: "Gallery",
+      
+      // Page Title
+      pageTitle: "About Us",
+      pageSubtitle: "Discover our history, mission, and commitment to workers' rights in Nepal",
+      
+      // Organization
+      organizationName: "Rastriya Shramik Mahasangh",
+      organizationLocation: "Nepal",
+      organizationFullName: "Rastriya Shramik Mahasangh Nepal",
+      
+      // Announcement
+      announcement1: "Rastra heet!",
+      announcement2: "Udyog heet!",
+      announcement3: "Shramik heet!",
+      
+      // Search and Menu
+      search: "Search",
+      menu: "Menu",
+      close: "Close",
+      
+      // Our Story Section
+      ourStory: "Our Story",
+      storyParagraph1: "Nepal, an ancient and sacred land steeped in wisdom and tradition, has long been guided by the teachings of sages and monks who imparted not only material knowledge but also profound moral and ethical principles. Throughout history, structured frameworks have governed the delicate balance between the presiding class and laborers, establishing regulations and ethical norms to foster harmony and progress.",
+      storyHighlight: "Nationalise the Labour, Labourise the Industries, Industrialise the Nation",
+      storyParagraph2: "In contemporary Nepal, our constitution, aligned with trade union laws, enshrines provisions for the protection and holistic development of workers' rights. Workers form the backbone of nation-building; no country can advance without their unwavering dedication and contributions. Yet, despite the proliferation of labor organizations, many remain entangled in political affiliations, often manipulated for partisan gains. This exploitation has stymied the success of trade union movements, reducing workers to mere vote banks and perpetuating their deprivation of essential rights and benefits.",
+      originalName: "Rastriya Krishi Shramik Sangh Nepal",
+      currentName: "Rastriya Shramik Mahasangh Nepal",
+      storyParagraph3: "Amid this challenging landscape, originally founded as <span class=\"key-phrase\">Rastriya Krishi Shramik Sangh Nepal</span> on Chaitra 11, 2068, evolved on Baishak 11, 2080 into <span class=\"key-phrase\">Rastriya Shramik Mahasangh Nepal</span>, as an independent beacon of hope dedicated to safeguarding Nepal's sovereign soil, its rich cultural diversity, mesmerizing heritage, and national identity while elevating the living standards of the working class for comprehensive national development. We stand as an independent force, safeguarding Nepal's sovereignty, cultural heritage, and national identity while elevating workers' living standards for national progress.",
+      industrializingNation: "industrializing the nation",
+      storyParagraph4: "Committed to <span class=\"key-phrase\">nationalising the labour, labourising the industries and industrialising the nation</span>, our principles prioritize national interest, industrial development, and labor rights. Operated by workers for workers, we remain free from government, business, political, foreign, or personal influences, embodying true autonomy in labor advocacy.",
+      // Timeline
+      phasesOfStruggle: "Phases of Struggle",
+      timeline2067: "Established as Rastriya Krishi Shramik Sangh with a mission to safeguard worker welfare",
+      timeline2077: "Led pivotal protests for sugarcane farmers, compelling sugar mill owners to settle outstanding dues worth crores, addressing long-standing grievances in the agricultural sector.",
+      timeline2080: "Establishment of Rastriya Shramik Mahasangh Nepal as an independent organization",
+      timeline2080b: "Actively protected rights in key industries like Varun Beverages (PepsiCola) and Mount Everest Brewery, championing fair wages, job security, and improved working conditions through sustained movements.",
+      timeline2081: "Submitted an eight-point demand memorandum to the Nepal government via Chief District Officers, spotlighting challenges faced by farmers and agricultural workers in our agriculture-dominant nation, urging systemic resolutions.",
+      timeline2081b: "Implementation of employment programs across different districts to uplift living standards of informal sector workers",
+      presentDay: "Present Day",
+      presentDayDesc: "Continuing to spearhead labor movements, implement district-level employment programs for informal sector workers, and ensure social security while fighting for comprehensive worker prosperity.",
+      storyCallToAction: "We invite all workers and laborers to unite in rebuilding our nation, championing prosperity, and advancing workers' rights and well-being.",
+      // Leadership
+      centralExecutiveCommittee: "Central Executive Committee",
+      centralExecutiveDesc: "The Central Executive Committee (Kendriya Karya Samiti) serves as the pinnacle of decision-making within Rastriya Shramik Mahasangh Nepal, comprising visionary leaders who steer our mission with unwavering dedication to workers' empowerment.",
+      president: "President",
+      vicePresident: "Vice President",
+      treasurer: "Treasurer",
+      generalSecretary: "General Secretary",
+      secretary: "Secretary",
+      headOfPublicRelations: "Head of Public Relations",
+      womenChief: "Women Chief",
+      trainingChief: "Training Chief",
+      industryChief: "Industry Chief",
+      member: "Member",
+      sangathanSecretary: "Sangathan Secretary",
+      officesecretary: "Office Secretary",
+      
+      // State Level Leadership
+      stateLevelLeadership: "State-Level Leadership",
+      stateLevelDesc: "Our provincial leadership embodies the spirit of Rastriya Shramik Mahasangh Nepal across Nepal's diverse regions, ensuring localized implementation of our core values and advocacy efforts.",
+      bagmatiProvince: "Bagmati Province",
+      madheshProvince: "Madhesh Province",
+      koshiProvince: "Koshi Province",
+      lumbiniProvince: "Lumbini Province",
+      coordinator: "Coordinator",
+      
+      // Unions
+      affiliatedUnions: "Our Affiliated Unions",
+      affiliatedUnionsDesc: "Rastriya Shramik Mahasangh Nepal unites 11 specialized unions, each championing workers in distinct sectors. Explore their missions and leadership.",
+      krishiSanghName: "Rastriya Krishi Shramik Sangh Nepal",
+      krishiSanghDesc: "Championing agricultural workers and farmers for fair wages and sustainable practices.",
+      naiSanghName: "Rastriya Nai Shramik Sangh Nepal",
+      naiSanghDesc: "Advocating for barbers and hairdressers' professional rights and development.",
+      rangroganSanghName: "Rastriya Rangrogan Shramik Sangh Nepal",
+      rangroganSanghDesc: "Protecting painters and dyeing workers with focus on safety and fair pay.",
+      kasthaSanghName: "Rastriya Kastha Shramik Sangh Nepal",
+      kasthaSanghDesc: "Supporting carpenters and woodworkers in skill enhancement and rights protection.",
+      plumberSanghName: "Rastriya Plumber Shramik Sangh Nepal",
+      plumberSanghDesc: "Ensuring plumbers' fair wages and safe working environments.",
+      gharGrihstiSanghName: "Rastriya Ghar Grihsti Shramik Sangh Nepal",
+      gharGrihstiSanghDesc: "Upholding dignity and rights for domestic workers.",
+      nirmanSanghName: "Rastriya Nirman Shramik Sangh Nepal",
+      nirmanSanghDesc: "Advocating safety and compensation for construction workers.",
+      autoRickshawSanghName: "Rastriya Auto Rickshaw Chalak Shramik Sangh Nepal",
+      autoRickshawSanghDesc: "Fighting for fair fares and conditions for auto rickshaw drivers.",
+      kabadiSanghName: "Rastriya Kabadi Shramik Sangh Nepal",
+      kabadiSanghDesc: "Promoting dignified work for waste pickers and recyclers.",
+      ittaBhattaSanghName: "Rastriya Itta Bhatta Shramik Sangh Nepal",
+      ittaBhattaSanghDesc: "Supporting brick kiln workers in fair practices.",
+      shikshakSanghName: "Nepal Rastriya Shikshak Sangh",
+      shikshakSanghDesc: "Empowering teachers for better education and conditions.",
+      
+      // Industrial Units
+      industrialUnits: "Industrial Units",
+      industrialUnitsDesc: "Under <span class=\"key-phrase\">Rastriya Audhogik Shramik Sangh Nepal</span>, our two industrial units represent key sectors, driving worker rights in manufacturing.",
+      audhogikSanghName: "Rastriya Audhogik Shramik Sangh Nepal",
+      mountEverestBrewery: "Mount Everest Brewery",
+      mountEverestBreweryDesc: "Bharatpur, Chitwan - Advocating for beverage industry workers.",
+      varunBeverage: "Varun Beverage Pvt. Ltd.",
+      varunBeverageDesc: "Ramgram, Nawalparasi - Championing bottling sector labor rights.",
+      
+      // Buttons and Modals
+      viewDetails: "View Details",
+      unionLeadership: "Union Leadership",
+      
+      // Footer
+      quickLinks: "Quick Links",
+      aboutUs: "About Us",
+      latestUpdates: "Latest Updates",
+      ourEvents: "Our Events",
+      mediaCoverages: "Media Coverages",
+      contactUs: "Contact Us",
+      footerDescription: "Empowering workers through unity, advocacy, and action since 2080 B.S.",
+      copyright: "© {year} Rastriya Shramik Mahasangh Nepal. All rights reserved.",
+      
+      // Names
+      HiralalYadav: "Mr. Hiralal Yadav",
+      LaxmiBhatta: "Mr. Laxmi Bhatta",
+      GovindaPaudel: "Mr. Govinda Paudel",
+      RadhaKumariKayastha: "Mrs. Radha Kumari Kayastha",
+      SitaramAgrawal: "Mr. Sitaram Agrawal",
+      GopalYadav: "Mr. Gopal Yadav",
+      SantoshKumarKarn: "Dr. Santosh Kumar Karn",
+      AjayPrasadKurmi: "Mr. Ajay Prasad Kurmi",
+      ChandraMohanChaudhary: "Mr. Chandra Mohan Chaudhary",
+      MandaKumariKarn: "Mrs. Manda Kumari Karn",
+      JanakPrasadKurmi: "Mr. Janak Prasad Kurmi",
+      RajendraPrasadAcharya: "Mr. Rajendra Prasad Acharya",
+      NarayanPrasadPaudel: "Mr. Narayan Prasad Paudel",
+      JogendraPaswan: "Mr. Jogendra Paswan",
+      SunitaKumariYadav: "Mrs. Sunita Kumari Yadav",
+      DharmavirArya: "Mr. Dharmavir Arya",
+      GudduShahBaniya: "Mr. Guddu Shah Baniya",
+      NiwasYadav: "Mr. Niwas Yadav",
+      DipendraThakur: "Mr. Dipendra Thakur",
+      SanjayKumarLal: "Mr. Sanjay Kumar Lal",
+      KBTamang: "Mr. K. B. Tamang",
+      RahulKumarJha: "Mr. Rahul Kumar Jha",
+      ChandrashekharJoshi: "Mr. Chandrashekhar Joshi",
+      MohanKhatri: "Mr. Mohan Khatri",
+      MilanTamang: "Mr. Milan Tamang",
+      ChandrarYadav: "Mr. Chandrar Yadav",
+      GaneshRajbanshi: "Mr. Ganesh Rajbanshi",
+      UpendraNayak: "Mr. Upendra Nayak",
+      AnilAgrahari: "Mr. Anil Agrahari"
+    },
+    ne: {
+      // Navigation
+      home: "गृहपृष्ठ",
+      about: "हाम्रो बारेमा",
+      ourStory: "हाम्रो कथा",
+      organizationalStructure: "संगठनात्मक संरचना",
+      leadership: "नेतृत्व",
+      resources: "संसाधनहरू",
+      ourSlogans: "हाम्रा नाराहरू",
+      pressReleases: "प्रेस विज्ञप्तिहरू",
+      publications: "प्रकाशनहरू",
+      events: "कार्यक्रमहरू",
+      gallery: "ग्यालरी",
+      
+      // Page Title
+      pageTitle: "हाम्रो बारेमा",
+      pageSubtitle: "हाम्रो इतिहास, उद्देश्य, र नेपालमा श्रमिक अधिकारप्रति हाम्रो प्रतिबद्धता बारे जान्नुहोस्",
+      
+      // Organization
+      organizationName: "राष्ट्रिय श्रमिक महासंघ",
+      organizationLocation: "नेपाल",
+      organizationFullName: "राष्ट्रिय श्रमिक महासंघ नेपाल",
+      
+      // Announcement
+      announcement1: "राष्ट्र हित!",
+      announcement2: "उद्योग हित!",
+      announcement3: "श्रमिक हित!",
+      
+      // Search and Menu
+      search: "खोज्नुहोस्",
+      menu: "मेनु",
+      close: "बन्द गर्नुहोस्",
+      
+      // Our Story Section
+      ourStory: "हाम्रो कथा",
+      storyParagraph1: "नेपाल, ज्ञान र परम्परामा डुबेको प्राचीन र पवित्र भूमि, शताब्दीयौँदेखि ऋषि–मुनी र साधुहरूको उपदेशद्वारा मार्गदर्शित रहँदै आएको छ। तिनले केवल भौतिक ज्ञान मात्र नभई गहिरा नैतिक मूल्य र आचरणका सिद्धान्तहरू पनि प्रदान गरेका थिए। इतिहासभरि, व्यवस्थित संरचनाहरूले शासक वर्ग र श्रमिकबीचको संवेदनशील सन्तुलनलाई नियमन गर्दै, सामञ्जस्य र प्रगतिका लागि नियम तथा आचारसंहिताहरू स्थापना गरेका छन्।",
+      storyHighlight: "श्रमिकको राष्ट्रियकरण, राष्ट्रको औद्योगिकरण, उद्योगको श्रमिकीकरण",
+      storyParagraph2: "समकालीन नेपालमा हाम्रो संविधानले श्रम ऐन तथा ट्रेड युनियनसम्बन्धी कानुनसँग सुसङ्गत रही श्रमिक अधिकारको संरक्षण र समग्र विकासका लागि प्रावधानहरू सुनिश्चित गरेको छ। श्रमिकहरू राष्ट्रनिर्माणको मेरुदण्ड हुन्; उनीहरूको अटुट समर्पण र योगदानबिनाअघि कुनै पनि देश अगाडि बढ्न सक्दैन। यद्यपि श्रमिक संगठनहरूको विस्तार भए पनि, धेरैजसो राजनीतिक दलसँग गाँसिएका कारण प्रायः दलगत स्वार्थका लागि प्रयोग हुने गरेका छन्। यस्तो दुरुपयोगले ट्रेड युनियन आन्दोलनको सफलतालाई अवरुद्ध गर्दै श्रमिकलाई केवल मतदाता समूहमा सीमित बनाइरहेको छ र उनीहरूलाई आवश्यकीय अधिकार र सुविधा प्राप्त हुन नदिइरहेको छ।",
+      originalName: "राष्ट्रिय कृषि श्रमिक संघ नेपाल",
+      currentName: "राष्ट्रिय श्रमिक महासंघ नेपाल",
+      storyParagraph3: "यस चुनौतीपूर्ण परिवेशमा, <span class=\"key-phrase\">राष्ट्रिय कृषि श्रमिक संघ नेपाल</span>का रूपमा चैत्र ११, २०६८ मा स्थापना भई, बैशाख ११, २०८० मा विकसित हुँदै <span class=\"key-phrase\">राष्ट्रिय श्रमिक महासंघ नेपाल</span>को रूपमा उदित भएको यस संस्थाले, नेपालको सार्वभौमसत्ता, बहुरंगी सांस्कृतिक विविधता, गौरवशाली सम्पदा र राष्ट्रिय पहिचानको संरक्षणसहित श्रमिक वर्गको जीवनस्तर उन्नत गर्न र समग्र राष्ट्रिय विकासमा योगदान पुर्‍याउन स्वतन्त्र आशाको दीपको रूपमा आफूलाई स्थापित गरेको छ। हामी स्वतन्त्र शक्तिका रूपमा उभिँदै, नेपालको सार्वभौमसत्ता, सांस्कृतिक सम्पदा र राष्ट्रिय पहिचानको रक्षा गर्दै श्रमिक वर्गको जीवनस्तर अभिवृद्धि गर्न प्रतिबद्ध छौँ।",
+      industrializingNation: "राष्ट्रलाई औद्योगिकरण गर्ने",
+      storyParagraph4: "<span class=\"key-phrase\">श्रमिकको राष्ट्रियकरण</span> गर्ने, <span class=\"key-phrase\">राष्ट्रको औद्योगिकरण</span> गर्ने र <span class=\"key-phrase\">उद्योगको श्रमिकीकरण</span> गर्ने हाम्रो अटुट प्रतिबद्धता हो। हाम्रा सिद्धान्तहरूले राष्ट्रिय हित, औद्योगिक विकास र श्रमिक अधिकारलाई सर्वोपरि स्थान दिएका छन्। श्रमिक स्वयंको सहभागितामा, श्रमिककै हितका लागि सञ्चालित यस संगठन सरकार, व्यवसाय, राजनीति, विदेशी शक्ति वा व्यक्तिगत प्रभावबाट पूर्णतः स्वतन्त्र रहँदै श्रम पक्षसम्बन्धी वकालतमा वास्तविक स्वायत्तताको प्रतीक बनेको छ।",
+      
+      // Timeline
+      phasesOfStruggle: "संघर्षका चरणहरू",
+      timeline2067: "श्रमिक कल्याणको संरक्षण गर्ने उद्देश्यसहित राष्ट्रिय कृषि श्रमिक संघको रूपमा स्थापना",
+      timeline2077: "उखु किसानका लागि ऐतिहासिक आन्दोलन सञ्चालन, जसबाट चिनी मिल व्यवसायीहरूलाई अर्बौँको बक्यौता तिर्न बाध्य पार्दै, कृषि क्षेत्रमा दशकौँदेखि थिचिएका गुनासोहरू सम्बोधन",
+      timeline2080: "स्वतन्त्र संगठनको रूपमा राष्ट्रिय श्रमिक महासंघ नेपालको स्थापना",
+      timeline2080b: "वरुण बेभरेजस (पेप्सीकोला) र माउण्ड एभरेष्ट ब्रुअरीज जस्ता ठूला उद्योगहरूमा श्रमिक अधिकारको सक्रिय रक्षा, उचित तलब, रोजगारीको सुरक्षा र श्रम–सर्त सुधारका लागि निरन्तर आन्दोलन",
+      timeline2081: "नेपाल कृषि–प्रधान राष्ट्र भएको परिप्रेक्ष्यमा किसान र कृषक श्रमिकले भोगिरहेका चुनौतीहरूलाई औँल्याउँदै प्रमुख जिल्ला अधिकारीमार्फत नेपाल सरकारलाई आठ बुँदे मागपत्र बुझाइ, प्रणालीगत समाधानको आग्रह",
+      timeline2081b: "अव्यवस्थित (अनौपचारिक) क्षेत्रका श्रमिकहरूको जीवनस्तर उकास्न विभिन्न जिल्लामा रोजगारी कार्यक्रम कार्यान्वयन",
+      presentDay: "वर्तमान",
+      presentDayDesc: "श्रम आन्दोलनको नेतृत्व निरन्तर गर्दै, अनौपचारिक क्षेत्रका श्रमिकका लागि जिल्लास्तरीय रोजगारी कार्यक्रम सञ्चालन, सामाजिक सुरक्षा सुनिश्चित, र श्रमिकको समग्र समृद्धिका लागि निरन्तर संघर्षरत",
+      storyCallToAction: "हाम्रो राष्ट्र पुनर्निर्माण गर्न, समृद्धिको वकालता गर्न, र श्रमिक अधिकारहरू र कल्याणलाई अघि बढाउन सबै श्रमिकहरू र मजदुरहरूलाई एकित्रित हुन आह्वान गर्दछौं।",
+      
+      // Organizational Structure
+      orgStructureDesc: "राष्ट्रिय श्रमिक महासंघ नेपाल <span class=\"key-phrase\">११ वटा विशेषज्ञ संघ र २ वटा औद्योगिक इकाइ</span>हरूलाई समेट्ने एक सबल महासंघ हो, जसका प्रादेशिक र जिल्ला समिति नेपालका सबै प्रदेशमा स्थापना भइसकेका छन्। प्रत्येक सम्बद्ध संघले आफ्ना प्रादेशिक तथा जिल्ला समिति सञ्चालन गर्दै आएको छ, जसले देशभरका श्रमिकहरूको जमीनी प्रतिनिधित्व र प्रभावकारी पक्षसमर्थन सुनिश्चित गर्दछ।",
+      
+      // Leadership
+      centralExecutiveCommittee: "केन्द्रीय कार्यकारिणी समिति",
+      centralExecutiveDesc: "केन्द्रिय कार्य समिति राष्ट्रिय श्रमिक महासंघ नेपालभित्र निर्णय गर्ने सर्वोच्च निकायका रूपमा कार्यरत छ। यसमा श्रमिक सशक्तीकरणप्रति अटुट प्रतिबद्धता र दूरदर्शी नेतृत्व गुण भएका अगुवाहरू समावेश छन्, जसले संगठनको अभियानलाई स्पष्ट दिशा र दृढतापूर्वक अघि बढाइरहेका छन्।",
+      president: "अध्यक्ष",
+      vicePresident: "उपाध्यक्ष",
+      treasurer: "कोषाध्यक्ष",
+      generalSecretary: "महासचिव",
+      secretary: "सचिव",
+      headOfPublicRelations: "सार्वजनिक सम्बन्ध प्रमुख",
+      womenChief: "महिला प्रमुख",
+      trainingChief: "तालिम प्रमुख",
+      industryChief: "उद्योग प्रमुख",
+      member: "सदस्य",
+      sangathanSecretary: "संगठन सचिव",
+      officesecretary: "कार्यालय सचिव",
+      
+      // State Level Leadership
+      stateLevelLeadership: "प्रदेशीय स्तरको नेतृत्व",
+      stateLevelDesc: "हाम्रो प्रदेशीय नेतृत्वले नेपालको विविध क्षेत्रहरूमा राष्ट्रिय श्रमिक महासंघ नेपालको भावना व्यक्त गर्दछ, हाम्रा मूल मूल्यहरू र अधिवक्ता प्रयासहरूको स्थानीय कार्यान्वयन सुनिश्चित गर्दछ।",
+      bagmatiProvince: "बाग्मती प्रदेश",
+      madheshProvince: "मधेश प्रदेश",
+      koshiProvince: "कोशी प्रदेश",
+      lumbiniProvince: "लुम्बिनी प्रदेश",
+      coordinator: "समन्वयक",
+      
+      // Unions
+      affiliatedUnions: "हाम्रा सम्बद्ध संघहरू",
+      affiliatedUnionsDesc: "राष्ट्रिय श्रमिक महासङ्घ नेपालसँग ११ वटा विशेषीकृत सङ्घहरू आवद्ध छन्, जसले आ–आफ्ना क्षेत्रका श्रमिक अधिकारका लागि नेतृत्व दिइरहेका छन्। तिनीहरूको उद्देश्य र नेतृत्वबारे जान्नुहोस्:",
+      krishiSanghName: "राष्ट्रिय कृषि श्रमिक संघ नेपाल",
+      krishiSanghDesc: "किसान र कृषक श्रमिकहरूको उचित पारिश्रमिक र दिगो अभ्यासका लागि अग्रसर",
+      naiSanghName: "राष्ट्रिय नाई श्रमिक संघ नेपाल",
+      naiSanghDesc: "नाई र कपाल काट्ने व्यवसायीहरूको व्यावसायिक अधिकार र विकासको पक्षमा आवाज",
+      rangroganSanghName: "राष्ट्रिय रंगरोगन श्रमिक संघ नेपाल",
+      rangroganSanghDesc: "रङ्गरोगन गर्ने श्रमिकहरूको सुरक्षा र उचित पारिश्रमिकमा केन्द्रित",
+      kasthaSanghName: "राष्ट्रिय काष्ठ श्रमिक संघ नेपाल",
+      kasthaSanghDesc: "सुतार र काठका कामदारहरूको सीप विकास र अधिकार संरक्षणमा सहायक",
+      plumberSanghName: "राष्ट्रिय प्लम्बर श्रमिक संघ नेपाल",
+      plumberSanghDesc: "प्लम्बरहरूको उचित पारिश्रमिक र सुरक्षित कार्य वातावरण सुनिश्चित गर्ने",
+      gharGrihstiSanghName: "राष्ट्रिय घर गृहस्थी श्रमिक संघ नेपाल",
+      gharGrihstiSanghDesc: "घरेलु श्रमिकहरूको गरिमा र अधिकारहरूको प्रतिष्ठापनामा केन्द्रित",
+      nirmanSanghName: "राष्ट्रिय निर्माण श्रमिक संघ नेपाल",
+      nirmanSanghDesc: "निर्माण श्रमिकहरूको सुरक्षा र क्षतिपूर्तिको पक्षमा आवाज",
+      autoRickshawSanghName: "राष्ट्रिय अटो रिक्सा चालक श्रमिक संघ नेपाल",
+      autoRickshawSanghDesc: "अटो रिक्सा चालकहरूको उचित भाडा र कार्य–सर्तका लागि संघर्षरत",
+      kabadiSanghName: "राष्ट्रिय कबाडी श्रमिक संघ नेपाल",
+      kabadiSanghDesc: "फोहोरा संकलनकर्ताहरू र पुन: प्रयोग गर्नेहरूको लागि गरिमापूर्ण कामको प्रवर्द्धन गर्ने",
+      ittaBhattaSanghName: "राष्ट्रिय इट्टा भट्टा श्रमिक संघ नेपाल",
+      ittaBhattaSanghDesc: "इट्टा भट्टा श्रमिकहरूको न्यायपूर्ण कार्यप्रणाली र अधिकारका लागि अग्रसर",
+      shikshakSanghName: "नेपाल राष्ट्रिय शिक्षक संघ",
+      shikshakSanghDesc: "शिक्षकहरूको सशक्तिकरणमार्फत गुणस्तरीय शिक्षा र उचित कार्य–सर्तको प्रवर्द्धनका लागि अग्रसर",
+      
+      // Industrial Units
+      industrialUnits: "औद्योगिक इकाइहरू",
+      industrialUnitsDesc: "<span class=\"key-phrase\">राष्ट्रिय औद्योगिक श्रमिक संघ नेपाल</span> अन्तर्गत, हाम्रा दुई औद्योगिक इकाइहरूले प्रमुख क्षेत्रहरूको प्रतिनिधित्व गर्दछन्, उत्पादनमा श्रमिक अधिकारहरूलाई अगाडि बढाउँदै",
+      audhogikSanghName: "राष्ट्रिय औद्योगिक श्रमिक संघ नेपाल",
+      mountEverestBrewery: "माउन्ट एभरेस्ट ब्रुअरी",
+      mountEverestBreweryDesc: "भरतपुर, चितवन – पेय पदार्थ उद्योगका श्रमिकहरूको पक्षमा अग्रसर",
+      varunBeverage: "वरुण बेभरेज प्रा. लि.",
+      varunBeverageDesc: "रामग्राम, नवलपरासी – बोतलिङ्ग क्षेत्रका श्रमिक अधिकारका लागि अग्रसर",
+      
+      // Buttons and Modals
+      viewDetails: "विवरण हेर्नुहोस्",
+      unionLeadership: "संघ नेतृत्व",
+      
+      // Footer
+      quickLinks: "द्रुत लिङ्कहरू",
+      aboutUs: "हाम्रो बारेमा",
+      latestUpdates: "नवीनतम अपडेटहरू",
+      ourEvents: "हाम्रा कार्यक्रमहरू",
+      mediaCoverages: "मिडिया कभरेजहरू",
+      contactUs: "सम्पर्क गर्नुहोस्",
+      footerDescription: "एकता, वकालत र कार्यबाट २०८० बि.स. देखि श्रमिकहरूलाई सशक्त बनाउँदै",
+      copyright: "© {year} सर्वाधिकार राष्ट्रिय श्रमिक महासंघमा सुरक्षित",
+      
+      // Names
+      HiralalYadav: "श्री हीरालाल यादव",
+      LaxmiBhatta: "श्री लक्ष्मी भट्ट",
+      GovindaPaudel: "श्री गोविन्द पौडेल",
+      RadhaKumariKayastha: "श्रीमती राधा कुमारी कायस्थ",
+      SitaramAgrawal: "श्री सीताराम अग्रवाल",
+      GopalYadav: "श्री गोपाल यादव",
+      SantoshKumarKarn: "डा. सन्तोष कुमार कर्ण",
+      AjayPrasadKurmi: "श्री अजय प्रसाद कुर्मी",
+      ChandraMohanChaudhary: "श्री चन्द्रमोहन चौधरी",
+      MandaKumariKarn: "श्रीमती मन्दा कुमारी कर्ण",
+      JanakPrasadKurmi: "श्री जनक प्रसाद कुर्मी",
+      RajendraPrasadAcharya: "श्री राजेन्द्र प्रसाद आचार्य",
+      NarayanPrasadPaudel: "श्री नारायण प्रसाद पौडेल",
+      JogendraPaswan: "श्री जोगेन्द्र पासवान",
+      SunitaKumariYadav: "श्रीमती सुनिता कुमारी यादव",
+      DharmavirArya: "श्री धर्मवीर आर्य",
+      GudduShahBaniya: "श्री गुड्डू शाह बनिया",
+      NiwasYadav: "श्री निवास यादव",
+      DipendraThakur: "श्री दीपेन्द्र ठाकुर",
+      SanjayKumarLal: "श्री संजय कुमार लाल",
+      KBTamang: "श्री के. बी. तामाङ",
+      RahulKumarJha: "श्री राहुल कुमार झा",
+      ChandrashekharJoshi: "श्री चन्द्रशेखर जोशी",
+      MohanKhatri: "श्री मोहन खत्री",    
+      MilanTamang: "श्री मिलन तामाङ",
+      ChandrarYadav: "श्री चन्द्रार यादव",
+      GaneshRajbanshi: "श्री गणेश राजवंशी",
+      UpendraNayak: "श्री उपेन्द्र नायक",
+      AnilAgrahari: "श्री अनिल अग्रहरी"
+    }
   };
   
-  return monthMap[monthName] || monthName;
-}
-// Function to update the language
-function updateLanguage(lang) {
-  // Save the language preference to localStorage
-  localStorage.setItem('preferredLanguage', lang);
-  
-  // Update the language toggle buttons
-  const langEn = document.getElementById('lang-en');
-  const langNe = document.getElementById('lang-ne');
-  const mobileLangEn = document.getElementById('mobile-lang-en');
-  const mobileLangNe = document.getElementById('mobile-lang-ne');
-  
-  if (lang === 'en') {
-    // Desktop language toggle
-    if (langEn && langNe) {
-      langEn.classList.add('bg-white', 'text-orange');
-      langEn.classList.remove('text-white');
-      langNe.classList.remove('bg-white', 'text-orange');
-      langNe.classList.add('text-white');
+  // Function to convert Arabic numerals to Nepali numerals
+  function convertToNepaliNumerals(text) {
+    const arabicNumerals = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+    const nepaliNumerals = ['०', '१', '२', '३', '४', '५', '६', '७', '८', '९'];
+    
+    let convertedText = text;
+    for (let i = 0; i < arabicNumerals.length; i++) {
+      const regex = new RegExp(arabicNumerals[i], 'g');
+      convertedText = convertedText.replace(regex, nepaliNumerals[i]);
     }
     
-    // Mobile language toggle
-    if (mobileLangEn && mobileLangNe) {
-      mobileLangEn.classList.add('bg-white', 'text-orange');
-      mobileLangEn.classList.remove('text-white');
-      mobileLangNe.classList.remove('bg-white', 'text-orange');
-      mobileLangNe.classList.add('text-white');
-    }
-  } else {
-    // Desktop language toggle
-    if (langEn && langNe) {
-      langNe.classList.add('bg-white', 'text-orange');
-      langNe.classList.remove('text-white');
-      langEn.classList.remove('bg-white', 'text-orange');
-      langEn.classList.add('text-white');
-    }
-    
-    // Mobile language toggle
-    if (mobileLangEn && mobileLangNe) {
-      mobileLangNe.classList.add('bg-white', 'text-orange');
-      mobileLangNe.classList.remove('text-white');
-      mobileLangEn.classList.remove('bg-white', 'text-orange');
-      mobileLangEn.classList.add('text-white');
-    }
+    return convertedText;
   }
   
-  // Update the content based on the selected language
-  const translation = translations[lang];
+  // Function to convert Nepali numerals to Arabic numerals
+  function convertToArabicNumerals(text) {
+    const arabicNumerals = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+    const nepaliNumerals = ['०', '१', '२', '३', '४', '५', '६', '७', '८', '९'];
+    
+    let convertedText = text;
+    for (let i = 0; i < nepaliNumerals.length; i++) {
+      const regex = new RegExp(nepaliNumerals[i], 'g');
+      convertedText = convertedText.replace(regex, arabicNumerals[i]);
+    }
+    
+    return convertedText;
+  }
   
-  // Update all elements with data-i18n attribute
-  document.querySelectorAll('[data-i18n]').forEach(element => {
-    const key = element.getAttribute('data-i18n');
-    if (translation[key]) {
-      // Special handling for copyright with year placeholder
-      if (key === 'copyright') {
-        const currentYear = new Date().getFullYear();
-        element.innerHTML = translation[key].replace('{year}', currentYear);
-      } else {
-        // Check if the translation string contains HTML tags
-        if (translation[key].includes('<')) {
-          element.innerHTML = translation[key];
+  // Function to convert month names to Nepali
+  function convertMonthToNepali(monthName) {
+    const monthMap = {
+      'Baishakh': 'बैशाख',
+      'Jestha': 'जेष्ठ',
+      'Asar': 'आषाढ',
+      'Shrawan': 'श्रावण',
+      'Bhadra': 'भाद्र',
+      'Ashwin': 'अश्विन',
+      'Kartik': 'कार्तिक',
+      'Mangsir': 'मंसिर',
+      'Poush': 'पौष',
+      'Magh': 'माघ',
+      'Falgun': 'फाल्गुन',
+      'Chaitra': 'चैत्र',
+      'Asoj': 'असोज'
+    };
+    
+    return monthMap[monthName] || monthName;
+  }
+  
+  // Function to update the language
+  function updateLanguage(lang) {
+    // Save the language preference to localStorage
+    localStorage.setItem('preferredLanguage', lang);
+    
+    // Update the language toggle buttons
+    const langEn = document.getElementById('lang-en');
+    const langNe = document.getElementById('lang-ne');
+    const mobileLangEn = document.getElementById('mobile-lang-en');
+    const mobileLangNe = document.getElementById('mobile-lang-ne');
+    
+    if (lang === 'en') {
+      // Desktop language toggle
+      if (langEn && langNe) {
+        langEn.classList.add('bg-white', 'text-orange');
+        langEn.classList.remove('text-white');
+        langNe.classList.remove('bg-white', 'text-orange');
+        langNe.classList.add('text-white');
+      }
+      
+      // Mobile language toggle
+      if (mobileLangEn && mobileLangNe) {
+        mobileLangEn.classList.add('bg-white', 'text-orange');
+        mobileLangEn.classList.remove('text-white');
+        mobileLangNe.classList.remove('bg-white', 'text-orange');
+        mobileLangNe.classList.add('text-white');
+      }
+    } else {
+      // Desktop language toggle
+      if (langEn && langNe) {
+        langNe.classList.add('bg-white', 'text-orange');
+        langNe.classList.remove('text-white');
+        langEn.classList.remove('bg-white', 'text-orange');
+        langEn.classList.add('text-white');
+      }
+      
+      // Mobile language toggle
+      if (mobileLangEn && mobileLangNe) {
+        mobileLangNe.classList.add('bg-white', 'text-orange');
+        mobileLangNe.classList.remove('text-white');
+        mobileLangEn.classList.remove('bg-white', 'text-orange');
+        mobileLangEn.classList.add('text-white');
+      }
+    }
+    
+    // Update the content based on the selected language
+    const translation = translations[lang];
+    
+    // Update all elements with data-i18n attribute
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+      const key = element.getAttribute('data-i18n');
+      if (translation[key]) {
+        // Special handling for copyright with year placeholder
+        if (key === 'copyright') {
+          const currentYear = new Date().getFullYear();
+          element.innerHTML = translation[key].replace('{year}', currentYear);
         } else {
-          element.textContent = translation[key];
+          // Check if the translation string contains HTML tags
+          if (translation[key].includes('<')) {
+            element.innerHTML = translation[key];
+          } else {
+            element.textContent = translation[key];
+          }
         }
       }
-    }
-  });
-  
-  // Update elements with data-i18n-placeholder attribute
-  document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
-    const key = element.getAttribute('data-i18n-placeholder');
-    if (translation[key]) {
-      element.placeholder = translation[key];
-    }
-  });
-  
-  // Update elements with data-i18n-aria-label attribute
-  document.querySelectorAll('[data-i18n-aria-label]').forEach(element => {
-    const key = element.getAttribute('data-i18n-aria-label');
-    if (translation[key]) {
-      element.setAttribute('aria-label', translation[key]);
-    }
-  });
-  
-  // Update names with data-i18n-name attribute
-  document.querySelectorAll('[data-i18n-name]').forEach(element => {
-    const key = element.getAttribute('data-i18n-name');
-    if (translation[key]) {
-      element.textContent = translation[key];
-    }
-  });
-  
-  // Update organizational structure images based on language
-  document.querySelectorAll('.structure-image img').forEach(img => {
-    const nepaliSrc = img.getAttribute('data-src-ne');
-    if (lang === 'ne' && nepaliSrc) {
-      // Store the original src if not already stored
-      if (!img.getAttribute('data-src-en')) {
-        img.setAttribute('data-src-en', img.src);
-      }
-      img.src = nepaliSrc;
-    } else if (lang === 'en') {
-      // Restore the original English image
-      const englishSrc = img.getAttribute('data-src-en');
-      if (englishSrc) {
-        img.src = englishSrc;
-      }
-    }
-  });
-  
-  // Update dates
-  document.querySelectorAll('.timeline-title').forEach(dateElement => {
-    const originalDate = dateElement.getAttribute('data-date');
-    const nepaliDate = dateElement.getAttribute('data-date-ne');
+    });
     
-    if (lang === 'ne' && nepaliDate) {
-      dateElement.textContent = nepaliDate;
-    } else if (lang === 'en' && originalDate) {
-      dateElement.textContent = originalDate;
-    }
-  });
-  
-  // Update phone numbers with Nepali numerals
-  document.querySelectorAll('[data-phone]').forEach(phoneElement => {
-    const originalPhone = phoneElement.getAttribute('data-phone');
-    if (originalPhone) {
-      if (lang === 'ne') {
-        phoneElement.textContent = convertToNepaliNumerals(originalPhone);
-      } else {
-        phoneElement.textContent = originalPhone;
+    // Update elements with data-i18n-placeholder attribute
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
+      const key = element.getAttribute('data-i18n-placeholder');
+      if (translation[key]) {
+        element.placeholder = translation[key];
       }
-    }
-  });
-  
-  // Update address with Nepali numerals
-  document.querySelectorAll('[data-address]').forEach(addressElement => {
-    const originalAddress = addressElement.getAttribute('data-address');
-    if (originalAddress) {
-      if (lang === 'ne') {
-        // Convert address to Nepali
-        let nepaliAddress = originalAddress;
-        // Convert place names
-        nepaliAddress = nepaliAddress.replace(/Keshavdham/g, 'केशवधाम');
-        nepaliAddress = nepaliAddress.replace(/Guheswari Marg/g, 'गुह्येश्वरी मार्ग');
-        nepaliAddress = nepaliAddress.replace(/Kathmandu/g, 'काठमाडौं');
-        nepaliAddress = nepaliAddress.replace(/Nepal/g, 'नेपाल');
-        
-        // Convert numerals to Nepali
-        nepaliAddress = convertToNepaliNumerals(nepaliAddress);
-        
-        addressElement.textContent = nepaliAddress;
-      } else {
-        addressElement.textContent = originalAddress;
+    });
+    
+    // Update elements with data-i18n-aria-label attribute
+    document.querySelectorAll('[data-i18n-aria-label]').forEach(element => {
+      const key = element.getAttribute('data-i18n-aria-label');
+      if (translation[key]) {
+        element.setAttribute('aria-label', translation[key]);
       }
+    });
+    
+    // Update names with data-i18n-name attribute
+    document.querySelectorAll('[data-i18n-name]').forEach(element => {
+      const key = element.getAttribute('data-i18n-name');
+      if (translation[key]) {
+        element.textContent = translation[key];
+      }
+    });
+    
+    // Update organizational structure images based on language
+    document.querySelectorAll('.structure-image img').forEach(img => {
+      const nepaliSrc = img.getAttribute('data-src-ne');
+      if (lang === 'ne' && nepaliSrc) {
+        // Store the original src if not already stored
+        if (!img.getAttribute('data-src-en')) {
+          img.setAttribute('data-src-en', img.src);
+        }
+        img.src = nepaliSrc;
+      } else if (lang === 'en') {
+        // Restore the original English image
+        const englishSrc = img.getAttribute('data-src-en');
+        if (englishSrc) {
+          img.src = englishSrc;
+        }
+      }
+    });
+    
+    // Update dates
+    document.querySelectorAll('.timeline-title').forEach(dateElement => {
+      const originalDate = dateElement.getAttribute('data-date');
+      const nepaliDate = dateElement.getAttribute('data-date-ne');
+      
+      if (lang === 'ne' && nepaliDate) {
+        dateElement.textContent = nepaliDate;
+      } else if (lang === 'en' && originalDate) {
+        dateElement.textContent = originalDate;
+      }
+    });
+    
+    // Update phone numbers with Nepali numerals
+    document.querySelectorAll('[data-phone]').forEach(phoneElement => {
+      const originalPhone = phoneElement.getAttribute('data-phone');
+      if (originalPhone) {
+        if (lang === 'ne') {
+          phoneElement.textContent = convertToNepaliNumerals(originalPhone);
+        } else {
+          phoneElement.textContent = originalPhone;
+        }
+      }
+    });
+    
+    // Update address with Nepali numerals
+    document.querySelectorAll('[data-address]').forEach(addressElement => {
+      const originalAddress = addressElement.getAttribute('data-address');
+      if (originalAddress) {
+        if (lang === 'ne') {
+          // Convert address to Nepali
+          let nepaliAddress = originalAddress;
+          // Convert place names
+          nepaliAddress = nepaliAddress.replace(/Keshavdham/g, 'केशवधाम');
+          nepaliAddress = nepaliAddress.replace(/Guheswari Marg/g, 'गुह्येश्वरी मार्ग');
+          nepaliAddress = nepaliAddress.replace(/Kathmandu/g, 'काठमाडौं');
+          nepaliAddress = nepaliAddress.replace(/Nepal/g, 'नेपाल');
+          
+          // Convert numerals to Nepali
+          nepaliAddress = convertToNepaliNumerals(nepaliAddress);
+          
+          addressElement.textContent = nepaliAddress;
+        } else {
+          addressElement.textContent = originalAddress;
+        }
+      }
+    });
+    
+    // Update HTML lang attribute
+    document.documentElement.lang = lang;
+    
+    // Add or remove nepali-font class to body for font switching
+    if (lang === 'ne') {
+      document.body.classList.add('nepali-font');
+    } else {
+      document.body.classList.remove('nepali-font');
     }
-  });
-  
-  // Update HTML lang attribute
-  document.documentElement.lang = lang;
-  
-  // Add or remove nepali-font class to body for font switching
-  if (lang === 'ne') {
-    document.body.classList.add('nepali-font');
-  } else {
-    document.body.classList.remove('nepali-font');
+    
+    // Update page title and meta tags for SEO
+    if (lang === 'ne') {
+      document.title = "हाम्रो बारेमा - राष्ट्रिय श्रमिक महासंघ नेपाल";
+      document.querySelector('meta[name="description"]').setAttribute('content', 'राष्ट्रिय श्रमिक महासंघ नेपालको इतिहास, अभियान, नेतृत्व, र संगठनात्मक संरचनाको बारे जान्नुहोस्। नेपाल भरि श्रमिकहरूलाई सशक्त बनाउने हाम्रो यात्रा अन्वेषण गर्नुहोस्।');
+      document.querySelector('meta[property="og:title"]').setAttribute('content', 'हाम्रो बारेमा - राष्ट्रिय श्रमिक महासंघ नेपाल');
+      document.querySelector('meta[property="og:description"]').setAttribute('content', 'राष्ट्रिय श्रमिक महासंघ नेपालको इतिहास, अभियान, नेतृत्व, र संगठनात्मक संरचनाको बारे जान्नुहोस्।');
+      document.querySelector('meta[property="twitter:title"]').setAttribute('content', 'हाम्रो बारेमा - राष्ट्रिय श्रमिक महासंघ नेपाल');
+      document.querySelector('meta[property="twitter:description"]').setAttribute('content', 'राष्ट्रिय श्रमिक महासंघ नेपालको इतिहास, अभियान, नेतृत्व, र संगठनात्मक संरचनाको बारे जान्नुहोस्।');
+    } else {
+      document.title = "About Us - Rastriya Shramik Mahasangh Nepal";
+      document.querySelector('meta[name="description"]').setAttribute('content', 'Learn about Rastriya Shramik Mahasangh Nepal\'s history, mission, leadership, and organizational structure. Discover our journey in empowering workers across Nepal.');
+      document.querySelector('meta[property="og:title"]').setAttribute('content', 'About Us - Rastriya Shramik Mahasangh Nepal');
+      document.querySelector('meta[property="og:description"]').setAttribute('content', 'Learn about Rastriya Shramik Mahasangh Nepal\'s history, mission, leadership, and organizational structure.');
+      document.querySelector('meta[property="twitter:title"]').setAttribute('content', 'About Us - Rastriya Shramik Mahasangh Nepal');
+      document.querySelector('meta[property="twitter:description"]').setAttribute('content', 'Learn about Rastriya Shramik Mahasangh Nepal\'s history, mission, leadership, and organizational structure.');
+    }
   }
   
-  // Update page title and meta tags for SEO
-  if (lang === 'ne') {
-    document.title = "हाम्रो बारेमा - राष्ट्रिय श्रमिक महासंघ नेपाल";
-    document.querySelector('meta[name="description"]').setAttribute('content', 'राष्ट्रिय श्रमिक महासंघ नेपालको इतिहास, अभियान, नेतृत्व, र संगठनात्मक संरचनाको बारेमा जान्नुहोस्। नेपाल भरि श्रमिकहरूलाई सशक्त बनाउने हाम्रो यात्रा अन्वेषण गर्नुहोस्।');
-    document.querySelector('meta[property="og:title"]').setAttribute('content', 'हाम्रो बारेमा - राष्ट्रिय श्रमिक महासंघ नेपाल');
-    document.querySelector('meta[property="og:description"]').setAttribute('content', 'राष्ट्रिय श्रमिक महासंघ नेपालको इतिहास, अभियान, नेतृत्व, र संगठनात्मक संरचनाको बारेमा जान्नुहोस्।');
-    document.querySelector('meta[property="twitter:title"]').setAttribute('content', 'हाम्रो बारेमा - राष्ट्रिय श्रमिक महासंघ नेपाल');
-    document.querySelector('meta[property="twitter:description"]').setAttribute('content', 'राष्ट्रिय श्रमिक महासंघ नेपालको इतिहास, अभियान, नेतृत्व, र संगठनात्मक संरचनाको बारेमा जान्नुहोस्।');
-  } else {
-    document.title = "About Us - Rastriya Shramik Mahasangh Nepal";
-    document.querySelector('meta[name="description"]').setAttribute('content', 'Learn about Rastriya Shramik Mahasangh Nepal\'s history, mission, leadership, and organizational structure. Discover our journey in empowering workers across Nepal.');
-    document.querySelector('meta[property="og:title"]').setAttribute('content', 'About Us - Rastriya Shramik Mahasangh Nepal');
-    document.querySelector('meta[property="og:description"]').setAttribute('content', 'Learn about Rastriya Shramik Mahasangh Nepal\'s history, mission, leadership, and organizational structure.');
-    document.querySelector('meta[property="twitter:title"]').setAttribute('content', 'About Us - Rastriya Shramik Mahasangh Nepal');
-    document.querySelector('meta[property="twitter:description"]').setAttribute('content', 'Learn about Rastriya Shramik Mahasangh Nepal\'s history, mission, leadership, and organizational structure.');
-  }
-}
-// Check for saved language preference or default to English
-const savedLanguage = localStorage.getItem('preferredLanguage') || 'en';
-// Initialize AOS
-AOS.init({
-  duration: 1000,
-  once: true,
-  disable: 'mobile'
-});
-document.addEventListener('DOMContentLoaded', function() {
+  // Check for saved language preference or default to English
+  const savedLanguage = localStorage.getItem('preferredLanguage') || 'en';
+  
+  // Initialize AOS
+  AOS.init({
+    duration: 1000,
+    once: true,
+    disable: 'mobile'
+  });
+  
   // Set the initial language
   updateLanguage(savedLanguage);
   
@@ -2869,7 +2898,6 @@ document.addEventListener('DOMContentLoaded', function() {
   const closeMobileMenu = document.getElementById('close-mobile-menu');
   const mobileMenu = document.getElementById('mobile-menu');
   const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
-
   if (mobileMenuButton && closeMobileMenu && mobileMenu && mobileMenuOverlay) {
     mobileMenuButton.addEventListener('click', () => {
       mobileMenu.classList.toggle('active');
@@ -2915,19 +2943,23 @@ document.addEventListener('DOMContentLoaded', function() {
   const mobileSearchToggle = document.getElementById('mobile-search-toggle');
   const searchBar = document.getElementById('search-bar');
   
-  searchToggle.addEventListener('click', () => {
-    searchBar.classList.toggle('active');
-    if (searchBar.classList.contains('active')) {
-      searchBar.querySelector('input').focus();
-    }
-  });
+  if (searchToggle) {
+    searchToggle.addEventListener('click', () => {
+      searchBar.classList.toggle('active');
+      if (searchBar.classList.contains('active')) {
+        searchBar.querySelector('input').focus();
+      }
+    });
+  }
   
-  mobileSearchToggle.addEventListener('click', () => {
-    searchBar.classList.toggle('active');
-    if (searchBar.classList.contains('active')) {
-      searchBar.querySelector('input').focus();
-    }
-  });
+  if (mobileSearchToggle) {
+    mobileSearchToggle.addEventListener('click', () => {
+      searchBar.classList.toggle('active');
+      if (searchBar.classList.contains('active')) {
+        searchBar.querySelector('input').focus();
+      }
+    });
+  }
   
   // Touch device dropdown handling
   const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
@@ -2996,7 +3028,6 @@ document.addEventListener('DOMContentLoaded', function() {
   const unionLeadersGrid = document.getElementById('unionLeadersGrid');
   const closeUnionModal = document.getElementById('closeUnionModal');
   const closeUnionModalBtn = document.getElementById('closeUnionModalBtn');
-  const viewUnionDetailsBtns = document.querySelectorAll('.view-union-details');
   
   // Union data (updated descriptions for eloquence)
   const unionData = {
@@ -3064,7 +3095,7 @@ document.addEventListener('DOMContentLoaded', function() {
       },
       description: {
         en: "Committed to uplifting the profession of barbers and hairdressers by advocating for fair wages, secure livelihoods, and social recognition, while promoting advanced skill development, ethical practices, and safe, dignified workplaces. Through unity and empowerment, we strive to ensure that every professional in this field can work with pride and contribute to the cultural and economic fabric of Nepal.",
-        ne: "नाई तथा कपाल सजाउने व्यवसायको उन्नतिको लागि हामी उचित पारिश्रमिक, सुरक्षित जीविकोपार्जन र सामाजिक सम्मान सुनिश्चित गर्दै, आधुनिक सीप विकास, नैतिक अभ्यास, सुरक्षित र गरिमामय कार्यस्थल प्रवर्द्धनमा प्रतिबद्ध छौँ। एकता र सशक्तिकरणमार्फत, यस क्षेत्रमा संलग्न हरेक व्यावसायिकले गर्वका साथ काम गर्न सकून् र नेपालको सांस्कृतिक तथा आर्थिक विकासमा योगदान पुर्‍याउन सकून् भन्ने हाम्रो उद्देश्य हो।"
+        ne: "नाई तथा कपाल काट्ने व्यवसायको उन्नतिको लागि हामी उचित पारिश्रमिक, सुरक्षित जीविकोपार्जन र सामाजिक सम्मान सुनिश्चित गर्दै आवाज उठाइरहेका छौँ। आधुनिक सीप विकास, नैतिक अभ्यास, सुरक्षित र गरिमामय कार्यस्थल प्रवर्द्धनमा प्रतिबद्ध छौँ। एकता र सशक्तिकरणमार्फत, यस क्षेत्रमा संलग्न हरेक व्यावसायिकले गर्वका साथ काम गर्न सकून् र नेपालको सांस्कृतिक तथा आर्थिक विकासमा योगदान पुर्‍याउन सक्ने हाम्रो उद्देश्य हो।"
       },
       leaders: [
         { 
@@ -3075,14 +3106,14 @@ document.addEventListener('DOMContentLoaded', function() {
         { 
           name: { en: "Mr. Dipendra Thakur", ne: "श्री दीपेन्द्र ठाकुर" }, 
           designation: { en: "Secretary", ne: "सचिव" }, 
-          image: "About/Members/man.png" 
+          image: "About/Members/Unions/Nai Shramik Sangh/Mem_1.png" 
         }
       ]
     },
-    rangrohan: {
+    rangrogan: {
       title: {
-        en: "Rastriya Rangrohan Shramik Sangh Nepal",
-        ne: "राष्ट्रिय रंगरोहन श्रमिक संघ नेपाल"
+        en: "Rastriya Rangrogan Shramik Sangh Nepal",
+        ne: "राष्ट्रिय रंगरोगन श्रमिक संघ नेपाल"
       },
       description: {
         en: "Dedicated to advancing the profession of painters and decorators by advocating for fair labor rights, improved safety standards, and professional recognition. We work to enhance skills through training, promote the use of quality materials and sustainable techniques, and ensure members have access to social security and dignified livelihoods. Through solidarity and collective action, we aim to empower every painter to work with dignity, achieve economic stability, and play a vital role in Nepal's growing construction and design sector.",
@@ -3097,7 +3128,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { 
           name: { en: "Mr. Chandra Mohan Chaudhary", ne: "श्री चन्द्रमोहन चौधरी" }, 
           designation: { en: "Secretary", ne: "सचिव" }, 
-          image: "About/Members/man.png" 
+          image: "About/Members/Unions/RangRogan/Mem_1.png" 
         }
       ]
     },
@@ -3108,7 +3139,7 @@ document.addEventListener('DOMContentLoaded', function() {
       },
       description: {
         en: "Committed to empowering carpenters, woodworkers, and furniture makers by championing fair wages, safe working conditions, and social recognition for their craft. We work to preserve traditional woodworking skills while embracing modern tools and sustainable practices, ensuring that members can compete in evolving markets. Through training, advocacy, and unity, we aim to create a future where every Kastha Shramik can work with dignity, achieve economic stability, and contribute to the cultural and economic growth of Nepal's woodworking and furniture industry.",
-        ne: "सुतार, काठकर्मी, र फर्निचर निर्माताहरूलाई उनीहरूको सीपका लागि उचित पारिश्रमिक, सुरक्षित कार्य वातावरण, र सामाजिक सम्मान सुनिश्चित गर्दै सशक्त बनाउने हाम्रो प्रतिबद्धता छ। हामी परम्परागत काष्ठकला सीप संरक्षण गर्दै आधुनिक उपकरण र दिगो अभ्यास अपनाउने काममा लागिपर्छौँ, जसले सदस्यहरूलाई विकसित हुँदै गएको बजारमा प्रतिस्पर्धा गर्न सक्षम बनाउँछ। प्रशिक्षण, वकालत, र एकताको माध्यमबाट, प्रत्येक काष्ठ श्रमिकले गरिमासाथ काम गर्न, आर्थिक स्थायित्व हासिल गर्न, र नेपालको काष्ठ र फर्निचर उद्योगको सांस्कृतिक तथा आर्थिक विकासमा योगदान पुर्‍याउन सक्ने भविष्य सिर्जना गर्ने हाम्रो उद्देश्य हो।"
+        ne: "सुतार, काठकर्मी, र फर्निचर निर्माताहरूलाई उनीहरूको सीपका लागि उचित पारिश्रमिक, सुरक्षित कार्य वातावरण, र सामाजिक सम्मान सुनिश्चित गर्दै सशक्त बनाउने हाम्रो प्रतिबद्धता छौँ। हामी परम्परागत काष्ठकला सीप संरक्षण गर्दै आधुनिक उपकरण र दिगो अभ्यास अपनाउने काममा लागिपर्छौँ, जसले सदस्यहरूलाई विकसित हुँदै गएको बजारमा प्रतिस्पर्धा गर्न सक्षम बनाउँछ। प्रशिक्षण, वकालत, र एकताको माध्यमबाट, प्रत्येक काष्ठ श्रमिकले गरिमासाथ काम गर्न, आर्थिक स्थायित्व हासिल गर्न, र नेपालको काष्ठ र फर्निचर उद्योगको सांस्कृतिक तथा आर्थिक विकासमा योगदान पुर्‍याउन सक्ने भविष्य सिर्जना गर्ने हाम्रो उद्देश्य हो।"
       },
       leaders: [
         { 
@@ -3176,14 +3207,14 @@ document.addEventListener('DOMContentLoaded', function() {
           image: "About/Members/Unions/Ghar Grihasti Sangh/Mem_1.jpeg" 
         },
         { 
-          name: { en: "Smt. Manda Kumari Karn", ne: "श्रीमती मण्डा कुमारी कर्ण" }, 
+          name: { en: "Smt. Manda Kumari Karn", ne: "श्रीमती मन्दा कुमारी कर्ण" }, 
           designation: { en: "Deputy Secretary", ne: "उप सचिव" }, 
-          image: "About/Members/woman.png" 
+          image: "About/Members/Unions/Ghar Grihasti Sangh/Mem_4.png" 
         },
         { 
           name: { en: "Smt. Sunita Devi Yadav", ne: "श्रीमती सुनिता देवी यादव" }, 
           designation: { en: "Member", ne: "सदस्य" }, 
-          image: "About/Members/woman.png" 
+          image: "About/Members/Unions/Ghar Grihasti Sangh/Mem_5.png" 
         },
         { 
           name: { en: "Smt. Ruma Kumari Dutt", ne: "श्रीमती रूमा कुमारी दत्त" }, 
@@ -3242,7 +3273,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { 
           name: { en: "Mr. Jitendra Yadav", ne: "श्री जितेन्द्र यादव" }, 
           designation: { en: "Secretary", ne: "सचिव" }, 
-          image: "About/Members/man.png" 
+          image: "About/Members/Unions/Auto Rickshaw/Mem_1.png" 
         }
       ]
     },
@@ -3286,7 +3317,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { 
           name: { en: "Mr. Narayan Prasad Paudel", ne: "श्री नारायण प्रसाद पौडेल" }, 
           designation: { en: "Secretary", ne: "सचिव" }, 
-          image: "About/Members/man.png" 
+          image: "About/Members/Unions/Ita Vatta Sangh/Mem_1.png" 
         }
       ]
     },
@@ -3316,7 +3347,7 @@ document.addEventListener('DOMContentLoaded', function() {
           image: "About/Members/woman.png" 
         },
         { 
-          name: { en: "Mr. Ujjwal Prashant", ne: "श्री उज्वल प्रशान्त" }, 
+          name: { en: "Mr. Ujjwal Prashant", ne: "श्री उज्जवल प्रशान्त" }, 
           designation: { en: "General Secretary", ne: "महासचिव" }, 
           image: "About/Members/Unions/Sikshak sangh/Mem_2.png" 
         },
@@ -3345,57 +3376,93 @@ document.addEventListener('DOMContentLoaded', function() {
   };
   
   // Open union modal
-  viewUnionDetailsBtns.forEach(button => {
-    button.addEventListener('click', function() {
-      const unionKey = this.getAttribute('data-union');
-      const union = unionData[unionKey];
-      const currentLang = localStorage.getItem('preferredLanguage') || 'en';
+  function setupUnionModalListeners() {
+    // Use event delegation to handle dynamically loaded content
+    document.addEventListener('click', function(e) {
+      // Check if the clicked element is a union details button or its child
+      const unionButton = e.target.closest('.view-union-details');
+      const industrialButton = e.target.closest('.view-industrial-details');
       
-      if (union) {
-        unionModalTitle.textContent = union.title[currentLang];
-        unionModalDescription.textContent = union.description[currentLang];
-        unionLeadersGrid.innerHTML = '';
+      if (unionButton) {
+        const unionKey = unionButton.getAttribute('data-union');
+        const union = unionData[unionKey];
+        const currentLang = localStorage.getItem('preferredLanguage') || 'en';
         
-        // Update modal title
-        const modalTitle = document.querySelector('#unionModalLeadership h3');
-        if (modalTitle) {
-          modalTitle.textContent = translations[currentLang].unionLeadership;
+        if (union) {
+          unionModalTitle.textContent = union.title[currentLang];
+          unionModalDescription.textContent = union.description[currentLang];
+          unionLeadersGrid.innerHTML = '';
+          
+          // Update modal title
+          const modalTitle = document.querySelector('#unionModalLeadership h3');
+          if (modalTitle) {
+            modalTitle.textContent = translations[currentLang].unionLeadership;
+          }
+          
+          // Update close button text
+          const closeBtn = document.getElementById('closeUnionModalBtn');
+          if (closeBtn) {
+            closeBtn.textContent = translations[currentLang].close;
+          }
+          
+          union.leaders.forEach(leader => {
+            const leaderCard = document.createElement('div');
+            leaderCard.className = 'modal-leader-card';
+            leaderCard.innerHTML = `
+              <div class="modal-leader-image">
+                <img src="${leader.image}" alt="${leader.name[currentLang]}">
+              </div>
+              <div class="modal-leader-name">${leader.name[currentLang]}</div>
+              <div class="modal-leader-designation">${leader.designation[currentLang]}</div>
+            `;
+            unionLeadersGrid.appendChild(leaderCard);
+          });
+          unionModal.classList.add('active');
+          document.body.style.overflow = 'hidden';
         }
+      }
+      
+      if (industrialButton) {
+        const industrialKey = industrialButton.getAttribute('data-industrial');
+        const industrial = industrialData[industrialKey];
+        const currentLang = localStorage.getItem('preferredLanguage') || 'en';
         
-        // Update close button text
-        const closeBtn = document.getElementById('closeUnionModalBtn');
-        if (closeBtn) {
-          closeBtn.textContent = translations[currentLang].close;
+        if (industrial) {
+          industrialModalTitle.textContent = industrial.title[currentLang];
+          industrialModalDescription.textContent = industrial.description[currentLang];
+          
+          // Update close button text
+          const closeBtn = document.getElementById('closeIndustrialModalBtn');
+          if (closeBtn) {
+            closeBtn.textContent = translations[currentLang].close;
+          }
+          
+          industrialModal.classList.add('active');
+          document.body.style.overflow = 'hidden';
         }
-        
-        union.leaders.forEach(leader => {
-          const leaderCard = document.createElement('div');
-          leaderCard.className = 'modal-leader-card';
-          leaderCard.innerHTML = `
-            <div class="modal-leader-image">
-              <img src="${leader.image}" alt="${leader.name[currentLang]}">
-            </div>
-            <div class="modal-leader-name">${leader.name[currentLang]}</div>
-            <div class="modal-leader-designation">${leader.designation[currentLang]}</div>
-          `;
-          unionLeadersGrid.appendChild(leaderCard);
-        });
-        unionModal.classList.add('active');
-        document.body.style.overflow = 'hidden';
       }
     });
-  });
+  }
+  
+  // Initialize union modal listeners
+  setupUnionModalListeners();
   
   // Close union modal
   function closeUnionModalFunction() {
     unionModal.classList.remove('active');
     document.body.style.overflow = '';
   }
-  closeUnionModal.addEventListener('click', closeUnionModalFunction);
-  closeUnionModalBtn.addEventListener('click', closeUnionModalFunction);
-  unionModal.addEventListener('click', function(e) {
-    if (e.target === unionModal) closeUnionModalFunction();
-  });
+  if (closeUnionModal) {
+    closeUnionModal.addEventListener('click', closeUnionModalFunction);
+  }
+  if (closeUnionModalBtn) {
+    closeUnionModalBtn.addEventListener('click', closeUnionModalFunction);
+  }
+  if (unionModal) {
+    unionModal.addEventListener('click', function(e) {
+      if (e.target === unionModal) closeUnionModalFunction();
+    });
+  }
   
   // Industrial Modal (similar updates)
   const industrialModal = document.getElementById('industrialModal');
@@ -3403,7 +3470,6 @@ document.addEventListener('DOMContentLoaded', function() {
   const industrialModalDescription = document.getElementById('industrialModalDescription');
   const closeIndustrialModal = document.getElementById('closeIndustrialModal');
   const closeIndustrialModalBtn = document.getElementById('closeIndustrialModalBtn');
-  const viewIndustrialDetailsBtns = document.querySelectorAll('.view-industrial-details');
   
   const industrialData = {
     mounteverest: {
@@ -3428,64 +3494,89 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   };
   
-  viewIndustrialDetailsBtns.forEach(button => {
-    button.addEventListener('click', function() {
-      const industrialKey = this.getAttribute('data-industrial');
-      const industrial = industrialData[industrialKey];
-      const currentLang = localStorage.getItem('preferredLanguage') || 'en';
-      
-      if (industrial) {
-        industrialModalTitle.textContent = industrial.title[currentLang];
-        industrialModalDescription.textContent = industrial.description[currentLang];
+  function setupIndustrialModalListeners() {
+    const viewIndustrialDetailsBtns = document.querySelectorAll('.view-industrial-details');
+    
+    viewIndustrialDetailsBtns.forEach(button => {
+      button.addEventListener('click', function() {
+        const industrialKey = this.getAttribute('data-industrial');
+        const industrial = industrialData[industrialKey];
+        const currentLang = localStorage.getItem('preferredLanguage') || 'en';
         
-        // Update close button text
-        const closeBtn = document.getElementById('closeIndustrialModalBtn');
-        if (closeBtn) {
-          closeBtn.textContent = translations[currentLang].close;
+        if (industrial) {
+          industrialModalTitle.textContent = industrial.title[currentLang];
+          industrialModalDescription.textContent = industrial.description[currentLang];
+          
+          // Update close button text
+          const closeBtn = document.getElementById('closeIndustrialModalBtn');
+          if (closeBtn) {
+            closeBtn.textContent = translations[currentLang].close;
+          }
+          
+          industrialModal.classList.add('active');
+          document.body.style.overflow = 'hidden';
         }
-        
-        industrialModal.classList.add('active');
-        document.body.style.overflow = 'hidden';
-      }
+      });
     });
-  });
+  }
+  
+  // Initialize industrial modal listeners
+  setupIndustrialModalListeners();
   
   function closeIndustrialModalFunction() {
     industrialModal.classList.remove('active');
     document.body.style.overflow = '';
   }
-  closeIndustrialModal.addEventListener('click', closeIndustrialModalFunction);
-  closeIndustrialModalBtn.addEventListener('click', closeIndustrialModalFunction);
-  industrialModal.addEventListener('click', function(e) {
-    if (e.target === industrialModal) closeIndustrialModalFunction();
-  });
+  if (closeIndustrialModal) {
+    closeIndustrialModal.addEventListener('click', closeIndustrialModalFunction);
+  }
+  if (closeIndustrialModalBtn) {
+    closeIndustrialModalBtn.addEventListener('click', closeIndustrialModalFunction);
+  }
+  if (industrialModal) {
+    industrialModal.addEventListener('click', function(e) {
+      if (e.target === industrialModal) closeIndustrialModalFunction();
+    });
+  }
   
   // Escape key for modals
   document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') {
-      if (unionModal.classList.contains('active')) closeUnionModalFunction();
-      if (industrialModal.classList.contains('active')) closeIndustrialModalFunction();
+      if (unionModal && unionModal.classList.contains('active')) closeUnionModalFunction();
+      if (industrialModal && industrialModal.classList.contains('active')) closeIndustrialModalFunction();
     }
   });
   
-  // Back to Top
+  // Back to Top Button - Fixed implementation
   const backToTopButton = document.getElementById('back-to-top');
-  window.addEventListener('scroll', () => {
+  if (backToTopButton) {
+    // Add scroll event listener with a small delay to ensure proper initialization
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 300) {
+        backToTopButton.classList.add('visible');
+      } else {
+        backToTopButton.classList.remove('visible');
+      }
+    });
+    
+    backToTopButton.addEventListener('click', function() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+    
+    // Initialize button state based on current scroll position
     if (window.scrollY > 300) {
-      backToTopButton.classList.remove('opacity-0', 'invisible');
-      backToTopButton.classList.add('opacity-100', 'visible');
-    } else {
-      backToTopButton.classList.add('opacity-0', 'invisible');
-      backToTopButton.classList.remove('opacity-100', 'visible');
+      backToTopButton.classList.add('visible');
     }
-  });
-  
-  backToTopButton.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
+  }
   
   // Current year
-  document.getElementById('current-year').textContent = new Date().getFullYear();
+  const currentYearElement = document.getElementById('current-year');
+  if (currentYearElement) {
+    currentYearElement.textContent = new Date().getFullYear();
+  }
 });
 </script>
 </body>
