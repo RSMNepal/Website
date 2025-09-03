@@ -47,7 +47,8 @@
 --text-light: #555555;
 }
 body {
-font-family: 'Poppins', sans-serif;
+font-family: Tahoma, Geneva, sans-serif;
+font-size: 17px;
 background-color: var(--beige);
 color: var(--text-dark);
 overflow-x: hidden;
@@ -303,7 +304,6 @@ transform: translateX(0);
 #mobile-menu-overlay {
   display: none;
 }
-
 #mobile-menu-overlay.active {
   display: block;
 }
@@ -354,7 +354,6 @@ left: 0;
     font-size: 0.9rem;
   }
 }
-
 @media (max-width: 768px) {
   .announcement-fade {
     padding: 4px 0;
@@ -384,7 +383,6 @@ left: 0;
     font-size: 0.9rem;
   }
 }
-
 @media (max-width: 480px) {
   .announcement-fade {
     padding: 4px 0;
@@ -1180,6 +1178,36 @@ background: var(--dark-orange);
           </div>
         </div>
       </div>
+      <!-- Press Release 4 -->
+      <div class="press-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="press-image">
+          <img src="/Press_Releases/Press_release4.jpg" alt="RSMN Appeals for Joint Front to Protect Nepalese Migrant Workers in India" class="object-top" loading="lazy">
+          <div class="press-badge" data-i18n="pressRelease">Press Release</div>
+        </div>
+        <div class="press-details">
+          <div class="press-date">
+            <i class="far fa-calendar-alt"></i>
+            <span class="date" data-date="Chaitra 27, 2081" data-date-ne="चैत्र २७, २०८१">Chaitra 27, 2081</span>
+          </div>
+          <h3 class="press-title" data-i18n="pressRelease4Title">RSMN Appeals for Joint Front to Protect Nepalese Migrant Workers in India</h3>
+          <p class="press-description" data-i18n="pressRelease4Desc">Seeks collaboration with Bhartiya Mazdoor Sangh to ensure fair wages, social security, financial safety, and protection from exploitation for Nepalese workers in India.</p>
+          <div class="press-actions">
+            <button class="press-btn press-btn-primary view-press-release" 
+                    data-title="RSMN Appeals for Joint Front to Protect Nepalese Migrant Workers in India"
+                    data-title-ne="भारतमा रहेका नेपाली श्रमिकहरूको संरक्षणका लागि संयुक्त मोर्चाको आह्वान"
+                    data-date="Chaitra 27, 2081"
+                    data-date-ne="चैत्र २७, २०८१"
+                    data-description="The memorandum calls on the Bhartiya Mazdoor Sangh to join hands with RSMN to safeguard Nepalese migrant labourers in India. It highlights issues of underpayment, lack of social security, unsafe work conditions, financial exploitation, and abuse by middlemen. RSMN proposes strict enforcement of labour laws, inclusion in PF, ESI and insurance schemes, access to joint bank accounts across Nepal and India, and regulation of intermediaries. It stresses that such cooperation will protect millions of workers and further strengthen Nepal–India ties."
+                    data-description-ne="ज्ञापन पत्रमा राष्ट्रिय श्रमिक महासङ्घ नेपालले भारतीय मजदुर सङ्घसँग सहकार्य गरी भारतमा रहेका नेपाली श्रमिकको अधिकार संरक्षण गर्न आग्रह गरेको छ। यसमा न्यूनतम ज्याला नपाइनु, सामाजिक सुरक्षा अभाव, असुरक्षित कार्यस्थल, रेमिट्यान्समा वित्तीय शोषण र दलालहरूको अत्याचारजस्ता समस्या उल्लेख छन्। महासङ्घले श्रम कानुनको कडाइका साथ कार्यान्वयन, PF, ESI र बीमा योजनामा समावेश, नेपाल–भारत दुवैमा चल्ने बैंक खाता सुविधा, र दलाल नियमनको प्रस्ताव गरेको छ। यसले लाखौँ श्रमिकलाई सुरक्षित गर्नुका साथै नेपाल–भारत सम्बन्धलाई सुदृढ बनाउने भनिएको छ।"
+                    data-pdf="../Press_Releases/Press_release4.pdf"
+                    data-pdf-ne="../Press_Releases/Press_release4.pdf"
+                    data-i18n="viewDetails">View Details</button>
+            <a href="/Press_Releases/Press_release4.pdf" download class="press-btn press-btn-secondary" data-i18n="download">
+              <i class="fas fa-download"></i> <span data-i18n="download">Download</span>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -1391,6 +1419,8 @@ const translations = {
     pressRelease2Desc: "Calls on the government to reverse its decision to end the long-standing incentive grant for sugar cane farmers.",
     pressRelease3Title: "RSMN Affiliate Demands Continued Sugar Cane Farmer Subsidies",
     pressRelease3Desc: "Protests the government's decision to cut the long-standing incentive grant for sugar cane farmers and warns of a future struggle.",
+    pressRelease4Title: "RSMN Appeals for Joint Front to Protect Nepalese Migrant Workers in India",
+    pressRelease4Desc: "Seeks collaboration with Bhartiya Mazdoor Sangh to ensure fair wages, social security, financial safety, and protection from exploitation for Nepalese workers in India.",
     viewDetails: "View Details",
     download: "Download",
     
@@ -1453,6 +1483,8 @@ const translations = {
     pressRelease2Desc: "नेपाल सरकारलाई उखु किसानलाई विगत ३० वर्षदेखि दिँदै आएको प्रोत्साहन अनुदान निरन्तरताको माग गर्दै निर्णय उल्टाउन आह्वान",
     pressRelease3Title: "सम्बद्ध संस्थाद्वारा उखु किसानलाई निरन्तर अनुदानको माग",
     pressRelease3Desc: "उखु किसानलाई दिइँदै आएको प्रोत्साहन अनुदान बन्द गर्ने सरकारको निर्णयको विरोध र संघर्षको चेतावनी",
+    pressRelease4Title: "भारतमा रहेका नेपाली श्रमिकहरूको संरक्षणका लागि संयुक्त मोर्चाको आह्वान",
+    pressRelease4Desc: "भारतीय मजदुर सङ्घसँग सहकार्य गरी उचित पारिश्रमिक, सामाजिक सुरक्षा, वित्तीय सुरक्षा र शोषणविरुद्ध संरक्षणको माग",
     viewDetails: "विवरण हेर्नुहोस्",
     download: "डाउनलोड गर्नुहोस्",
     
@@ -1488,6 +1520,7 @@ const translations = {
     announcement3: "श्रमिक हित!"
   }
 };
+
 // Function to convert Arabic numerals to Nepali numerals
 function convertToNepaliNumerals(text) {
   const arabicNumerals = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
@@ -1501,6 +1534,7 @@ function convertToNepaliNumerals(text) {
   
   return convertedText;
 }
+
 // Function to convert Nepali numerals to Arabic numerals
 function convertToArabicNumerals(text) {
   const arabicNumerals = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
@@ -1514,6 +1548,7 @@ function convertToArabicNumerals(text) {
   
   return convertedText;
 }
+
 // Function to convert month names to Nepali
 function convertMonthToNepali(monthName) {
   const monthMap = {
@@ -1534,6 +1569,7 @@ function convertMonthToNepali(monthName) {
   
   return monthMap[monthName] || monthName;
 }
+
 // Function to update the language
 function updateLanguage(lang) {
   // Save the language preference to localStorage
@@ -1702,14 +1738,17 @@ function updateLanguage(lang) {
     document.body.classList.remove('nepali-font');
   }
 }
+
 // Check for saved language preference or default to English
 const savedLanguage = localStorage.getItem('preferredLanguage') || 'en';
+
 // Initialize AOS
 AOS.init({
   duration: 1000,
   once: true,
   disable: 'mobile'
 });
+
 document.addEventListener('DOMContentLoaded', function() {
   // Set the initial language
   updateLanguage(savedLanguage);
@@ -1719,7 +1758,6 @@ document.addEventListener('DOMContentLoaded', function() {
   const closeMobileMenu = document.getElementById('close-mobile-menu');
   const mobileMenu = document.getElementById('mobile-menu');
   const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
-
   if (mobileMenuButton && closeMobileMenu && mobileMenu && mobileMenuOverlay) {
     mobileMenuButton.addEventListener('click', () => {
       mobileMenu.classList.toggle('active');
@@ -1765,47 +1803,40 @@ document.addEventListener('DOMContentLoaded', function() {
   const mobileSearchToggle = document.getElementById('mobile-search-toggle');
   const searchBar = document.getElementById('search-bar');
   
-  searchToggle.addEventListener('click', () => {
-    searchBar.classList.toggle('active');
-    if (searchBar.classList.contains('active')) {
-      searchBar.querySelector('input').focus();
-    }
-  });
-  
-  mobileSearchToggle.addEventListener('click', () => {
-    searchBar.classList.toggle('active');
-    if (searchBar.classList.contains('active')) {
-      searchBar.querySelector('input').focus();
-    }
-  });
-  
-  // Language Toggle Functionality
-  const langEn = document.getElementById('lang-en');
-  const langNe = document.getElementById('lang-ne');
-  const mobileLangEn = document.getElementById('mobile-lang-en');
-  const mobileLangNe = document.getElementById('mobile-lang-ne');
-  
-  // Desktop language toggle
-  if (langEn && langNe) {
-    langEn.addEventListener('click', function() {
-      updateLanguage('en');
-    });
-    
-    langNe.addEventListener('click', function() {
-      updateLanguage('ne');
+  if (searchToggle) {
+    searchToggle.addEventListener('click', () => {
+      searchBar.classList.toggle('active');
+      if (searchBar.classList.contains('active')) {
+        searchBar.querySelector('input').focus();
+      }
     });
   }
   
-  // Mobile language toggle
-  if (mobileLangEn && mobileLangNe) {
-    mobileLangEn.addEventListener('click', function() {
-      updateLanguage('en');
-    });
-    
-    mobileLangNe.addEventListener('click', function() {
-      updateLanguage('ne');
+  if (mobileSearchToggle) {
+    mobileSearchToggle.addEventListener('click', () => {
+      searchBar.classList.toggle('active');
+      if (searchBar.classList.contains('active')) {
+        searchBar.querySelector('input').focus();
+      }
     });
   }
+  
+  // Language Toggle Functionality - Using event delegation
+  document.addEventListener('click', function(e) {
+    // Desktop language toggle
+    if (e.target.id === 'lang-en') {
+      updateLanguage('en');
+    } else if (e.target.id === 'lang-ne') {
+      updateLanguage('ne');
+    }
+    
+    // Mobile language toggle
+    if (e.target.id === 'mobile-lang-en') {
+      updateLanguage('en');
+    } else if (e.target.id === 'mobile-lang-ne') {
+      updateLanguage('ne');
+    }
+  });
   
   // Touch device dropdown handling
   const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
@@ -1866,40 +1897,37 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
   
-  // Press Release Modal Functionality
-  const modal = document.getElementById('pressReleaseModal');
-  const modalTitle = document.getElementById('modalTitle');
-  const modalDate = document.getElementById('modalDate');
-  const modalDescription = document.getElementById('modalDescription');
-  const modalPdf = document.getElementById('modalPdf');
-  const pdfLink = document.getElementById('pdfLink');
-  const downloadPdf = document.getElementById('downloadPdf');
-  const closeModalBtn = document.getElementById('closeModalBtn');
-  const closeModal = document.getElementById('closeModal');
-  const viewPressReleaseBtns = document.querySelectorAll('.view-press-release');
-  const pdfFallback = document.getElementById('pdfFallback');
-  
-  // Open modal when any "View Details" button is clicked
-  viewPressReleaseBtns.forEach(button => {
-    button.addEventListener('click', function() {
+  // Press Release Modal Functionality - Using event delegation
+  document.addEventListener('click', function(e) {
+    // Check if the clicked element or its parent has the 'view-press-release' class
+    if (e.target.classList.contains('view-press-release') || e.target.closest('.view-press-release')) {
+      const button = e.target.classList.contains('view-press-release') ? e.target : e.target.closest('.view-press-release');
       const currentLang = localStorage.getItem('preferredLanguage') || 'en';
       
       // Get the appropriate data attributes based on current language
       const title = currentLang === 'ne' 
-        ? this.getAttribute('data-title-ne') 
-        : this.getAttribute('data-title');
+        ? button.getAttribute('data-title-ne') 
+        : button.getAttribute('data-title');
         
       const date = currentLang === 'ne' 
-        ? this.getAttribute('data-date-ne') 
-        : this.getAttribute('data-date');
+        ? button.getAttribute('data-date-ne') 
+        : button.getAttribute('data-date');
         
       const description = currentLang === 'ne' 
-        ? this.getAttribute('data-description-ne') 
-        : this.getAttribute('data-description');
+        ? button.getAttribute('data-description-ne') 
+        : button.getAttribute('data-description');
         
       const pdf = currentLang === 'ne' 
-        ? this.getAttribute('data-pdf-ne') 
-        : this.getAttribute('data-pdf');
+        ? button.getAttribute('data-pdf-ne') 
+        : button.getAttribute('data-pdf');
+      
+      const modal = document.getElementById('pressReleaseModal');
+      const modalTitle = document.getElementById('modalTitle');
+      const modalDate = document.getElementById('modalDate');
+      const modalDescription = document.getElementById('modalDescription');
+      const modalPdf = document.getElementById('modalPdf');
+      const pdfLink = document.getElementById('pdfLink');
+      const downloadPdf = document.getElementById('downloadPdf');
       
       if (modal && modalTitle && modalDate && modalDescription) {
         modalTitle.textContent = title;
@@ -1915,11 +1943,14 @@ document.addEventListener('DOMContentLoaded', function() {
         modal.classList.add('active');
         document.body.style.overflow = 'hidden'; // Prevent scrolling
       }
-    });
+    }
   });
   
   // Close modal when close buttons are clicked
   function closeModalFunction() {
+    const modal = document.getElementById('pressReleaseModal');
+    const modalPdf = document.getElementById('modalPdf');
+    
     if (modal) {
       modal.classList.remove('active');
       document.body.style.overflow = ''; // Restore scrolling
@@ -1930,19 +1961,24 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
   
+  const closeModalBtn = document.getElementById('closeModalBtn');
+  const closeModal = document.getElementById('closeModal');
+  
   if (closeModalBtn) closeModalBtn.addEventListener('click', closeModalFunction);
   if (closeModal) closeModal.addEventListener('click', closeModalFunction);
   
   // Close modal when clicking outside the modal content
-  if (modal) {
-    modal.addEventListener('click', function(e) {
-      if (e.target === modal) {
-        closeModalFunction();
-      }
-    });
-  }
+  document.addEventListener('click', function(e) {
+    const modal = document.getElementById('pressReleaseModal');
+    if (e.target === modal) {
+      closeModalFunction();
+    }
+  });
   
   // Check if PDF can be displayed, otherwise show fallback
+  const modalPdf = document.getElementById('modalPdf');
+  const pdfFallback = document.getElementById('pdfFallback');
+  
   if (modalPdf && pdfFallback) {
     modalPdf.addEventListener('load', function() {
       pdfFallback.style.display = 'none';
@@ -1955,31 +1991,32 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Close modal with Escape key
   document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') {
-      if (modal && modal.classList.contains('active')) {
-        closeModalFunction();
-      }
+    const modal = document.getElementById('pressReleaseModal');
+    if (e.key === 'Escape' && modal && modal.classList.contains('active')) {
+      closeModalFunction();
     }
   });
   
   // Back to Top Button
   const backToTopButton = document.getElementById('back-to-top');
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 300) {
-      backToTopButton.classList.remove('opacity-0', 'invisible');
-      backToTopButton.classList.add('opacity-100', 'visible');
-    } else {
-      backToTopButton.classList.add('opacity-0', 'invisible');
-      backToTopButton.classList.remove('opacity-100', 'visible');
-    }
-  });
-  
-  backToTopButton.addEventListener('click', () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
+  if (backToTopButton) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        backToTopButton.classList.remove('opacity-0', 'invisible');
+        backToTopButton.classList.add('opacity-100', 'visible');
+      } else {
+        backToTopButton.classList.add('opacity-0', 'invisible');
+        backToTopButton.classList.remove('opacity-100', 'visible');
+      }
     });
-  });
+    
+    backToTopButton.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  }
   
   // Set current year in footer
   const currentYearElement = document.getElementById('current-year');
