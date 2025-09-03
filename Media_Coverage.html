@@ -47,7 +47,8 @@
 --text-light: #555555;
 }
 body {
-font-family: 'Poppins', sans-serif;
+font-family: Tahoma, Geneva, sans-serif;
+font-size: 17px;
 background-color: var(--beige);
 color: var(--text-dark);
 overflow-x: hidden;
@@ -303,7 +304,6 @@ transform: translateX(0);
 #mobile-menu-overlay {
   display: none;
 }
-
 #mobile-menu-overlay.active {
   display: block;
 }
@@ -354,7 +354,6 @@ left: 0;
     font-size: 0.9rem;
   }
 }
-
 @media (max-width: 768px) {
   .announcement-fade {
     padding: 4px 0;
@@ -384,7 +383,6 @@ left: 0;
     font-size: 0.9rem;
   }
 }
-
 @media (max-width: 480px) {
   .announcement-fade {
     padding: 4px 0;
@@ -651,6 +649,7 @@ margin-right: 8px;
 color: var(--primary-orange);
 }
 .media-source {
+font-size: small;
 font-weight: 600;
 color: var(--primary-orange);
 }
@@ -740,6 +739,35 @@ color: white;
   .media-grid {
     grid-template-columns: 1fr;
   }
+}
+/* Back to Top Button Styles */
+#back-to-top {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background-color: var(--primary-orange);
+  color: white;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+#back-to-top:hover {
+  background-color: var(--dark-orange);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+#back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
 }
 </style>
 </head>
@@ -1130,7 +1158,7 @@ color: white;
   </div>
 </footer>
 <!-- Back to Top Button -->
-<button id="back-to-top" class="fixed bottom-6 right-6 bg-orange text-white p-3 rounded-full shadow-lg transition-all duration-300 opacity-0 invisible hover:bg-gold">
+<button id="back-to-top" aria-label="Back to top">
   <i class="fas fa-arrow-up"></i>
 </button>
 <!-- Scripts -->
@@ -1257,7 +1285,6 @@ const translations = {
     announcement3: "श्रमिक हित!"
   }
 };
-
 // Function to convert Arabic numerals to Nepali numerals
 function convertToNepaliNumerals(text) {
   const arabicNumerals = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
@@ -1271,7 +1298,6 @@ function convertToNepaliNumerals(text) {
   
   return convertedText;
 }
-
 // Function to convert Nepali numerals to Arabic numerals
 function convertToArabicNumerals(text) {
   const arabicNumerals = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
@@ -1285,7 +1311,6 @@ function convertToArabicNumerals(text) {
   
   return convertedText;
 }
-
 // Function to convert month names to Nepali
 function convertMonthToNepali(monthName) {
   const monthMap = {
@@ -1306,7 +1331,6 @@ function convertMonthToNepali(monthName) {
   
   return monthMap[monthName] || monthName;
 }
-
 // Function to update the language
 function updateLanguage(lang) {
   // Save the language preference to localStorage
@@ -1475,18 +1499,16 @@ function updateLanguage(lang) {
     document.body.classList.remove('nepali-font');
   }
 }
-
-// Check for saved language preference or default to English
-const savedLanguage = localStorage.getItem('preferredLanguage') || 'en';
-
 // Initialize AOS
 AOS.init({
   duration: 1000,
   once: true,
   disable: 'mobile'
 });
-
 document.addEventListener('DOMContentLoaded', function() {
+  // Check for saved language preference or default to English
+  const savedLanguage = localStorage.getItem('preferredLanguage') || 'en';
+  
   // Set the initial language
   updateLanguage(savedLanguage);
   
@@ -1495,7 +1517,6 @@ document.addEventListener('DOMContentLoaded', function() {
   const closeMobileMenu = document.getElementById('close-mobile-menu');
   const mobileMenu = document.getElementById('mobile-menu');
   const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
-
   if (mobileMenuButton && closeMobileMenu && mobileMenu && mobileMenuOverlay) {
     mobileMenuButton.addEventListener('click', () => {
       mobileMenu.classList.toggle('active');
@@ -1541,19 +1562,23 @@ document.addEventListener('DOMContentLoaded', function() {
   const mobileSearchToggle = document.getElementById('mobile-search-toggle');
   const searchBar = document.getElementById('search-bar');
   
-  searchToggle.addEventListener('click', () => {
-    searchBar.classList.toggle('active');
-    if (searchBar.classList.contains('active')) {
-      searchBar.querySelector('input').focus();
-    }
-  });
+  if (searchToggle) {
+    searchToggle.addEventListener('click', () => {
+      searchBar.classList.toggle('active');
+      if (searchBar.classList.contains('active')) {
+        searchBar.querySelector('input').focus();
+      }
+    });
+  }
   
-  mobileSearchToggle.addEventListener('click', () => {
-    searchBar.classList.toggle('active');
-    if (searchBar.classList.contains('active')) {
-      searchBar.querySelector('input').focus();
-    }
-  });
+  if (mobileSearchToggle) {
+    mobileSearchToggle.addEventListener('click', () => {
+      searchBar.classList.toggle('active');
+      if (searchBar.classList.contains('active')) {
+        searchBar.querySelector('input').focus();
+      }
+    });
+  }
   
   // Language Toggle Functionality
   const langEn = document.getElementById('lang-en');
@@ -1670,22 +1695,22 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Back to Top Button
   const backToTopButton = document.getElementById('back-to-top');
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 300) {
-      backToTopButton.classList.remove('opacity-0', 'invisible');
-      backToTopButton.classList.add('opacity-100', 'visible');
-    } else {
-      backToTopButton.classList.add('opacity-0', 'invisible');
-      backToTopButton.classList.remove('opacity-100', 'visible');
-    }
-  });
-  
-  backToTopButton.addEventListener('click', () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
+  if (backToTopButton) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        backToTopButton.classList.add('visible');
+      } else {
+        backToTopButton.classList.remove('visible');
+      }
     });
-  });
+    
+    backToTopButton.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  }
   
   // Set current year in footer
   const currentYearElement = document.getElementById('current-year');

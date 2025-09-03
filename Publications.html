@@ -47,7 +47,8 @@
 --text-light: #555555;
 }
 body {
-font-family: 'Poppins', sans-serif;
+font-family: Tahoma, Geneva, sans-serif;
+font-size: 17px;
 background-color: var(--beige);
 color: var(--text-dark);
 overflow-x: hidden;
@@ -303,7 +304,6 @@ transform: translateX(0);
 #mobile-menu-overlay {
   display: none;
 }
-
 #mobile-menu-overlay.active {
   display: block;
 }
@@ -354,7 +354,6 @@ left: 0;
     font-size: 0.9rem;
   }
 }
-
 @media (max-width: 768px) {
   .announcement-fade {
     padding: 4px 0;
@@ -384,7 +383,6 @@ left: 0;
     font-size: 0.9rem;
   }
 }
-
 @media (max-width: 480px) {
   .announcement-fade {
     padding: 4px 0;
@@ -900,6 +898,38 @@ transition: background 0.2s;
 .close-modal-btn:hover {
 background: var(--dark-orange);
 }
+/* Back to Top Button Styles */
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--primary-orange);
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+#back-to-top:hover {
+  background-color: var(--primary-gold);
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
 /* Responsive adjustments */
 @media (max-width: 992px) {
   .publications-content h1 {
@@ -945,6 +975,13 @@ background: var(--dark-orange);
   
   .pdf-viewer {
     height: 300px;
+  }
+  
+  #back-to-top {
+    bottom: 15px;
+    right: 15px;
+    width: 45px;
+    height: 45px;
   }
 }
 </style>
@@ -1797,7 +1834,6 @@ document.addEventListener('DOMContentLoaded', function() {
   const closeMobileMenu = document.getElementById('close-mobile-menu');
   const mobileMenu = document.getElementById('mobile-menu');
   const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
-
   if (mobileMenuButton && closeMobileMenu && mobileMenu && mobileMenuOverlay) {
     mobileMenuButton.addEventListener('click', () => {
       mobileMenu.classList.toggle('active');
@@ -1843,19 +1879,23 @@ document.addEventListener('DOMContentLoaded', function() {
   const mobileSearchToggle = document.getElementById('mobile-search-toggle');
   const searchBar = document.getElementById('search-bar');
   
-  searchToggle.addEventListener('click', () => {
-    searchBar.classList.toggle('active');
-    if (searchBar.classList.contains('active')) {
-      searchBar.querySelector('input').focus();
-    }
-  });
+  if (searchToggle) {
+    searchToggle.addEventListener('click', () => {
+      searchBar.classList.toggle('active');
+      if (searchBar.classList.contains('active')) {
+        searchBar.querySelector('input').focus();
+      }
+    });
+  }
   
-  mobileSearchToggle.addEventListener('click', () => {
-    searchBar.classList.toggle('active');
-    if (searchBar.classList.contains('active')) {
-      searchBar.querySelector('input').focus();
-    }
-  });
+  if (mobileSearchToggle) {
+    mobileSearchToggle.addEventListener('click', () => {
+      searchBar.classList.toggle('active');
+      if (searchBar.classList.contains('active')) {
+        searchBar.querySelector('input').focus();
+      }
+    });
+  }
   
   // Language Toggle Functionality
   const langEn = document.getElementById('lang-en');

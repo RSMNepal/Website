@@ -38,7 +38,8 @@
 --text-light: #555555;
 }
 body {
-font-family: 'Poppins', sans-serif;
+font-family: Tahoma, Geneva, sans-serif;
+font-size: 17px;
 background-color: var(--beige);
 color: var(--text-dark);
 overflow-x: hidden;
@@ -221,7 +222,6 @@ transform: translateX(0);
 #mobile-menu-overlay {
   display: none;
 }
-
 #mobile-menu-overlay.active {
   display: block;
 }
@@ -272,7 +272,6 @@ left: 0;
     font-size: 0.9rem;
   }
 }
-
 @media (max-width: 768px) {
   .announcement-fade {
     padding: 4px 0;
@@ -302,7 +301,6 @@ left: 0;
     font-size: 0.9rem;
   }
 }
-
 @media (max-width: 480px) {
   .announcement-fade {
     padding: 4px 0;
@@ -789,7 +787,6 @@ color: var(--primary-gold);
     </div>
   </div>
 </header>
-
 <section class="principles-hero">
   <div class="principles-hero-bg"></div>
   <div class="principles-hero-overlay"></div>
@@ -1163,7 +1160,6 @@ const translations = {
     announcement3: "श्रमिक हित!"
   }
 };
-
 // Function to convert Arabic numerals to Nepali numerals
 function convertToNepaliNumerals(text) {
   const arabicNumerals = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
@@ -1177,7 +1173,6 @@ function convertToNepaliNumerals(text) {
   
   return convertedText;
 }
-
 // Function to convert Nepali numerals to Arabic numerals
 function convertToArabicNumerals(text) {
   const arabicNumerals = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
@@ -1191,7 +1186,6 @@ function convertToArabicNumerals(text) {
   
   return convertedText;
 }
-
 // Function to update the language
 function updateLanguage(lang) {
   // Save the language preference to localStorage
@@ -1336,14 +1330,12 @@ function updateLanguage(lang) {
     document.body.classList.remove('nepali-font');
   }
 }
-
 // Initialize AOS
 AOS.init({
   duration: 1000,
   once: true,
   disable: 'mobile'
 });
-
 document.addEventListener('DOMContentLoaded', function() {
   // Check for saved language preference or default to English
   const savedLanguage = localStorage.getItem('preferredLanguage') || 'en';
@@ -1356,7 +1348,6 @@ document.addEventListener('DOMContentLoaded', function() {
   const closeMobileMenu = document.getElementById('close-mobile-menu');
   const mobileMenu = document.getElementById('mobile-menu');
   const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
-
   if (mobileMenuButton && closeMobileMenu && mobileMenu && mobileMenuOverlay) {
     mobileMenuButton.addEventListener('click', () => {
       mobileMenu.classList.toggle('active');
@@ -1402,19 +1393,23 @@ document.addEventListener('DOMContentLoaded', function() {
   const mobileSearchToggle = document.getElementById('mobile-search-toggle');
   const searchBar = document.getElementById('search-bar');
   
-  searchToggle.addEventListener('click', () => {
-    searchBar.classList.toggle('active');
-    if (searchBar.classList.contains('active')) {
-      searchBar.querySelector('input').focus();
-    }
-  });
+  if (searchToggle) {
+    searchToggle.addEventListener('click', () => {
+      searchBar.classList.toggle('active');
+      if (searchBar.classList.contains('active')) {
+        searchBar.querySelector('input').focus();
+      }
+    });
+  }
   
-  mobileSearchToggle.addEventListener('click', () => {
-    searchBar.classList.toggle('active');
-    if (searchBar.classList.contains('active')) {
-      searchBar.querySelector('input').focus();
-    }
-  });
+  if (mobileSearchToggle) {
+    mobileSearchToggle.addEventListener('click', () => {
+      searchBar.classList.toggle('active');
+      if (searchBar.classList.contains('active')) {
+        searchBar.querySelector('input').focus();
+      }
+    });
+  }
   
   // Language Toggle Functionality
   const langEn = document.getElementById('lang-en');
