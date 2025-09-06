@@ -1,1 +1,3704 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Current Labour Scenario - Rastriya Shramik Mahasangh Nepal</title>
+<meta name="description" content="Comprehensive analysis of Nepal's current labour landscape, challenges, and opportunities for workers.">
+<meta name="keywords" content="Nepal labour scenario, workers rights, employment statistics, informal economy, foreign employment, minimum wage Nepal">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rsmn.org.np/labour-scenario.html">
+<meta property="og:title" content="Current Labour Scenario - Rastriya Shramik Mahasangh Nepal">
+<meta property="og:description" content="Comprehensive analysis of Nepal's current labour landscape, challenges, and opportunities for workers.">
+<meta property="og:image" content="https://rsmn.org.np/img/logo.jpg">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://rsmn.org.np/labour-scenario.html">
+<meta property="twitter:title" content="Current Labour Scenario - Rastriya Shramik Mahasangh Nepal">
+<meta property="twitter:description" content="Comprehensive analysis of Nepal's current labour landscape, challenges, and opportunities for workers.">
+<meta property="twitter:image" content="https://rsmn.org.np/img/logo.jpg">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" as="style">
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" as="style">
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;700&display=swap" as="style">
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+:root {
+--primary-orange: #e67e22;
+--dark-orange: #d35400;
+--light-orange: #f39c12;
+--primary-gold: #FFD700;
+--light-gold: #FFED4E;
+--dark-gold: #B8860B;
+--beige: #f5f0e6;
+--text-dark: #333333;
+--text-light: #555555;
+}
+body {
+font-family: Tahoma, Geneva, sans-serif;
+font-size: 17px;
+background-color: var(--beige);
+color: var(--text-dark);
+overflow-x: hidden;
+}
+.nepali-font {
+font-family: 'Mukta', sans-serif;
+font-size: large;
+}
+.nepali-numerals {
+  font-family: 'Mukta', sans-serif;
+  font-size: 17px;
+}
+.section-title {
+position: relative;
+display: inline-block;
+}
+.section-title::after {
+content: '';
+position: absolute;
+width: 60%;
+height: 3px;
+background: linear-gradient(90deg, var(--primary-orange), var(--light-orange));
+bottom: -10px;
+left: 20%;
+}
+.card-hover {
+transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+transform-origin: center bottom;
+}
+.card-hover:hover {
+transform: translateY(-12px);
+box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+.btn-primary {
+background: linear-gradient(135deg, var(--primary-gold), var(--primary-orange));
+transition: all 0.3s ease;
+box-shadow: 0 4px 15px rgba(230, 126, 34, 0.3);
+}
+.btn-primary:hover {
+background: linear-gradient(135deg, var(--primary-orange), var(--dark-orange));
+transform: scale(1.05);
+box-shadow: 0 6px 20px rgba(230, 126, 34, 0.4);
+}
+.btn-secondary {
+background: linear-gradient(135deg, var(--primary-gold), var(--dark-gold));
+transition: all 0.3s ease;
+box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+.btn-secondary:hover {
+background: linear-gradient(135deg, var(--dark-gold), var(--primary-gold));
+transform: translateY(-2px);
+box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+}
+.text-orange {
+color: var(--primary-orange);
+}
+.hover\:text-orange:hover {
+color: var(--primary-orange) !important;
+}
+.text-gold {
+color: var(--primary-gold);
+}
+.bg-orange {
+background-color: var(--primary-orange);
+}
+.bg-gold {
+background: linear-gradient(135deg, var(--primary-gold), var(--dark-gold));
+}
+.bg-beige {
+background-color: var(--beige);
+}
+.nav-link {
+position: relative;
+transition: all 0.3s ease;
+}
+.nav-link::after {
+content: '';
+position: absolute;
+width: 0;
+height: 2px;
+background: white;
+bottom: -5px;
+left: 0;
+transition: width 0.3s ease;
+}
+.nav-link:hover::after {
+width: 100%;
+}
+.loading-spinner {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 40px;
+height: 40px;
+border: 4px solid rgba(230, 126, 34, 0.2);
+border-top: 4px solid var(--primary-orange);
+border-radius: 50%;
+animation: spin 1s linear infinite;
+}
+@keyframes spin {
+0% { transform: translate(-50%, -50%) rotate(0deg); }
+100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+/* Header Styles */
+.header-container {
+background: linear-gradient(135deg, var(--primary-orange), var(--dark-orange));
+position: relative;
+overflow: visible;
+z-index: 100;
+}
+.announcement-fade {
+background: linear-gradient(to bottom, rgba(255, 215, 0, 0.9), rgba(255, 215, 0, 0));
+padding: 8px 0;
+text-align: center;
+font-weight: 500;
+position: relative;
+}
+.announcement-fade::after {
+content: '';
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+height: 20px;
+background: linear-gradient(to bottom, rgba(255, 215, 0, 0), rgba(230, 126, 34, 0.3));
+}
+.nav-link-item {
+position: relative;
+transition: all 0.3s ease;
+}
+.nav-link-item::after {
+content: '';
+position: absolute;
+width: 0;
+height: 2px;
+background: var(--primary-gold);
+bottom: -2px;
+left: 50%;
+transform: translateX(-50%);
+transition: width 0.3s ease;
+}
+.nav-link-item:hover::after {
+width: 80%;
+}
+.dropdown-menu {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  z-index: 1000;
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #4b5563;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.dropdown-menu a:hover {
+  color: #ea580c !important; /* orange-600 equivalent */
+}
+.dropdown:hover .dropdown-menu {
+opacity: 1;
+visibility: visible;
+transform: translateY(0);
+}
+.dropdown-toggle i {
+transition: transform 0.3s ease;
+}
+.dropdown:hover .dropdown-toggle i {
+transform: rotate(180deg);
+}
+.mobile-menu {
+transform: translateX(-100%);
+transition: transform 0.3s ease;
+box-shadow: 4px 0 20px rgba(0, 0, 0, 0.5);
+}
+.mobile-menu.active {
+transform: translateX(0);
+}
+/* Mobile Menu Overlay */
+#mobile-menu-overlay {
+  display: none;
+}
+#mobile-menu-overlay.active {
+  display: block;
+}
+.search-bar {
+opacity: 0;
+max-height: 0;
+overflow: hidden;
+transition: all 0.3s ease;
+}
+.search-bar.active {
+opacity: 1;
+max-height: 100px;
+}
+.lang-toggle {
+position: relative;
+overflow: hidden;
+}
+.lang-toggle::before {
+content: '';
+position: absolute;
+top: 0;
+left: -100%;
+width: 100%;
+height: 100%;
+background: rgba(255, 255, 255, 0.2);
+transition: left 0.3s ease;
+}
+.lang-toggle:hover::before {
+left: 0;
+}
+/* Labour Scenario Hero Section */
+.labour-hero {
+position: relative;
+height: 50vh;
+min-height: 400px;
+overflow: hidden;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.labour-hero-bg {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-image: url('/Gallery/hero-banner1.png');
+background-size: cover;
+background-position: center;
+filter: brightness(0.6);
+z-index: -1;
+}
+.labour-hero-overlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.4));
+z-index: -1;
+}
+.labour-content {
+position: relative;
+z-index: 2;
+text-align: center;
+color: white;
+padding: 0 20px;
+max-width: 900px;
+}
+.labour-content h1 {
+font-size: 3.5rem;
+font-weight: 700;
+margin-bottom: 1.5rem;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.labour-content p {
+font-size: 1.4rem;
+margin-bottom: 2.5rem;
+text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+.labour-breadcrumb {
+position: absolute;
+bottom: 30px;
+left: 0;
+width: 100%;
+text-align: center;
+color: rgba(255, 255, 255, 0.8);
+font-size: 0.9rem;
+}
+.labour-breadcrumb a {
+color: white;
+text-decoration: none;
+transition: color 0.3s ease;
+}
+.labour-breadcrumb a:hover {
+color: var(--primary-gold);
+}
+/* Labour Scenario Specific Styles */
+.executive-summary {
+  background: linear-gradient(135deg, rgba(230, 126, 34, 0.05), rgba(243, 156, 18, 0.1));
+  padding: 3rem 0;
+  margin-bottom: 4rem;
+}
+.executive-summary-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 1rem;
+}
+.executive-summary-content h2 {
+  font-size: 2.5rem;
+  color: var(--primary-orange);
+  margin-bottom: 1.5rem;
+}
+.executive-summary-content p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: var(--text-dark);
+}
+.stat-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  /* word-wrap: break-word;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin-top: 0.5rem;  */
+}
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, var(--primary-orange), var(--light-orange));
+}
+.stat-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(230, 126, 34, 0.2);
+}
+.stat-card.no-wrap .stat-label {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.stat-card.large-number .stat-number {
+  font-size: 2rem;
+  align-items: center;
+}
+.stat-icon {
+  font-size: 3rem;
+  color: var(--primary-gold);
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+.stat-icon-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 215, 0, 0.1);
+  border-radius: 50%;
+  z-index: 0;
+}
+.stat-number {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 700;
+  color: var(--primary-orange);
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+  word-wrap: break-word;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+}
+.stat-label {
+  font-size: 1rem;
+  color: var(--text-dark);
+  line-height: 1.5;
+  margin-top: 0.75rem;
+  text-align: center;
+  display: block;
+  white-space: normal;       /* allow multi-line */
+  word-break: break-word;    /* break long words if needed */
+  overflow-wrap: anywhere; /* safe fallback */
+  max-width: 90%;
+  /* white-space: pre; */
+}
+.data-section {
+  padding: 4rem 0;
+  background-color: white;
+}
+.data-section-title {
+  font-size: 2.5rem;
+  color: var(--primary-orange);
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+.data-section-title::after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary-orange), var(--light-orange));
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.data-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+.chart-container {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  height: 100%;
+  position: relative;
+}
+.chart-title {
+  font-size: 1.5rem;
+  color: var(--primary-orange);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.bar-chart {
+  display: flex;
+  align-items: flex-end;
+  height: 300px;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+.bar {
+  flex: 1;
+  background: linear-gradient(to top, var(--primary-orange), var(--light-orange));
+  border-radius: 0.5rem 0.5rem 0 0;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.bar:hover {
+  transform: scaleY(1.05);
+  filter: brightness(1.1);
+}
+.bar-label {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-dark);
+}
+.bar-value {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  color: var(--primary-orange);
+}
+.timeline {
+  position: relative;
+  padding: 2rem 0;
+  margin: 2rem 0;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(to bottom, var(--primary-orange), var(--light-orange));
+}
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+}
+.timeline-content {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  position: relative;
+  width: 45%;
+  z-index: 1;
+}
+.timeline-item:nth-child(odd) .timeline-content {
+  margin-left: auto;
+  margin-right: 55px;
+}
+.timeline-item:nth-child(even) .timeline-content {
+  margin-left: 55px;
+  margin-right: auto;
+}
+.timeline-dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--primary-gold);
+  border: 4px solid white;
+  box-shadow: 0 0 0 4px rgba(230, 126, 34, 0.2);
+  z-index: 2;
+}
+.timeline-year {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary-orange);
+  margin-bottom: 0.5rem;
+}
+.timeline-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+}
+.timeline-description {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  line-height: 1.5;
+}
+.sector-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.sector-tab {
+  padding: 0.75rem 1.5rem;
+  background: white;
+  border-radius: 2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+.sector-tab:hover {
+  background: rgba(230, 126, 34, 0.1);
+  color: var(--primary-orange);
+}
+.sector-tab.active {
+  background: linear-gradient(135deg, var(--primary-gold), var(--primary-orange));
+  color: white;
+}
+.sector-content {
+  display: none;
+}
+.sector-content.active {
+  display: block;
+}
+.sector-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+.sector-card h3 {
+  font-size: 1.8rem;
+  color: var(--primary-orange);
+  margin-bottom: 1rem;
+}
+.sector-card p {
+  font-size: 1rem;
+  color: var(--text-dark);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+.sector-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.sector-stat {
+  flex: 1;
+  min-width: 150px;
+  background: rgba(230, 126, 34, 0.05);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+}
+.sector-stat-number {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--primary-orange);
+}
+.sector-stat-label {
+  font-size: 0.9rem;
+  color: var(--text-dark);
+}
+.recommendation-card {
+  background: linear-gradient(135deg, white, rgba(255, 215, 0, 0.05));
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+  border-left: 5px solid var(--primary-orange);
+}
+.recommendation-card h3 {
+  font-size: 1.5rem;
+  color: var(--primary-orange);
+  margin-bottom: 1rem;
+}
+.recommendation-card ul {
+  padding-left: 1.5rem;
+}
+.recommendation-card li {
+  margin-bottom: 0.75rem;
+  color: var(--text-dark);
+}
+.progress-container {
+  background: #e0e0e0;
+  border-radius: 1rem;
+  height: 2rem;
+  margin: 1rem 0;
+  overflow: hidden;
+}
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary-orange), var(--light-orange));
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 1rem;
+  color: white;
+  font-weight: 600;
+  transition: width 1.5s ease;
+}
+.map-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: #f0f0f0;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+.map-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--text-light);
+}
+.map-placeholder i {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: var(--primary-orange);
+}
+.data-source {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+.chart-wrapper {
+  position: relative;
+  height: 300px;
+  margin: 1rem 0;
+}
+/* Responsive adjustments for Labour Hero */
+@media (max-width: 992px) {
+  .labour-content h1 {
+    font-size: 2.8rem;
+  }
+  
+  .labour-content p {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 768px) {
+  .labour-hero {
+    height: 50vh;
+    min-height: 400px;
+  }
+  
+  .labour-content h1 {
+    font-size: 2.2rem;
+  }
+  
+  .labour-content p {
+    font-size: 1rem;
+  }
+  
+  .timeline::before {
+    left: 1rem;
+  }
+  
+  .timeline-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 3rem;
+  }
+  
+  .timeline-content {
+    width: 100%;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  
+  .timeline-dot {
+    left: 1rem;
+  }
+  
+  .stat-number {
+    font-size: 1.8rem;
+  }
+  
+  .stat-card.large-number .stat-number {
+    font-size: 1.6rem;
+  }
+  
+  .stat-label {
+    font-size: 0.9rem;
+  }
+  
+  .bar-chart {
+    height: 250px;
+  }
+}
+@media (max-width: 576px) {
+  .labour-content h1 {
+    font-size: 1.8rem;
+  }
+  
+  .labour-content p {
+    font-size: 0.9rem;
+  }
+  
+  .executive-summary-content h2 {
+    font-size: 2rem;
+  }
+  
+  .executive-summary-content p {
+    font-size: 1rem;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+  }
+  
+  .stat-card.large-number .stat-number {
+    font-size: 1.8rem;
+  }
+  
+  .bar-chart {
+    height: 250px;
+  }
+}
+</style>
+</head>
+<body>
+<!-- Header -->
+<header class="header-container text-white shadow-xl sticky top-0 z-50">
+  <!-- Announcement Bar with Fade Effect -->
+  <div class="announcement-fade">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 md:gap-x-4 lg:gap-x-6 text-lg md:text-xl font-semibold overflow-x-auto py-1">
+        <span class="whitespace-nowrap transition-colors duration-300 hover:text-yellow-300 px-1" data-i18n="announcement1">Rastra heet!</span>
+        <span class="whitespace-nowrap transition-colors duration-300 hover:text-yellow-300 px-1" data-i18n="announcement2">Udyog heet!</span>
+        <span class="whitespace-nowrap transition-colors duration-300 hover:text-yellow-300 px-1" data-i18n="announcement3">Shramik heet!</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="nav-container">
+    <div class="flex flex-col md:flex-row items-center justify-between py-0 px-4">
+      <!-- Logo and Organization Name (Left) - Now clickable -->
+      <a href="/" class="flex items-center w-full md:w-auto mb-3 md:mb-0 pl-4 md:pl-20 no-underline">
+        <div class="logo-container">
+          <img src="/logo.jpg" alt="Rastriya Shramik Mahasangh Nepal Logo" class="h-16 md:h-20 lg:h-28 transition-transform duration-300 hover:scale-105">
+        </div>
+        <div class="organization-name ml-3 md:ml-4">
+          <h1 class="text-xl md:text-2xl lg:text-3xl font-bold transition-colors duration-300 hover:text-yellow-100" data-i18n="organizationName">Rastriya Shramik Mahasangh</h1>
+          <p class="text-sm md:text-base lg:text-lg transition-colors duration-300 hover:text-yellow-200" data-i18n="organizationLocation">Nepal</p>
+        </div>
+      </a>
+      
+      <!-- Navigation Links (Center) -->
+      <nav class="nav-links hidden lg:flex items-center justify-center flex-grow mx-4 lg:mx-8">
+        <a href="/" class="nav-link-item px-3 py-2 rounded-lg text-white font-medium transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md" data-i18n="home">Home</a>
+        
+        <!-- About Dropdown -->
+        <div class="relative dropdown">
+          <a href="/About/" class="nav-link-item px-3 py-2 rounded-lg text-white font-medium flex items-center transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md dropdown-toggle" data-i18n="about">
+            About <i class="fas fa-chevron-down ml-1 text-xs"></i>
+          </a>
+          <div class="dropdown-menu absolute left-0 flex-col bg-white text-gray-800 mt-1 rounded-md shadow-lg py-1 w-48">
+            <a href="/About/" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600" data-i18n="ourStory">Our Story</a>
+            <a href="/About/#organizational-structure" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600" data-i18n="organizationalStructure">Organizational Structure</a>
+            <a href="/About/#central-executive-committee" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600" data-i18n="leadership">Leadership</a>
+          </div>
+        </div>
+        
+        <!-- Resources Dropdown -->
+        <div class="relative dropdown">
+          <button class="nav-link-item px-3 py-2 rounded-lg text-white font-medium flex items-center transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md dropdown-toggle" data-i18n="resources">
+            Resources <i class="fas fa-chevron-down ml-1 text-xs"></i>
+          </button>
+          <div class="dropdown-menu absolute left-0 flex-col bg-white text-gray-800 mt-1 rounded-md shadow-lg py-1 w-56">
+            <a href="/Slogans/" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600" data-i18n="ourSlogans">Our Slogans</a>
+            <a href="/Press_Releases/" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600" data-i18n="pressReleases">Press Releases</a>
+            <a href="/Publications/" class="block px-4 py-2 hover:bg-orange-100 transition-colors duration-300 hover:text-orange-600" data-i18n="publications">Publications</a>
+          </div>
+        </div>
+        
+        <a href="/Events/" class="nav-link-item px-3 py-2 rounded-lg text-white font-medium transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md" data-i18n="events">Events</a>
+        <a href="/Gallery/" class="nav-link-item px-3 py-2 rounded-lg text-white font-medium transition-all duration-300 hover:bg-gold hover:text-dark-orange hover:shadow-md" data-i18n="gallery">Gallery</a>
+      </nav>
+      
+      <!-- Language and Search (Right) -->
+      <div class="flex items-center justify-end space-x-3 md:space-x-4 pr-4 md:pr-20">
+        <!-- Language Toggle -->
+        <div class="flex bg-orange-800 bg-opacity-60 rounded-full p-1 shadow-md transition-all duration-300 hover:bg-opacity-80">
+          <button id="lang-en" class="lang-toggle px-2 py-1 md:px-3 md:py-1 rounded-full text-sm font-medium transition-all duration-300 bg-white text-orange hover:bg-orange-100">EN</button>
+          <button id="lang-ne" class="lang-toggle px-2 py-1 md:px-3 md:py-1 rounded-full text-sm font-medium transition-all duration-300 text-white hover:bg-orange-800 hover:text-yellow-200">ने</button>
+        </div>
+        
+        <!-- Search Button -->
+        <!-- <button class="text-white hover:text-gold p-2 rounded-full hover:bg-gold hover:shadow-md transition-all duration-300" id="search-toggle" aria-label="Search">
+          <i class="fas fa-search text-lg"></i>
+        </button> -->
+        
+        <!-- Mobile Menu Button -->
+        <button class="lg:hidden text-white focus:outline-none p-2" id="mobile-menu-button" aria-label="Menu">
+          <i class="fas fa-bars text-xl"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Search Bar (Hidden by default) -->
+  <div id="search-bar" class="search-bar bg-gray-700 py-2 px-4 shadow-md">
+    <div class="container mx-auto">
+      <form id="search-form" class="flex">
+        <input type="text" id="search-input" placeholder="Search..." class="flex-grow px-4 py-1.5 rounded-l-lg focus:outline-none text-gray-800 bg-white shadow-inner transition-all duration-300 hover:bg-gray-50">
+        <button type="submit" class="bg-gold hover:bg-orange-600 px-4 py-1.5 rounded-r-lg transition-all duration-300 hover:shadow-md">
+          <i class="fas fa-search"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+  
+  <!-- Mobile Menu Overlay -->
+  <div id="mobile-menu-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden transition-opacity duration-300"></div>
+  
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="mobile-menu fixed top-0 left-0 w-80 h-full text-white z-50 shadow-lg" style="background: linear-gradient(135deg, rgba(230, 126, 34, 1), rgba(211, 84, 0, 0.6));">
+    <div class="p-4 border-b border-orange-600">
+      <div class="flex justify-between items-center mb-4">
+        <!-- Language Toggle -->
+        <div class="flex bg-orange-900 bg-opacity-60 rounded-full p-1 shadow-md transition-all duration-300 hover:bg-opacity-80">
+          <button id="mobile-lang-en" class="lang-toggle px-3 py-1 rounded-full text-sm font-medium transition-all duration-300 bg-white text-orange hover:bg-orange-100">EN</button>
+          <button id="mobile-lang-ne" class="lang-toggle px-3 py-1 rounded-full text-sm font-medium transition-all duration-300 text-white hover:bg-orange-800 hover:text-yellow-200">ने</button>
+        </div>
+        
+        <!-- Search Button -->
+        <!-- <button class="text-white hover:text-gold p-2 rounded-full hover:bg-gold hover:shadow-md transition-all duration-300" id="mobile-search-toggle" aria-label="Search">
+          <i class="fas fa-search text-lg"></i>
+        </button> -->
+        
+        <!-- Close Button -->
+        <button class="text-white hover:text-gold p-2 rounded-full hover:bg-gold hover:shadow-md transition-all duration-300" id="close-mobile-menu" aria-label="Close menu">
+          <i class="fas fa-times text-lg"></i>
+        </button>
+      </div>
+      
+      <!-- Logo and Organization Name -->
+      <a href="/" class="flex items-center no-underline">
+        <img src="/logo.jpg" alt="Rastriya Shramik Mahasangh Nepal Logo" class="h-16">
+        <div class="ml-3">
+          <h1 class="text-lg font-bold text-white" data-i18n="organizationName">Rastriya Shramik Mahasangh</h1>
+          <p class="text-sm text-white" data-i18n="organizationLocation">Nepal</p>
+        </div>
+      </a>
+    </div>
+    
+    <div class="p-4 space-y-2 overflow-y-auto max-h-[calc(100vh-180px)]">
+      <a href="/" class="block py-2 px-4 rounded-lg hover:bg-orange-600 hover:text-white transition-all duration-300" data-i18n="home">Home</a>
+      
+      <div class="py-1">
+        <button class="flex justify-between items-center w-full py-2 px-4 rounded-lg hover:bg-orange-600 hover:text-white transition-all duration-300 mobile-submenu-toggle" data-target="about-submenu">
+          <span data-i18n="about">About</span> <i class="fas fa-chevron-down text-xs transition-transform duration-300"></i>
+        </button>
+        <div id="about-submenu" class="hidden pl-6 mt-1 space-y-1 bg-orange-900 bg-opacity-50 rounded-lg">
+          <a href="/About/" class="block px-4 py-2 hover:bg-orange-600 transition-colors duration-300 hover:text-white" data-i18n="ourStory">Our Story</a>
+          <a href="/About/#organizational-structure" class="block px-4 py-2 hover:bg-orange-600 transition-colors duration-300 hover:text-white" data-i18n="organizationalStructure">Organizational Structure</a>
+          <a href="/About/#central-executive-committee" class="block px-4 py-2 hover:bg-orange-600 transition-colors duration-300 hover:text-white" data-i18n="leadership">Leadership</a>
+        </div>
+      </div>
+      
+      <div class="py-1">
+        <button class="flex justify-between items-center w-full py-2 px-4 rounded-lg hover:bg-orange-600 hover:text-white transition-all duration-300 mobile-submenu-toggle" data-target="resources-submenu">
+          <span data-i18n="resources">Resources</span> <i class="fas fa-chevron-down text-xs transition-transform duration-300"></i>
+        </button>
+        <div id="resources-submenu" class="hidden pl-6 mt-1 space-y-1 bg-orange-900 bg-opacity-50 rounded-lg">
+          <a href="/Slogans/" class="block py-2 px-4 hover:bg-orange-600 transition-colors duration-300 hover:text-white" data-i18n="ourSlogans">Our Slogans</a>
+          <a href="/Press_Releases/" class="block py-2 px-4 hover:bg-orange-600 transition-colors duration-300 hover:text-white" data-i18n="pressReleases">Press Releases</a>
+          <a href="/Publications/" class="block py-2 px-4 hover:bg-orange-600 transition-colors duration-300 hover:text-white" data-i18n="publications">Publications</a>
+        </div>
+      </div>
+      
+      <a href="/Events/" class="block py-2 px-4 rounded-lg hover:bg-orange-600 hover:text-white transition-all duration-300" data-i18n="events">Events</a>
+      <a href="/Gallery/" class="block py-2 px-4 rounded-lg hover:bg-orange-600 hover:text-white transition-all duration-300" data-i18n="gallery">Gallery</a>
+    </div>
+  </div>
+</header>
+<!-- Hero Section -->
+<section class="labour-hero">
+  <div class="labour-hero-bg"></div>
+  <div class="labour-hero-overlay"></div>
+  <div class="labour-content">
+    <h1 data-aos="fade-up" data-i18n="heroTitle">Current Labour Scenario in Nepal</h1>
+    <p data-aos="fade-up" data-aos-delay="100" data-i18n="heroSubtitle">A comprehensive analysis of challenges, opportunities, and the path forward for Nepal's workforce</p>
+  </div>
+  <div class="labour-breadcrumb">
+    <a href="/" class="nav-link-custom" data-i18n="breadcrumbHome">Home</a> / <span data-i18n="breadcrumbLabour">Labour Scenario</span>
+  </div>
+</section>
+<!-- Executive Summary -->
+<section class="executive-summary">
+  <div class="executive-summary-content" data-aos="fade-up">
+    <!-- <h2 data-i18n="executiveSummaryTitle">Executive Summary</h2> -->
+    <p data-i18n="executiveSummaryText">
+      Nepal's labour landscape presents a complex picture of challenges and opportunities in 2024. With a total labour force of 8.43 million people representing only 39.75% of the population, the country faces significant employment challenges. The unemployment rate stands at 10.71%, with youth unemployment reaching an alarming 20.82%. Most critically, 84.6% of all employment remains in the informal sector, leaving millions of workers without adequate social protection.
+    </p>
+    <!-- <p class="text-[var(--text-light)] italic text-xs mt-2" data-i18n="executiveSummarySource">Source: Nepal Labour Force Survey 2024, ILO</p> -->
+  </div>
+</section>
+<!-- Key Statistics Section -->
+<section class="data-section">
+  <div class="container mx-auto px-4">
+    <h2 class="data-section-title" data-aos="fade-up" data-i18n="keyStatsTitle">Key Labour Statistics</h2>
+    
+    <div class="data-grid">
+      <div class="stat-card card-hover" data-aos="fade-up">
+        <div class="stat-icon">
+          <div class="stat-icon-bg"></div>
+          <i class="fas fa-users"></i>
+        </div>
+        <div class="stat-number">8.43M</div>
+        <div class="stat-label" data-i18n="labourForceStat">Total Labour Force</div>
+        <p class="data-source" data-i18n="labourForceSource">Source: CBS Nepal</p>
+      </div>
+      
+      <div class="stat-card card-hover" data-aos="fade-up" data-aos-delay="100">
+        <div class="stat-icon">
+          <div class="stat-icon-bg"></div>
+          <i class="fas fa-percentage"></i>
+        </div>
+        <div class="stat-number">10.71%</div>
+        <div class="stat-label" data-i18n="unemploymentRateStat">Unemployment Rate</div>
+        <p class="data-source" data-i18n="unemploymentRateSource">Source: Nepal Labour Force Survey</p>
+      </div>
+      
+      <div class="stat-card card-hover" data-aos="fade-up" data-aos-delay="200">
+        <div class="stat-icon">
+          <div class="stat-icon-bg"></div>
+          <i class="fas fa-user-clock"></i>
+        </div>
+        <div class="stat-number">20.82%</div>
+        <div class="stat-label" data-i18n="youthUnemploymentStat">Youth Unemployment</div>
+        <p class="data-source" data-i18n="youthUnemploymentSource">Source: ILO Nepal</p>
+      </div>
+      
+      <div class="stat-card card-hover" data-aos="fade-up" data-aos-delay="300">
+        <div class="stat-icon">
+          <div class="stat-icon-bg"></div>
+          <i class="fas fa-briefcase"></i>
+        </div>
+        <div class="stat-number">84.6%</div>
+        <div class="stat-label" data-i18n="informalEmploymentStat">Informal Employment</div>
+        <p class="data-source" data-i18n="informalEmploymentSource">Source: WIEGO Nepal</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Employment Status Section -->
+<section class="py-16 px-4 bg-white">
+  <div class="container mx-auto">
+    <h2 class="data-section-title" data-aos="fade-up" data-i18n="employmentStatusTitle">Current Employment Status</h2>
+    
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-12">
+      <div data-aos="fade-right">
+        <div class="chart-container">
+          <h3 class="chart-title" data-i18n="labourForceChartTitle">Labour Force Participation</h3>
+          <div class="chart-wrapper">
+            <canvas id="labourForceChart"></canvas>
+          </div>
+          <p class="data-source" data-i18n="labourForceChartSource">Source: The Global Economy, World Bank</p>
+        </div>
+      </div>
+      
+      <div data-aos="fade-left">
+        <div class="chart-container">
+          <h3 class="chart-title" data-i18n="sectoralDistributionTitle">Sectoral Employment Distribution</h3>
+          <div class="chart-wrapper">
+            <canvas id="sectorDistributionChart"></canvas>
+          </div>
+          <p class="data-source" data-i18n="sectorDistributionSource">Source: Nepal Labour Force Survey 2024</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Gender Disparities Section -->
+<section class="py-16 px-4" style="background-color: rgba(230, 126, 34, 0.05);">
+  <div class="container mx-auto">
+    <h2 class="data-section-title" data-aos="fade-up" data-i18n="genderDisparitiesTitle">Gender Disparities in Employment</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+      <div class="stat-card card-hover" data-aos="fade-right">
+        <div class="stat-icon">
+          <div class="stat-icon-bg"></div>
+          <i class="fas fa-mars"></i>
+        </div>
+        <div class="stat-number">53.70%</div>
+        <div class="stat-label" data-i18n="maleParticipationLabel">Male Labour Participation</div>
+        <p class="data-source" data-i18n="maleParticipationSource">Source: Gender Data Portal, World Bank</p>
+      </div>
+      
+      <div class="stat-card card-hover" data-aos="fade-left">
+        <div class="stat-icon">
+          <div class="stat-icon-bg"></div>
+          <i class="fas fa-venus"></i>
+        </div>
+        <div class="stat-number">27.65%</div>
+        <div class="stat-label" data-i18n="femaleParticipationLabel">Female Labour Participation</div>
+        <p class="data-source" data-i18n="femaleParticipationSource">Source: Gender Data Portal, World Bank</p>
+      </div>
+      
+      <div class="stat-card card-hover" data-aos="fade-right" data-aos-delay="100">
+        <div class="stat-icon">
+          <div class="stat-icon-bg"></div>
+          <i class="fas fa-chart-line"></i>
+        </div>
+        <div class="stat-number">9.74%</div>
+        <div class="stat-label" data-i18n="maleUnemploymentLabel">Male Unemployment Rate</div>
+        <p class="data-source" data-i18n="maleUnemploymentSource">Source: Nepal Labour Force Survey</p>
+      </div>
+      
+      <div class="stat-card card-hover" data-aos="fade-left" data-aos-delay="100">
+        <div class="stat-icon">
+          <div class="stat-icon-bg"></div>
+          <i class="fas fa-chart-line"></i>
+        </div>
+        <div class="stat-number">12.25%</div>
+        <div class="stat-label" data-i18n="femaleUnemploymentLabel">Female Unemployment Rate</div>
+        <p class="data-source" data-i18n="femaleUnemploymentSource">Source: Nepal Labour Force Survey</p>
+      </div>
+    </div>
+    
+    <div class="mt-12 text-center" data-aos="fade-up">
+      <p class="text-lg" data-i18n="genderWageGapText">
+        In agriculture, women earn significantly less than men, with female labourers earning NPR 553.9 (USD 4.2) per day compared to NPR 626.1 (USD 4.7) for males, representing a female-to-male wage ratio of 0.9.
+      </p>
+      <p class="data-source mt-2" data-i18n="genderWageGapSource">Source: CEIC Data, Nepal Labour Force Survey</p>
+    </div>
+  </div>
+</section>
+<!-- Informal Economy Section -->
+<section class="py-16 px-4 bg-white">
+  <div class="container mx-auto">
+    <h2 class="data-section-title" data-aos="fade-up" data-i18n="informalEconomyTitle">Informal Economy Dominance</h2>
+    
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-12">
+      <div data-aos="fade-right">
+        <div class="chart-container h-full flex flex-col justify-center">
+          <div class="text-center mb-8">
+            <div class="text-6xl font-bold text-orange mb-2">84.6%</div>
+            <div class="text-xl" data-i18n="informalEmploymentLabel">Informal Employment</div>
+          </div>
+          
+          <div class="progress-container">
+            <div class="progress-bar" style="width: 84.6%;">84.6%</div>
+          </div>
+          
+          <div class="text-center mt-8">
+            <div class="text-4xl font-bold text-orange mb-2">15.4%</div>
+            <div class="text-xl" data-i18n="formalEmploymentLabel">Formal Employment</div>
+          </div>
+          
+          <div class="progress-container">
+            <div class="progress-bar" style="width: 15.4%;">15.4%</div>
+          </div>
+          
+          <p class="data-source mt-4" data-i18n="informalEconomySource">Source: WIEGO Nepal, 2024</p>
+        </div>
+      </div>
+      
+      <div data-aos="fade-left">
+        <div class="chart-container">
+          <h3 class="chart-title" data-i18n="informalWorkersCharacteristicsTitle">Characteristics of Informal Workers</h3>
+          <ul class="mt-6 space-y-4">
+            <li class="flex items-start">
+              <i class="fas fa-file-contract text-orange mt-1 mr-3"></i>
+              <div>
+                <strong data-i18n="noContractsTitle">No written contracts:</strong>
+                <span data-i18n="noContractsText">Over 80% of domestic workers lack formal agreements</span>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-money-bill-wave text-orange mt-1 mr-3"></i>
+              <div>
+                <strong data-i18n="belowMinimumWageTitle">Below minimum wage:</strong>
+                <span data-i18n="belowMinimumWageText">34% of domestic workers earn less than the official minimum wage</span>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-heartbeat text-orange mt-1 mr-3"></i>
+              <div>
+                <strong data-i18n="limitedSocialSecurityTitle">Limited social security:</strong>
+                <span data-i18n="limitedSocialSecurityText">Only 25% of informal workers have any form of health benefits</span>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-venus-mars text-orange mt-1 mr-3"></i>
+              <div>
+                <strong data-i18n="genderWageGapTitle">Gender wage gap:</strong>
+                <span data-i18n="genderWageGapText">Domestic workers earn 20.5% less than other workers, with female domestic workers earning 28.5% less than other female workers</span>
+              </div>
+            </li>
+          </ul>
+          <p class="data-source mt-4" data-i18n="informalWorkersSource">Source: WIEGO Policy Brief, ILO Nepal</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Foreign Employment Section -->
+<section class="py-16 px-4" style="background-color: rgba(230, 126, 34, 0.05);">
+  <div class="container mx-auto">
+    <h2 class="data-section-title" data-aos="fade-up" data-i18n="foreignEmploymentTitle">Foreign Employment and Migration</h2>
+    
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-12">
+      <div data-aos="fade-right">
+        <div class="chart-container">
+          <h3 class="chart-title" data-i18n="migrationTrendsTitle">Migration Trends</h3>
+          <div class="chart-wrapper">
+            <canvas id="migrationTrendsChart"></canvas>
+          </div>
+          <div class="mt-6 text-center">
+            <p class="text-lg" data-i18n="dailyDepartureText">
+              <strong>Approximately 1,500 youths</strong> leaving daily for foreign employment
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div data-aos="fade-left">
+        <div class="chart-container">
+          <h3 class="chart-title" data-i18n="remittanceImpactTitle">Remittance Impact</h3>
+          <div class="large-number mt-6">
+            <div class="stat-number">NPR 1,356.61B</div>
+            <div class="stat-label" data-i18n="remittance2024Label">Remittance in 2024-25 (10 months)</div>
+          </div>
+          
+          <div class="mt-6">
+            <div class="flex justify-between mb-2">
+              <span data-i18n="growthRateLabel">Growth Rate:</span>
+              <span class="font-bold text-orange">13.2%</span>
+            </div>
+            <div class="progress-container">
+              <div class="progress-bar" style="width: 13.2%;">13.2%</div>
+            </div>
+          </div>
+          
+          <div class="mt-6">
+            <div class="flex justify-between mb-2">
+              <span data-i18n="gdpContributionLabel">GDP Contribution:</span>
+              <span class="font-bold text-orange">24.25%</span>
+            </div>
+            <div class="progress-container">
+              <div class="progress-bar" style="width: 24.25%;">24.25%</div>
+            </div>
+          </div>
+          
+          <div class="mt-6 text-center">
+            <p class="text-lg" data-i18n="perHouseholdRemittanceText">
+              <strong>NPR 145,093</strong> average remittance per household in 2022-23
+            </p>
+          </div>
+          <p class="data-source mt-2" data-i18n="remittanceSource">Source: Nepal Rastra Bank, 2024</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="mt-12" data-aos="fade-up">
+      <div class="chart-container">
+        <h3 class="chart-title" data-i18n="migrationChallengesTitle">Migration Challenges and Casualties</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-skull-crossbones"></i>
+            </div>
+            <div class="stat-number">~1,000</div>
+            <div class="stat-label" data-i18n="annualDeathsLabel">Annual Deaths (4 per day average)</div>
+          </div>
+          
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-hand-holding-usd"></i>
+            </div>
+            <div class="stat-number">NPR 656.7M</div>
+            <div class="stat-label" data-i18n="compensation2024Label">Compensation provided in 2024</div>
+          </div>
+          
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-first-aid"></i>
+            </div>
+            <div class="stat-number">NPR 147.4M</div>
+            <div class="stat-label" data-i18n="injurySupportLabel">Injury support disbursed</div>
+          </div>
+        </div>
+        <p class="data-source mt-4" data-i18n="migrationChallengesSource">Source: Department of Foreign Employment, Nepal</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Minimum Wage Section -->
+<section class="py-16 px-4 bg-white">
+  <div class="container mx-auto">
+    <h2 class="data-section-title" data-aos="fade-up" data-i18n="minimumWageTitle">Minimum Wage and Compensation</h2>
+    
+    <div class="mt-12" data-aos="fade-up">
+      <div class="chart-container">
+        <h3 class="chart-title" data-i18n="currentMinimumWageTitle">Current Minimum Wage Structure (2025)</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-money-bill"></i>
+            </div>
+            <div class="stat-number">NPR 12,170</div>
+            <div class="stat-label" data-i18n="basicSalaryLabel">Basic Salary</div>
+          </div>
+          
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-percentage"></i>
+            </div>
+            <div class="stat-number">NPR 7,380</div>
+            <div class="stat-label" data-i18n="dearnessAllowanceLabel">Dearness Allowance</div>
+          </div>
+          
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-calculator"></i>
+            </div>
+            <div class="stat-number">NPR 19,550</div>
+            <div class="stat-label" data-i18n="totalMonthlyLabel">Total Monthly</div>
+          </div>
+        </div>
+        <p class="data-source mt-4" data-i18n="minimumWageSource">Source: Ministry of Labour, Employment and Social Security, Nepal</p>
+      </div>
+    </div>
+    
+    <div class="mt-12" data-aos="fade-up" data-aos-delay="100">
+      <h3 class="text-2xl font-bold text-center text-orange mb-8" data-i18n="historicalWageEvolutionTitle">Historical Wage Evolution</h3>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <div class="timeline-year">2017</div>
+            <div class="timeline-title" data-i18n="wage2017Title">NPR 13,450</div>
+            <div class="timeline-description" data-i18n="wage2017Description">Basic: 10,000 + Allowance: 3,450</div>
+          </div>
+          <div class="timeline-dot"></div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <div class="timeline-year">2019</div>
+            <div class="timeline-title" data-i18n="wage2019Title">NPR 17,300</div>
+            <div class="timeline-description" data-i18n="wage2019Description">Basic: 10,820 + Allowance: 6,480 (28.6% increase)</div>
+          </div>
+          <div class="timeline-dot"></div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <div class="timeline-year">2025</div>
+            <div class="timeline-title" data-i18n="wage2025Title">NPR 19,550</div>
+            <div class="timeline-description" data-i18n="wage2025Description">Basic: 12,170 + Allowance: 7,380 (13.0% increase)</div>
+          </div>
+          <div class="timeline-dot"></div>
+        </div>
+      </div>
+      <p class="data-source text-center mt-4" data-i18n="wageEvolutionSource">Source: Ministry of Labour, Employment and Social Security, Nepal</p>
+    </div>
+  </div>
+</section>
+<!-- Trade Union Landscape Section -->
+<section class="py-16 px-4" style="background-color: rgba(230, 126, 34, 0.05);">
+  <div class="container mx-auto">
+    <h2 class="data-section-title" data-aos="fade-up" data-i18n="tradeUnionTitle">Trade Union Landscape</h2>
+    
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-12">
+      <div data-aos="fade-right">
+        <div class="chart-container">
+          <h3 class="chart-title" data-i18n="unionMembershipTitle">Major Trade Union Confederations</h3>
+          <div class="chart-wrapper">
+            <canvas id="unionMembershipChart"></canvas>
+          </div>
+          <p class="data-source mt-2" data-i18n="unionMembershipSource">Source: GEFONT, NTUC, DECONT Annual Reports, 2024</p>
+        </div>
+      </div>
+      
+      <div data-aos="fade-left">
+        <div class="chart-container">
+          <h3 class="chart-title" data-i18n="gefontMembershipTitle">GEFONT Membership by Sector (2024)</h3>
+          <div class="chart-wrapper">
+            <canvas id="gefontMembershipChart"></canvas>
+          </div>
+          <p class="data-source mt-2" data-i18n="gefontMembershipSource">Source: GEFONT Membership Report, 2024</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="mt-12 text-center" data-aos="fade-up">
+      <p class="text-lg" data-i18n="unionChallengesText">
+        Trade unions face significant organizational challenges, with many experiencing membership declines in key sectors. The transport sector saw a 25% decrease in membership, while the tourism sector declined by 23.8%.
+      </p>
+      <p class="data-source mt-2" data-i18n="unionChallengesSource">Source: Friedrich Ebert Stiftung, Nepal Trade Union Study, 2024</p>
+    </div>
+  </div>
+</section>
+<!-- Workplace Safety Section -->
+<section class="py-16 px-4 bg-white">
+  <div class="container mx-auto">
+    <h2 class="data-section-title" data-aos="fade-up" data-i18n="workplaceSafetyTitle">Workplace Safety and Health</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+      <div class="stat-card card-hover" data-aos="fade-up">
+        <div class="stat-icon">
+          <i class="fas fa-procedures"></i>
+        </div>
+        <div class="stat-number">6.4</div>
+        <div class="stat-label" data-i18n="workRelatedInjuriesLabel">Work-related injuries per 1,000 population</div>
+        <p class="data-source" data-i18n="workRelatedInjuriesSource">Source: Injury Prevention Journal, 2021</p>
+      </div>
+      
+      <div class="stat-card card-hover" data-aos="fade-up" data-aos-delay="100">
+        <div class="stat-icon">
+          <i class="fas fa-home"></i>
+        </div>
+        <div class="stat-number">8.0</div>
+        <div class="stat-label" data-i18n="homeRelatedInjuriesLabel">Home-related injuries per 1,000 population</div>
+        <p class="data-source" data-i18n="homeRelatedInjuriesSource">Source: Injury Prevention Journal, 2021</p>
+      </div>
+      
+      <div class="stat-card card-hover" data-aos="fade-up" data-aos-delay="200">
+        <div class="stat-icon">
+          <i class="fas fa-exclamation-triangle"></i>
+        </div>
+        <div class="stat-number">~20,000</div>
+        <div class="stat-label" data-i18n="annualAccidentsLabel">Annual workplace accidents</div>
+        <p class="data-source" data-i18n="annualAccidentsSource">Source: Nepal Labour Force Survey, 2024</p>
+      </div>
+      
+      <div class="stat-card card-hover" data-aos="fade-up" data-aos-delay="300">
+        <div class="stat-icon">
+          <i class="fas fa-user-shield"></i>
+        </div>
+        <div class="stat-number">15.4%</div>
+        <div class="stat-label" data-i18n="safetyCoverageLabel">Workers covered by safety regulations</div>
+        <p class="data-source" data-i18n="safetyCoverageSource">Source: ILO Nepal, 2024</p>
+      </div>
+    </div>
+    
+    <div class="mt-12" data-aos="fade-up">
+      <div class="chart-container">
+        <h3 class="chart-title" data-i18n="sectorSafetyChallengesTitle">Sector-specific Safety Challenges</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6 ml-32">
+          <div>
+            <h4 class="text-xl font-bold text-orange mb-4" data-i18n="constructionSafetyTitle">Construction Industry</h4>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <i class="fas fa-hard-hat text-orange mt-1 mr-3"></i>
+                <span data-i18n="constructionSafetyText1">Employs approximately 1 million workers</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-exclamation-circle text-orange mt-1 mr-3"></i>
+                <span data-i18n="constructionSafetyText2">High levels of informality</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-tools text-orange mt-3 mr-3"></i>
+                <span data-i18n="constructionSafetyText3">Inadequate safety measures and training</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 class="text-xl font-bold text-orange mb-4" data-i18n="garmentSafetyTitle">Garment Industry</h4>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <i class="fas fa-tshirt text-orange mt-1 mr-3"></i>
+                <span data-i18n="garmentSafetyText1">Poor occupational safety practices</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-head-side-mask text-orange mt-1 mr-3"></i>
+                <span data-i18n="garmentSafetyText2">Workers often lack access to personal protective equipment</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-fire-extinguisher text-orange mt-1 mr-3"></i>
+                <span data-i18n="garmentSafetyText3">Limited fire safety measures</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="data-source text-center mt-4" data-i18n="sectorSafetySource">Source: ILO Nepal, Occupational Safety and Health Assessment, 2024</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Social Security Section -->
+<section class="py-16 px-4" style="background-color: rgba(230, 126, 34, 0.05);">
+  <div class="container mx-auto">
+    <h2 class="data-section-title" data-aos="fade-up" data-i18n="socialSecurityTitle">Social Security and Protection</h2>
+    
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-12">
+      <div data-aos="fade-right">
+        <div class="chart-container">
+          <h3 class="chart-title" data-i18n="socialSecurityCoverageTitle">Social Security Fund Coverage</h3>
+          <div class="text-center my-8">
+            <div class="text-6xl font-bold text-orange mb-2">381,000</div>
+            <div class="text-xl" data-i18n="currentlyRegisteredLabel">Currently Registered Workers</div>
+          </div>
+          
+          <div class="mt-6">
+            <div class="flex justify-between mb-2">
+              <span data-i18n="targetCoverageLabel">Target Coverage by 2025:</span>
+              <span class="font-bold text-orange">60%</span>
+            </div>
+            <div class="progress-container">
+              <div class="progress-bar" style="width: 60%;">60%</div>
+            </div>
+          </div>
+          
+          <div class="mt-6">
+            <div class="flex justify-between mb-2">
+              <span data-i18n="currentCoverageLabel">Current Coverage:</span>
+              <span class="font-bold text-orange">5.4%</span>
+            </div>
+            <div class="progress-container">
+              <div class="progress-bar" style="width: 5.4%;">5.4%</div>
+            </div>
+          </div>
+          
+          <div class="mt-8 text-center">
+            <p class="text-lg" data-i18n="contributionStructureText">
+              <strong>Contribution Structure:</strong> 31% of basic salary (20% employer + 11% employee)
+            </p>
+          </div>
+          <p class="data-source mt-4" data-i18n="socialSecurityCoverageSource">Source: Social Security Fund, Nepal, 2024</p>
+        </div>
+      </div>
+      
+      <div data-aos="fade-left">
+        <div class="chart-container">
+          <h3 class="chart-title" data-i18n="benefitsChallengesTitle">Benefits and Challenges</h3>
+          <div class="mt-6">
+            <h4 class="text-xl font-bold text-orange mb-4" data-i18n="benefitsTitle">Benefits Provided</h4>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <i class="fas fa-heartbeat text-orange mt-1 mr-3"></i>
+                <span data-i18n="healthcareBenefit">Healthcare</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-baby text-orange mt-1 mr-3"></i>
+                <span data-i18n="maternityBenefit">Maternity Support</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-umbrella text-orange mt-1 mr-3"></i>
+                <span data-i18n="accidentInsurance">Accident Insurance</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-user-clock text-orange mt-1 mr-3"></i>
+                <span data-i18n="oldAgePension">Old-age Pensions</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="mt-8">
+            <h4 class="text-xl font-bold text-orange mb-4" data-i18n="implementationChallengesTitle">Implementation Challenges</h4>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <i class="fas fa-question-circle text-orange mt-1 mr-3"></i>
+                <span data-i18n="limitedAwareness">Limited awareness among workers and employers</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-file-alt text-orange mt-1 mr-3"></i>
+                <span data-i18n="complexProcedures">Complex registration procedures</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-user-times text-orange mt-1 mr-3"></i>
+                <span data-i18n="employerResistance">Resistance from employers regarding contribution requirements</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-gavel text-orange mt-1 mr-3"></i>
+                <span data-i18n="inadequateEnforcement">Inadequate enforcement of mandatory participation</span>
+              </li>
+            </ul>
+          </div>
+          <p class="data-source mt-4" data-i18n="benefitsChallengesSource">Source: Social Security Fund, Nepal, 2024</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Sectoral Analysis Section -->
+<section class="py-16 px-4 bg-white">
+  <div class="container mx-auto">
+    <h2 class="data-section-title" data-aos="fade-up" data-i18n="sectoralAnalysisTitle">Sectoral Analysis</h2>
+    
+    <div class="sector-tabs mt-8" data-aos="fade-up">
+      <div class="sector-tab active" data-sector="agriculture" data-i18n="agricultureTab">Agriculture</div>
+      <div class="sector-tab" data-sector="construction" data-i18n="constructionTab">Construction</div>
+      <div class="sector-tab" data-sector="domestic" data-i18n="domesticTab">Domestic Work</div>
+      <div class="sector-tab" data-sector="manufacturing" data-i18n="manufacturingTab">Manufacturing</div>
+    </div>
+    
+    <div class="sector-content active" id="agriculture" data-aos="fade-up">
+      <div class="sector-card">
+        <h3 data-i18n="agricultureWorkersTitle">Agricultural Workers</h3>
+        <p data-i18n="agricultureWorkersText1">
+          Agriculture employs 61.21% of Nepal's workforce but faces declining productivity and persistent poverty.
+        </p>
+        <p data-i18n="agricultureWorkersText2">
+          The sector is characterized by declining household participation (from 73.9% in 2010/11 to 60.3% in 2022/23) and shrinking land holdings (average size decreased from 1.1 hectares in 1995/96 to 0.4 hectares in 2022/23).
+        </p>
+        
+        <div class="sector-stats">
+          <div class="sector-stat">
+            <div class="sector-stat-number">61.21%</div>
+            <div class="sector-stat-label" data-i18n="workforceEmploymentLabel">Workforce Employment</div>
+          </div>
+          <div class="sector-stat">
+            <div class="sector-stat-number">88%</div>
+            <div class="sector-stat-label" data-i18n="femaleToMaleWageRatio">Female-to-Male Wage Ratio</div>
+          </div>
+          <div class="sector-stat">
+            <div class="sector-stat-number">5.2%</div>
+            <div class="sector-stat-label" data-i18n="marketOrientationLabel">Market Orientation</div>
+          </div>
+        </div>
+        <p class="data-source mt-4" data-i18n="agricultureSource">Source: Ministry of Agriculture, Nepal, 2024</p>
+      </div>
+    </div>
+    
+    <div class="sector-content" id="construction" data-aos="fade-up">
+      <div class="sector-card">
+        <h3 data-i18n="constructionWorkersTitle">Construction Workers</h3>
+        <p data-i18n="constructionWorkersText1">
+          The construction sector employs approximately 1 million workers (13.8% of total employment) and contributes 9.5% to GDP.
+        </p>
+        <p data-i18n="constructionWorkersText2">
+          Key challenges include high informality, safety concerns, skill shortages, and increasing reliance on non-Nepali workers.
+        </p>
+        
+        <div class="sector-stats">
+          <div class="sector-stat">
+            <div class="sector-stat-number">13.8%</div>
+            <div class="sector-stat-label" data-i18n="totalEmploymentLabel">Total Employment</div>
+          </div>
+          <div class="sector-stat">
+            <div class="sector-stat-number">9.5%</div>
+            <div class="sector-stat-label" data-i18n="gdpContributionLabel">GDP Contribution</div>
+          </div>
+          <div class="sector-stat">
+            <div class="sector-stat-number">~1M</div>
+            <div class="sector-stat-label" data-i18n="workersEmployedLabel">Workers Employed</div>
+          </div>
+        </div>
+        <p class="data-source mt-4" data-i18n="constructionSource">Source: Nepal Infrastructure Summit, 2024</p>
+      </div>
+    </div>
+    
+    <div class="sector-content" id="domestic" data-aos="fade-up">
+      <div class="sector-card">
+        <h3 data-i18n="domesticWorkersTitle">Domestic Workers</h3>
+        <p data-i18n="domesticWorkersText1">
+          An estimated 200,000-250,000 domestic workers, predominantly women, face unique challenges including wage discrimination, lack of legal protection, and no formal contracts.
+        </p>
+        <p data-i18n="domesticWorkersText2">
+          Over 80% work without written agreements, and only 25% have any health benefits. There are also significant concerns regarding child labour in this sector.
+        </p>
+        
+        <div class="sector-stats">
+          <div class="sector-stat">
+            <div class="sector-stat-number">200K-250K</div>
+            <div class="sector-stat-label" data-i18n="estimatedWorkersLabel">Estimated Workers</div>
+          </div>
+          <div class="sector-stat">
+            <div class="sector-stat-number">-20.5%</div>
+            <div class="sector-stat-label" data-i18n="wageDiscriminationLabel">Wage Discrimination</div>
+          </div>
+          <div class="sector-stat">
+            <div class="sector-stat-number">80%+</div>
+            <div class="sector-stat-label" data-i18n="noFormalContractsLabel">No Formal Contracts</div>
+          </div>
+        </div>
+        <p class="data-source mt-4" data-i18n="domesticSource">Source: WOREC Nepal, ILO Report, 2024</p>
+      </div>
+    </div>
+    
+    <div class="sector-content" id="manufacturing" data-aos="fade-up">
+      <div class="sector-card">
+        <h3 data-i18n="manufacturingWorkersTitle">Manufacturing and Industrial Workers</h3>
+        <p data-i18n="manufacturingWorkersText1">
+          The manufacturing sector employs 8.2% of the workforce but faces competitiveness challenges.
+        </p>
+        <p data-i18n="manufacturingWorkersText2">
+          Worker concerns include job security, wage stagnation, limited union representation, and risk of job losses to automation.
+        </p>
+        
+        <div class="sector-stats">
+          <div class="sector-stat">
+            <div class="sector-stat-number">8.2%</div>
+            <div class="sector-stat-label" data-i18n="workforceEmploymentLabel">Workforce Employment</div>
+          </div>
+          <div class="sector-stat">
+            <div class="sector-stat-number">0.58M</div>
+            <div class="sector-stat-label" data-i18n="workersEmployedLabel">Workers Employed</div>
+          </div>
+          <div class="sector-stat">
+            <div class="sector-stat-number">Declining</div>
+            <div class="sector-stat-label" data-i18n="unionMembershipLabel">Union Membership</div>
+          </div>
+        </div>
+        <p class="data-source mt-4" data-i18n="manufacturingSource">Source: GEFONT Industrial Report, 2024</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Regional Variations Section -->
+<section class="py-16 px-4" style="background-color: rgba(230, 126, 34, 0.05);">
+  <div class="container mx-auto">
+    <h2 class="data-section-title" data-aos="fade-up" data-i18n="regionalVariationsTitle">Regional and Provincial Variations</h2>
+    
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-12">
+      <div data-aos="fade-right">
+        <div class="chart-container">
+          <h3 class="chart-title" data-i18n="employmentDisparitiesTitle">Employment Disparities</h3>
+          <div class="chart-wrapper">
+            <canvas id="employmentDisparitiesChart"></canvas>
+          </div>
+          <p class="data-source mt-2" data-i18n="employmentDisparitiesSource">Source: Nepal Labour Force Survey, 2024</p>
+        </div>
+      </div>
+      
+      <div data-aos="fade-left">
+        <div class="chart-container">
+          <h3 class="chart-title mt-14" data-i18n="migrationHotspotsTitle">Migration Hotspots</h3>
+          <!-- <div class="map-container">
+            <div class="map-placeholder">
+              <i class="fas fa-map-marked-alt"></i>
+              <p data-i18n="nepalMapLabel">Nepal Regional Migration Map</p>
+            </div>
+          </div> -->
+          
+          <div class="mt-6">
+            <h4 class="text-xl font-bold text-orange mb-4" data-i18n="highMigrationRegionsTitle">High Migration Regions</h4>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <i class="fas fa-map-marker-alt text-orange mt-1 mr-3"></i>
+                <div>
+                  <strong data-i18n="easternRegionLabel">Eastern Region:</strong>
+                  <span data-i18n="easternRegionText">32.2% of total strike events and high outmigration</span>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-map-marker-alt text-orange mt-1 mr-3"></i>
+                <div>
+                  <strong data-i18n="teraiRegionLabel">Terai Region:</strong>
+                  <span data-i18n="teraiRegionText">54.9% of labour disputes and strikes</span>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-map-marker-alt text-orange mt-1 mr-3"></i>
+                <div>
+                  <strong data-i18n="midWesternRegionLabel">Mid-Western and Far-Western:</strong>
+                  <span data-i18n="midWesternRegionText">High rates of labour migration to India and Gulf countries</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <p class="data-source mt-4" data-i18n="migrationHotspotsSource">Source: Department of Foreign Employment, Nepal</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Current Challenges Section -->
+<section class="py-16 px-4 bg-white">
+  <div class="container mx-auto">
+    <h2 class="data-section-title" data-aos="fade-up" data-i18n="currentChallengesTitle">Current Challenges and Concerns</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+      <div class="stat-card card-hover" data-aos="fade-up">
+        <div class="stat-icon">
+          <i class="fas fa-user-graduate"></i>
+        </div>
+        <h3 class="text-xl font-bold text-orange mb-3" data-i18n="youthEmploymentCrisisTitle">Youth Employment Crisis</h3>
+        <p class="stat-label" data-i18n="youthEmploymentCrisisText">
+          Youth unemployment remains critically high at 20.82%, indicating systematic failures in job creation for new entrants to the labour market.
+        </p>
+        <p class="data-source mt-2" data-i18n="youthEmploymentSource">Source: ILO Nepal, 2024</p>
+      </div>
+      
+      <div class="stat-card card-hover" data-aos="fade-up" data-aos-delay="100">
+        <div class="stat-icon">
+          <i class="fas fa-tools"></i>
+        </div>
+        <h3 class="text-xl font-bold text-orange mb-3" data-i18n="skillsMismatchTitle">Skills Mismatch</h3>
+        <p class="stat-label" data-i18n="skillsMismatchText">
+          A significant gap exists between available skills and market demands, with over 677,000 generally skilled workers migrating abroad compared to only 732 highly skilled workers.
+        </p>
+        <p class="data-source mt-2" data-i18n="skillsMismatchSource">Source: Department of Foreign Employment, Nepal</p>
+      </div>
+      
+      <div class="stat-card card-hover" data-aos="fade-up" data-aos-delay="200">
+        <div class="stat-icon">
+          <i class="fas fa-money-bill-wave"></i>
+        </div>
+        <h3 class="text-xl font-bold text-orange mb-3" data-i18n="remittanceDependenceTitle">Economic Dependence on Remittances</h3>
+        <p class="stat-label" data-i18n="remittanceDependenceText">
+          While remittances provide crucial foreign exchange, they indicate brain drain, consumption-oriented economy, and vulnerability to external shocks.
+        </p>
+        <p class="data-source mt-2" data-i18n="remittanceDependenceSource">Source: Nepal Rastra Bank, 2024</p>
+      </div>
+      
+      <div class="stat-card card-hover" data-aos="fade-up" data-aos-delay="300">
+        <div class="stat-icon">
+          <i class="fas fa-briefcase"></i>
+        </div>
+        <h3 class="text-xl font-bold text-orange mb-3" data-i18n="informalEconomyTitle">Labour Market Informality</h3>
+        <p class="stat-label" data-i18n="informalEconomyText">
+          The dominance of informal employment (84.6%) creates multiple challenges including limited social protection, weak enforcement of labour laws, and poor working conditions.
+        </p>
+        <p class="data-source mt-2" data-i18n="informalEconomyChallengeSource">Source: WIEGO Nepal, 2024</p>
+      </div>
+      
+      <div class="stat-card card-hover" data-aos="fade-up" data-aos-delay="400">
+        <div class="stat-icon">
+          <i class="fas fa-gavel"></i>
+        </div>
+        <h3 class="text-xl font-bold text-orange mb-3" data-i18n="policyImplementationTitle">Policy Implementation Gaps</h3>
+        <p class="stat-label" data-i18n="policyImplementationText">
+          Despite progressive labour laws, implementation and enforcement remain inconsistent, particularly in the informal sector and remote areas.
+        </p>
+        <p class="data-source mt-2" data-i18n="policyImplementationSource">Source: Labour Rights Index, 2024</p>
+      </div>
+      
+      <div class="stat-card card-hover" data-aos="fade-up" data-aos-delay="500">
+        <div class="stat-icon">
+          <i class="fas fa-robot"></i>
+        </div>
+        <h3 class="text-xl font-bold text-orange mb-3" data-i18n="technologicalDisruptionTitle">Technological Disruption</h3>
+        <p class="stat-label" data-i18n="technologicalDisruptionText">
+          Emerging technologies pose risks of job displacement in traditional sectors while creating opportunities in the digital economy that require new skill sets.
+        </p>
+        <p class="data-source mt-2" data-i18n="technologicalDisruptionSource">Source: World Bank Nepal Development Report, 2024</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Recent Policy Developments Section -->
+<section class="py-16 px-4" style="background-color: rgba(230, 126, 34, 0.05);">
+  <div class="container mx-auto">
+    <h2 class="data-section-title" data-aos="fade-up" data-i18n="policyDevelopmentsTitle">Recent Policy Developments</h2>
+    
+    <div class="timeline mt-12">
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-content">
+          <div class="timeline-year">2017</div>
+          <div class="timeline-title" data-i18n="labourAct2017Title">Labour Act 2017</div>
+          <div class="timeline-description" data-i18n="labourAct2017Description">
+            Provided framework for improved worker protections, though implementation and enforcement remain inconsistent.
+          </div>
+        </div>
+        <div class="timeline-dot"></div>
+      </div>
+      
+      <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-content">
+          <div class="timeline-year">2023</div>
+          <div class="timeline-title" data-i18n="socialSecurityExpansionTitle">Social Security Expansion</div>
+          <div class="timeline-description" data-i18n="socialSecurityExpansionDescription">
+            Government approved guidelines to extend social security coverage to migrant workers, self-employed persons, and informal economy workers.
+          </div>
+        </div>
+        <div class="timeline-dot"></div>
+      </div>
+      
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-content">
+          <div class="timeline-year">2025</div>
+          <div class="timeline-title" data-i18n="minimumWageRevisionTitle">Minimum Wage Revision</div>
+          <div class="timeline-description" data-i18n="minimumWageRevisionDescription">
+            Tripartite agreement on minimum wage increases (13% to NPR 19,550) demonstrates improved dialogue between government, employers, and trade unions.
+          </div>
+        </div>
+        <div class="timeline-dot"></div>
+      </div>
+    </div>
+    <p class="data-source text-center mt-4" data-i18n="policyDevelopmentsSource">Source: Ministry of Labour, Employment and Social Security, Nepal</p>
+  </div>
+</section>
+<!-- Economic Impact Section -->
+<section class="py-16 px-4 bg-white">
+  <div class="container mx-auto">
+    <h2 class="data-section-title" data-aos="fade-up" data-i18n="economicImpactTitle">Economic Impact of Labour Issues</h2>
+    
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-12">
+      <div data-aos="fade-right">
+        <div class="chart-container">
+          <h3 class="chart-title" data-i18n="strikeActivityTitle">Strike Activity and Economic Costs</h3>
+          <div class="large-number mt-14">
+            <div class="stat-number">NPR 1.8B</div>
+            <div class="stat-label" data-i18n="dailyStrikeCostLabel">Cost per day of general strikes</div>
+          </div>
+          
+          <div class="large-number mt-14">
+            <div class="stat-number">NPR 27B</div>
+            <div class="stat-label" data-i18n="annualLossesLabel">Annual losses between 2008-2013</div>
+          </div>
+          
+          <div class="mt-14">
+            <p class="text-lg" data-i18n="gdpImpactText">
+              Strikes decelerated GDP growth by 0.6-2.2 percentage points during peak periods.
+            </p>
+          </div>
+          <p class="data-source mt-4" data-i18n="strikeActivitySource">Source: Online Khabar, Labour Law Analysis, 2024</p>
+        </div>
+      </div>
+      
+      <div data-aos="fade-left">
+        <div class="chart-container">
+          <h3 class="chart-title" data-i18n="productivityChallengesTitle">Productivity Challenges</h3>
+          <div class="chart-wrapper">
+            <canvas id="productivityChart"></canvas>
+          </div>
+          
+          <div class="mt-8">
+            <h4 class="text-xl font-bold text-orange mb-4" data-i18n="keyConstraintsTitle">Key Constraints</h4>
+            <ul class="space-y-3">
+              <li class="flex items-start">
+                <i class="fas fa-seedling text-orange mt-1 mr-3"></i>
+                <span data-i18n="agriculturalProductivityText">Agricultural productivity: Limited mechanization and small land holdings</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-graduation-cap text-orange mt-1 mr-3"></i>
+                <span data-i18n="skillsConstraintsText">Skills constraints: Inadequate technical training and professional development</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-microchip text-orange mt-1 mr-3"></i>
+                <span data-i18n="technologyGapText">Technology gap: Limited adoption of modern production techniques</span>
+              </li>
+            </ul>
+          </div>
+          <p class="data-source mt-4" data-i18n="productivitySource">Source: World Bank Nepal Productivity Report, 2024</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Future Implications Section -->
+<section class="py-16 px-4" style="background-color: rgba(230, 126, 34, 0.05);">
+  <div class="container mx-auto">
+    <h2 class="data-section-title" data-aos="fade-up" data-i18n="futureImplicationsTitle">Future Implications and Trends</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+      <div class="stat-card card-hover" data-aos="fade-up">
+        <div class="stat-icon">
+          <i class="fas fa-users"></i>
+        </div>
+        <h3 class="text-xl font-bold text-orange mb-3" data-i18n="demographicDividendTitle">Demographic Dividend</h3>
+        <p class="stat-label" data-i18n="demographicDividendText">
+          Nepal's young population presents opportunities with growing working-age population and declining dependency ratio, but requires critical investment in human capital development.
+        </p>
+        <p class="data-source mt-2" data-i18n="demographicDividendSource">Source: World Bank Nepal Development Report, 2024</p>
+      </div>
+      
+      <div class="stat-card card-hover" data-aos="fade-up" data-aos-delay="100">
+        <div class="stat-icon">
+          <i class="fas fa-laptop-code"></i>
+        </div>
+        <h3 class="text-xl font-bold text-orange mb-3" data-i18n="technologicalDisruptionTitle">Technological Disruption</h3>
+        <p class="stat-label" data-i18n="technologicalDisruptionText">
+          Emerging technologies pose risks of job displacement but also create opportunities in digital economy, requiring digital literacy and technical skills transformation.
+        </p>
+        <p class="data-source mt-2" data-i18n="technologicalDisruptionSource">Source: World Bank Nepal Development Report, 2024</p>
+      </div>
+      
+      <div class="stat-card card-hover" data-aos="fade-up" data-aos-delay="200">
+        <div class="stat-icon">
+          <i class="fas fa-leaf"></i>
+        </div>
+        <h3 class="text-xl font-bold text-orange mb-3" data-i18n="climateChangeTitle">Climate Change Impacts</h3>
+        <p class="stat-label" data-i18n="climateChangeText">
+          Environmental challenges will affect labour markets through agricultural adaptation needs, migration pressures, and opportunities in renewable energy and environmental services.
+        </p>
+        <p class="data-source mt-2" data-i18n="climateChangeSource">Source: World Bank Nepal Development Report, 2024</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Recommendations Section -->
+<section class="py-16 px-4 bg-white">
+  <div class="container mx-auto">
+    <h2 class="data-section-title" data-aos="fade-up" data-i18n="recommendationsTitle">Recommendations for Rastriya Shramik Mahasangh Nepal</h2>
+    
+    <div class="mt-12">
+      <div class="recommendation-card" data-aos="fade-up">
+        <h3 data-i18n="immediateActionsTitle">Immediate Actions</h3>
+        <ul>
+          <li data-i18n="immediateAction1">Strengthen organizing efforts in the informal sector, particularly among domestic workers, agricultural labourers, and construction workers</li>
+          <li data-i18n="immediateAction2">Advocate for implementation of existing labour laws and social security provisions</li>
+          <li data-i18n="immediateAction3">Push for living wage standards that reflect actual cost of living rather than minimum subsistence</li>
+        </ul>
+      </div>
+      
+      <div class="recommendation-card" data-aos="fade-up" data-aos-delay="100">
+        <h3 data-i18n="mediumTermGoalsTitle">Medium-term Goals</h3>
+        <ul>
+          <li data-i18n="mediumTermGoal1">Develop sector-specific strategies for different categories of workers (agricultural, construction, domestic, etc.)</li>
+          <li data-i18n="mediumTermGoal2">Build alliances with international labour organizations to protect migrant workers</li>
+          <li data-i18n="mediumTermGoal3">Promote skills development programs linked to emerging economic opportunities</li>
+        </ul>
+      </div>
+      
+      <div class="recommendation-card" data-aos="fade-up" data-aos-delay="200">
+        <h3 data-i18n="longTermVisionTitle">Long-term Vision</h3>
+        <ul>
+          <li data-i18n="longTermVision1">Advocate for structural economic transformation toward higher-productivity sectors</li>
+          <li data-i18n="longTermVision2">Support formalization of the informal economy through appropriate incentives and support</li>
+          <li data-i18n="longTermVision3">Build comprehensive social protection systems that cover all categories of workers</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Footer -->
+<footer class="text-white pt-16 pb-8 px-4" style="background: linear-gradient(135deg, var(--primary-orange), var(--dark-orange));">
+  <div class="container mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+      <!-- Brand Column -->
+      <div class="md:col-span-1">
+        <a href="/" class="flex items-center mb-6 transition-transform duration-300 hover:scale-105">
+          <img src="/logo.jpg" alt="Rastriya Shramik Mahasangh Nepal Logo" class="h-24 md:h-28 mr-3">
+          <div>
+            <h3 class="text-xl font-bold" data-i18n="organizationName">Rastriya Shramik Mahasangh</h3>
+            <p class="text-sm text-white-300" data-i18n="organizationLocation">नेपाल</p>
+          </div>
+        </a>
+        <p class="text-white mb-6" data-i18n="footerDescription">
+          Empowering workers through unity, advocacy, and action since 2080 B.S.
+        </p>
+        <div class="flex space-x-4">
+          <a
+            href="https://www.facebook.com/share/166n2f5LS2/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="bg-gold hover:bg-orange-600 w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300"
+            aria-label="Facebook"
+          ><i class="fab fa-facebook-f"></i>
+          </a>
+          <a
+            href="https://wa.me/9779855020288?text=Hello%2C%20Rastriya%20Shramik%20Mahasangh%20Nepal.%20I%20visited%20your%20website%20and%20have%20a%20question."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="bg-gold hover:bg-orange-600 w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300"
+            aria-label="WhatsApp"
+          >
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a
+            href="https://youtu.be/XbdMoZdlIbQ?si=zh4b24EBB9qC7RYW"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="bg-gold hover:bg-orange-600 w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300"
+            aria-label="YouTube"
+          >
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="#" class="bg-gold hover:bg-orange-600 w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+      <!-- Quick Links -->
+      <div class="md:col-span-1">
+        <h3 class="text-lg font-bold mb-6 uppercase tracking-wider text-white" data-i18n="quickLinks">Quick Links</h3>
+        <ul class="space-y-3">
+          <li>
+            <a href="/About/" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center">
+              <i class="fas fa-angle-right mr-2 text-gold"></i>
+              <span data-i18n="aboutUs">About Us</span>
+            </a>
+          </li>
+          <li>
+            <a href="/Archives/" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center">
+              <i class="fas fa-angle-right mr-2 text-gold"></i>
+              <span data-i18n="latestUpdatesFooter">Archives</span>
+            </a>
+          </li>
+          <li>
+            <a href="/Events/" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center">
+              <i class="fas fa-angle-right mr-2 text-gold"></i>
+              <span data-i18n="ourEvents">Our Events</span>
+            </a>
+          </li>
+          <li>
+            <a href="/Media_Coverage/" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center">
+              <i class="fas fa-angle-right mr-2 text-gold"></i>
+              <span data-i18n="mediaCoverages">Media Coverages</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Resources -->
+      <div class="md:col-span-1">
+        <h3 class="text-lg font-bold mb-6 uppercase tracking-wider text-white" data-i18n="resources">Resources</h3>
+        <ul class="space-y-3">
+          <li>
+            <a href="/Slogans/" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center">
+              <i class="fas fa-angle-right mr-2 text-gold"></i>
+              <span data-i18n="ourSlogans">Our Slogans</span>
+            </a>
+          </li>
+          <li>
+            <a href="/Press_Releases/" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center">
+              <i class="fas fa-angle-right mr-2 text-gold"></i>
+              <span data-i18n="pressReleases">Press Releases</span>
+            </a>
+          </li>
+          <li>
+            <a href="/Publications/" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center">
+              <i class="fas fa-angle-right mr-2 text-gold"></i>
+              <span data-i18n="publications">Publications</span>
+            </a>
+          </li>
+          <li>
+            <a href="/Gallery/" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center">
+              <i class="fas fa-angle-right mr-2 text-gold"></i>
+              <span data-i18n="gallery">Gallery</span>
+            </a>
+          </li>
+          <li>
+            <a href="/Labour_Scenario/" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center">
+              <i class="fas fa-angle-right mr-2 text-gold"></i>
+              <span data-i18n="Labourscenario">Current Labour Scenario</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Contact & Newsletter -->
+      <div class="md:col-span-1">
+        <h3 class="text-lg font-bold mb-6 uppercase tracking-wider text-white" data-i18n="contactUs">Contact Us</h3>
+        <ul class="space-y-4 mb-8">
+          <li class="flex items-start">
+            <i class="fas fa-map-marker-alt text-gold mt-1 mr-3"></i>
+            <a href="https://maps.app.goo.gl/4C8W3pM3qPDEQvMA9" target="_blank" class="text-white hover:text-yellow-200 transition-colors duration-300" data-address="Keshavdham, Guheswari Marg - 8, Kathmandu, Nepal">Keshavdham, Guheswari Marg - 8, Kathmandu, Nepal</a>
+          </li>
+          <li class="flex items-center">
+            <i class="fas fa-phone-alt text-gold mr-3"></i>
+            <a href="tel:+9779855020288" class="text-white hover:text-yellow-200 transition-colors duration-300" data-phone="+977-9855020288">+977-9855020288</a>
+          </li>
+          <li class="flex items-center">
+            <i class="fas fa-envelope text-gold mr-3"></i>
+            <a href="mailto:rashtriyashramikm@gmail.com" class="text-white hover:text-yellow-200 transition-colors duration-300">rashtriyashramikm@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Bottom Bar -->
+    <div class="border-t border-orange-800 pt-4">
+      <div class="flex justify-center">
+        <p class="text-white text-sm" data-i18n="copyright">
+          &copy; <span id="current-year"></span> Rastriya Shramik Mahasangh Nepal. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+<button id="back-to-top" class="fixed bottom-6 right-6 bg-orange text-white p-3 rounded-full shadow-lg transition-all duration-300 opacity-0 invisible hover:bg-gold">
+  <i class="fas fa-arrow-up"></i>
+</button>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+// Language data structure with all translations
+const translations = {
+  en: {
+    // Navigation
+    home: "Home",
+    about: "About",
+    ourStory: "Our Story",
+    organizationalStructure: "Organizational Structure",
+    leadership: "Leadership",
+    resources: "Resources",
+    ourSlogans: "Our Slogans",
+    pressReleases: "Press Releases",
+    publications: "Publications",
+    events: "Events",
+    gallery: "Gallery",
+    Labourscenario: "Current Labour Scenario",
+    
+    // Hero Section
+    heroTitle: "Current Labour Scenario in Nepal",
+    heroSubtitle: "A comprehensive analysis of challenges, opportunities, and the path forward for Nepal's workforce",
+    
+    // Breadcrumb
+    breadcrumbHome: "Home",
+    breadcrumbLabour: "Labour Scenario",
+    
+    // Executive Summary
+    // executiveSummaryTitle: "Executive Summary",
+    executiveSummaryText: "Nepal's labour landscape presents a complex picture of challenges and opportunities in 2024. With a total labour force of 8.43 million people representing only 39.75% of the population, the country faces significant employment challenges. The unemployment rate stands at 10.71%, with youth unemployment reaching an alarming 20.82%. Most critically, 84.6% of all employment remains in the informal sector, leaving millions of workers without adequate social protection.",
+    executiveSummarySource: "Source: Nepal Labour Force Survey 2024, ILO",
+    
+    // Key Statistics
+    keyStatsTitle: "Key Labour Statistics",
+    labourForceStat: "Total Labour Force",
+    labourForceSource: "Source: CBS Nepal",
+    unemploymentRateStat: "Unemployment Rate",
+    unemploymentRateSource: "Source: Nepal Labour Force Survey",
+    youthUnemploymentStat: "Youth Unemployment",
+    youthUnemploymentSource: "Source: ILO Nepal",
+    informalEmploymentStat: "Informal Employment",
+    informalEmploymentSource: "Source: WIEGO Nepal",
+    
+    // Employment Status
+    employmentStatusTitle: "Current Employment Status",
+    labourForceChartTitle: "Labour Force Participation",
+    labourForceChartSource: "Source: The Global Economy, World Bank",
+    sectoralDistributionTitle: "Sectoral Employment Distribution",
+    sectorDistributionSource: "Source: Nepal Labour Force Survey 2024",
+    
+    // Gender Disparities
+    genderDisparitiesTitle: "Gender Disparities in Employment",
+    maleParticipationLabel: "Male Labour Participation",
+    maleParticipationSource: "Source: Gender Data Portal, World Bank",
+    femaleParticipationLabel: "Female Labour Participation",
+    femaleParticipationSource: "Source: Gender Data Portal, World Bank",
+    maleUnemploymentLabel: "Male Unemployment Rate",
+    maleUnemploymentSource: "Source: Nepal Labour Force Survey",
+    femaleUnemploymentLabel: "Female Unemployment Rate",
+    femaleUnemploymentSource: "Source: Nepal Labour Force Survey",
+    genderWageGapText: "In agriculture, women earn significantly less than men, with female labourers earning NPR 553.9 (USD 4.2) per day compared to NPR 626.1 (USD 4.7) for males, representing a female-to-male wage ratio of 0.9.",
+    genderWageGapSource: "Source: CEIC Data, Nepal Labour Force Survey",
+    
+    // Informal Economy
+    informalEconomyTitle: "Informal Economy Dominance",
+    informalEmploymentLabel: "Informal Employment",
+    formalEmploymentLabel: "Formal Employment",
+    informalEconomySource: "Source: WIEGO Nepal, 2024",
+    informalWorkersCharacteristicsTitle: "Characteristics of Informal Workers",
+    noContractsTitle: "No written contracts:",
+    noContractsText: "Over 80% of domestic workers lack formal agreements",
+    belowMinimumWageTitle: "Below minimum wage:",
+    belowMinimumWageText: "34% of domestic workers earn less than the official minimum wage",
+    limitedSocialSecurityTitle: "Limited social security:",
+    limitedSocialSecurityText: "Only 25% of informal workers have any form of health benefits",
+    genderWageGapTitle: "Gender wage gap:",
+    genderWageGapText: "Domestic workers earn 20.5% less than other workers, with female domestic workers earning 28.5% less than other female workers",
+    informalWorkersSource: "Source: WIEGO Policy Brief, ILO Nepal",
+    
+    // Foreign Employment
+    foreignEmploymentTitle: "Foreign Employment and Migration",
+    migrationTrendsTitle: "Migration Trends",
+    migrationTrendsSource: "Source: Department of Foreign Employment, Nepal",
+    migration2022Label: "2022-23",
+    migration2023Label: "2023-24",
+    migration2024Label: "2024-25 (10 months)",
+    dailyDepartureText: "Approximately 1,500 youths leaving daily for foreign employment",
+    remittanceImpactTitle: "Remittance Impact",
+    remittance2024Label: "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Remittance in 2024-25 (10 months)",
+    growthRateLabel: "Growth Rate:",
+    gdpContributionLabel: "GDP Contribution:",
+    perHouseholdRemittanceText: "NPR 145,093 average remittance per household in 2022-23",
+    remittanceSource: "Source: Nepal Rastra Bank, 2024",
+    migrationChallengesTitle: "Migration Challenges and Casualties",
+    annualDeathsLabel: "Annual Deaths (4 per day average)",
+    compensation2024Label: "Compensation provided in 2024",
+    injurySupportLabel: "Injury support disbursed",
+    migrationChallengesSource: "Source: Department of Foreign Employment, Nepal",
+    
+    // Minimum Wage
+    minimumWageTitle: "Minimum Wage and Compensation",
+    currentMinimumWageTitle: "Current Minimum Wage Structure (2025)",
+    basicSalaryLabel: "Basic Salary",
+    dearnessAllowanceLabel: "Dearness Allowance",
+    totalMonthlyLabel: "Total Monthly",
+    minimumWageSource: "Source: Ministry of Labour, Employment and Social Security, Nepal",
+    historicalWageEvolutionTitle: "Historical Wage Evolution",
+    wage2017Title: "NPR 13,450",
+    wage2017Description: "Basic: 10,000 + Allowance: 3,450",
+    wage2019Title: "NPR 17,300",
+    wage2019Description: "Basic: 10,820 + Allowance: 6,480 (28.6% increase)",
+    wage2025Title: "NPR 19,550",
+    wage2025Description: "Basic: 12,170 + Allowance: 7,380 (13.0% increase)",
+    wageEvolutionSource: "Source: Ministry of Labour, Employment and Social Security, Nepal",
+    
+    // Trade Union Landscape
+    tradeUnionTitle: "Trade Union Landscape",
+    unionMembershipTitle: "Major Trade Union Confederations",
+    unionMembershipSource: "Source: GEFONT, NTUC, DECONT Annual Reports, 2024",
+    gefontLabel: "GEFONT",
+    decontLabel: "DECONT",
+    ntucLabel: "NTUC",
+    gefontMembershipTitle: "GEFONT Membership by Sector (2024)",
+    gefontMembershipSource: "Source: GEFONT Membership Report, 2024",
+    nonAgriculturalInformalLabel: "Non-Agricultural Informal",
+    transportLabel: "Transport",
+    industrialLabel: "Industrial",
+    healthLabel: "Health",
+    agricultureLabel: "Agriculture",
+    unionChallengesText: "Trade unions face significant organizational challenges, with many experiencing membership declines in key sectors. The transport sector saw a 25% decrease in membership, while the tourism sector declined by 23.8%.",
+    unionChallengesSource: "Source: Friedrich Ebert Stiftung, Nepal Trade Union Study, 2024",
+    
+    // Workplace Safety
+    workplaceSafetyTitle: "Workplace Safety and Health",
+    workRelatedInjuriesLabel: "Work-related injuries per 1,000 population",
+    workRelatedInjuriesSource: "Source: Injury Prevention Journal, 2021",
+    homeRelatedInjuriesLabel: "Home-related injuries per 1,000 population",
+    homeRelatedInjuriesSource: "Source: Injury Prevention Journal, 2021",
+    annualAccidentsLabel: "Annual workplace accidents",
+    annualAccidentsSource: "Source: Nepal Labour Force Survey, 2024",
+    safetyCoverageLabel: "Workers covered by safety regulations",
+    safetyCoverageSource: "Source: ILO Nepal, 2024",
+    sectorSafetyChallengesTitle: "Sector-specific Safety Challenges",
+    constructionSafetyTitle: "Construction Industry",
+    constructionSafetyText1: "Employs approximately 1 million workers",
+    constructionSafetyText2: "High levels of informality",
+    constructionSafetyText3: "Inadequate safety measures and training",
+    garmentSafetyTitle: "Garment Industry",
+    garmentSafetyText1: "Poor occupational safety practices",
+    garmentSafetyText2: "Workers often lack access to personal protective equipment",
+    garmentSafetyText3: "Limited fire safety measures",
+    sectorSafetySource: "Source: ILO Nepal, Occupational Safety and Health Assessment, 2024",
+    
+    // Social Security
+    socialSecurityTitle: "Social Security and Protection",
+    socialSecurityCoverageTitle: "Social Security Fund Coverage",
+    socialSecurityCoverageSource: "Source: Social Security Fund, Nepal, 2024",
+    currentlyRegisteredLabel: "Currently Registered Workers",
+    targetCoverageLabel: "Target Coverage by 2025:",
+    currentCoverageLabel: "Current Coverage:",
+    contributionStructureText: "Contribution Structure: 31% of basic salary (20% employer + 11% employee)",
+    benefitsChallengesTitle: "Benefits and Challenges",
+    benefitsTitle: "Benefits Provided",
+    healthcareBenefit: "Healthcare",
+    maternityBenefit: "Maternity Support",
+    accidentInsurance: "Accident Insurance",
+    oldAgePension: "Old-age Pensions",
+    implementationChallengesTitle: "Implementation Challenges",
+    limitedAwareness: "Limited awareness among workers and employers",
+    complexProcedures: "Complex registration procedures",
+    employerResistance: "Resistance from employers regarding contribution requirements",
+    inadequateEnforcement: "Inadequate enforcement of mandatory participation",
+    benefitsChallengesSource: "Source: Social Security Fund, Nepal, 2024",
+    
+    // Sectoral Analysis
+    sectoralAnalysisTitle: "Sectoral Analysis",
+    agricultureTab: "Agriculture",
+    constructionTab: "Construction",
+    domesticTab: "Domestic Work",
+    manufacturingTab: "Manufacturing",
+    agricultureWorkersTitle: "Agricultural Workers",
+    agricultureWorkersText1: "Agriculture employs 61.21% of Nepal's workforce but faces declining productivity and persistent poverty.",
+    agricultureWorkersText2: "The sector is characterized by declining household participation (from 73.9% in 2010/11 to 60.3% in 2022/23) and shrinking land holdings (average size decreased from 1.1 hectares in 1995/96 to 0.4 hectares in 2022/23).",
+    agricultureSource: "Source: Ministry of Agriculture, Nepal, 2024",
+    workforceEmploymentLabel: "Workforce Employment",
+    femaleToMaleWageRatio: "Female-to-Male Wage Ratio",
+    marketOrientationLabel: "Market Orientation",
+    constructionWorkersTitle: "Construction Workers",
+    constructionWorkersText1: "The construction sector employs approximately 1 million workers (13.8% of total employment) and contributes 9.5% to GDP.",
+    constructionWorkersText2: "Key challenges include high informality, safety concerns, skill shortages, and increasing reliance on non-Nepali workers.",
+    constructionSource: "Source: Nepal Infrastructure Summit, 2024",
+    gdpContributionLabel: "GDP Contribution",
+    workersEmployedLabel: "Workers Employed",
+    domesticWorkersTitle: "Domestic Workers",
+    domesticWorkersText1: "An estimated 200,000-250,000 domestic workers, predominantly women, face unique challenges including wage discrimination, lack of legal protection, and no formal contracts.",
+    domesticWorkersText2: "Over 80% work without written agreements, and only 25% have any health benefits. There are also significant concerns regarding child labour in this sector.",
+    domesticSource: "Source: WOREC Nepal, ILO Report, 2024",
+    estimatedWorkersLabel: "Estimated Workers",
+    wageDiscriminationLabel: "Wage Discrimination",
+    noFormalContractsLabel: "No Formal Contracts",
+    manufacturingWorkersTitle: "Manufacturing and Industrial Workers",
+    manufacturingWorkersText1: "The manufacturing sector employs 8.2% of the workforce but faces competitiveness challenges.",
+    manufacturingWorkersText2: "Worker concerns include job security, wage stagnation, limited union representation, and risk of job losses to automation.",
+    manufacturingSource: "Source: GEFONT Industrial Report, 2024",
+    unionMembershipLabel: "Union Membership",
+    
+    // Regional Variations
+    regionalVariationsTitle: "Regional and Provincial Variations",
+    employmentDisparitiesTitle: "Employment Disparities",
+    employmentDisparitiesSource: "Source: Nepal Labour Force Survey, 2024",
+    province3Label: "Province 3 (Bagmati)",
+    province2Label: "Province 2 (Madhesh)",
+    urbanLabel: "Urban",
+    ruralLabel: "Rural",
+    urbanEmploymentLabel: "Urban Employment-to-population ratio:",
+    ruralEmploymentLabel: "Rural Employment-to-population ratio:",
+    migrationHotspotsTitle: "Migration Hotspots",
+    nepalMapLabel: "Nepal Regional Migration Map",
+    highMigrationRegionsTitle: "High Migration Regions",
+    easternRegionLabel: "Eastern Region:",
+    easternRegionText: "32.2% of total strike events and high outmigration",
+    teraiRegionLabel: "Terai Region:",
+    teraiRegionText: "54.9% of labour disputes and strikes",
+    midWesternRegionLabel: "Mid-Western and Far-Western:",
+    midWesternRegionText: "High rates of labour migration to India and Gulf countries",
+    migrationHotspotsSource: "Source: Department of Foreign Employment, Nepal",
+    
+    // Current Challenges
+    currentChallengesTitle: "Current Challenges and Concerns",
+    youthEmploymentCrisisTitle: "Youth Employment Crisis",
+    youthEmploymentCrisisText: "Youth unemployment remains critically high at 20.82%, indicating systematic failures in job creation for new entrants to the labour market.",
+    youthEmploymentSource: "Source: ILO Nepal, 2024",
+    skillsMismatchTitle: "Skills Mismatch",
+    skillsMismatchText: "A significant gap exists between available skills and market demands, with over 677,000 generally skilled workers migrating abroad compared to only 732 highly skilled workers.",
+    skillsMismatchSource: "Source: Department of Foreign Employment, Nepal",
+    remittanceDependenceTitle: "Economic Dependence on Remittances",
+    remittanceDependenceText: "While remittances provide crucial foreign exchange, they indicate brain drain, consumption-oriented economy, and vulnerability to external shocks.",
+    remittanceDependenceSource: "Source: Nepal Rastra Bank, 2024",
+    informalEconomyTitle: "Labour Market Informality",
+    informalEconomyText: "The dominance of informal employment (84.6%) creates multiple challenges including limited social protection, weak enforcement of labour laws, and poor working conditions.",
+    informalEconomyChallengeSource: "Source: WIEGO Nepal, 2024",
+    policyImplementationTitle: "Policy Implementation Gaps",
+    policyImplementationText: "Despite progressive labour laws, implementation and enforcement remain inconsistent, particularly in the informal sector and remote areas.",
+    policyImplementationSource: "Source: Labour Rights Index, 2024",
+    technologicalDisruptionTitle: "Technological Disruption",
+    technologicalDisruptionText: "Emerging technologies pose risks of job displacement in traditional sectors while creating opportunities in the digital economy that require new skill sets.",
+    technologicalDisruptionSource: "Source: World Bank Nepal Development Report, 2024",
+    
+    // Recent Policy Developments
+    policyDevelopmentsTitle: "Recent Policy Developments",
+    labourAct2017Title: "Labour Act 2017",
+    labourAct2017Description: "Provided framework for improved worker protections, though implementation and enforcement remain inconsistent.",
+    socialSecurityExpansionTitle: "Social Security Expansion",
+    socialSecurityExpansionDescription: "Government approved guidelines to extend social security coverage to migrant workers, self-employed persons, and informal economy workers.",
+    minimumWageRevisionTitle: "Minimum Wage Revision",
+    minimumWageRevisionDescription: "Tripartite agreement on minimum wage increases (13% to NPR 19,550) demonstrates improved dialogue between government, employers, and trade unions.",
+    policyDevelopmentsSource: "Source: Ministry of Labour, Employment and Social Security, Nepal",
+    
+    // Economic Impact
+    economicImpactTitle: "Economic Impact of Labour Issues",
+    strikeActivityTitle: "Strike Activity and Economic Costs",
+    dailyStrikeCostLabel: "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Cost per day of general strikes",
+    annualLossesLabel: "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0Annual losses between 2008-2013",
+    gdpImpactText: "Strikes decelerated GDP growth by 0.6-2.2 percentage points during peak periods.",
+    strikeActivitySource: "Source: Online Khabar, Labour Law Analysis, 2024",
+    productivityChallengesTitle: "Productivity Challenges",
+    constructionProductivityLabel: "Construction Productivity Growth",
+    globalManufacturingLabel: "Global Manufacturing Productivity",
+    keyConstraintsTitle: "Key Constraints",
+    agriculturalProductivityText: "Agricultural productivity: Limited mechanization and small land holdings",
+    skillsConstraintsText: "Skills constraints: Inadequate technical training and professional development",
+    technologyGapText: "Technology gap: Limited adoption of modern production techniques",
+    productivitySource: "Source: World Bank Nepal Productivity Report, 2024",
+    
+    // Future Implications
+    futureImplicationsTitle: "Future Implications and Trends",
+    demographicDividendTitle: "Demographic Dividend",
+    demographicDividendText: "Nepal's young population presents opportunities with growing working-age population and declining dependency ratio, but requires critical investment in human capital development.",
+    demographicDividendSource: "Source: World Bank Nepal Development Report, 2024",
+    technologicalDisruptionTitle: "Technological Disruption",
+    technologicalDisruptionText: "Emerging technologies pose risks of job displacement but also create opportunities in digital economy, requiring digital literacy and technical skills transformation.",
+    technologicalDisruptionSource: "Source: World Bank Nepal Development Report, 2024",
+    climateChangeTitle: "Climate Change Impacts",
+    climateChangeText: "Environmental challenges will affect labour markets through agricultural adaptation needs, migration pressures, and opportunities in renewable energy and environmental services.",
+    climateChangeSource: "Source: World Bank Nepal Development Report, 2024",
+    
+    // Recommendations
+    recommendationsTitle: "Recommendations for Rastriya Shramik Mahasangh Nepal",
+    immediateActionsTitle: "Immediate Actions",
+    immediateAction1: "Strengthen organizing efforts in the informal sector, particularly among domestic workers, agricultural labourers, and construction workers",
+    immediateAction2: "Advocate for implementation of existing labour laws and social security provisions",
+    immediateAction3: "Push for living wage standards that reflect actual cost of living rather than minimum subsistence",
+    mediumTermGoalsTitle: "Medium-term Goals",
+    mediumTermGoal1: "Develop sector-specific strategies for different categories of workers (agricultural, construction, domestic, etc.)",
+    mediumTermGoal2: "Build alliances with international labour organizations to protect migrant workers",
+    mediumTermGoal3: "Promote skills development programs linked to emerging economic opportunities",
+    longTermVisionTitle: "Long-term Vision",
+    longTermVision1: "Advocate for structural economic transformation toward higher-productivity sectors",
+    longTermVision2: "Support formalization of the informal economy through appropriate incentives and support",
+    longTermVision3: "Build comprehensive social protection systems that cover all categories of workers",
+    
+    // Footer
+    quickLinks: "Quick Links",
+    aboutUs: "About Us",
+    latestUpdatesFooter: "Archives",
+    ourEvents: "Our Events",
+    mediaCoverages: "Media Coverages",
+    resourcesFooter: "Resources",
+    contactUs: "Contact Us",
+    footerDescription: "Empowering workers through unity, advocacy, and action since 2080 B.S.",
+    copyright: "© {year} Rastriya Shramik Mahasangh Nepal. All rights reserved.",
+    
+    // Organization
+    organizationName: "Rastriya Shramik Mahasangh",
+    organizationLocation: "Nepal",
+    
+    // Announcement
+    announcement1: "Rastra heet!",
+    announcement2: "Udyog heet!",
+    announcement3: "Shramik heet!"
+  },
+  ne: {
+    // Navigation
+    home: "गृहपृष्ठ",
+    about: "हाम्रो बारेमा",
+    ourStory: "हाम्रो कथा",
+    organizationalStructure: "संगठनात्मक संरचना",
+    leadership: "नेतृत्व",
+    resources: "संसाधनहरू",
+    ourSlogans: "हाम्रा नाराहरू",
+    pressReleases: "प्रेस विज्ञप्तिहरू",
+    publications: "प्रकाशनहरू",
+    events: "कार्यक्रमहरू",
+    gallery: "ग्यालरी",
+    Labourscenario: "वर्तमान श्रम परिदृश्य",
+    
+    // Hero Section
+    heroTitle: "नेपालमा वर्तमान श्रम परिदृश्य",
+    heroSubtitle: "नेपालको श्रमशक्तिका लागि चुनौतीहरू, अवसरहरू र अगाडि बढ्ने बाटोको व्यापक विश्लेषण",
+    
+    // Breadcrumb
+    breadcrumbHome: "गृहपृष्ठ",
+    breadcrumbLabour: "श्रम परिदृश्य",
+    
+    // Executive Summary
+    // executiveSummaryTitle: "कार्यकारी सारांश",
+    executiveSummaryText: "नेपालको श्रम परिदृश्यले २०२४ मा चुनौतीहरू र अवसरहरूको जटिल चित्र प्रस्तुत गर्दछ। जम्मा ८.४३ मिलियन मानिसहरूको श्रमशक्ति भएको जुन कुल जनसंख्याको मात्र ३९.७५% प्रतिनिधित्व गर्दछ, देशले महत्त्वपूर्ण रोजगारी चुनौतीहरूको सामना गर्दछ। बेरोजगारी दर १०.७१% मा छ, जुन युवा बेरोजगारी २०.८२% मा पुगेको छ। सबैभन्दा गम्भीर कुरा भनेको ८४.६% रोजगारी अनौपचारिक क्षेत्रमा छ, जसले लाखौं श्रमिकहरूलाई पर्याप्त सामाजिक सुरक्षा बिना छोड्दछ।",
+    executiveSummarySource: "स्रोत: नेपाल श्रमशक्ति सर्वेक्षण २०२४, आईएलओ",
+    
+    // Key Statistics
+    keyStatsTitle: "प्रमुख श्रम तथ्याङ्कहरू",
+    labourForceStat: "कुल श्रमशक्ति",
+    labourForceSource: "स्रोत: केन्द्रीय तथ्याङ्क विभाग नेपाल",
+    unemploymentRateStat: "बेरोजगारी दर",
+    unemploymentRateSource: "स्रोत: नेपाल श्रमशक्ति सर्वेक्षण",
+    youthUnemploymentStat: "युवा बेरोजगारी",
+    youthUnemploymentSource: "स्रोत: आईएलओ नेपाल",
+    informalEmploymentStat: "अनौपचारिक रोजगारी",
+    informalEmploymentSource: "स्रोत: विगो नेपाल",
+    
+    // Employment Status
+    employmentStatusTitle: "वर्तमान रोजगारी स्थिति",
+    labourForceChartTitle: "श्रमशक्ति सहभागिता",
+    labourForceChartSource: "स्रोत: द ग्लोबल इकोनोमी, विश्व बैंक",
+    sectoralDistributionTitle: "क्षेत्रीय रोजगारी वितरण",
+    sectorDistributionSource: "स्रोत: नेपाल श्रमशक्ति सर्वेक्षण २०२४",
+    
+    // Gender Disparities
+    genderDisparitiesTitle: "रोजगारीमा लैङ्गिक असमानताहरू",
+    maleParticipationLabel: "पुरुष श्रम सहभागिता",
+    maleParticipationSource: "स्रोत: लैङ्गिक डाटा पोर्टल, विश्व बैंक",
+    femaleParticipationLabel: "महिला श्रम सहभागिता",
+    femaleParticipationSource: "स्रोत: लैङ्गिक डाटा पोर्टल, विश्व बैंक",
+    maleUnemploymentLabel: "पुरुष बेरोजगारी दर",
+    maleUnemploymentSource: "स्रोत: नेपाल श्रमशक्ति सर्वेक्षण",
+    femaleUnemploymentLabel: "महिला बेरोजगारी दर",
+    femaleUnemploymentSource: "स्रोत: नेपाल श्रमशक्ति सर्वेक्षण",
+    genderWageGapText: "कृषिमा, महिलाहरू पुरुषहरू भन्दा धेरै कम कमाउँछन्, महिला श्रमिकहरूले दिनमा एनपीआर ५५३.९ (युएसडी ४.२) कमाउँछन् भने पुरुषहरूको लागि एनपीआर ६२६.१ (युएसडी ४.७) छ, जुन महिला-देखि-पुरुष तलब अनुपात ०.९ छ।",
+    genderWageGapSource: "स्रोत: सीईआईसी डाटा, नेपाल श्रमशक्ति सर्वेक्षण",
+    
+    // Informal Economy
+    informalEconomyTitle: "अनौपचारिक अर्थतन्त्रको प्रभुत्व",
+    informalEmploymentLabel: "अनौपचारिक रोजगारी",
+    formalEmploymentLabel: "औपचारिक रोजगारी",
+    informalEconomySource: "स्रोत: विगो नेपाल, २०२४",
+    informalWorkersCharacteristicsTitle: "अनौपचारिक श्रमिकहरूको विशेषताहरू",
+    noContractsTitle: "कुनै लिखित सम्झौताहरू छैनन्:",
+    noContractsText: "घरेलु श्रमिकहरूको ८०% भन्दा बढीले औपचारिक सम्झौताहरू छैनन्",
+    belowMinimumWageTitle: "न्यूनतम तलब भन्दा तल:",
+    belowMinimumWageText: "घरेलु श्रमिकहरूको ३४% ले आधिकारिक न्यूनतम तलब भन्दा कम कमाउँछन्",
+    limitedSocialSecurityTitle: "सीमित सामाजिक सुरक्षा:",
+    limitedSocialSecurityText: "अनौपचारिक श्रमिकहरूको मात्र २५% लाई कुनै पनि स्वास्थ्य लाभहरू छन्",
+    genderWageGapTitle: "लैङ्गिक तलब अन्तर:",
+    genderWageGapText: "घरेलु श्रमिकहरूले अन्य श्रमिकहरू भन्दा २०.५% कम कमाउँछन्, जहाँ महिला घरेलु श्रमिकहरूले अन्य महिला श्रमिकहरू भन्दा २८.५% कम कमाउँछन्",
+    informalWorkersSource: "स्रोत: विगो नीति संक्षिप्त, आईएलओ नेपाल",
+    
+    // Foreign Employment
+    foreignEmploymentTitle: "विदेशी रोजगारी र प्रवास",
+    migrationTrendsTitle: "प्रवास प्रवृत्तिहरू",
+    migrationTrendsSource: "स्रोत: विदेशी रोजगारी विभाग, नेपाल",
+    migration2022Label: "२०२२-२३",
+    migration2023Label: "२०२३-२४",
+    migration2024Label: "२०२४-२५ (१० महिना)",
+    dailyDepartureText: "विदेशी रोजगारीका लागि दैनिक लगभग १,५०० युवाहरू जान्छन्",
+    remittanceImpactTitle: "रेमिट्यान्स प्रभाव",
+    remittance2024Label: "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0२०२४-२५ (१० महिना) मा रेमिट्यान्स",
+    growthRateLabel: "वृद्धि दर:",
+    gdpContributionLabel: "जीडीपी योगदान:",
+    perHouseholdRemittanceText: "२०२२-२३ मा प्रति घरधुरी औसत रेमिट्यान्स एनपीआर १४५,०९३",
+    remittanceSource: "स्रोत: नेपाल राष्ट्र बैंक, २०२४",
+    migrationChallengesTitle: "प्रवास चुनौतीहरू र क्षति",
+    annualDeathsLabel: "वार्षिक मृत्यु (दैनिक औसत ४ जना)",
+    compensation2024Label: "२०२४ मा मृतकको परिवारलाई क्षतिपूर्ति",
+    injurySupportLabel: "घाइतेहरूलाई सहयोग वितरण",
+    migrationChallengesSource: "स्रोत: विदेशी रोजगारी विभाग, नेपाल",
+    
+    // Minimum Wage
+    minimumWageTitle: "न्यूनतम तलब र क्षतिपूर्ति",
+    currentMinimumWageTitle: "वर्तमान न्यूनतम तलब संरचना (२०८२)",
+    basicSalaryLabel: "आधारभूत तलब",
+    dearnessAllowanceLabel: "महँगो भत्ता",
+    totalMonthlyLabel: "जम्मा मासिक",
+    minimumWageSource: "स्रोत: श्रम, रोजगारी र सामाजिक सुरक्षा मन्त्रालय, नेपाल",
+    historicalWageEvolutionTitle: "ऐतिहासिक तलब विकास",
+    wage2017Title: "एनपीआर १३,४५०",
+    wage2017Description: "आधारभूत: १०,००० + भत्ता: ३,४५०",
+    wage2019Title: "एनपीआर १७,३००",
+    wage2019Description: "आधारभूत: १०,८२० + भत्ता: ६,४८० (२८.६% वृद्धि)",
+    wage2025Title: "एनपीआर १९,५५०",
+    wage2025Description: "आधारभूत: १२,१७० + भत्ता: ७,३८० (१३.०% वृद्धि)",
+    wageEvolutionSource: "स्रोत: श्रम, रोजगारी र सामाजिक सुरक्षा मन्त्रालय, नेपाल",
+    
+    // Trade Union Landscape
+    tradeUnionTitle: "ट्रेड युनियन परिदृश्य",
+    unionMembershipTitle: "प्रमुख ट्रेड युनियन संघहरू",
+    unionMembershipSource: "स्रोत: जेफोन्ट, एनटीयूसी, डिकन्ट वार्षिक प्रतिवेदन, २०२४",
+    gefontLabel: "जेफोन्ट",
+    decontLabel: "डिकन्ट",
+    ntucLabel: "एनटीयूसी",
+    gefontMembershipTitle: "जेफोन्ट सदस्यता क्षेत्रअनुसार (२०८१)",
+    gefontMembershipSource: "स्रोत: जेफोन्ट सदस्यता प्रतिवेदन, २०२४",
+    nonAgriculturalInformalLabel: "गैर-कृषि अनौपचारिक",
+    transportLabel: "यातायात",
+    industrialLabel: "औद्योगिक",
+    healthLabel: "स्वास्थ्य",
+    agricultureLabel: "कृषि",
+    unionChallengesText: "ट्रेड युनियनहरूले महत्त्वपूर्ण संगठनात्मक चुनौतीहरूको सामना गर्छन्, धेरैले प्रमुख क्षेत्रहरूमा सदस्यता कमी अनुभव गरिरहेका छन्। यातायात क्षेत्रमा सदस्यता २५% ले घटेको छ, जबकि पर्यटन क्षेत्रमा २३.८% ले घटेको छ।",
+    unionChallengesSource: "स्रोत: फ्रेडरिक एबर्ट स्टिफ्टुङ, नेपाल ट्रेड युनियन अध्ययन, २०२४",
+    
+    // Workplace Safety
+    workplaceSafetyTitle: "कार्यस्थल सुरक्षा र स्वास्थ्य",
+    workRelatedInjuriesLabel: "प्रति १,००० जनसंख्या कार्यसम्बन्धी चोटहरू",
+    workRelatedInjuriesSource: "स्रोत: चोट रोकथाम जर्नल, २०२१",
+    homeRelatedInjuriesLabel: "प्रति १,००० जनसंख्या घरसम्बन्धी चोटहरू",
+    homeRelatedInjuriesSource: "स्रोत: चोट रोकथाम जर्नल, २०२१",
+    annualAccidentsLabel: "वार्षिक कार्यस्थल दुर्घटनाहरू",
+    annualAccidentsSource: "स्रोत: नेपाल श्रमशक्ति सर्वेक्षण, २०२४",
+    safetyCoverageLabel: "सुरक्षा नियमहरूद्वारा कभर गरिएका श्रमिकहरू",
+    safetyCoverageSource: "स्रोत: आईएलओ नेपाल, २०२४",
+    sectorSafetyChallengesTitle: "क्षेत्र-विशिष्ट सुरक्षा चुनौतीहरू",
+    constructionSafetyTitle: "निर्माण उद्योग",
+    constructionSafetyText1: "लगभग १ मिलियन श्रमिकहरूलाई रोजगारी दिन्छ",
+    constructionSafetyText2: "उच्च स्तरको अनौपचारिकता",
+    constructionSafetyText3: "अपर्याप्त सुरक्षा उपायहरू र प्रशिक्षण",
+    garmentSafetyTitle: "पोशाक उद्योग",
+    garmentSafetyText1: "खराब पेशेवर सुरक्षा अभ्यासहरू",
+    garmentSafetyText2: "श्रमिकहरूलाई व्यक्तिगत सुरक्षा उपकरणहरूमा पहुँच सीमित छ",
+    garmentSafetyText3: "सीमित आग नियन्त्रण उपायहरू",
+    sectorSafetySource: "स्रोत: आईएलओ नेपाल, पेशेवर सुरक्षा र स्वास्थ्य मूल्याङ्कन, २०२४",
+    
+    // Social Security
+    socialSecurityTitle: "सामाजिक सुरक्षा र संरक्षण",
+    socialSecurityCoverageTitle: "सामाजिक सुरक्षा कोष कभरेज",
+    socialSecurityCoverageSource: "स्रोत: सामाजिक सुरक्षा कोष, नेपाल, २०२४",
+    currentlyRegisteredLabel: "हाल दर्ता भएका श्रमिकहरू",
+    targetCoverageLabel: "२०८२ सम्म लक्ष्य कभरेज:",
+    currentCoverageLabel: "वर्तमान कभरेज:",
+    contributionStructureText: "योगदान संरचना: आधारभूत तलबको ३१% (२०% नियोजक + ११% कर्मचारी)",
+    benefitsChallengesTitle: "लाभहरू र चुनौतीहरू",
+    benefitsTitle: "प्रदान गरिएका लाभहरू",
+    healthcareBenefit: "स्वास्थ्य सेवा",
+    maternityBenefit: "प्रसूति समर्थन",
+    accidentInsurance: "दुर्घटना बीमा",
+    oldAgePension: "वृद्धाप्य पेंशन",
+    implementationChallengesTitle: "कार्यान्वयन चुनौतीहरू",
+    limitedAwareness: "श्रमिकहरू र नियोजकहरू बीच सीमित जागरूकता",
+    complexProcedures: "जटिल दर्ता प्रक्रियाहरू",
+    employerResistance: "योगदान आवश्यकताहरूको लागि नियोजकहरूबाट प्रतिरोध",
+    inadequateEnforcement: "अनिवार्य सहभागिताको अपर्याप्त कार्यान्वयन",
+    benefitsChallengesSource: "स्रोत: सामाजिक सुरक्षा कोष, नेपाल, २०२४",
+    
+    // Sectoral Analysis
+    sectoralAnalysisTitle: "क्षेत्रीय विश्लेषण",
+    agricultureTab: "कृषि",
+    constructionTab: "निर्माण",
+    domesticTab: "घरेलु काम",
+    manufacturingTab: "उत्पादन",
+    agricultureWorkersTitle: "कृषि श्रमिकहरू",
+    agricultureWorkersText1: "कृषिले नेपालको श्रमशक्तिको ६१.२१% लाई रोजगारी दिन्छ तर उत्पादकता घट्दो र दीर्घकालीन गरीबीको सामना गर्दछ।",
+    agricultureWorkersText2: "यो क्षेत्र घट्दो घरधुरी सहभागिता (२०६७/६८ मा ७३.९% बाट २०७९/८० मा ६०.३%) र साँघुरो जग्गा धरानो (औसत आकार १९९५/९६ मा १.१ हेक्टरबाट २०७९/८० मा ०.४ हेक्टरमा घटेको) ले विशेषता गर्दछ।",
+    agricultureSource: "स्रोत: कृषि मन्त्रालय, नेपाल, २०२४",
+    workforceEmploymentLabel: "श्रमशक्ति रोजगारी",
+    femaleToMaleWageRatio: "महिला-देखि-पुरुष तलब अनुपात",
+    marketOrientationLabel: "बजार अभिमुखीकरण",
+    constructionWorkersTitle: "निर्माण श्रमिकहरू",
+    constructionWorkersText1: "निर्माण क्षेत्रले लगभग १ मिलियन श्रमिकहरूलाई (कुल रोजगारीको १३.८%) रोजगारी दिन्छ र जीडीपी मा ९.५% योगदान पुर्याउँछ।",
+    constructionWorkersText2: "प्रमुख चुनौतीहरूमा उच्च अनौपचारिकता, सुरक्षा चिन्ताहरू, कौशल अभाव, र गैर-नेपाली श्रमिकहरूमा बढ्दो निर्भरता समावेश छन्।",
+    constructionSource: "स्रोत: नेपाल पूर्वाधार शिखर सम्मेलन, २०२४",
+    gdpContributionLabel: "जीडीपी योगदान",
+    workersEmployedLabel: "रोजगारी पाएका श्रमिकहरू",
+    domesticWorkersTitle: "घरेलु श्रमिकहरू",
+    domesticWorkersText1: "अनुमानित २००,०००-२५०,००० घरेलु श्रमिकहरू, मुख्यतया महिलाहरू, तलब भेदभाव, कानूनी संरक्षणको अभाव, र कुनै औपचारिक सम्झौताहरू नभएको जस्ता अद्वितीय चुनौतीहरूको सामना गर्छन्।",
+    domesticWorkersText2: "८०% भन्दा बढीले लिखित सम्झौताहरू बिना काम गर्छन्, र मात्र २५% लाई कुनै पनि स्वास्थ्य लाभहरू छन्। यो क्षेत्रमा बाल श्रमिकको बारेमा पनि महत्त्वपूर्ण चिन्ताहरू छन्।",
+    domesticSource: "स्रोत: वोरेक नेपाल, आईएलओ प्रतिवेदन, २०२४",
+    estimatedWorkersLabel: "अनुमानित श्रमिकहरू",
+    wageDiscriminationLabel: "तलब भेदभाव",
+    noFormalContractsLabel: "कुनै औपचारिक सम्झौताहरू छैनन्",
+    manufacturingWorkersTitle: "उत्पादन र औद्योगिक श्रमिकहरू",
+    manufacturingWorkersText1: "उत्पादन क्षेत्रले श्रमशक्तिको ८.२% लाई रोजगारी दिन्छ तर प्रतिस्पर्धात्मकता चुनौतीहरूको सामना गर्दछ।",
+    manufacturingWorkersText2: "श्रमिक चिन्ताहरूमा रोजगारी सुरक्षा, तलब गतिरोध, सीमित युनियन प्रतिनिधित्व, र स्वचालनमा रोजगारी हानिको जोखिम समावेश छन्।",
+    manufacturingSource: "स्रोत: जेफोन्ट औद्योगिक प्रतिवेदन, २०२४",
+    unionMembershipLabel: "युनियन सदस्यता",
+    
+    // Regional Variations
+    regionalVariationsTitle: "क्षेत्रीय र प्रदेशीय भिन्नताहरू",
+    employmentDisparitiesTitle: "रोजगारी असमानताहरू",
+    employmentDisparitiesSource: "स्रोत: नेपाल श्रमशक्ति सर्वेक्षण, २०२४",
+    province3Label: "प्रदेश ३ (बाग्मती)",
+    province2Label: "प्रदेश २ (मधेश)",
+    urbanLabel: "शहरी",
+    ruralLabel: "ग्रामीण",
+    urbanEmploymentLabel: "शहरी रोजगारी-देखि-जनसंख्या अनुपात:",
+    ruralEmploymentLabel: "ग्रामीण रोजगारी-देखि-जनसंख्या अनुपात:",
+    migrationHotspotsTitle: "प्रवास हटस्पटहरू",
+    nepalMapLabel: "नेपाल क्षेत्रीय प्रवास मानचित्र",
+    highMigrationRegionsTitle: "उच्च प्रवास क्षेत्रहरू",
+    easternRegionLabel: "पूर्वी क्षेत्र:",
+    easternRegionText: "कुल हडताल घटनाहरूको ३२.२% र उच्च बाहिर प्रवास",
+    teraiRegionLabel: "तराई क्षेत्र:",
+    teraiRegionText: "श्रम विवादहरू र हडतालहरूको ५४.९%",
+    midWesternRegionLabel: "मध्य-पश्चिम र सुदूर-पश्चिम:",
+    midWesternRegionText: "भारत र खाडी देशहरूमा श्रम प्रवासको उच्च दरहरू",
+    migrationHotspotsSource: "स्रोत: विदेशी रोजगारी विभाग, नेपाल",
+    
+    // Current Challenges
+    currentChallengesTitle: "वर्तमान चुनौतीहरू र चिन्ताहरू",
+    youthEmploymentCrisisTitle: "युवा रोजगारी संकट",
+    youthEmploymentCrisisText: "युवा बेरोजगारी २०.८२% मा गम्भीर रूपमा उच्च छ, जसले श्रम बजारमा नयाँ प्रवेशकर्ताहरूका लागि रोजगारी सिर्जनामा प्रणालीगत असफलताहरू देखाउँछ।",
+    youthEmploymentSource: "स्रोत: आईएलओ नेपाल, २०२४",
+    skillsMismatchTitle: "कौशल बेमेल",
+    skillsMismatchText: "उपलब्ध कौशलहरू र बजार मागहरू बीच महत्त्वपूर्ण अन्तर छ, विदेशमा ६७७,००० भन्दा बढी सामान्य कौशल युक्त श्रमिकहरू प्रवास गर्दछन् भने मात्र ७३२ उच्च कौशल युक्त श्रमिकहरू छन्।",
+    skillsMismatchSource: "स्रोत: विदेशी रोजगारी विभाग, नेपाल",
+    remittanceDependenceTitle: "रेमिट्यान्समा आर्थिक निर्भरता",
+    remittanceDependenceText: "रेमिट्यान्सले महत्त्वपूर्ण विदेशी मुद्रा प्रदान गर्दछ, तर तिनीहरूले मस्तिष्क ड्रेन, उपभोग-उन्मुख अर्थतन्त्र, र बाह्य झटकाहरू प्रति भेद्यता संकेत गर्दछ।",
+    remittanceDependenceSource: "स्रोत: नेपाल राष्ट्र बैंक, २०२४",
+    informalEconomyTitle: "श्रम बजार अनौपचारिकता",
+    informalEconomyText: "अनौपचारिक रोजगारी (८४.६%) को प्रभुत्वले धेरै चुनौतीहरू सिर्जना गर्दछ जसमा सीमित सामाजिक संरक्षण, श्रम कानूनहरूको कमजोर कार्यान्वयन, र खराब कामको अवस्थाहरू समावेश छन्।",
+    informalEconomyChallengeSource: "स्रोत: विगो नेपाल, २०२४",
+    policyImplementationTitle: "नीति कार्यान्वयन ग्यापहरू",
+    policyImplementationText: "प्रगतिशील श्रम कानूनहरू भए पनि, कार्यान्वयन र प्रवर्तन असंगत छ, विशेष गरी अनौपचारिक क्षेत्र र दूरदराजको क्षेत्रहरूमा।",
+    policyImplementationSource: "स्रोत: श्रम अधिकार सूचकांक, २०२४",
+    technologicalDisruptionTitle: "प्राविधिक व्यवधान",
+    technologicalDisruptionText: "उदीयमान प्रविधिहरूले परम्परागत क्षेत्रहरूमा रोजगारी विस्थापनको जोखिम पैदा गर्छन् जबकि डिजिटल अर्थतन्त्रमा अवसरहरू सिर्जना गर्छन् जसले नयाँ कौशल सेटहरू आवश्यक पार्छ।",
+    technologicalDisruptionSource: "स्रोत: विश्व बैंक नेपाल विकास प्रतिवेदन, २०२४",
+    
+    // Recent Policy Developments
+    policyDevelopmentsTitle: "हालको नीति विकासहरू",
+    labourAct2017Title: "श्रम ऐन २०७४",
+    labourAct2017Description: "सुधारित श्रमिक संरक्षणको लागि ढाँचा प्रदान गर्यो, यद्यपि कार्यान्वयन र प्रवर्तन असंगत छ।",
+    socialSecurityExpansionTitle: "सामाजिक सुरक्षा विस्तार",
+    socialSecurityExpansionDescription: "सरकारले प्रवासी श्रमिकहरू, स्व-रोजगारी व्यक्तिहरू, र अनौपचारिक अर्थतन्त्र श्रमिकहरूलाई सामाजिक सुरक्षा कभरेज विस्तार गर्ने मार्गदर्शनहरू स्वीकृत गर्यो।",
+    minimumWageRevisionTitle: "न्यूनतम तलब संशोधन",
+    minimumWageRevisionDescription: "न्यूनतम तलब वृद्धिमा त्रिपक्षीय सम्झौता (१३% ले एनपीआर १९,५५०) ले सरकार, नियोजकहरू, र ट्रेड युनियनहरू बीच सुधारित संवाद देखाउँछ।",
+    policyDevelopmentsSource: "स्रोत: श्रम, रोजगारी र सामाजिक सुरक्षा मन्त्रालय, नेपाल",
+    
+    // Economic Impact
+    economicImpactTitle: "श्रम मुद्दाहरूको आर्थिक प्रभाव",
+    strikeActivityTitle: "हडताल गतिविधि र आर्थिक लागतहरू",
+    dailyStrikeCostLabel: "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0साधारण हडतालको दिनमा लागत",
+    annualLossesLabel: "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0२०६५-२०७० बीच वार्षिक नोक्सानीहरू",
+    gdpImpactText: "हडतालहरूले शिखर अवधिमा जीडीपी वृद्धिलाई ०.६-२.२ प्रतिशत अंकले ढिलो गर्यो।",
+    strikeActivitySource: "स्रोत: अनलाइन खबर, श्रम कानून विश्लेषण, २०२४",
+    productivityChallengesTitle: "उत्पादकता चुनौतीहरू",
+    constructionProductivityLabel: "निर्माण उत्पादकता वृद्धि",
+    globalManufacturingLabel: "विश्वव्यापी उत्पादन उत्पादकता",
+    keyConstraintsTitle: "प्रमुख बाधाहरू",
+    agriculturalProductivityText: "कृषि उत्पादकता: सीमित मेसिनीकरण र सानो जग्गा धरानो",
+    skillsConstraintsText: "कौशल बाधाहरू: अपर्याप्त तालिम र व्यावसायिक विकास",
+    technologyGapText: "प्राविधिक अन्तर: आधुनिक उत्पादन तकनीकहरूको सीमित अपनाउने",
+    productivitySource: "स्रोत: विश्व बैंक नेपाल उत्पादकता प्रतिवेदन, २०२४",
+    
+    // Future Implications
+    futureImplicationsTitle: "भविष्यको निहितार्थ र प्रवृत्तिहरू",
+    demographicDividendTitle: "जनांगीय लाभांश",
+    demographicDividendText: "नेपालको युवा जनसंख्याले बढ्दो काम गर्ने उमेर समूह र घट्दो निर्भरता अनुपातको साथ अवसरहरू प्रस्तुत गर्दछ, तर मानव पूँजी विकासमा महत्त्वपूर्ण लगानी आवश्यक पर्दछ।",
+    demographicDividendSource: "स्रोत: विश्व बैंक नेपाल विकास प्रतिवेदन, २०२४",
+    technologicalDisruptionTitle: "प्राविधिक व्यवधान",
+    technologicalDisruptionText: "उदीयमान प्रविधिहरूले परम्परागत क्षेत्रहरूमा रोजगारी विस्थापनको जोखिम पैदा गर्छन् जबकि डिजिटल अर्थतन्त्रमा अवसरहरू सिर्जना गर्छन् जसले डिजिटल साक्षरता र प्राविधिक कौशल परिवर्तन आवश्यक पार्छ।",
+    technologicalDisruptionSource: "स्रोत: विश्व बैंक नेपाल विकास प्रतिवेदन, २०२४",
+    climateChangeTitle: "जलवायु परिवर्तनको प्रभाव",
+    climateChangeText: "पर्यावरणीय चुनौतीहरूले कृषि अनुकूलन आवश्यकताहरू, प्रवास दबाबहरू, र नवीकरणीय ऊर्जा र पर्यावरणीय सेवाहरूमा अवसरहरू मार्फत श्रम बजारहरूलाई प्रभाव पार्नेछ।",
+    climateChangeSource: "स्रोत: विश्व बैंक नेपाल विकास प्रतिवेदन, २०२४",
+    
+    // Recommendations
+    recommendationsTitle: "राष्ट्रिय श्रमिक महासंघ नेपालका लागि सिफारिसहरू",
+    immediateActionsTitle: "तत्काल कार्यहरू",
+    immediateAction1: "अनौपचारिक क्षेत्र, विशेष गरी घरेलु श्रमिकहरू, कृषि श्रमिकहरू, र निर्माण श्रमिकहरू बीच संगठनको प्रयासहरूलाई बलियो बनाउनुहोस्",
+    immediateAction2: "अवस्थित श्रम कानूनहरू र सामाजिक सुरक्षा प्रावधानहरू कार्यान्वयन गर्न वकालत गर्नुहोस्",
+    immediateAction3: "न्यूनतम जीवनस्तर भन्दा वास्तविक जीवन लागतलाई प्रतिबिम्बित गर्ने जीवनयोग्य तलब मापदण्डहरूका लागि दबाब दिनुहोस्",
+    mediumTermGoalsTitle: "मध्यावधि लक्ष्यहरू",
+    mediumTermGoal1: "विभिन्न प्रकारका श्रमिकहरू (कृषि, निर्माण, घरेलु, आदि) का लागि क्षेत्र-विशिष्ट रणनीतिहरू विकास गर्नुहोस्",
+    mediumTermGoal2: "प्रवासी श्रमिकहरूको संरक्षण गर्न अन्तर्राष्ट्रिय श्रम संगठनहरूसँग गठबन्धनहरू निर्माण गर्नुहोस्",
+    mediumTermGoal3: "उदीयमान आर्थिक अवसरहरूसँग जोडिएका कौशल विकास कार्यक्रमहरूलाई प्रवर्द्धन गर्नुहोस्",
+    longTermVisionTitle: "दीर्घकालीन दृष्टि",
+    longTermVision1: "उच्च उत्पादकता क्षेत्रहरूतर्फ संरचनागत आर्थिक परिवर्तनको वकालत गर्नुहोस्",
+    longTermVision2: "उपयुक्त प्रोत्साहनहरू र समर्थन मार्फत अनौपचारिक अर्थतन्त्रको औपचारिकीकरणलाई समर्थन गर्नुहोस्",
+    longTermVision3: "सबै प्रकारका श्रमिकहरूलाई कभर गर्ने व्यापक सामाजिक संरक्षण प्रणालीहरू निर्माण गर्नुहोस्",
+    
+    // Footer
+    quickLinks: "द्रुत लिङ्कहरू",
+    aboutUs: "हाम्रो बारेमा",
+    latestUpdatesFooter: "आर्काइभ्स",
+    ourEvents: "हाम्रा कार्यक्रमहरू",
+    mediaCoverages: "मिडिया कभरेजहरू",
+    resourcesFooter: "संसाधनहरू",
+    contactUs: "सम्पर्क गर्नुहोस्",
+    footerDescription: "एकता, वकालत र कार्यबाट २०८० बि.स. देखि श्रमिकहरूलाई सशक्त बनाउँदै",
+    copyright: "© {year} सर्वाधिकार राष्ट्रिय श्रमिक महासंघमा सुरक्षित",
+    
+    // Organization
+    organizationName: "राष्ट्रिय श्रमिक महासंघ",
+    organizationLocation: "नेपाल",
+    
+    // Announcement
+    announcement1: "राष्ट्र हित!",
+    announcement2: "उद्योग हित!",
+    announcement3: "श्रमिक हित!"
+  }
+};
+// Function to convert Arabic numerals to Nepali numerals
+function convertToNepaliNumerals(text) {
+  const arabicNumerals = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+  const nepaliNumerals = ['०', '१', '२', '३', '४', '५', '६', '७', '८', '९'];
+  
+  let convertedText = text;
+  for (let i = 0; i < arabicNumerals.length; i++) {
+    const regex = new RegExp(arabicNumerals[i], 'g');
+    convertedText = convertedText.replace(regex, nepaliNumerals[i]);
+  }
+  
+  return convertedText;
+}
+// Function to convert Nepali numerals to Arabic numerals
+function convertToArabicNumerals(text) {
+  const arabicNumerals = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+  const nepaliNumerals = ['०', '१', '२', '३', '४', '५', '६', '७', '८', '९'];
+  
+  let convertedText = text;
+  for (let i = 0; i < nepaliNumerals.length; i++) {
+    const regex = new RegExp(nepaliNumerals[i], 'g');
+    convertedText = convertedText.replace(regex, arabicNumerals[i]);
+  }
+  
+  return convertedText;
+}
+// Function to update the language
+function updateLanguage(lang) {
+  // Save the language preference to localStorage
+  localStorage.setItem('preferredLanguage', lang);
+  
+  // Update the language toggle buttons
+  const langEn = document.getElementById('lang-en');
+  const langNe = document.getElementById('lang-ne');
+  const mobileLangEn = document.getElementById('mobile-lang-en');
+  const mobileLangNe = document.getElementById('mobile-lang-ne');
+  
+  if (lang === 'en') {
+    // Desktop language toggle
+    if (langEn && langNe) {
+      langEn.classList.add('bg-white', 'text-orange');
+      langEn.classList.remove('text-white');
+      langNe.classList.remove('bg-white', 'text-orange');
+      langNe.classList.add('text-white');
+    }
+    
+    // Mobile language toggle
+    if (mobileLangEn && mobileLangNe) {
+      mobileLangEn.classList.add('bg-white', 'text-orange');
+      mobileLangEn.classList.remove('text-white');
+      mobileLangNe.classList.remove('bg-white', 'text-orange');
+      mobileLangNe.classList.add('text-white');
+    }
+  } else {
+    // Desktop language toggle
+    if (langEn && langNe) {
+      langNe.classList.add('bg-white', 'text-orange');
+      langNe.classList.remove('text-white');
+      langEn.classList.remove('bg-white', 'text-orange');
+      langEn.classList.add('text-white');
+    }
+    
+    // Mobile language toggle
+    if (mobileLangEn && mobileLangNe) {
+      mobileLangNe.classList.add('bg-white', 'text-orange');
+      mobileLangNe.classList.remove('text-white');
+      mobileLangEn.classList.remove('bg-white', 'text-orange');
+      mobileLangEn.classList.add('text-white');
+    }
+  }
+  
+  // Update the content based on the selected language
+  const translation = translations[lang];
+  
+  // Update all elements with data-i18n attribute
+  document.querySelectorAll('[data-i18n]').forEach(element => {
+    const key = element.getAttribute('data-i18n');
+    if (translation[key]) {
+      // Special handling for copyright with year placeholder
+      if (key === 'copyright') {
+        const currentYear = new Date().getFullYear();
+        element.innerHTML = translation[key].replace('{year}', currentYear);
+      } else {
+        element.textContent = translation[key];
+      }
+    }
+  });
+  
+  // Update numbers in stat cards
+  document.querySelectorAll('.stat-number').forEach(statNumber => {
+    const originalNumber = statNumber.getAttribute('data-original') || statNumber.textContent;
+    statNumber.setAttribute('data-original', originalNumber);
+    
+    if (lang === 'ne') {
+      // Convert to Nepali numerals
+      statNumber.textContent = convertToNepaliNumerals(originalNumber);
+    } else {
+      // Convert back to Arabic numerals
+      statNumber.textContent = convertToArabicNumerals(originalNumber);
+    }
+  });
+  
+  // Update address with Nepali numerals
+  document.querySelectorAll('[data-address]').forEach(addressElement => {
+    const originalAddress = addressElement.getAttribute('data-address');
+    if (originalAddress) {
+      if (lang === 'ne') {
+        // Convert address to Nepali
+        let nepaliAddress = originalAddress;
+        // Convert place names
+        nepaliAddress = nepaliAddress.replace(/Keshavdham/g, 'केशवधाम');
+        nepaliAddress = nepaliAddress.replace(/Guheswari Marg/g, 'गुह्येश्वरी मार्ग');
+        nepaliAddress = nepaliAddress.replace(/Kathmandu/g, 'काठमाडौं');
+        nepaliAddress = nepaliAddress.replace(/Nepal/g, 'नेपाल');
+        
+        // Convert numerals to Nepali
+        nepaliAddress = convertToNepaliNumerals(nepaliAddress);
+        
+        addressElement.textContent = nepaliAddress;
+      } else {
+        addressElement.textContent = originalAddress;
+      }
+    }
+  });
+  
+  // Update phone numbers with Nepali numerals
+  document.querySelectorAll('[data-phone]').forEach(phoneElement => {
+    const originalPhone = phoneElement.getAttribute('data-phone');
+    if (originalPhone) {
+      if (lang === 'ne') {
+        phoneElement.textContent = convertToNepaliNumerals(originalPhone);
+      } else {
+        phoneElement.textContent = originalPhone;
+      }
+    }
+  });
+  
+  // Update meta tags for SEO
+  document.querySelector('title').textContent = lang === 'en' 
+    ? 'Current Labour Scenario - Rastriya Shramik Mahasangh Nepal'
+    : 'वर्तमान श्रम परिदृश्य - राष्ट्रिय श्रमिक महासंघ नेपाल';
+  
+  document.querySelector('meta[name="description"]').setAttribute('content', lang === 'en'
+    ? 'Comprehensive analysis of Nepal\'s current labour landscape, challenges, and opportunities for workers.'
+    : 'नेपालको वर्तमान श्रम परिदृश्य, चुनौतीहरू, र श्रमिकहरूका लागि अवसरहरूको व्यापक विश्लेषण।');
+  
+  document.querySelector('meta[property="og:title"]').setAttribute('content', lang === 'en'
+    ? 'Current Labour Scenario - Rastriya Shramik Mahasangh Nepal'
+    : 'वर्तमान श्रम परिदृश्य - राष्ट्रिय श्रमिक महासंघ नेपाल');
+  
+  document.querySelector('meta[property="og:description"]').setAttribute('content', lang === 'en'
+    ? 'Comprehensive analysis of Nepal\'s current labour landscape, challenges, and opportunities for workers.'
+    : 'नेपालको वर्तमान श्रम परिदृश्य, चुनौतीहरू, र श्रमिकहरूका लागि अवसरहरूको व्यापक विश्लेषण।');
+  
+  document.querySelector('meta[property="twitter:title"]').setAttribute('content', lang === 'en'
+    ? 'Current Labour Scenario - Rastriya Shramik Mahasangh Nepal'
+    : 'वर्तमान श्रम परिदृश्य - राष्ट्रिय श्रमिक महासंघ नेपाल');
+  
+  document.querySelector('meta[property="twitter:description"]').setAttribute('content', lang === 'en'
+    ? 'Comprehensive analysis of Nepal\'s current labour landscape, challenges, and opportunities for workers.'
+    : 'नेपालको वर्तमान श्रम परिदृश्य, चुनौतीहरू, र श्रमिकहरूका लागि अवसरहरूको व्यापक विश्लेषण।');
+  
+  // Update HTML lang attribute
+  document.documentElement.lang = lang;
+  
+  // Add or remove nepali-font class to body for font switching
+  if (lang === 'ne') {
+    document.body.classList.add('nepali-font');
+  } else {
+    document.body.classList.remove('nepali-font');
+  }
+  
+  // Update charts if they exist
+  updateCharts(lang);
+}
+// Function to update charts based on language
+function updateCharts(lang) {
+  // Update Labour Force Chart
+  const labourForceChart = Chart.getChart('labourForceChart');
+  if (labourForceChart) {
+    labourForceChart.data.labels = lang === 'en' 
+      ? ['Nepal', 'Global Average'] 
+      : ['नेपाल', 'विश्व औसत'];
+    labourForceChart.update();
+  }
+  
+  // Update Sector Distribution Chart
+  const sectorDistributionChart = Chart.getChart('sectorDistributionChart');
+  if (sectorDistributionChart) {
+    sectorDistributionChart.data.labels = lang === 'en' 
+      ? ['Agriculture', 'Trade', 'Construction', 'Manufacturing', 'Transport'] 
+      : ['कृषि', 'व्यापार', 'निर्माण', 'उत्पादन', 'यातायात'];
+    sectorDistributionChart.update();
+  }
+  
+  // Update Migration Trends Chart
+  const migrationTrendsChart = Chart.getChart('migrationTrendsChart');
+  if (migrationTrendsChart) {
+    migrationTrendsChart.data.labels = lang === 'en' 
+      ? ['2022-23', '2023-24', '2024-25 (10 months)'] 
+      : ['२०२२-२३', '२०२३-२४', '२०२४-२५ (१० महिना)'];
+    migrationTrendsChart.update();
+  }
+  
+  // Update Union Membership Chart
+  const unionMembershipChart = Chart.getChart('unionMembershipChart');
+  if (unionMembershipChart) {
+    unionMembershipChart.data.labels = lang === 'en' 
+      ? ['GEFONT', 'DECONT', 'NTUC'] 
+      : ['जेफोन्ट', 'डिकन्ट', 'एनटीयूसी'];
+    unionMembershipChart.update();
+  }
+  
+  // Update GEFONT Membership Chart
+  const gefontMembershipChart = Chart.getChart('gefontMembershipChart');
+  if (gefontMembershipChart) {
+    gefontMembershipChart.data.labels = lang === 'en' 
+      ? ['Non-Agricultural Informal', 'Transport', 'Industrial', 'Health', 'Agriculture'] 
+      : ['गैर-कृषि अनौपचारिक', 'यातायात', 'औद्योगिक', 'स्वास्थ्य', 'कृषि'];
+    gefontMembershipChart.update();
+  }
+  
+  // Update Employment Disparities Chart
+  const employmentDisparitiesChart = Chart.getChart('employmentDisparitiesChart');
+  if (employmentDisparitiesChart) {
+    employmentDisparitiesChart.data.labels = lang === 'en' 
+      ? ['Province 3 (Bagmati)', 'Province 2 (Madhesh)', 'Urban', 'Rural'] 
+      : ['प्रदेश ३ (बाग्मती)', 'प्रदेश २ (मधेश)', 'शहरी', 'ग्रामीण'];
+    employmentDisparitiesChart.update();
+  }
+  
+  // Update Productivity Chart
+  const productivityChart = Chart.getChart('productivityChart');
+  if (productivityChart) {
+    productivityChart.data.labels = lang === 'en' 
+      ? ['Construction Productivity', 'Global Manufacturing Productivity'] 
+      : ['निर्माण उत्पादकता', 'विश्वव्यापी उत्पादन उत्पादकता'];
+    productivityChart.update();
+  }
+}
+// Function to get a gradient for charts
+function getGradient(ctx, colorStart, colorEnd) {
+  const gradient = ctx.createLinearGradient(0, 0, 0, 400);
+  gradient.addColorStop(0, colorStart);
+  gradient.addColorStop(1, colorEnd);
+  return gradient;
+}
+// Function to initialize all charts with enhanced styling
+function initializeCharts() {
+  // Get the current language
+  const currentLang = localStorage.getItem('preferredLanguage') || 'en';
+  
+  // Common chart options for premium look
+  const commonOptions = {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: {
+        labels: {
+          font: {
+            family: "'Poppins', sans-serif",
+            size: 14
+          },
+          usePointStyle: true,
+          padding: 20
+        }
+      },
+      tooltip: {
+        backgroundColor: 'rgba(255, 255, 255, 0.9)',
+        titleColor: '#333',
+        bodyColor: '#666',
+        borderColor: '#ddd',
+        borderWidth: 1,
+        padding: 12,
+        cornerRadius: 8,
+        displayColors: true,
+        titleFont: {
+          family: "'Poppins', sans-serif",
+          size: 14,
+          weight: 'bold'
+        },
+        bodyFont: {
+          family: "'Poppins', sans-serif",
+          size: 13
+        },
+        callbacks: {
+          label: function(context) {
+            let label = context.dataset.label || '';
+            if (label) {
+              label += ': ';
+            }
+            if (context.raw !== null) {
+              // Format numbers with commas
+              label += context.raw.toLocaleString();
+              // Add percentage if it's a percentage chart
+              if (context.dataset.label && context.dataset.label.includes('%')) {
+                label += '%';
+              }
+            }
+            return label;
+          }
+        }
+      }
+    }
+  };
+  
+  // Labour Force Participation Chart
+  const labourForceCtx = document.getElementById('labourForceChart');
+  if (labourForceCtx) {
+    const ctx = labourForceCtx.getContext('2d');
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: currentLang === 'en' ? ['Nepal', 'Global Average'] : ['नेपाल', 'विश्व औसत'],
+        datasets: [{
+          label: currentLang === 'en' ? 'Labour Force Participation Rate (%)' : 'श्रमशक्ति सहभागिता दर (%)',
+          data: [39.75, 60.63],
+          backgroundColor: [
+            getGradient(ctx, 'rgba(230, 126, 34, 0.8)', 'rgba(230, 126, 34, 0.4)'),
+            getGradient(ctx, 'rgba(243, 156, 18, 0.8)', 'rgba(243, 156, 18, 0.4)')
+          ],
+          borderColor: [
+            'rgba(230, 126, 34, 1)',
+            'rgba(243, 156, 18, 1)'
+          ],
+          borderWidth: 1,
+          borderRadius: 8,
+          hoverBackgroundColor: [
+            'rgba(230, 126, 34, 1)',
+            'rgba(243, 156, 18, 1)'
+          ]
+        }]
+      },
+      options: {
+        ...commonOptions,
+        scales: {
+          y: {
+            beginAtZero: true,
+            max: 100,
+            grid: {
+              color: 'rgba(0, 0, 0, 0.05)'
+            },
+            ticks: {
+              font: {
+                family: "'Poppins', sans-serif"
+              },
+              callback: function(value) {
+                return value + '%';
+              }
+            }
+          },
+          x: {
+            grid: {
+              display: false
+            },
+            ticks: {
+              font: {
+                family: "'Poppins', sans-serif"
+              }
+            }
+          }
+        }
+      }
+    });
+  }
+  
+  // Sector Distribution Chart
+  const sectorDistributionCtx = document.getElementById('sectorDistributionChart');
+  if (sectorDistributionCtx) {
+    const ctx = sectorDistributionCtx.getContext('2d');
+    new Chart(ctx, {
+      type: 'doughnut',
+      data: {
+        labels: currentLang === 'en' 
+          ? ['Agriculture', 'Trade', 'Construction', 'Manufacturing', 'Transport'] 
+          : ['कृषि', 'व्यापार', 'निर्माण', 'उत्पादन', 'यातायात'],
+        datasets: [{
+          data: [61.21, 17.5, 13.8, 8.2, 5.1],
+          backgroundColor: [
+            'rgba(230, 126, 34, 0.8)',
+            'rgba(243, 156, 18, 0.8)',
+            'rgba(211, 84, 0, 0.8)',
+            'rgba(184, 134, 11, 0.8)',
+            'rgba(255, 237, 78, 0.8)'
+          ],
+          borderColor: 'white',
+          borderWidth: 2,
+          hoverOffset: 15
+        }]
+      },
+      options: {
+        ...commonOptions,
+        cutout: '60%',
+        plugins: {
+          ...commonOptions.plugins,
+          legend: {
+            position: 'right',
+            labels: {
+              ...commonOptions.plugins.legend.labels,
+              padding: 15
+            }
+          }
+        }
+      }
+    });
+  }
+  
+  // Migration Trends Chart
+  const migrationTrendsCtx = document.getElementById('migrationTrendsChart');
+  if (migrationTrendsCtx) {
+    const ctx = migrationTrendsCtx.getContext('2d');
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: currentLang === 'en' 
+          ? ['2022-23', '2023-24', '2024-25 (10 months)'] 
+          : ['२०२२-२३', '२०२३-२४', '२०२४-२५ (१० महिना)'],
+        datasets: [{
+          label: currentLang === 'en' ? 'Number of Migrants' : 'प्रवासीको संख्या',
+          data: [402877, 534471, 685924],
+          backgroundColor: getGradient(ctx, 'rgba(230, 126, 34, 0.8)', 'rgba(230, 126, 34, 0.4)'),
+          borderColor: 'rgba(230, 126, 34, 1)',
+          borderWidth: 1,
+          borderRadius: 8,
+          hoverBackgroundColor: 'rgba(230, 126, 34, 1)'
+        }]
+      },
+      options: {
+        ...commonOptions,
+        scales: {
+          y: {
+            beginAtZero: true,
+            grid: {
+              color: 'rgba(0, 0, 0, 0.05)'
+            },
+            ticks: {
+              font: {
+                family: "'Poppins', sans-serif"
+              },
+              callback: function(value) {
+                if (value >= 1000000) {
+                  return (value / 1000000).toFixed(1) + 'M';
+                } else if (value >= 1000) {
+                  return (value / 1000).toFixed(0) + 'K';
+                }
+                return value;
+              }
+            }
+          },
+          x: {
+            grid: {
+              display: false
+            },
+            ticks: {
+              font: {
+                family: "'Poppins', sans-serif"
+              }
+            }
+          }
+        }
+      }
+    });
+  }
+  
+  // Union Membership Chart
+  const unionMembershipCtx = document.getElementById('unionMembershipChart');
+  if (unionMembershipCtx) {
+    const ctx = unionMembershipCtx.getContext('2d');
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: currentLang === 'en' ? ['GEFONT', 'DECONT', 'NTUC'] : ['जेफोन्ट', 'डिकन्ट', 'एनटीयूसी'],
+        datasets: [{
+          label: currentLang === 'en' ? 'Number of Members' : 'सदस्यहरूको संख्या',
+          data: [449766, 239000, 192000],
+          backgroundColor: [
+            getGradient(ctx, 'rgba(230, 126, 34, 0.8)', 'rgba(230, 126, 34, 0.4)'),
+            getGradient(ctx, 'rgba(243, 156, 18, 0.8)', 'rgba(243, 156, 18, 0.4)'),
+            getGradient(ctx, 'rgba(211, 84, 0, 0.8)', 'rgba(211, 84, 0, 0.4)')
+          ],
+          borderColor: [
+            'rgba(230, 126, 34, 1)',
+            'rgba(243, 156, 18, 1)',
+            'rgba(211, 84, 0, 1)'
+          ],
+          borderWidth: 1,
+          borderRadius: 8,
+          hoverBackgroundColor: [
+            'rgba(230, 126, 34, 1)',
+            'rgba(243, 156, 18, 1)',
+            'rgba(211, 84, 0, 1)'
+          ]
+        }]
+      },
+      options: {
+        ...commonOptions,
+        scales: {
+          y: {
+            beginAtZero: true,
+            grid: {
+              color: 'rgba(0, 0, 0, 0.05)'
+            },
+            ticks: {
+              font: {
+                family: "'Poppins', sans-serif"
+              },
+              callback: function(value) {
+                if (value >= 1000000) {
+                  return (value / 1000000).toFixed(1) + 'M';
+                } else if (value >= 1000) {
+                  return (value / 1000).toFixed(0) + 'K';
+                }
+                return value;
+              }
+            }
+          },
+          x: {
+            grid: {
+              display: false
+            },
+            ticks: {
+              font: {
+                family: "'Poppins', sans-serif"
+              }
+            }
+          }
+        }
+      }
+    });
+  }
+  
+  // GEFONT Membership Chart
+  const gefontMembershipCtx = document.getElementById('gefontMembershipChart');
+  if (gefontMembershipCtx) {
+    const ctx = gefontMembershipCtx.getContext('2d');
+    new Chart(ctx, {
+      type: 'doughnut',
+      data: {
+        labels: currentLang === 'en' 
+          ? ['Non-Agricultural Informal', 'Transport', 'Industrial', 'Health', 'Agriculture'] 
+          : ['गैर-कृषि अनौपचारिक', 'यातायात', 'औद्योगिक', 'स्वास्थ्य', 'कृषि'],
+        datasets: [{
+          data: [106123, 81075, 72713, 27605, 19634],
+          backgroundColor: [
+            'rgba(230, 126, 34, 0.8)',
+            'rgba(243, 156, 18, 0.8)',
+            'rgba(211, 84, 0, 0.8)',
+            'rgba(184, 134, 11, 0.8)',
+            'rgba(255, 237, 78, 0.8)'
+          ],
+          borderColor: 'white',
+          borderWidth: 2,
+          hoverOffset: 15
+        }]
+      },
+      options: {
+        ...commonOptions,
+        cutout: '60%',
+        plugins: {
+          ...commonOptions.plugins,
+          legend: {
+            position: 'right',
+            labels: {
+              ...commonOptions.plugins.legend.labels,
+              padding: 15
+            }
+          }
+        }
+      }
+    });
+  }
+  
+  // Employment Disparities Chart
+  const employmentDisparitiesCtx = document.getElementById('employmentDisparitiesChart');
+  if (employmentDisparitiesCtx) {
+    const ctx = employmentDisparitiesCtx.getContext('2d');
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: currentLang === 'en' 
+          ? ['Province 3 (Bagmati)', 'Province 2 (Madhesh)', 'Urban', 'Rural'] 
+          : ['प्रदेश ३ (बाग्मती)', 'प्रदेश २ (मधेश)', 'शहरी', 'ग्रामीण'],
+        datasets: [{
+          label: currentLang === 'en' ? 'Unemployment Rate (%)' : 'बेरोजगारी दर (%)',
+          data: [7, 20.1, 10.9, 11.6],
+          backgroundColor: [
+            getGradient(ctx, 'rgba(230, 126, 34, 0.8)', 'rgba(230, 126, 34, 0.4)'),
+            getGradient(ctx, 'rgba(243, 156, 18, 0.8)', 'rgba(243, 156, 18, 0.4)'),
+            getGradient(ctx, 'rgba(211, 84, 0, 0.8)', 'rgba(211, 84, 0, 0.4)'),
+            getGradient(ctx, 'rgba(184, 134, 11, 0.8)', 'rgba(184, 134, 11, 0.4)')
+          ],
+          borderColor: [
+            'rgba(230, 126, 34, 1)',
+            'rgba(243, 156, 18, 1)',
+            'rgba(211, 84, 0, 1)',
+            'rgba(184, 134, 11, 1)'
+          ],
+          borderWidth: 1,
+          borderRadius: 8,
+          hoverBackgroundColor: [
+            'rgba(230, 126, 34, 1)',
+            'rgba(243, 156, 18, 1)',
+            'rgba(211, 84, 0, 1)',
+            'rgba(184, 134, 11, 1)'
+          ]
+        }]
+      },
+      options: {
+        ...commonOptions,
+        scales: {
+          y: {
+            beginAtZero: true,
+            max: 25,
+            grid: {
+              color: 'rgba(0, 0, 0, 0.05)'
+            },
+            ticks: {
+              font: {
+                family: "'Poppins', sans-serif"
+              },
+              callback: function(value) {
+                return value + '%';
+              }
+            }
+          },
+          x: {
+            grid: {
+              display: false
+            },
+            ticks: {
+              font: {
+                family: "'Poppins', sans-serif"
+              }
+            }
+          }
+        }
+      }
+    });
+  }
+  
+  // Productivity Chart
+  const productivityCtx = document.getElementById('productivityChart');
+  if (productivityCtx) {
+    const ctx = productivityCtx.getContext('2d');
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: currentLang === 'en' 
+          ? ['Construction Productivity', 'Global Manufacturing Productivity'] 
+          : ['निर्माण उत्पादकता', 'विश्वव्यापी उत्पादन उत्पादकता'],
+        datasets: [{
+          label: currentLang === 'en' ? 'Annual Growth Rate (%)' : 'वार्षिक वृद्धि दर (%)',
+          data: [1, 3.6],
+          backgroundColor: [
+            getGradient(ctx, 'rgba(230, 126, 34, 0.8)', 'rgba(230, 126, 34, 0.4)'),
+            getGradient(ctx, 'rgba(243, 156, 18, 0.8)', 'rgba(243, 156, 18, 0.4)')
+          ],
+          borderColor: [
+            'rgba(230, 126, 34, 1)',
+            'rgba(243, 156, 18, 1)'
+          ],
+          borderWidth: 1,
+          borderRadius: 8,
+          hoverBackgroundColor: [
+            'rgba(230, 126, 34, 1)',
+            'rgba(243, 156, 18, 1)'
+          ]
+        }]
+      },
+      options: {
+        ...commonOptions,
+        scales: {
+          y: {
+            beginAtZero: true,
+            max: 5,
+            grid: {
+              color: 'rgba(0, 0, 0, 0.05)'
+            },
+            ticks: {
+              font: {
+                family: "'Poppins', sans-serif"
+              },
+              callback: function(value) {
+                return value + '%';
+              }
+            }
+          },
+          x: {
+            grid: {
+              display: false
+            },
+            ticks: {
+              font: {
+                family: "'Poppins', sans-serif"
+              }
+            }
+          }
+        }
+      }
+    });
+  }
+}
+// Initialize AOS
+AOS.init({
+  duration: 1000,
+  once: true,
+  disable: 'mobile'
+});
+document.addEventListener('DOMContentLoaded', function() {
+  // Check for saved language preference or default to English
+  const savedLanguage = localStorage.getItem('preferredLanguage') || 'en';
+  
+  // Set the initial language
+  updateLanguage(savedLanguage);
+  
+  // Mobile Menu Toggle
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const closeMobileMenu = document.getElementById('close-mobile-menu');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+  if (mobileMenuButton && closeMobileMenu && mobileMenu && mobileMenuOverlay) {
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('active');
+      mobileMenuOverlay.classList.toggle('active');
+      document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+    });
+    
+    closeMobileMenu.addEventListener('click', () => {
+      mobileMenu.classList.remove('active');
+      mobileMenuOverlay.classList.remove('active');
+      document.body.style.overflow = '';
+    });
+    
+    // Close mobile menu when clicking on the overlay
+    mobileMenuOverlay.addEventListener('click', () => {
+      mobileMenu.classList.remove('active');
+      mobileMenuOverlay.classList.remove('active');
+      document.body.style.overflow = '';
+    });
+  }
+  
+  // Mobile Submenu Toggle
+  const mobileSubmenuToggles = document.querySelectorAll('.mobile-submenu-toggle');
+  mobileSubmenuToggles.forEach(toggle => {
+    toggle.addEventListener('click', () => {
+      const targetId = toggle.getAttribute('data-target');
+      const targetSubmenu = document.getElementById(targetId);
+      targetSubmenu.classList.toggle('hidden');
+      // Toggle icon
+      const icon = toggle.querySelector('i');
+      if (targetSubmenu.classList.contains('hidden')) {
+        icon.classList.remove('fa-chevron-up');
+        icon.classList.add('fa-chevron-down');
+      } else {
+        icon.classList.remove('fa-chevron-down');
+        icon.classList.add('fa-chevron-up');
+      }
+    });
+  });
+  
+  // Search Toggle
+  const searchToggle = document.getElementById('search-toggle');
+  const mobileSearchToggle = document.getElementById('mobile-search-toggle');
+  const searchBar = document.getElementById('search-bar');
+  
+  if (searchToggle) {
+    searchToggle.addEventListener('click', () => {
+      searchBar.classList.toggle('active');
+      if (searchBar.classList.contains('active')) {
+        searchBar.querySelector('input').focus();
+      }
+    });
+  }
+  
+  if (mobileSearchToggle) {
+    mobileSearchToggle.addEventListener('click', () => {
+      searchBar.classList.toggle('active');
+      if (searchBar.classList.contains('active')) {
+        searchBar.querySelector('input').focus();
+      }
+    });
+  }
+  
+  // Language Toggle Functionality
+  const langEn = document.getElementById('lang-en');
+  const langNe = document.getElementById('lang-ne');
+  const mobileLangEn = document.getElementById('mobile-lang-en');
+  const mobileLangNe = document.getElementById('mobile-lang-ne');
+  
+  // Desktop language toggle
+  if (langEn && langNe) {
+    langEn.addEventListener('click', function() {
+      updateLanguage('en');
+    });
+    
+    langNe.addEventListener('click', function() {
+      updateLanguage('ne');
+    });
+  }
+  
+  // Mobile language toggle
+  if (mobileLangEn && mobileLangNe) {
+    mobileLangEn.addEventListener('click', function() {
+      updateLanguage('en');
+    });
+    
+    mobileLangNe.addEventListener('click', function() {
+      updateLanguage('ne');
+    });
+  }
+  
+  // Touch device dropdown handling
+  const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+  
+  if (isTouchDevice) {
+    const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+    
+    dropdownToggles.forEach(toggle => {
+      toggle.addEventListener('click', function(e) {
+        e.preventDefault();
+        const dropdown = this.closest('.dropdown');
+        const dropdownMenu = dropdown.querySelector('.dropdown-menu');
+        
+        // Close other dropdowns
+        document.querySelectorAll('.dropdown-menu').forEach(menu => {
+          if (menu !== dropdownMenu) {
+            menu.classList.remove('active');
+          }
+        });
+        
+        document.querySelectorAll('.dropdown-toggle').forEach(t => {
+          if (t !== this) {
+            t.classList.remove('active');
+          }
+        });
+        
+        // Toggle current dropdown
+        dropdownMenu.classList.toggle('active');
+        this.classList.toggle('active');
+      });
+    });
+    
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('.dropdown')) {
+        document.querySelectorAll('.dropdown-menu').forEach(menu => {
+          menu.classList.remove('active');
+        });
+        document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+          toggle.classList.remove('active');
+        });
+      }
+    });
+  }
+  
+  // Search functionality
+  const searchForm = document.getElementById('search-form');
+  const searchInput = document.getElementById('search-input');
+  if (searchForm && searchInput) {
+    searchForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const searchTerm = searchInput.value.trim();
+      if (searchTerm) {
+        alert(`Searching for: ${searchTerm}`);
+        searchInput.value = '';
+        searchBar.classList.remove('active');
+      }
+    });
+  }
+  
+  // Back to Top Button
+  const backToTopButton = document.getElementById('back-to-top');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      backToTopButton.classList.remove('opacity-0', 'invisible');
+      backToTopButton.classList.add('opacity-100', 'visible');
+    } else {
+      backToTopButton.classList.add('opacity-0', 'invisible');
+      backToTopButton.classList.remove('opacity-100', 'visible');
+    }
+  });
+  
+  backToTopButton.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+  
+  // Set current year in footer
+  const currentYearElement = document.getElementById('current-year');
+  if (currentYearElement) {
+    currentYearElement.textContent = new Date().getFullYear();
+  }
+  
+  // Sector tabs functionality
+  const sectorTabs = document.querySelectorAll('.sector-tab');
+  sectorTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      // Remove active class from all tabs and contents
+      sectorTabs.forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.sector-content').forEach(content => {
+        content.classList.remove('active');
+      });
+      
+      // Add active class to clicked tab and corresponding content
+      tab.classList.add('active');
+      const sectorId = tab.getAttribute('data-sector');
+      document.getElementById(sectorId).classList.add('active');
+    });
+  });
+  
+  // Initialize Charts
+  initializeCharts();
+});
+</script>
+</body>
+</html>
