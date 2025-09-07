@@ -857,7 +857,7 @@ color: var(--primary-gold);
         </div>
       </div>
       
-      <div class="principle-card" data-aos="fade-up" data-aos-delay="300">
+      <div class="principle-card" data-aos="fade-up">
         <div class="principle-number nepali-numerals" data-original="4">4</div>
         <div class="principle-icon">
           <div class="principle-icon-bg"></div>
@@ -869,7 +869,7 @@ color: var(--primary-gold);
         </div>
       </div>
       
-      <div class="principle-card" data-aos="fade-up">
+      <div class="principle-card" data-aos="fade-up" data-aos-delay="100">
         <div class="principle-number nepali-numerals" data-original="5">5</div>
         <div class="principle-icon">
           <div class="principle-icon-bg"></div>
@@ -881,7 +881,7 @@ color: var(--primary-gold);
         </div>
       </div>
       
-      <div class="principle-card" data-aos="fade-up" data-aos-delay="100">
+      <div class="principle-card" data-aos="fade-up" data-aos-delay="200">
         <div class="principle-number nepali-numerals" data-original="6">6</div>
         <div class="principle-icon">
           <div class="principle-icon-bg"></div>
@@ -893,7 +893,7 @@ color: var(--primary-gold);
         </div>
       </div>
       
-      <div class="principle-card" data-aos="fade-up" data-aos-delay="200">
+      <div class="principle-card" data-aos="fade-up">
         <div class="principle-number nepali-numerals" data-original="7">7</div>
         <div class="principle-icon">
           <div class="principle-icon-bg"></div>
@@ -904,15 +904,27 @@ color: var(--primary-gold);
           <p class="principle-english">Rastrabhakt Shramik... Ek hau, Ek Hau!</p>
         </div>
       </div>
+
+      <div class="principle-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="principle-number nepali-numerals" data-original="7">7</div>
+        <div class="principle-icon">
+          <div class="principle-icon-bg"></div>
+          <i class="fas fa-medal"></i>
+        </div>
+        <div class="principle-content">
+          <h3 class="principle-nepali">देशभक्त श्रमिक... एक हौँ, एक हौँ!</h3>
+          <p class="principle-english">Deshbhakt Shramik... Ek hau, Ek Hau!</p>
+        </div>
+      </div>
       
-      <div class="principle-card" data-aos="fade-up" data-aos-delay="300">
+      <div class="principle-card" data-aos="fade-up" data-aos-delay="200">
         <div class="principle-number nepali-numerals" data-original="8">8</div>
         <div class="principle-icon">
           <div class="principle-icon-bg"></div>
           <i class="fas fa-file-contract"></i>
         </div>
         <div class="principle-content">
-          <h3 class="principle-nepali">ठेकाप्रथा समाप्त गर! समाप्त गर! पैसा र पसिनाको मूल्य सम्झाऔँ एक समान</h3>
+          <h3 class="principle-nepali">ठेकाप्रथा समाप्त गर! समाप्त गर! पैसा र पसिनाको मूल्य सम्झऔँ एक समान</h3>
           <p class="principle-english">Thekapratha Samapta Gara! Samapta Gara! Paisa ra Pasinako Mulya Samjhau Ek Samaan</p>
         </div>
       </div>
@@ -1039,7 +1051,7 @@ color: var(--primary-gold);
         <ul class="space-y-4 mb-8">
           <li class="flex items-start">
             <i class="fas fa-map-marker-alt text-gold mt-1 mr-3"></i>
-            <a href="https://maps.app.goo.gl/4C8W3pM3qPDEQvMA9" target="_blank" class="text-white hover:text-yellow-200 transition-colors duration-300" data-address="Keshavdham, Guheswari Marg - 8, Kathmandu, Nepal">Keshavdham, Guheswari Marg - 8, Kathmandu, Nepal</a>
+            <a href="https://maps.app.goo.gl/4C8W3pM3qPDEQvMA9" target="_blank" class="text-white hover:text-yellow-200 transition-colors duration-300" data-address="Guheswari Marg - 8, Kathmandu, Nepal">Guheswari Marg - 8, Kathmandu, Nepal</a>
           </li>
           <li class="flex items-center">
             <i class="fas fa-phone-alt text-gold mr-3"></i>
@@ -1278,7 +1290,7 @@ function updateLanguage(lang) {
         // Convert address to Nepali
         let nepaliAddress = originalAddress;
         // Convert place names
-        nepaliAddress = nepaliAddress.replace(/Keshavdham/g, 'केशवधाम');
+        // nepaliAddress = nepaliAddress.replace(/Keshavdham/g, 'केशवधाम');
         nepaliAddress = nepaliAddress.replace(/Guheswari Marg/g, 'गुह्येश्वरी मार्ग');
         nepaliAddress = nepaliAddress.replace(/Kathmandu/g, 'काठमाडौं');
         nepaliAddress = nepaliAddress.replace(/Nepal/g, 'नेपाल');
