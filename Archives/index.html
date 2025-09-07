@@ -300,7 +300,6 @@ transform: translateX(0);
 #mobile-menu-overlay {
   display: none;
 }
-
 #mobile-menu-overlay.active {
   display: block;
 }
@@ -351,7 +350,6 @@ left: 0;
     font-size: 0.9rem;
   }
 }
-
 @media (max-width: 768px) {
   .announcement-fade {
     padding: 4px 0;
@@ -381,7 +379,6 @@ left: 0;
     font-size: 0.9rem;
   }
 }
-
 @media (max-width: 480px) {
   .announcement-fade {
     padding: 4px 0;
@@ -726,17 +723,16 @@ width: 100%;
 height: 100%;
 background-color: rgba(0, 0, 0, 0.8);
 z-index: 1000;
-display: flex;
+display: none;
 align-items: center;
 justify-content: center;
 padding: 20px;
 opacity: 0;
-visibility: hidden;
-transition: all 0.3s ease;
+transition: opacity 0.3s ease;
 }
 .modal-overlay.active {
+display: flex;
 opacity: 1;
-visibility: visible;
 }
 .modal-content {
 background: white;
@@ -747,7 +743,7 @@ max-height: 90vh;
 overflow: hidden;
 box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
 transform: scale(0.8);
-transition: all 0.3s ease;
+transition: transform 0.3s ease;
 }
 .modal-overlay.active .modal-content {
 transform: scale(1);
@@ -904,6 +900,36 @@ transition: background 0.2s;
 }
 .close-modal-btn:hover {
 background: var(--dark-orange);
+}
+/* Back to Top Button Styles */
+#back-to-top {
+position: fixed;
+bottom: 20px;
+right: 20px;
+padding: 12px;
+background-color: var(--primary-orange);
+color: white;
+width: 40px;
+height: 40px;
+border-radius: 9999px;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+opacity: 0;
+visibility: hidden;
+transition: all 0.3s ease;
+z-index: 999;
+box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+#back-to-top.visible {
+opacity: 1;
+visibility: visible;
+}
+
+#back-to-top:hover {
+background-color: var(--dark-orange);
 }
 /* Responsive adjustments */
 @media (max-width: 992px) {
@@ -1545,7 +1571,7 @@ background: var(--dark-orange);
           <li>
             <a href="/Archives/" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center">
               <i class="fas fa-angle-right mr-2 text-gold"></i>
-              <span data-i18n="latestUpdates">Archives</span>
+              <span data-i18n="latestUpdatesFooter">Archives</span>
             </a>
           </li>
           <li>
@@ -1564,7 +1590,7 @@ background: var(--dark-orange);
       </div>
       <!-- Resources -->
       <div class="md:col-span-1">
-        <h3 class="text-lg font-bold mb-6 uppercase tracking-wider text-white" data-i18n="resources">Resources</h3>
+        <h3 class="text-lg font-bold mb-6 uppercase tracking-wider text-white" data-i18n="resourcesFooter">Resources</h3>
         <ul class="space-y-3">
           <li>
             <a href="/Slogans/" class="text-white hover:text-yellow-200 transition-colors duration-300 flex items-center">
@@ -2124,7 +2150,6 @@ document.addEventListener('DOMContentLoaded', function() {
   const closeMobileMenu = document.getElementById('close-mobile-menu');
   const mobileMenu = document.getElementById('mobile-menu');
   const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
-
   if (mobileMenuButton && closeMobileMenu && mobileMenu && mobileMenuOverlay) {
     mobileMenuButton.addEventListener('click', () => {
       mobileMenu.classList.toggle('active');
@@ -2170,19 +2195,23 @@ document.addEventListener('DOMContentLoaded', function() {
   const mobileSearchToggle = document.getElementById('mobile-search-toggle');
   const searchBar = document.getElementById('search-bar');
   
-  searchToggle.addEventListener('click', () => {
-    searchBar.classList.toggle('active');
-    if (searchBar.classList.contains('active')) {
-      searchBar.querySelector('input').focus();
-    }
-  });
+  if (searchToggle) {
+    searchToggle.addEventListener('click', () => {
+      searchBar.classList.toggle('active');
+      if (searchBar.classList.contains('active')) {
+        searchBar.querySelector('input').focus();
+      }
+    });
+  }
   
-  mobileSearchToggle.addEventListener('click', () => {
-    searchBar.classList.toggle('active');
-    if (searchBar.classList.contains('active')) {
-      searchBar.querySelector('input').focus();
-    }
-  });
+  if (mobileSearchToggle) {
+    mobileSearchToggle.addEventListener('click', () => {
+      searchBar.classList.toggle('active');
+      if (searchBar.classList.contains('active')) {
+        searchBar.querySelector('input').focus();
+      }
+    });
+  }
   
   // Touch device dropdown handling
   const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
